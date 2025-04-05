@@ -43,7 +43,7 @@ I am Yotoha.😄
 -->
 
 ### 📈 统计信息
-![我的 GitHub 统计信息](https://github-readme-stats.vercel.app/api?username=Yotoha303&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=radical)
+![我的 GitHub 统计信息](https://github-readme-stats.vercel.app/api?username=Yotoha303&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=transparent)
 
 ### 🤝 联系我
 - 📧 电子邮件：[player159263@gmail.com](mailto:player159263@gmail.com)
