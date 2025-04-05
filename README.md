@@ -47,7 +47,8 @@ I am Yotoha.😄
 
 ### 🤝 联系我
 - 📧 电子邮件：[player159263@gmail.com](mailto:player159263@gmail.com)
-- 🌐 个人博客：[个人链接](https://space.bilibili.com/363242875)
+- ![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fspace.bilibili.com%2F363242875)
+ 个人博客：[个人链接](https://space.bilibili.com/363242875)
 
 
 感谢你的访问！如果你对我的工作感兴趣，可以关注我，或者直接通过我的电子邮件与我联系。😊
