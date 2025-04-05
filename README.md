@@ -16,5 +16,5 @@ Here are some ideas to get you started:
 -->
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Yotoha303Yotoha3031&show_icons=true&theme=transparent" /> 
+  <img src="https://github-readme-stats.vercel.app/api?username=Yotoha3031&show_icons=true&theme=transparent" /> 
 </div>
