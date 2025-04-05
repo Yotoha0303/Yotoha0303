@@ -19,7 +19,7 @@ Here are some ideas to get you started:
   <img src="https://github-readme-stats.vercel.app/api?username=Yotoha303&show_icons=true&theme=transparent" /> 
 </div>
 
-<! --
+<!--
   Statistics of code that has been committed
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha303&layout=compact&langs_count=6&text_color=000&icon_color=fff&theme=graywhite" />
