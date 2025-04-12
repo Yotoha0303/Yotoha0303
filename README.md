@@ -36,12 +36,12 @@ I am Yotoha.😄
   - Git, GitHub, Visual Studio Code
   - Remix IDE for Solidity
     
-<!--
+
 ### 📌 我的开源项目
-- **[项目1名称](项目1链接)** - 项目1的描述
-- **[项目2名称](项目2链接)** - 项目2的描述
-- **[项目3名称](项目3链接)** - 项目3的描述
--->
+<!--- **[项目1名称](项目1链接)** - 项目1的描述
+- **[项目2名称](项目2链接)** - 项目2的描述-->
+- **[Ethereum Sepolia和Holesky的简单跨链交互（经验与总结）](https://github.com/Yotoha0303/ethersTest/blob/main/crossChainERC20/records.md)** - 在跨链交互上的总结和个人心得，解决了幽灵交易和Rpc网络陷阱
+
 
 ### 📈 统计信息
 ![我的 GitHub 统计信息](https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=transparent)
