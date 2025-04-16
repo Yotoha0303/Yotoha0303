@@ -16,7 +16,7 @@ I am Yotoha.😄
 - 💻 **编程语言**：JavaScript, Solidity, Java
 - 📚 **技术领域**：
   - 区块链开发（智能合约，DApp）
-  - 人工智能
+  - [人工智能](https://github.com/Yotoha0303/AI_RoleTemplate/edit/main/README.md)
   - 数据结构与算法
  
 <!--
