@@ -45,7 +45,10 @@ I am Yotoha.😄
 
 ### 📈 统计信息
 ![Yotoha's GitHub stats](https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=transparent)
+
+<!---
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&count_private=true&show_icons=true&theme=transparent)
+--->
 
 ### 🤝 联系我
 - ![](https://img.shields.io/badge/-EA4335?logo=gmail&logoColor=FFFFFF) 电子邮件：[player159263@gmail.com](mailto:player159263@gmail.com) or [min2686396546@163.com](mailto:min2686396546@163.com)
