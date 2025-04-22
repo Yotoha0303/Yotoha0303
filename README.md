@@ -3,6 +3,8 @@
 
 I am Yotoha.😄
 
+中文 | [English](https://github.com/Yotoha0303/Yotoha0303/blob/main/translate/en.md)
+
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Yotoha303&show_icons=true&theme=transparent" /> 
 </div>
