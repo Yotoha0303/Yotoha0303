@@ -3,14 +3,14 @@
 
 I am Yotoha.😄
 
-中文 | [English](https://github.com/Yotoha0303/Yotoha0303/blob/main/translate/en.md)
-
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Yotoha303&show_icons=true&theme=transparent" /> 
 </div>
 -->
 
 # 你好，我是 [Yotoha] 👋
+
+中文 | [English](https://github.com/Yotoha0303/Yotoha0303/blob/main/translate/en.md)
 
 欢迎来到我的 GitHub 主页！我是一个热衷于自学和技术探索的开发者/工程师，专注于计算机科学、区块链技术、AI 等领域。我通过自学不断提高自己的技能，力求在这个快速发展的技术世界中紧跟潮流。
 
