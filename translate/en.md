@@ -1,0 +1,66 @@
+<!-- old
+## Hi there 👋
+
+I am Yotoha.😄
+
+<div align="center">
+<img src="https://github-readme-stats.vercel.app/api?username=Yotoha303&show_icons=true&theme=transparent" />
+</div>
+-->
+
+# Hi, I am [Yotoha] 👋
+
+Welcome to my GitHub homepage! I am a developer/engineer who is passionate about self-study and technology exploration, focusing on computer science, blockchain technology, AI and other fields. I continue to improve my skills through self-study and strive to keep up with the trend in this fast-moving technology world.
+
+### 🔭 My interests and expertise
+- 💻 **Programming languages**: JavaScript, Solidity, Java
+- 📚 **Technology fields**:
+- Blockchain development (smart contracts, DApp)
+- [Artificial intelligence](https://github.com/Yotoha0303/AI_RoleTemplate/blob/main/README.md)
+- Data structures and algorithms
+
+<!--
+- 🚀 **Project experience**:
+- I opened a personal repository on GitHub and published some projects that I researched and developed.
+-->
+
+### 🌱 My learning and growth
+- Self-study ability: I continue to improve my professional level through Internet learning, reading books and participating in open source projects.
+- Work philosophy: Continuous learning and practice to better integrate technology with life.
+- Self-management: Adhere to self-disciplined learning methods and skills, and constantly improve my efficiency and way of thinking.
+- Active in the community: Active in major news platforms, technical forums, knowledge communities, diving in the ocean of information, and also a knowledge editor of [Chinese Wikipedia](https://zh.wikipedia.org/wiki/User:Yotoha).
+
+### ⚡ My technical tools and methods
+- 🧠 **Thinking style**: Prefer structured thinking and deep learning, and constantly strengthen my problem-solving ability.
+- ⭐️ **Underlying thinking (core of thinking)**: My underlying thinking is coherent, it is not limited to a certain way of thinking, but through thinking and expression with the help of other thinking directions.
+- 🛠 **Tools**:
+- Git, GitHub, Visual Studio Code
+- Remix IDE for Solidity
+
+### 📌 My open source projects
+<!--- **[Project 1 Name](Project 1 Link)** - Description of Project 1-->
+- **[ERC20-Dapp](https://github.com/Yotoha0303/ERC20_Dapp_Project)** - Dapp built on ERC20 contract
+- **[Simple cross-chain interaction of Ethereum Sepolia and Holesky (experience and summary)](https://github.com/Yotoha0303/ethersTest/blob/main/crossChainERC20/records.md)** - Summary and personal experience on cross-chain interaction, solving ghost transactions and Rpc network traps
+
+### 📈 Statistics
+![Yotoha's GitHub stats](https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=transparent)
+
+<!---
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&count_private=true&show_icons=true&theme=transparent)
+--->
+
+### 🤝 Contact me
+- ![](https://img.shields.io/badge/-EA4335?logo=gmail&logoColor=FFFFFF) Email:[player159263@gmail.com](mailto:player159263@gmail.com) or [min2686396546@163.com](mailto:min2686396546@163.com)
+- ![](https://img.shields.io/badge/-00A1D6?logo=bilibili&logoColor=FFFFFF)
+Personal blog: [Personal link](https://space.bilibili.com/363242875)
+
+Thanks for your visit! If you are interested in my work, you can follow me or contact me directly through my email. 😊
+
+
+<!--- content tools
+😄 😆 😊 😃 😏 😍 😘 😚 😳 😌 😆 😁 😉 😜 😝 😀 😗 😙 😛 😴 😟 😦 😧 😮 😬 😕 😯 😑 😒 😅 😓 😥 😩 😔 😞 😖 😨 😰 😣 😢 😭 😂 😲 😱 😫 😠 😡 😤 😪 😋 😷 😎 😵 👿 😈 😐 😶 😇 👽 💛
+
+💙 💜 ❤️ 💚 💔 💓 💗 💕 💞 💘 💖 ✨ ⭐️ 🌟 💫 💥 💥 💢 ❗️ ❓ ❕ ❔ 💤 💨 💦 🎶 🎵 🔥 💩 💩 💩 👍 👍 👎 👎 👌 👊 👊 ✊ ✌️ 👋 ✋ ✋ 👐 ☝️ 👇 👈 👉 🙌 🙏 👆 👏 💪 🤘 🖕 🏃 🏃 👫 👪 👬 👭 💃 👯 🙆 🙅 💁
+
+🙋 👰 🙎 🙍 🙇 💑 💆 💇 💅 👦 👧 👩 👨 👶 👵 👴 👱 👲 👳 👷 👮 👼 👸 😺 😸 😻 😽 😼 🙀 😿 😹 😾 👹 👺 🙈 🙉
+--->
