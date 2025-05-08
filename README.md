@@ -35,7 +35,7 @@ I am Yotoha.😄
 ### ⚡ 我的技术工具和方法
 - 🧠 **思维方式**：偏好结构化思维和深度学习，不断强化自己的问题解决能力。
 - 🛠 **工具**：
-  - Git, GitHub, Visual Studio Code
+  - Git, GitHub, Visual Studio Code,Cursor
   - Remix IDE for Solidity
  
 <!--- ⭐️ **底层思维（思维核心）**：我的底层思维是连贯的，它并不局限于某种思维方式，而是通过借助其他思维方向进行思考和表达。 --->
