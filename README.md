@@ -42,10 +42,12 @@ I am Yotoha.😄
     
 
 ### 📌 我的开源项目（按最近排列）
-- **[成长记录](https://github.com/Yotoha0303/ProofOfGrowth/tree/main)** - 基于ERC721合约构建的dapp
+- **[Proof_Of_Growth](https://github.com/Yotoha0303/ProofOfGrowth/tree/main)** - 基于ERC721合约构建的dapp
 - **[ERC20-Dapp](https://github.com/Yotoha0303/ERC20_Dapp_Project)** - 基于ERC20合约构建的dapp
-- **[Ethereum Sepolia和Holesky的简单跨链交互（经验与总结）](https://github.com/Yotoha0303/ethersTest/blob/main/crossChainERC20/records.md)** - 在跨链交互上的总结和个人心得，解决了幽灵交易和Rpc网络陷阱
 
+<!---
+- **[Ethereum Sepolia和Holesky的简单跨链交互（经验与总结）](https://github.com/Yotoha0303/ethersTest/blob/main/crossChainERC20/records.md)** - 在跨链交互上的总结和个人心得，解决了幽灵交易和Rpc网络陷阱
+--->
 
 ### 📈 统计信息
 ![Yotoha's GitHub stats](https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=transparent)
