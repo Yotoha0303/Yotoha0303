@@ -53,7 +53,7 @@ Welcome to my GitHub homepage! I am a developer/engineer who is passionate about
 --->
 
 ### 🤝 Contact me
-- ![](https://img.shields.io/badge/-EA4335?logo=gmail&logoColor=FFFFFF) Email:[player159263@gmail.com](mailto:player159263@gmail.com) or [min2686396546@163.com](mailto:min2686396546@163.com)
+![](https://img.shields.io/badge/-EA4335?logo=gmail&logoColor=FFFFFF) Email:[player159263@gmail.com](mailto:player159263@gmail.com) or [min2686396546@163.com](mailto:min2686396546@163.com)
 
 Thanks for your visit! If you are interested in my work, you can follow me or contact me directly through my email. 😊
 
