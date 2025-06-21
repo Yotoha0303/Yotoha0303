@@ -17,7 +17,7 @@ I am Yotoha.😄
 ### 🔭 我的兴趣和专长
 - 💻 **编程语言**：JavaScript, Solidity, Java
 - 📚 **技术领域**：
-  - [区块链开发](https://github.com/Yotoha0303/Yotoha0303/blob/main/personalRecords/Web3%20learning_20250620.png)（智能合约，DApp）
+  - [区块链开发](https://github.com/Yotoha0303/Yotoha0303/blob/main/personalRecords/Web3_Learning_20250620.png)（智能合约，DApp）
   - [人工智能](https://github.com/Yotoha0303/AI_RoleTemplate/blob/main/README.md)
   - 数据结构与算法
  
