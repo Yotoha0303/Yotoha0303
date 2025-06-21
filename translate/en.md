@@ -17,7 +17,7 @@ Welcome to my GitHub homepage! I am a developer/engineer who is passionate about
 ### 🔭 My interests and expertise
 - 💻 **Programming languages**: JavaScript, Solidity, Java
 - 📚 **Technology fields**:
-- [Blockchain development](https://github.com/Yotoha0303/Yotoha0303/blob/main/personalRecords/Web3%20learning_20250620.png) (smart contracts, DApp)
+- [Blockchain development](https://github.com/Yotoha0303/Yotoha0303/blob/main/personalRecords/Web3_Learning_20250621.png) (smart contracts, DApp)
 - [Artificial intelligence](https://github.com/Yotoha0303/AI_RoleTemplate/blob/main/README.md)
 - Data structures and algorithms
 
