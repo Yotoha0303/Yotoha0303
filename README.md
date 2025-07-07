@@ -42,7 +42,6 @@ I am Yotoha.😄
     
 
 ### 📌 我的开源项目（按最近排列）
-- **[DEX_Uniswap-V2](https://github.com/Yotoha0303/AMM_Dapp_Project)** - Uniswap V2风格的DEX（Developing...）
 - **[Proof_Of_Growth](https://github.com/Yotoha0303/ProofOfGrowth/tree/main)** - 基于ERC721合约构建的dapp
 - **[ERC20-Dapp](https://github.com/Yotoha0303/ERC20_Dapp_Project)** - 基于ERC20合约构建的dapp
 
