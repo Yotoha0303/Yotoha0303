@@ -1,13 +1,3 @@
-<!--  old
-## Hi there 👋
-
-I am Yotoha.😄
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Yotoha303&show_icons=true&theme=transparent" /> 
-</div>
--->
-
 # 你好，我是 [Yotoha] 👋
 
 **简体中文 | [English](https://github.com/Yotoha0303/Yotoha0303/blob/main/translate/en.md)**
@@ -35,9 +25,6 @@ I am Yotoha.😄
 ### 📌 我的开源项目（按最近排列）
 - **[Proof_Of_Growth](https://github.com/Yotoha0303/ProofOfGrowth/tree/main)** - 基于ERC721合约构建的dapp
 - **[ERC20-Dapp](https://github.com/Yotoha0303/ERC20_Dapp_Project)** - 基于ERC20合约构建的dapp
-
-### 📈 统计信息
-![Yotoha's GitHub stats](https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=transparent)
 
 
 ### 🤝 联系我
