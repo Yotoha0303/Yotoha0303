@@ -45,9 +45,6 @@ Welcome to my GitHub homepage! I am a developer/engineer who is passionate about
 - **[ERC20-Dapp](https://github.com/Yotoha0303/ERC20_Dapp_Project)** - Dapp built on ERC20 contract
 - **[Simple cross-chain interaction of Ethereum Sepolia and Holesky (experience and summary)](https://github.com/Yotoha0303/ethersTest/blob/main/crossChainERC20/records.md)** - Summary and personal experience on cross-chain interaction, solving ghost transactions and Rpc network traps
 
-### 📈 Statistics
-![Yotoha's GitHub stats](https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&hide_title=true&count_private=true&hide=prs&theme=transparent)
-
 <!---
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&count_private=true&show_icons=true&theme=transparent)
 --->
