@@ -1,6 +1,6 @@
 # Hi, I am [Yotoha] 👋
 
-**[Simplified Chinese](https://github.com/Yotoha0303) | English**
+**[Simplified Chinese](https://github.com/Yotoha0303)** | **English**
 
 Welcome to my GitHub homepage! I am a developer/engineer who is passionate about self-study and technology exploration, focusing on computer science, blockchain technology, AI and other fields. I continue to improve my skills through self-study and strive to keep up with the trend in this fast-moving technology world.
 
