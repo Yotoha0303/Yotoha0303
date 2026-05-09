@@ -1,16 +1,6 @@
-<!-- old
-## Hi there 👋
-
-I am Yotoha.😄
-
-<div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=Yotoha303&show_icons=true&theme=transparent" />
-</div>
--->
-
 # Hi, I am [Yotoha] 👋
 
-**Simplified Chinese | [English](https://github.com/Yotoha0303/Yotoha0303/blob/main/translate/en.md)**
+**[Simplified Chinese](https://github.com/Yotoha0303) | English**
 
 Welcome to my GitHub homepage! I am a developer/engineer who is passionate about self-study and technology exploration, focusing on computer science, blockchain technology, AI and other fields. I continue to improve my skills through self-study and strive to keep up with the trend in this fast-moving technology world.
 
@@ -41,13 +31,11 @@ Welcome to my GitHub homepage! I am a developer/engineer who is passionate about
 <!--- ⭐️ **Underlying thinking (core of thinking)**: My underlying thinking is coherent. It is not limited to a certain way of thinking, but is thought and expressed with the help of other thinking directions. --->
 
 ### 📌 My open source projects (arranged by most recent)
+- **[Go-Order-Inventory](https://github.com/Yotoha0303/go-order-inventory)** - A lightweight order inventory management system is implemented based on Go + Gin + Gorm + MySQL
+- **[Go-User-System](https://github.com/Yotoha0303/go-user-system/tree/main)** - The user authentication system is implemented based on Go + Gin + GORM + MySQL
 - **[Growth Record](https://github.com/Yotoha0303/ProofOfGrowth/tree/main)** - Dapp built on ERC721 contract
 - **[ERC20-Dapp](https://github.com/Yotoha0303/ERC20_Dapp_Project)** - Dapp built on ERC20 contract
-- **[Simple cross-chain interaction of Ethereum Sepolia and Holesky (experience and summary)](https://github.com/Yotoha0303/ethersTest/blob/main/crossChainERC20/records.md)** - Summary and personal experience on cross-chain interaction, solving ghost transactions and Rpc network traps
 
-<!---
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&count_private=true&show_icons=true&theme=transparent)
---->
 
 ### 🤝 Contact me
 ![](https://img.shields.io/badge/-EA4335?logo=gmail&logoColor=FFFFFF) Email:[player159263@gmail.com](mailto:player159263@gmail.com) or [min2686396546@163.com](mailto:min2686396546@163.com)
