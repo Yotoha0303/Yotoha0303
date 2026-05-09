@@ -23,6 +23,8 @@
   - Remix IDE for Solidity
 
 ### 📌 我的开源项目（按最近排列）
+- **[Go-Order-Inventory](https://github.com/Yotoha0303/go-order-inventory)** - 基于 Go + Gin + Gorm + MySQL 实现轻量级订单库存管理系统
+- **[Go-User-System](https://github.com/Yotoha0303/go-user-system/tree/main)** - 基于 Go + Gin + GORM + MySQL 实现用户认证系统
 - **[Proof_Of_Growth](https://github.com/Yotoha0303/ProofOfGrowth/tree/main)** - 基于ERC721合约构建的dapp
 - **[ERC20-Dapp](https://github.com/Yotoha0303/ERC20_Dapp_Project)** - 基于ERC20合约构建的dapp
 
