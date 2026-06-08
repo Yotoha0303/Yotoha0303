@@ -56,16 +56,37 @@
 
 ### 2. go-user-system
 
-基于 **Go + Gin + GORM + MySQL** 的用户认证系统，用于训练后端基础能力与工程分层。
+一个基于 **Go、Gin、GORM 和 MySQL** 实现的用户认证与基础用户管理系统。
 
-核心功能：
-- 用户注册
-- 用户登录
-- bcrypt 密码加密
-- JWT 鉴权
-- 用户信息查询
-- handler / service / dao / model 分层
-- 统一响应结构
+项目围绕用户注册、登录、JWT 鉴权、当前用户查询和资料修改等核心业务，采用 Handler、Service、DAO 分层结构，并补充 SQL Migration、自动化测试、Docker Compose、GitHub Actions、健康检查和优雅关闭等工程化能力。
+
+项目目标是完整实践一个 Go 单体后端从业务开发、数据库管理、测试验证到容器化交付的基本流程。
+
+#### 核心功能
+
+* 用户注册与用户名唯一性校验
+* bcrypt 密码哈希存储与密码校验
+* 用户登录与 JWT `access_token` 签发
+* JWT 鉴权中间件与用户身份上下文传递
+* 当前登录用户信息查询
+* 当前用户昵称修改
+* 用户状态校验
+* 统一响应结构、业务错误码与应用错误处理
+* `/ping`、`/livez`、`/readyz` 健康检查
+
+#### 工程化能力
+
+* Handler、Service、DAO 分层设计
+* 显式注入 `*gorm.DB`，避免依赖全局数据库对象
+* HTTP Request Context 向 Service 和 DAO 层传递
+* 使用 SQL Migration 管理数据库结构版本
+* 单元测试、HTTP Handler 测试与 MySQL 集成测试
+* Docker 多阶段构建与 Docker Compose 编排
+* 非 root 用户运行容器
+* GitHub Actions 自动执行测试、`go vet`、二进制构建和镜像构建
+* SIGTERM 信号处理与 HTTP Server 优雅关闭
+* Makefile 统一管理运行、测试、构建和容器命令
+
 
 项目地址：[go-user-system](https://github.com/Yotoha0303/go-user-system)
 
