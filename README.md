@@ -1,119 +1,185 @@
-﻿# Hi，我是 Yotoha
+# Yotoha | Go Backend Developer
 
-我目前专注于 **Go 后端开发**，围绕业务后端项目持续训练接口设计、数据库建模、事务一致性、Redis 缓存、服务层测试和项目交付能力。
+我目前专注于 **Go 后端开发**，主要训练方向是业务后端系统、MySQL 数据建模、事务一致性、Redis 缓存、接口分层、测试验证与工程化交付。
 
-当前目标是进入正式后端开发岗位，在真实业务场景中稳定交付可维护、可扩展的后端模块。
+当前重点不是堆功能，而是把后端项目做到：
+
+* 业务流程清晰
+* 表结构设计合理
+* 接口行为可验证
+* 事务边界明确
+* 错误处理统一
+* 配置、日志、测试、Docker、CI 能形成闭环
 
 ---
 
 ## 技术栈
 
-### 后端开发
-- Go
-- Gin
-- GORM
-- RESTful API
-- Java / Spring（基础）
+### Backend
 
-### 数据库与缓存
-- MySQL
-- Redis
-- 事务处理
-- 基础索引设计
-- 表结构设计
+* Go
+* Gin
+* GORM
+* RESTful API
+* Middleware
+* Context
+* Error Handling
 
-### 工程实践
-- handler / service / dao / model 分层
-- 统一响应结构
-- 业务错误码设计
-- 配置管理
-- service 层测试
-- REST Client 接口自测
-- Docker Compose（基础）
-- Git / GitHub
+### Database & Cache
+
+* MySQL
+* Redis
+* SQL Migration
+* Transaction
+* Row Lock
+* Index Design
+* Table Design
+
+### Engineering
+
+* Handler / Service / DAO / Model 分层
+* Unified Response
+* Business Error Code
+* Request Validation
+* Docker / Docker Compose
+* Makefile
+* GitHub Actions
+* Unit Test / Integration Test
+* Structured Logging
+* Graceful Shutdown
 
 ---
 
-## 重点项目
+## Featured Projects
 
-### 1. go-order-inventory
+### go-order-inventory
 
-基于 **Go + Gin + GORM + MySQL + Redis** 的轻量级订单库存管理系统。
+一个基于 **Go + Gin + GORM + MySQL + Redis** 的轻量级订单库存管理系统。
 
-覆盖商品管理、库存初始化、库存流水、订单创建、订单支付、订单完成、订单取消回滚等核心业务流程，重点训练业务建模、表结构设计、事务一致性、库存扣减、缓存与测试能力。
+项目重点是训练真实业务后端中的 **订单创建、库存扣减、库存回滚、库存流水、订单状态机、事务一致性和 Redis 缓存**。
 
-核心功能：
-- 商品创建、查询、上架、下架
-- 库存初始化与手动加库存
-- 库存流水记录
-- 订单创建、查询、支付、完成、取消
-- 取消订单后的库存回滚
-- Redis 商品详情缓存
-- 统一业务错误码与响应结构
-- service 层测试与 REST Client 自测
+Repository: [go-order-inventory](https://github.com/Yotoha0303/go-order-inventory)
 
-项目地址：[go-order-inventory](https://github.com/Yotoha0303/go-order-inventory)
+#### Core Features
 
-### 2. go-user-system
+* 商品创建、查询、上架、下架
+* 库存初始化、增加库存、查询库存
+* 库存流水记录
+* 创建订单时扣减库存
+* 库存不足时事务回滚
+* 订单支付、完成、取消
+* 取消待支付订单时回滚库存
+* 订单状态机限制非法流转
+* 商品详情 Redis cache-aside 缓存
+* Redis 不可用时自动降级到 MySQL 主流程
 
-一个基于 **Go、Gin、GORM 和 MySQL** 实现的用户认证与基础用户管理系统。
+#### Backend Highlights
 
-项目围绕用户注册、登录、JWT 鉴权、当前用户查询和资料修改等核心业务，采用 Handler、Service、DAO 分层结构，并补充 SQL Migration、自动化测试、Docker Compose、GitHub Actions、健康检查和优雅关闭等工程化能力。
+* 使用 Handler / Service / DAO / Model 分层组织代码
+* 使用 MySQL 事务保证订单、订单项、库存和库存流水的一致性
+* 使用行级锁控制并发库存扣减
+* 使用库存流水追踪每一次库存变化
+* 使用订单状态机限制非法业务流转
+* 使用 Redis 做商品详情缓存，并在商品状态变化时删除缓存
+* 使用 Goose 管理数据库迁移
+* 使用 Docker Compose 编排 App、MySQL、Redis
+* 使用 Makefile 统一封装运行、测试、构建、迁移和 Docker 命令
+* 使用 GitHub Actions 执行测试、race test、vet、lint、migration 校验和构建
 
-项目目标是完整实践一个 Go 单体后端从业务开发、数据库管理、测试验证到容器化交付的基本流程。
+---
 
-#### 核心功能
+### go-user-system
 
-* 用户注册与用户名唯一性校验
-* bcrypt 密码哈希存储与密码校验
-* 用户登录与 JWT `access_token` 签发
-* JWT 鉴权中间件与用户身份上下文传递
+一个基于 **Go + Gin + GORM + MySQL** 的用户认证与基础用户管理系统。
+
+项目重点是训练 Go 后端中的 **用户注册、登录、JWT 鉴权、密码安全、统一响应、错误码、SQL Migration、测试和基础工程化**。
+
+Repository: [go-user-system](https://github.com/Yotoha0303/go-user-system)
+
+#### Core Features
+
+* 用户注册
+* 用户名唯一性校验
+* bcrypt 密码哈希存储
+* 用户登录
+* JWT access token 签发
+* JWT 鉴权中间件
 * 当前登录用户信息查询
 * 当前用户昵称修改
 * 用户状态校验
-* 统一响应结构、业务错误码与应用错误处理
 * `/ping`、`/livez`、`/readyz` 健康检查
 
-#### 工程化能力
+#### Backend Highlights
 
-* Handler、Service、DAO 分层设计
-* 显式注入 `*gorm.DB`，避免依赖全局数据库对象
-* HTTP Request Context 向 Service 和 DAO 层传递
+* 使用 Handler / Service / DAO 分层组织业务
+* 使用统一响应结构和业务错误码
 * 使用 SQL Migration 管理数据库结构版本
-* 单元测试、HTTP Handler 测试与 MySQL 集成测试
-* Docker 多阶段构建与 Docker Compose 编排
-* 非 root 用户运行容器
-* GitHub Actions 自动执行测试、`go vet`、二进制构建和镜像构建
-* SIGTERM 信号处理与 HTTP Server 优雅关闭
-* Makefile 统一管理运行、测试、构建和容器命令
-
-
-项目地址：[go-user-system](https://github.com/Yotoha0303/go-user-system)
+* 使用 Request Context 向 Service 和 DAO 层传递
+* 使用结构化日志记录请求与异常
+* 使用 HTTP Server 超时配置提升服务稳定性
+* 使用单元测试、Handler 测试和 MySQL 集成测试验证核心流程
+* 使用 Docker 多阶段构建和 Docker Compose 编排本地环境
+* 使用 GitHub Actions 自动执行测试、vet、构建和镜像构建
+* 支持 SIGTERM 信号处理与 HTTP Server 优雅关闭
 
 ---
 
-## 当前学习重点
+## What I Can Explain in Interviews
 
-- Go 后端项目结构
-- MySQL 表结构设计与事务处理
-- Redis 缓存与缓存失效策略
-- service 层业务测试
-- 业务错误码与统一响应设计
-- API 文档与 README 编写
-- Docker Compose 本地开发环境
-- 项目讲解与面试表达
+### Backend Design
+
+* 为什么要做 Handler / Service / DAO 分层
+* Service 层应该放什么业务逻辑
+* DAO 层为什么不处理业务状态
+* 如何设计统一响应和业务错误码
+* 如何从业务流程反推表结构和接口
+
+### MySQL & Transaction
+
+* 订单创建为什么需要事务
+* 库存扣减为什么需要行级锁
+* 库存不足时如何保证事务回滚
+* 取消订单时如何回滚库存
+* 库存流水表的作用
+* 为什么使用 SQL Migration 而不是只依赖 AutoMigrate
+
+### Redis Cache
+
+* 商品详情缓存的 cache-aside 流程
+* 缓存命中、未命中和写入逻辑
+* 商品状态变化时为什么要删除缓存
+* Redis 不可用时如何保证主流程可用
+
+### Engineering
+
+* Docker Compose 中 App 为什么不能连接 `127.0.0.1:3306`
+* 本地运行和 Docker 运行如何通过环境变量区分配置
+* Makefile 如何统一项目命令
+* GitHub Actions 如何作为质量门禁
+* HTTP Server 超时和优雅关闭的作用
 
 ---
 
-## 工程理念
+## Current Focus
 
-- 先理解业务，再设计表结构和接口
-- 区分简单 CRUD 与核心业务流程
-- 多表写入和状态流转优先保证事务一致性
-- 测试覆盖成功流程与失败流程
-- 保持接口、代码、测试、文档一致
-- 在轻量项目中避免过度设计，同时保留演进空间
+我当前继续围绕 Go 后端就业项目补强以下能力：
+
+* MySQL 表结构设计与索引设计
+* 事务一致性与并发库存扣减
+* Redis 缓存和缓存失效策略
+* Handler / Service / DAO 测试覆盖
+* Docker Compose 本地开发环境
+* SQL Migration 工作流
+* README、接口文档和项目讲解
 
 ---
 
-English version: [README.en.md](./README.en.md)
+## Engineering Principles
+
+* 先理解业务流程，再设计表结构和接口
+* 区分简单 CRUD 与核心业务流程
+* 多表写入优先明确事务边界
+* 状态流转必须显式建模，避免隐式判断散落在代码中
+* 缓存只做加速，不影响主业务正确性
+* 代码、测试、配置、文档和启动方式必须保持一致
+* 在轻量项目中避免过度设计，同时保留后续演进空间
