@@ -1,133 +1,178 @@
-# Yotoha | Go Backend Developer
+# Yotoha | SRE / Backend Engineer
 
-我目前专注于 **Go 后端开发**，重点训练业务系统、认证与权限、MySQL 事务一致性、Redis、消息队列、测试验证以及容器化交付。
+我目前将职业与工程实践重点收敛到 **Site Reliability Engineering（SRE）/ 后端可靠性工程**：以 Go 后端能力为基础，继续补强 Linux、容器、CI/CD、可观测性、自动化运维、备份恢复、故障演练与稳定性治理。
 
-当前项目不以堆叠 CRUD 为目标，而是持续验证：
+我关注的不只是“服务能跑起来”，而是持续验证：
 
-- 业务流程是否闭环
-- 数据模型与事务边界是否合理
-- 并发、幂等、缓存与异步任务是否可验证
-- 认证、权限和安全策略是否完整
-- 测试、迁移、日志、容器和 CI/CD 是否形成交付闭环
+- 服务如何构建、发布、部署与回滚
+- 指标、日志与 Trace 如何帮助发现和定位故障
+- 数据如何备份、恢复并验证完整性
+- 分布式业务如何处理幂等、一致性、消息可靠性与故障恢复
+- 自动化测试、CI/CD、Runbook 与故障演练如何形成可重复的运行保障
+- 如何从 Metrics / Logs / Traces 进一步演进到 SLI、SLO、Error Budget 与 Incident Review
 
 ---
 
-## Technical Stack
+## SRE / Reliability Stack
 
-### Backend
+### Systems & Runtime
 
+- Linux / Ubuntu
 - Go / Gin / GORM
-- RESTful API / Middleware / Context
-- JWT Authentication / RBAC
-- Error Handling / Request Validation
+- Docker / Docker Compose
+- Kubernetes / kind / Kustomize
+- Nginx / HTTP / TCP/IP
 
 ### Data & Messaging
 
-- MySQL / Redis
-- SQL Migration / Transaction / Row Lock / Index Design
-- RabbitMQ / Outbox Pattern / TTL / DLX
+- MySQL / PostgreSQL / Redis
+- RabbitMQ / Transactional Outbox
+- SQL Migration / Transaction / Row Lock / Idempotency
 
-### Engineering
+### Delivery & Automation
 
-- Handler / Service / DAO / Model 分层
-- Docker / Docker Compose / Kubernetes
-- Makefile / GitHub Actions / GHCR
-- Unit Test / Integration Test / E2E Test
-- Race Test / CodeQL / Dependabot / Vulnerability Check
-- Structured Logging / Request ID / Graceful Shutdown
-- Prometheus Metrics / 基础 Trace Context
+- GitHub Actions / GHCR
+- Immutable Container Images / Digest-based Deployment
+- CI Gates / Smoke Test / Rollback
+- Makefile / Shell-based Operations
+- Backup / Restore / SHA-256 Verification
+
+### Observability & Reliability
+
+- Prometheus / Grafana / Alert Rules
+- OpenTelemetry / OTLP / Tempo
+- Structured Logging / Request ID / Trace Context
+- Health Check / Readiness / Graceful Shutdown
+- Fault Drill / Runbook / Postmortem Template
+- Bounded Load Test / P50 / P95 / P99 / Capacity Analysis
+
+### Building Next
+
+- Prometheus + Grafana + Alertmanager
+- ELK / EFK centralized logging
+- Python + Shell operations automation
+- Ansible-based host provisioning and deployment
+- Ubuntu VM production-like deployment
+- SLI / SLO / Error Budget / Incident Management
 
 ---
 
-# Featured Projects
+# Featured Reliability Projects
 
-## go-order-management-system
+## 1. go-order-management-system-cloudnative-lab
 
-一个基于 **Go + Gin + GORM + MySQL + Redis + RabbitMQ** 的订单库存一致性管理服务，重点展示真实业务后端中的事务一致性、并发安全、异步任务和工程化交付能力。
+**当前最主要的 SRE / 云原生工程实验项目。**
+
+从 Go 订单系统演进出的多服务运行环境，重点验证微服务边界、消息可靠性、应用韧性、Kubernetes 交付、可观测性、备份恢复、故障演练与自动 CD。
 
 Repository:  
-https://github.com/Yotoha0303/go-order-management-system
+https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab
 
-### Core Business
+### Reliability Highlights
 
-- 用户注册、登录、JWT 鉴权与 RBAC
-- 商品创建、查询、上下架
-- 库存初始化、入库、库存流水
-- 用户级幂等订单创建
-- MySQL 事务 + 行锁 + 条件更新防止超卖
-- Redis Lua 库存预扣与 reservation 补偿
-- 订单支付、完成、取消状态机
-- 取消订单库存回补
-- RabbitMQ TTL/DLX 实现订单超时自动取消
-- Transactional Outbox 保证数据库事件与消息发布一致性
-
-### Engineering Highlights
-
-- Redis/MySQL 库存对账与 Redis 可售库存重建
-- 多商品按固定顺序加锁，降低死锁风险
-- Redis Cluster 固定 hash tag 规避多 key 跨 slot
-- 管理员操作审计日志与 Request ID 关联
-- Prometheus `/metrics` 暴露 HTTP、订单和库存预扣指标
-- W3C `traceparent` 兼容，日志输出 `trace_id/span_id`
-- GORM 慢 SQL 日志与压测/性能分析入口
-- Goose Migration、Docker Compose、Makefile、GitHub Actions
-- Docker 多阶段构建、非 root 运行，并支持云主机一键部署
+- 7 个运行单元、4 个独立服务数据库
+- Order Saga / Inventory Reservation / Compensation / Reconciliation
+- Transactional Outbox + RabbitMQ TTL/DLX + Publisher Confirm + Manual ACK
+- Deadline / Retry / Exponential Backoff / Circuit Breaker / Rate Limit
+- Kubernetes + Kustomize + Probe + Resources + PDB + Ingress
+- Prometheus + Grafana + OpenTelemetry Collector + Tempo
+- GHCR 不可变镜像、Commit SHA、OCI Digest 与发布清单
+- Digest-based 自动部署、Smoke Test、失败版本检测与完整回滚
+- 四库逻辑备份、SHA-256 校验、隔离恢复验证
+- RabbitMQ / HTTP / Worker Lease / Migration 故障演练
+- Operator Runbook、事故复盘模板与有界压测
 
 ---
 
-## go-user-system
+## 2. KnowTrace
 
-一个可自托管的 **Go + Gin + GORM + MySQL + Redis + React** 用户认证与 RBAC 系统，当前公开交付版本为 `v1.0.0-rc.3`。
+一个“记录优先、AI 辅助整理”的知识采集与可靠知识工作流系统，目前作为 **AI 应用 + 多服务交付 + 运维/SRE 演进项目** 持续开发。
+
+Repository:  
+https://github.com/Yotoha0303/KnowTrace
+
+### Current Engineering Scope
+
+- Next.js / TypeScript + PostgreSQL / Drizzle
+- 独立 Go 认证服务 + MySQL + Redis
+- Docker Compose 多服务编排与健康检查
+- Migration、单元测试、E2E、GitHub CI
+- Workspace 数据隔离、版本化知识链与审计边界
+- PostgreSQL / MySQL / Uploads 统一备份与恢复流程
+- 下一阶段重点：Ubuntu VM 部署、完整 CI/CD、Prometheus/Grafana、ELK、自动化运维与故障演练
+
+---
+
+## 3. go-user-system
+
+一个可自托管的 **Go + Gin + MySQL + Redis** 用户认证与 RBAC 系统，重点体现身份安全、可交付性与最小可运维能力。
 
 Repository:  
 https://github.com/Yotoha0303/go-user-system
 
-### Core Business
+### Reliability & Security Highlights
 
-- 用户注册、登录、资料查询、昵称修改、密码修改和登出
-- JWT Access / Refresh 双 Token
-- Refresh Token HttpOnly Cookie、哈希存储与 Rotation
-- Token Family 重放检测
-- 用户 `auth_version`，改密后全会话失效
-- 当前 Access JTI 吊销
-- Redis JTI 吊销与账号/IP 登录失败限流
-- RBAC 角色、权限、用户角色和角色权限模型
-- 一次性管理员初始化，普通注册用户仅绑定 `user` 角色
-- 可关闭公开注册入口
-
-### Engineering & Delivery
-
-- React + TypeScript 管理界面与会话恢复
-- Swagger、健康检查、结构化日志、Request ID、超时和优雅关闭
-- Goose Migration、完整 Docker Compose 栈
-- Kubernetes 清单、迁移 Job、Service 与 Ingress
-- Go 单元/集成测试、Vitest、Testing Library、Playwright E2E
-- GitHub Actions、CodeQL、Dependabot、secret scanning
-- GHCR 多架构镜像与版本发布
-- 生产环境 Secure Cookie、可信代理 CIDR 和启动安全校验
+- JWT Access / Refresh、Rotation、Token Family 重放检测
+- Redis JTI 吊销、账号/IP 双维度登录失败限流
+- RBAC、Secure Cookie、可信代理与生产启动校验
+- Prometheus HTTP / Runtime / Readiness 指标与基础告警规则
+- MySQL 备份、SHA-256 manifest 与隔离恢复演练
+- Docker Compose、Kubernetes、CI、CodeQL、Dependabot、GHCR 发布
 
 ---
 
-# Current Focus
+## 4. go-order-management-system
 
-当前继续补强：
+一个面向真实业务约束的 Go 订单库存一致性服务，重点训练 **事务、并发、幂等、消息可靠性与可观测性基础**。
 
-- MySQL 索引、查询优化与慢 SQL 分析
-- Redis 一致性与高并发场景
-- 分布式事务与消息一致性
-- Kubernetes / 云原生部署与可观测性
-- Go 网络与系统编程
-- AI 应用后端：LLM API、Tool Calling、RAG、Agent Worker
+Repository:  
+https://github.com/Yotoha0303/go-order-management-system
+
+### Backend Reliability Highlights
+
+- MySQL Transaction + Row Lock + Conditional Update
+- Redis Lua 预扣、reservation 补偿与 Redis/MySQL 对账
+- RabbitMQ 延迟取消 + Transactional Outbox
+- Publisher Confirm / Manual ACK / Idempotent Consumer
+- Prometheus `/metrics`
+- W3C `traceparent`、Request ID、结构化日志与慢 SQL 日志
+- Docker Compose / Migration / CI / Health Check
+
+---
+
+# Current SRE Roadmap
+
+```text
+Reliable Backend
+      ↓
+CI / Immutable Build
+      ↓
+Automated Delivery / Rollback
+      ↓
+Ubuntu Runtime Environment
+      ↓
+Metrics + Logs + Traces
+      ↓
+Alerting + Runbook
+      ↓
+Backup / Restore / Fault Drill
+      ↓
+SLI / SLO / Error Budget
+      ↓
+SRE / Reliability Engineering
+```
+
+当前重点不是继续堆叠工具数量，而是把已有项目真正推进到 **可部署、可观测、可恢复、可回滚、可演练、可复盘** 的状态。
 
 ---
 
 # Engineering Principles
 
-- 先理解业务，再设计表结构、接口和状态流转
-- 区分核心业务能力与工程化能力
-- 多表写入明确事务边界
-- 并发场景显式处理幂等、锁和一致性
-- 缓存是性能与流量保护层，数据库仍是事实源
-- 认证不仅是签发 JWT，还要考虑刷新、吊销、重放和会话失效
-- 代码、测试、迁移、配置、文档与部署保持一致
-- 避免为了技术数量过度设计，以可验证和可维护为优先
+- Reliability is a system property, not a monitoring dashboard.
+- 先定义故障边界，再决定监控、告警和恢复策略。
+- 数据库是事实源时，缓存与消息系统必须有明确的一致性与补偿边界。
+- 发布流程必须具备可验证的构建产物、健康检查和回滚路径。
+- Backup 只有经过 Restore Verification 后才具有恢复价值。
+- Metrics、Logs、Traces 应围绕故障定位建立关联，而不是独立堆叠。
+- 自动化应建立在已经理解并手工验证过的操作流程之上。
+- 不把实验环境包装成生产环境；明确系统能力、证据与边界。
