@@ -71,11 +71,11 @@
 
 ---
 
-## 2. KnowTrace
+## 2. KnowTrace-Workflow
 
 **AI 应用 + 多服务交付 + 可靠性工程演进项目。**
 
-KnowTrace 是“记录优先、AI 辅助整理”的知识采集与可靠知识工作流系统。
+KnowTrace-Workflow 是“记录优先、AI 辅助整理”的知识采集与可靠知识工作流系统。
 
 当前重点已经从单纯功能开发扩展到：
 
@@ -96,7 +96,7 @@ KnowTrace 是“记录优先、AI 辅助整理”的知识采集与可靠知识�
 
 > **建成的能力、已经验证的能力、以及尚未实现的能力。**
 
-仓库：<https://github.com/Yotoha0303/KnowTrace>
+仓库：<https://github.com/Yotoha0303/KnowTrace-Workflow>
 
 ---
 
