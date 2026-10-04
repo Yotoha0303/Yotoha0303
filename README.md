@@ -1,26 +1,48 @@
-# Yotoha | SRE / 后端工程师
+# Yotoha | SRE / 后端工程师 | Backend / SRE Engineer
 
-我目前将职业与工程实践重点收敛到 **SRE / 后端可靠性工程**，以 Go 后端为主轴，持续补强 Linux、容器、CI/CD、可观测性、自动化运维、备份恢复、故障演练与稳定性治理。
+专注于 **Go 后端、SRE、云原生与 AI 应用系统**，持续把个人项目从“能运行”推进到“可部署、可观测、可恢复、可回滚、可验证”。
 
-我的工程目标不是单纯“把功能写出来”，而是逐步具备：
+Focused on **Go backend systems, SRE, cloud-native engineering, and AI application systems**, with an emphasis on making systems deployable, observable, recoverable, rollback-safe, and verifiable.
+
+---
+
+## 工程目标 | Engineering Goal
 
 ```
-设计 → 开发 → 测试 → 构建 → 部署 → 观测 → 排障 → 恢复 → 复盘 → 自动化
+设计 Design
+  ↓
+开发 Development
+  ↓
+测试 Testing
+  ↓
+构建 Build
+  ↓
+部署 Deploy
+  ↓
+观测 Observe
+  ↓
+排障 Troubleshoot
+  ↓
+恢复 Recover
+  ↓
+复盘 Postmortem
+  ↓
+自动化 Automate
 ```
 
 ---
 
-## 当前技术栈
+## 当前技术栈 | Current Stack
 
-### Backend
+### Backend / 后端
 
 - Go / Gin / GORM
 - MySQL / PostgreSQL
 - Redis / RabbitMQ
 - JWT / RBAC
-- Transaction / Row Lock / Idempotency / Outbox
+- Transactions / Row Locks / Idempotency / Outbox
 
-### Delivery & Operations
+### Delivery & Operations / 交付与运维
 
 - Linux / Ubuntu
 - Docker / Docker Compose
@@ -28,9 +50,9 @@
 - Git / GitHub Actions / GHCR
 - Makefile / Shell / Python
 - Backup / Restore / SHA-256 Verification
-- Ansible：逐步用于主机初始化与部署自动化
+- Ansible：逐步用于主机初始化与部署自动化 / gradually used for host initialization and deployment automation
 
-### Observability & SRE
+### Observability & SRE / 可观测性与 SRE
 
 - Prometheus / Grafana / Alertmanager
 - Loki / Alloy
@@ -41,106 +63,58 @@
 - SLI / SLO / Error Budget
 - Runbook / Incident / Postmortem
 
-### Cloud Native
+### Cloud Native / 云原生
 
 - Kubernetes / kind / Kustomize
-- Helm / GitOps / ArgoCD 逐步学习
+- Helm / GitOps / ArgoCD — gradually learning / 逐步学习
 
 ---
 
-# 核心项目
+# 核心项目 | Featured Projects
 
 ## 1. go-order-management-system-cloudnative-lab
 
-当前主要的 **SRE / 云原生工程实验项目**。
+**SRE / Cloud-Native Engineering Lab | SRE / 云原生工程实验项目**
 
-从 Go 订单系统演进出的多服务运行环境，重点验证：
+从 Go 订单系统演进出的多服务运行环境，重点验证微服务边界、Saga/补偿、消息可靠性、Kubernetes 交付、可观测性、备份恢复、故障演练与有界压测。
 
-- 微服务边界
-- Order Saga / Compensation / Reconciliation
-- Transactional Outbox + RabbitMQ
-- Deadline / Retry / Backoff / Circuit Breaker / Rate Limit
-- Kubernetes / Kustomize / Probe / Resources / PDB / Ingress
-- Prometheus / Grafana / OpenTelemetry / Tempo
-- GHCR 不可变镜像、Commit SHA、OCI Digest
-- 自动部署、Smoke Test、失败检测与回滚
-- 数据库备份、SHA-256 校验与隔离恢复
-- 故障演练、Runbook、Postmortem 与有界压测
+A multi-service environment evolved from a Go order system, focusing on service boundaries, Saga/compensation, messaging reliability, Kubernetes delivery, observability, backup/recovery, fault drills, and bounded load testing.
 
-仓库：<https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab>
-
----
+Repository: [go-order-management-system-cloudnative-lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab)
 
 ## 2. KnowTrace-Workflow
 
-**AI 应用 + 多服务交付 + 可靠性工程演进项目。**
+**AI Application + Multi-Service Delivery + Reliability Engineering**
 
-KnowTrace-Workflow 是“记录优先、AI 辅助整理”的知识采集与可靠知识工作流系统。
+“记录优先、AI 辅助整理、证据可追溯”的知识工作流系统，同时作为 AI 应用工程、交付工程和可靠性工程实验环境。
 
-当前重点已经从单纯功能开发扩展到：
+An AI-assisted knowledge workflow system built around record-first design, traceable evidence, human verification, self-hosted deployment, observability, and reliability engineering.
 
-- Ubuntu / VPS 部署
-- Docker Compose 多服务运行
-- CI / 构建与发布验证
-- Prometheus / Grafana / Alertmanager
-- Loki / Alloy 日志
-- OpenTelemetry / Trace
-- Blackbox 故障演练
-- 备份 / 恢复 / SHA-256 验证
-- 压测与容量基线
-- Runbook / Incident / Postmortem
-- Python / Shell 自动化
-- Ansible 主机初始化与部署自动化
-
-当前项目明确区分：
-
-> **建成的能力、已经验证的能力、以及尚未实现的能力。**
-
-仓库：<https://github.com/Yotoha0303/KnowTrace-Workflow>
-
----
+Repository: [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)
 
 ## 3. go-user-system
 
-可自托管的 **Go + Gin + MySQL + Redis** 用户认证与 RBAC 系统。
+**Go Authentication / Authorization System**
 
-重点：
+可自托管的 Go + Gin + MySQL + Redis 用户认证与 RBAC 系统，覆盖 JWT Access/Refresh、Token Rotation、Replay Detection、JTI Revocation、登录限流、RBAC、CI/CD、Kubernetes 与备份恢复。
 
-- JWT Access / Refresh
-- Token Rotation / Replay Detection
-- Redis JTI Revocation
-- 登录失败限流
-- RBAC
-- Secure Cookie
-- Docker Compose / Kubernetes
-- CI / CodeQL / Dependabot / GHCR
-- Prometheus 基础指标
-- Backup / Restore
+A self-hosted Go + Gin + MySQL + Redis authentication and RBAC system covering JWT Access/Refresh, token rotation, replay detection, JTI revocation, rate limiting, CI/CD, Kubernetes, and backup/recovery.
 
-仓库：<https://github.com/Yotoha0303/go-user-system>
-
----
+Repository: [go-user-system](https://github.com/Yotoha0303/go-user-system)
 
 ## 4. go-order-management-system
 
-面向真实业务约束的 Go 订单库存一致性服务。
+**Go Order & Inventory Consistency Service**
 
-重点训练：
+面向真实业务约束的 Go 订单库存一致性服务，重点训练事务、行锁、幂等、Redis Lua、RabbitMQ Outbox、状态机、数据隔离与工程化交付。
 
-- MySQL Transaction / Row Lock
-- Redis Lua / Reservation / Compensation
-- RabbitMQ / Outbox
-- Publisher Confirm / Manual ACK
-- Idempotent Consumer
-- Prometheus Metrics
-- Request ID / Trace Context
-- Docker Compose / Migration / CI / Health Check
+A Go order and inventory consistency service focused on transactions, row locks, idempotency, Redis Lua, RabbitMQ Outbox, state machines, data isolation, and engineering delivery.
 
-仓库：<https://github.com/Yotoha0303/go-order-management-system>
+Repository: [go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)
 
 ---
 
-# 技术成长路线
+# 技术成长路线 | Engineering Roadmap
 
 ```
 Go Backend
@@ -168,15 +142,27 @@ AI Systems
 
 **可部署、可观测、可恢复、可回滚、可演练、可复盘。**
 
+The current focus is not collecting technologies indefinitely, but making existing systems:
+
+**Deployable, observable, recoverable, rollback-safe, testable under failure, and reviewable.**
+
 ---
 
-# 工程原则
+# 工程原则 | Engineering Principles
 
-- 可靠性是系统属性，不是 Dashboard 数量。
-- 先定义故障边界，再决定监控、告警和恢复策略。
-- 数据库、缓存、消息队列分别承担明确的事实、状态与传输职责。
-- 发布必须有可验证的构建产物、健康检查和回滚路径。
-- Backup 只有经过 Restore Verification 才具有恢复证据。
-- Metrics、Logs、Traces 围绕故障定位建立关联。
-- 自动化建立在已经理解并手工验证过的操作流程之上。
-- 不把实验环境包装成生产环境；明确能力、证据和边界。
+- 可靠性是系统属性，不是 Dashboard 数量。  
+  Reliability is a system property, not a dashboard count.
+- 先定义故障边界，再决定监控、告警和恢复策略。  
+  Define failure boundaries before choosing monitoring, alerting, and recovery strategies.
+- 数据库、缓存、消息队列分别承担明确的事实、状态与传输职责。  
+  Databases, caches, and message queues have explicit responsibilities for facts, state, and transport.
+- 发布必须有可验证的构建产物、健康检查和回滚路径。  
+  Releases require verifiable artifacts, health checks, and rollback paths.
+- Backup 只有经过 Restore Verification 才具有恢复证据。  
+  A backup becomes recovery evidence only after restore verification.
+- Metrics、Logs、Traces 围绕故障定位建立关联。  
+  Metrics, logs, and traces should be correlated around failure diagnosis.
+- 自动化建立在已经理解并手工验证过的操作流程之上。  
+  Automation is built on manually understood and verified operational procedures.
+- 不把实验环境包装成生产环境；明确能力、证据和边界。  
+  Experimental evidence is not presented as production capability; scope and limitations remain explicit.
