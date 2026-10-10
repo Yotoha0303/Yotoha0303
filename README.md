@@ -1,92 +1,99 @@
-# Yotoha | Go Backend Engineer
+# Yotoha | AI 应用工程师方向 · AI Application Engineering
 
-以 **Go 后端开发** 为主线，重点关注业务逻辑、数据一致性、测试与可维护性；通过 Linux、Docker 和 CI/CD 完成部署交付，并练习日志排查、备份恢复与故障验证。
+以 **AI 应用工程（AI Application Engineering）** 为目标方向，重点探索如何将大模型能力接入真实软件工作流，并通过后端工程、数据管理、测试与部署，让 AI 功能可验证、可维护。
 
-Focused on **Go backend engineering**: business logic, data consistency, testing, and maintainability. I use Linux, Docker, and CI/CD to deliver services, while building practical skills in troubleshooting, backup/recovery, and failure verification.
+Focused on **AI application engineering**: integrating LLM capabilities into real software workflows and making AI features verifiable and maintainable through backend engineering, data management, testing, and deployment.
 
 ---
 
 ## 当前方向 | Current Focus
 
-- **主线 / Primary:** Go, Gin, SQL, Redis, API design, transactions, concurrency, automated testing.
-- **配套 / Supporting:** Linux, networking basics, Docker Compose, CI/CD, logs, deployment, backup and restore.
-- **暂缓扩展 / Deprioritized for now:** adding more frameworks, expanding Kubernetes/GitOps, and building increasingly complex multi-agent orchestration.
+- **主线 / Primary:** LLM application integration, structured outputs, tool calling, retrieval and evidence-grounded workflows, workflow state, evaluation, and failure handling.
+- **工程基础 / Engineering Foundation:** Go, APIs, SQL, Redis, authentication/authorization, Linux, Docker, CI/CD, logs, and deployment.
+- **暂缓扩展 / Deprioritized for now:** model training and research, collecting agent frameworks, complex multi-agent orchestration without a validated use case, and expanding cloud-native tooling unrelated to the current application.
 
-目标不是堆叠技术标签，而是把一个业务服务做到 **能实现、能测试、能部署、能排错、能解释设计取舍**。
+目标不是堆叠 AI 名词或框架，而是构建一个 **有明确用户问题、可验证输出、可追踪执行过程、能够部署和排错** 的 AI 应用。
 
-The goal is not to collect technology labels, but to build services that I can implement, test, deploy, troubleshoot, and explain.
+The goal is not to collect AI terminology or frameworks, but to build applications that solve a defined user problem, produce verifiable outputs, provide traceable execution, and can be deployed and troubleshot.
 
 ---
 
 ## 核心项目 | Featured Projects
 
-### 1. [go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)
+### 1. [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)
 
-**Go Backend | Order & Inventory Consistency**
+**AI-Assisted Knowledge Workflow | AI 辅助知识工作流**
 
-订单与库存业务系统，重点实践 Go、Gin、MySQL、Redis、RabbitMQ，以及事务、行锁、幂等、状态流转和消息可靠性。
+以“记录优先、证据可追溯、人工核验”为核心的知识工作流项目，探索如何让 AI 辅助整理过程保留来源与验证路径，并结合 Web 应用、数据库、Go 服务和自托管交付。
 
-A Go order and inventory service focused on transactions, row locks, idempotency, state transitions, and reliable messaging.
+A record-first knowledge workflow focused on traceable evidence and human verification. It explores AI-assisted organization with source traceability, a web application, database, Go service, and self-hosted delivery.
 
-### 2. [go-user-system](https://github.com/Yotoha0303/go-user-system)
+### 2. [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework)
 
-**Go Backend | Authentication & Authorization**
+**Human–AI Engineering Governance | 人机协同工程治理**
 
-用户认证与授权服务，实践 JWT、Access/Refresh Token、权限控制、Redis、限流、测试和交付流程。
+探索如何通过角色契约、阶段门禁、证据要求、负向测试和单一事实源约束 AI 参与软件工程的过程。当前实现重点在 Claude Code 环境与部分自动化守卫，跨工具协同仍在演进。
 
-A Go authentication and authorization service covering JWT access/refresh tokens, access control, Redis, rate limiting, testing, and delivery.
+Explores how role contracts, stage gates, evidence requirements, negative tests, and a single source of truth can govern AI-assisted software work. The current implementation focuses on Claude Code and partial automated guards; cross-tool orchestration remains a work in progress.
 
-### 3. [go-order-management-system-cloudnative-lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab)
+### 3. [go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)
+
+**Backend Engineering Foundation | 后端工程基础**
+
+Go 订单与库存系统，用于展示业务建模、事务、并发、幂等和消息可靠性方面的工程基础。这些能力也可用于构建有状态、可审计的 AI 应用后端。
+
+A Go order and inventory system demonstrating business modeling, transactions, concurrency, idempotency, and reliable messaging—foundational skills for stateful and auditable AI application backends.
+
+### 4. [go-user-system](https://github.com/Yotoha0303/go-user-system)
+
+**Identity & Access Control | 身份与访问控制**
+
+Go 用户认证与授权系统，覆盖 JWT、Access/Refresh Token、权限控制、Redis、限流和交付流程。它作为 AI 应用中身份、权限与 API 保护的工程基础。
+
+A Go authentication and authorization system covering JWT access/refresh tokens, access control, Redis, rate limiting, and delivery practices—relevant foundations for identity and API protection in AI applications.
+
+### 5. [go-order-management-system-cloudnative-lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab)
 
 **Deployment & Reliability Lab | 部署与可靠性实验**
 
-基于订单系统扩展的工程实验环境，用于验证容器化交付、CI/CD、可观测性、备份恢复和故障演练。它是实验项目，不代表生产级平台经验。
+用于练习容器化交付、CI/CD、可观测性、备份恢复和故障演练的实验环境。它是工程验证项目，不代表生产级平台经验。
 
-An engineering lab for validating container delivery, CI/CD, observability, backup/recovery, and fault drills. It is an experiment, not a claim of production-scale platform experience.
-
----
-
-## 其他项目 | Additional Projects
-
-- [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow) — AI 辅助知识工作流，强调证据追溯、人工核验和可维护交付。 / An AI-assisted knowledge workflow focused on evidence traceability, human verification, and maintainable delivery.
-- [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework) — 人机协同工程治理框架，探索阶段门禁、证据约束和部分自动化验证；当前重点是 Claude Code 环境。 / An engineering governance framework exploring stage gates, evidence requirements, and partial automation, currently focused on Claude Code.
-
-这些项目是补充探索，不改变当前以 Go 后端为主的方向。
-
-These are supporting explorations, not a change to the primary Go backend focus.
+A lab for practicing container delivery, CI/CD, observability, backup/recovery, and fault drills. It is an engineering validation project, not a claim of production-scale platform experience.
 
 ---
 
 ## 学习路线 | Roadmap
 
 ```
-Go / Gin / SQL
-      ↓
-Transactions / Concurrency / Testing
-      ↓
-Linux / Networking / Docker
-      ↓
-CI/CD / Logs / Deployment
-      ↓
-Backup & Restore / Troubleshooting
-      ↓
-Improve existing projects through measured evidence
+Define a real user problem
+          ↓
+LLM API + structured outputs
+          ↓
+Tool calling / retrieval / evidence grounding
+          ↓
+Workflow state + permissions + error handling
+          ↓
+Evaluation + tracing + cost / latency checks
+          ↓
+Deploy, monitor, troubleshoot, iterate
 ```
 
 当前优先事项：
 
-1. 完成并验证核心业务流程、错误处理和自动化测试。
-2. 为核心项目提供可复现的启动、部署、排错和恢复说明。
-3. 记录实际问题、根因、修复和验证证据。
-4. 以项目完成度和求职反馈决定下一项学习内容，而不是持续扩展技术栈。
+1. 选定一个明确的 AI 应用场景，完成端到端可运行闭环。
+2. 验证输出质量、失败路径、来源追溯和人工复核机制。
+3. 记录模型调用、工具执行、错误、延迟与成本，建立可复现的评估样例。
+4. 用现有 Go、数据库和部署能力支撑应用，不为使用新框架而重写系统。
+5. 根据目标岗位要求和项目缺口决定下一步，不同时展开模型训练、复杂多智能体和全套云原生学习。
 
-Current priorities: verify core business flows and tests, make setup/deployment/troubleshooting/recovery reproducible, document incidents and evidence, and choose further learning based on project gaps and job-search feedback.
+Current priorities: complete one end-to-end AI use case, validate output quality and failure paths, preserve evidence and human review, measure model/tool calls and cost/latency, and reuse existing backend and delivery skills instead of rewriting systems for new frameworks.
 
 ---
 
 ## 工程原则 | Engineering Principles
 
-- 优先验证正确性，再增加架构复杂度。 / Verify correctness before adding architectural complexity.
-- 自动化必须建立在理解并验证过的操作之上。 / Automate only workflows that are understood and verified.
-- 用测试、日志和可复现步骤支撑结论。 / Support conclusions with tests, logs, and reproducible steps.
-- 明确区分实验结果与生产经验。 / Distinguish lab results from production experience.
+- 先定义用户问题，再选择模型与框架。 / Define the user problem before choosing models or frameworks.
+- AI 输出需要评估与验证，不能只凭演示效果判断。 / Evaluate and verify AI outputs rather than relying on demos.
+- 工具调用必须有明确权限、边界与失败处理。 / Tool calls need explicit permissions, boundaries, and failure handling.
+- 保留来源、执行记录和人工复核路径。 / Preserve sources, execution traces, and human review paths.
+- 区分已实现能力、实验结果与未来计划。 / Distinguish implemented capabilities, experimental results, and future plans.
