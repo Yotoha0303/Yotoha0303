@@ -92,7 +92,17 @@ An AI-assisted knowledge workflow system built around record-first design, trace
 
 Repository: [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)
 
-## 3. go-user-system
+## 3. ai-collaboration-framework
+
+**AI Collaboration & Engineering Governance Framework | AI 协同与工程治理框架**
+
+面向真实软件项目的人机协同工程框架，将任务认知模型、专业角色契约、阶段门禁、证据约束、负向证伪和单一事实源等原则转化为可检查的规则与部分机械化守卫。当前重点是 Claude Code 运行环境下的规则治理与验证，跨工具协同能力仍在演进中。
+
+An engineering governance framework for human–AI collaboration on real software projects. It formalizes task models, role contracts, stage gates, evidence requirements, falsification checks, and a single source of truth into reviewable rules and partially automated guards. The current implementation focuses on governance within Claude Code; broader cross-tool orchestration remains a work in progress.
+
+Repository: [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework)
+
+## 4. go-user-system
 
 **Go Authentication / Authorization System**
 
@@ -102,7 +112,7 @@ A self-hosted Go + Gin + MySQL + Redis authentication and RBAC system covering J
 
 Repository: [go-user-system](https://github.com/Yotoha0303/go-user-system)
 
-## 4. go-order-management-system
+## 5. go-order-management-system
 
 **Go Order & Inventory Consistency Service**
 
