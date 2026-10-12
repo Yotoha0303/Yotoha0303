@@ -22,6 +22,16 @@ I build toward practical AI application engineering, focusing on common delivery
 
 ---
 
+## 生产协同实践 | Production Collaboration
+
+### [NeutrinoGroup / koliance](https://github.com/NeutrinoGroup/koliance)
+*Web3 Perpetual & Clearing Infrastructure | 核心贡献者*
+- **清算 Bot 全链路与链上事件订阅**：实现 `go-ethereum` 事件监听、水位重连机制、资金费对齐与链上状态同步。
+- **架构治理与统一报错体系**：制定并落地 ADR-006（后端统一错误呈现分层体系），消灭前后端边界隐蔽缺陷。
+- **质量硬门禁落地**：主导推进 CI 语句覆盖率门禁、Gitleaks 凭证安全审计与 ZK 插槽降级显式化。
+
+---
+
 ## 核心项目 | Featured Projects
 
 ### 1. [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)
