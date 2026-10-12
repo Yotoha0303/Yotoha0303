@@ -35,28 +35,16 @@ I build toward practical AI application engineering, focusing on common delivery
 ## 核心项目 | Featured Projects
 
 ### 1. [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)
-
-**Evidence-Traceable Knowledge Workflow | 可追溯的知识工作流**
-
-针对 AI 辅助整理中来源丢失、结论难以复核的问题，探索保留原始记录、来源线索和人工核验路径。项目结合 Web 应用、数据库、Go 服务与自托管交付；AI 工作流能力按实际实现逐步验证。
-
-Addresses source loss and difficult-to-review conclusions in AI-assisted knowledge work by exploring record retention, source traceability, and human verification. The project combines a web application, database, Go service, and self-hosted delivery; AI workflow capabilities are validated incrementally against actual implementation.
+*Evidence-Traceable Knowledge Workflow | 可追溯的知识工作流*
+针对 AI 辅助处理中结论失真、来源丢失与黑盒执行问题，构建具备完整证据链的知识工作流系统。结合 Web 前端、PostgreSQL 与 Go 后端服务，已打通自托管容器化交付、E2E 自动化测试流水线与可观测性基线。
 
 ### 2. [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework)
-
-**Verification Controls for AI-Assisted Development | AI 辅助开发的验证机制**
-
-针对 AI 辅助开发中任务边界模糊、改动缺少验证、文档与实际状态不一致等风险，实践任务约束、阶段检查、证据要求、负向测试和单一事实源。当前实现重点在 Claude Code 环境与部分自动化守卫；跨工具协同仍在演进。
-
-Explores controls for common AI-assisted development risks: unclear task boundaries, unverified changes, and drift between documentation and actual state. The repository practices task constraints, stage checks, evidence requirements, negative tests, and a single source of truth. The current implementation focuses on Claude Code and partial automated guards; cross-tool collaboration remains in progress.
+*Verification Controls for AI-Assisted Development | AI 辅助研发的质量门禁体系*
+面向大模型生成代码的交付风险，构建基于操作系统底层 Hook 的刚性工程守卫。落实**执行权与只读审计三权分立**（禁用审计 Shell 权限），引入**测试变异故障注入（Popper 可证伪性）**与 Stop Hook 物理阻断，杜绝“空断言”与“虚假全绿”，确保代码变更与 Git 记录严格收敛。
 
 ### 3. [go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)
-
-**Order Integrity Under Concurrent Requests | 并发场景下的订单与库存一致性**
-
-使用 Go 构建订单与库存系统，实践业务建模、数据库事务、并发控制、幂等和可靠消息处理，研究如何降低重复请求、库存竞争和业务状态不一致的风险。
-
-A Go order and inventory system for practicing business modeling, database transactions, concurrency control, idempotency, and reliable messaging—focused on reducing risks from duplicate requests, inventory contention, and inconsistent business state.
+*Order Integrity Under Concurrent Requests | 高并发订单与库存一致性服务*
+基于 Go 构建的高并发订单库存核心。运用 MySQL 事务锁、Redis Lua 脚本防超卖、RabbitMQ Outbox 模式保障分布式最终一致性，设计全局请求幂等拦截与 Prometheus 性能指标监控，消除并发重试下的数据冲突风险。
 
 ### 4. [go-user-system](https://github.com/Yotoha0303/go-user-system)
 
