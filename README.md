@@ -76,14 +76,6 @@ I build toward practical AI application engineering, focusing on common delivery
 
 Practices JWT access/refresh tokens, access control, Redis, and rate limiting to explore ways to reduce session abuse, unauthorized access, and excessive API requests.
 
-### 5. [go-order-management-system-cloudnative-lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab)
-
-*Deployment, Observability & Recovery Lab | 部署、可观测性与恢复实验*
-
-用于验证容器化交付、CI/CD、可观测性、备份恢复和故障演练流程，重点关注部署失败、问题难定位和恢复过程不可验证等风险。这是工程实验环境，不代表生产规模的运维经验。
-
-A lab for validating container delivery, CI/CD, observability, backup/recovery, and fault-drill workflows. It focuses on risks such as failed deployments, difficult troubleshooting, and unverified recovery procedures. This is an engineering lab, not a claim of production-scale operations experience.
-
 ---
 
 ## 当前路线 | Current Roadmap
