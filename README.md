@@ -77,14 +77,7 @@ Go / Gin / GORM、MySQL 与 Redis 驱动的认证服务，配套 React + TypeScr
 
 An authentication service built with Go / Gin / GORM, MySQL, and Redis, paired with a responsive React + TypeScript admin workspace. Implements JWT Access/Refresh tokens, refresh rotation, session revocation and replay detection, RBAC, account/IP rate limiting, endpoint-level authorization, automated tests, and containerized deployment.
 
-### 4. [go-order-management-system-cloudnative-lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab)
-*Cloud-Native Delivery, Resilience & Observability | 云原生交付、韧性与可观测性*
-
-围绕服务边界与可靠交付构建云原生订单系统，涵盖 API Gateway、多服务数据隔离、Saga 补偿、Transactional Outbox、RabbitMQ、Worker 租约与恢复、Docker Compose / Kubernetes、不可变镜像、自动化测试环境 CD、备份恢复验证、故障演练和有界压测。集成 Prometheus、Grafana、OpenTelemetry 与 Tempo，形成可复现的部署和运行验证链路。
-
-A cloud-native order system focused on service boundaries and reliable delivery. Covers an API Gateway, service-owned data, Saga compensation, Transactional Outbox, RabbitMQ, worker leases and recovery, Docker Compose / Kubernetes, immutable images, test-environment CD, backup/restore verification, fault drills, and bounded load tests. Prometheus, Grafana, OpenTelemetry, and Tempo support repeatable deployment and runtime validation.
-
-### 5. [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework)
+### 4. [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework)
 *AI-DevEx Quality Gates & Developer Productivity Tooling | AI-DevEx 质量门禁与研发效能工具链*
 
 将 AI 辅助开发规范转化为可执行的工程检查，通过 Pre-commit 与 CI 钩子验证交付条件，包括负向变异测试验证（Mutation Testing）、Git Commit SHA 与文档基线一致性校验、最小权限隔离（Least Privilege）和阶段门禁。目标是尽早发现无效断言、文档漂移与未经验证的变更，并让质量结论关联到可复核的测试证据。
