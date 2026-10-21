@@ -14,6 +14,7 @@ I build software around practical business workflows: order and inventory consis
 - **[go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)** — order lifecycle, idempotency, inventory consistency
 - **[go-user-system](https://github.com/Yotoha0303/go-user-system)** — authentication, session security, RBAC
 - [Cloud-Native Validation Lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab) · [QA Automation](https://github.com/Yotoha0303/QA_Automation_Architecture) · [AI Development Quality Gates](https://github.com/Yotoha0303/ai-collaboration-framework)
+- **Organization Collaboration | 组织协作项目:** [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance) · real-time trading UI, Go event processing, RPC resilience, CI quality gates
 
 **Core stack:** Go · Gin · MySQL/PostgreSQL · Redis · TypeScript · React/Next.js · Docker · Kubernetes · GitHub Actions · Prometheus/Grafana
 
@@ -29,6 +30,7 @@ I build software around practical business workflows: order and inventory consis
 | Repeatable deployment and failure recovery | [go-order-management-system-cloudnative-lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab) — reliable messaging, Kubernetes delivery, fault drills, backup/restore verification |
 | Quality control for AI-assisted development | [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework) — automated quality gates, negative tests, least-privilege separation |
 | Regression testing across APIs, UI, and performance | [QA_Automation_Architecture](https://github.com/Yotoha0303/QA_Automation_Architecture) — reproducible test runtime, API/UI automation, load tests, reports and CI |
+| Autonomous-agent trust infrastructure and real-time trading workflows | [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance) — trading dashboard integration, RPC failover, Go event-listener recovery, unified errors and CI quality gates |
 
 ## Featured Projects | 核心项目
 
@@ -99,6 +101,26 @@ A reproducible test environment that separates host tools from test runtimes and
 **场景与收益：** 面向需要在不同机器或 CI 环境中重复执行回归测试的项目，减少环境漂移，并让 API、UI 和性能检查能够纳入统一的交付流水线。
 
 **Stack:** Python, Pytest, Playwright, k6, Appium, PostgreSQL, Prism, Allure, Docker, Dev Containers, GitHub Actions, Jira API.
+
+---
+
+## Organization Collaboration | 组织协作项目
+
+### [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance)
+**Autonomous AI Trust Infrastructure & Real-Time Trading Workflows | 自主 AI 信任基础设施与实时交易工作流**
+
+A collaborative full-stack project combining a real-time trading dashboard with infrastructure for autonomous-agent identity, bounded delegation, and on-chain economic activity. My contribution focus spans frontend integration, backend event-processing reliability, and delivery quality—not a claim of sole ownership of the organization repository.
+
+参与面向自主 AI Agent 的信任与经济基础设施项目，结合实时交易仪表盘、身份与授权边界及链上交互。贡献重点包括前端集成、后端事件处理可靠性和交付质量；该仓库属于组织协作项目，不代表个人独立拥有整个项目。
+
+**Contribution areas | 贡献方向:**
+- **Frontend integration | 前端集成:** Authentication-state synchronization and responsive UI fixes across trading workflows.
+- **RPC resilience | RPC 韧性:** Multi-endpoint failover to improve behavior when an RPC endpoint becomes unavailable or unreliable.
+- **Go event processing | Go 事件处理:** Listener watermark and reconnect handling to support recovery after interruptions.
+- **Consistent error contracts | 统一错误契约:** ADR-006 unified error handling across relevant application boundaries.
+- **CI quality gates | CI 质量门禁:** Test and coverage checks to make regressions visible before integration.
+
+**Stack:** Next.js, React, TypeScript, Go, PostgreSQL/Supabase, Solidity, Monad Testnet, GitHub Actions.
 
 ---
 
