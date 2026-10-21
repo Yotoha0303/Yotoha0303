@@ -11,7 +11,7 @@ I build software around practical business workflows: order and inventory consis
 ## Quick Navigation | 快速导航
 
 - **[KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)** — [Live Demo](https://knowtrace-workflow.vercel.app) · AI-assisted knowledge workflow with evidence traceability
-- **[go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)** — order lifecycle, idempotency, inventory consistency
+- **[go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)** — [Live Demo](https://go-order-management-system.vercel.app/) · order lifecycle, idempotency, inventory consistency
 - **[go-user-system](https://github.com/Yotoha0303/go-user-system)** — authentication, session security, RBAC
 - [Cloud-Native Validation Lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab) · [QA Automation](https://github.com/Yotoha0303/QA_Automation_Architecture) · [AI Development Quality Gates](https://github.com/Yotoha0303/ai-collaboration-framework)
 - **Organization Collaboration | 组织协作项目:** [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance) · real-time trading UI, Go event processing, RPC resilience, CI quality gates
