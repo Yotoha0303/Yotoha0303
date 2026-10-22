@@ -1,4 +1,4 @@
-name: Waka Readme
+name: GitHub Profile Summary Cards
 
 on:
   schedule:
@@ -6,14 +6,21 @@ on:
   workflow_dispatch:
 
 jobs:
-  update-readme:
-    name: Update Readme with Metrics
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write # 明确授予提交与推送权限
+
     steps:
-      - uses: anmol098/waka-readme-stats@master
+      # 必须先执行这步，将代码与 .git 目录拉取到 Runner 中
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate profile summary cards
+        uses: vn7n24fzkq/github-profile-summary-cards@release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          WAKATIME_API_KEY: ${{ secrets.WAKATIME_API_KEY }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          SHOW_OS: "False"
-          SHOW_PROJECTS: "True"
-          SHOW_TIME: "True"
+          USERNAME: ${{ github.repository_owner }}
+          BRANCH_NAME: main
+          UTC_OFFSET: 8
