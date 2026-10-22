@@ -131,7 +131,7 @@ GitHub statistics cards use the standard GitHub Readme Stats theme for a cleaner
 GitHub 统计卡片改用主流的 GitHub Readme Stats 默认主题，采用更简洁、明亮的原生样式。卡片由其公开服务渲染，显示情况受该服务可用性与限流策略影响。
 
 <p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&theme=default&hide_border=true&include_all_commits=true" alt="GitHub stats" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&theme=default&hide_border=true" alt="GitHub stats" />
   <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&layout=compact&theme=default&hide_border=true" alt="Top languages" />
 </p>
 
