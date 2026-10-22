@@ -126,17 +126,13 @@ A collaborative full-stack project combining a real-time trading dashboard with 
 
 ## Live Engineering Signals | 动态工程数据
 
-Profile cards are generated on a schedule by GitHub Actions. WakaTime statistics require a configured WakaTime account and repository secret; until configured, that section will not populate.
+GitHub statistics cards use the standard GitHub Readme Stats theme for a cleaner, lighter presentation. These cards are rendered by the public GitHub Readme Stats service; availability and rate limits depend on that service.
 
-技术栈概览卡片由 GitHub Actions 定时生成。WakaTime 统计需要先配置 WakaTime 账号及仓库 Secret；完成配置前，该区域不会生成真实统计数据。
-
-<p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub profile summary" />
-</p>
+GitHub 统计卡片改用主流的 GitHub Readme Stats 默认主题，采用更简洁、明亮的原生样式。卡片由其公开服务渲染，显示情况受该服务可用性与限流策略影响。
 
 <p align="center">
-  <img width="49%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repositories by language" />
-  <img width="49%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most committed languages" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&theme=default&hide_border=true&include_all_commits=true" alt="GitHub stats" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&layout=compact&theme=default&hide_border=true" alt="Top languages" />
 </p>
 
 ### WakaTime Coding Activity | WakaTime 编码统计
