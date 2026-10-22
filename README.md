@@ -124,6 +124,47 @@ A collaborative full-stack project combining a real-time trading dashboard with 
 
 ---
 
+## Live Engineering Signals | 动态工程数据
+
+Profile cards are generated on a schedule by GitHub Actions. WakaTime statistics require a configured WakaTime account and repository secret; until configured, that section will not populate.
+
+技术栈概览卡片由 GitHub Actions 定时生成。WakaTime 统计需要先配置 WakaTime 账号及仓库 Secret；完成配置前，该区域不会生成真实统计数据。
+
+<p align="center">
+  <img width="100%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/output/profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub profile summary" />
+</p>
+
+<p align="center">
+  <img width="49%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/output/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repositories by language" />
+  <img width="49%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/output/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most committed languages" />
+</p>
+
+### WakaTime Coding Activity | WakaTime 编码统计
+
+<!--START_SECTION:waka-->
+_WakaTime data will appear here after the WakaTime API key is configured and the scheduled workflow runs._
+<!--END_SECTION:waka-->
+
+---
+
+## Representative Architecture | 代表性架构项目
+
+| Architecture Focus | Representative Project | Evidence to Explore |
+| --- | --- | --- |
+| AI-assisted workflow with human review | [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow) | Versioned inputs, evidence traceability, review and controlled publication |
+| Transactional business workflow | [Go Order Management](https://github.com/Yotoha0303/go-order-management-system) | Idempotency, transaction boundaries, inventory consistency, asynchronous compensation |
+| Identity and access control | [Go User System](https://github.com/Yotoha0303/go-user-system) | Token lifecycle, session revocation, RBAC and rate limiting |
+| Cloud-native recovery and delivery | [Cloud-Native Validation Lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab) | Kubernetes delivery, reliable messaging, backup/restore and fault drills |
+| Autonomous-agent trust and trading workflows | [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance) | RPC resilience, Go event processing, unified errors and CI quality gates |
+
+## Project Planning & Automation | 项目管理与自动化
+
+Use [GitHub Projects (v2)](https://github.com/Yotoha0303?tab=projects) as the portfolio-level planning surface for prioritization, status tracking, and cross-repository work. Recommended workflow: **Backlog → Ready → In Progress → In Review → Done**, with issue/PR-linked items, owner and priority fields, and automations for status changes when pull requests are opened, reviewed, merged, or issues are closed. Keep implementation evidence in repository Issues and PRs; use the Project board for coordination rather than duplicating technical details.
+
+使用 [GitHub Projects (v2)](https://github.com/Yotoha0303?tab=projects) 作为跨仓库的项目规划看板，统一管理优先级、进度和交付状态。建议流程：**待规划 → 就绪 → 进行中 → 审查中 → 已完成**，关联 Issue/PR，并设置负责人、优先级等字段；在 PR 创建、审查、合并或 Issue 关闭时，通过自动化同步状态。技术细节和验证证据仍保留在各仓库的 Issue 与 PR 中，看板负责协调，不重复维护实现细节。
+
+---
+
 ## Technology Stack | 技术栈
 
 | Area | Technologies | Practical Use |
