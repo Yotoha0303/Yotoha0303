@@ -131,12 +131,12 @@ Profile cards are generated on a schedule by GitHub Actions. WakaTime statistics
 技术栈概览卡片由 GitHub Actions 定时生成。WakaTime 统计需要先配置 WakaTime 账号及仓库 Secret；完成配置前，该区域不会生成真实统计数据。
 
 <p align="center">
-  <img width="100%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/output/profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub profile summary" />
+  <img width="100%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/profile-summary-card-output/github_dark/0-profile-details.svg" alt="GitHub profile summary" />
 </p>
 
 <p align="center">
-  <img width="49%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/output/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repositories by language" />
-  <img width="49%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/output/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most committed languages" />
+  <img width="49%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/profile-summary-card-output/github_dark/1-repos-per-language.svg" alt="Repositories by language" />
+  <img width="49%" src="https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/profile-summary-card-output/github_dark/2-most-commit-language.svg" alt="Most committed languages" />
 </p>
 
 ### WakaTime Coding Activity | WakaTime 编码统计
