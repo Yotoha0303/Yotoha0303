@@ -2,17 +2,19 @@ name: GitHub Profile Summary Cards
 
 on:
   schedule:
+    # 每天 UTC 0:00 (北京时间早 8:00) 自动刷新
     - cron: '0 0 * * *'
-  workflow_dispatch:
+  workflow_dispatch: # 允许在页面手动点击运行
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: generate-github-profile-summary-cards
     permissions:
-      contents: write # 明确授予提交与推送权限
+      contents: write # 解决 git push 权限问题
 
     steps:
-      # 必须先执行这步，将代码与 .git 目录拉取到 Runner 中
+      # 必须步骤：拉取仓库与 .git 目录，解决 fatal: not a git repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
