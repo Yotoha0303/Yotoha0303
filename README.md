@@ -124,25 +124,6 @@ A collaborative full-stack project combining a real-time trading dashboard with 
 
 ---
 
-## Live Engineering Signals | 动态工程数据
-
-GitHub statistics cards use the standard GitHub Readme Stats theme for a cleaner, lighter presentation. These cards are rendered by the public GitHub Readme Stats service; availability and rate limits depend on that service.
-
-GitHub 统计卡片改用主流的 GitHub Readme Stats 默认主题，采用更简洁、明亮的原生样式。卡片由其公开服务渲染，显示情况受该服务可用性与限流策略影响。
-
-<p align="center">
-  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&theme=default&hide_border=true" alt="GitHub stats" />
-  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&layout=compact&theme=default&hide_border=true" alt="Top languages" />
-</p>
-
-### WakaTime Coding Activity | WakaTime 编码统计
-
-<!--START_SECTION:waka-->
-_WakaTime data will appear here after the WakaTime API key is configured and the scheduled workflow runs._
-<!--END_SECTION:waka-->
-
----
-
 ## Representative Architecture | 代表性架构项目
 
 | Architecture Focus | Representative Project | Evidence to Explore |
@@ -195,3 +176,16 @@ Build and validate small, end-to-end software products; improve Go backend and f
 **Note | 说明:** The repositories above are public engineering projects and labs. Benchmarks and deployment setups apply only to their documented environments and test boundaries; they should not be interpreted as production SLA or commercial customer results unless explicitly stated in the relevant repository.
 
 以上为公开工程项目与实验系统。性能数据和部署能力仅适用于各仓库明确记录的环境与测试边界；除非对应仓库另有明确说明，不应将其理解为生产 SLA 或商业客户成果。
+
+--
+
+## Live Engineering Signals | 动态工程数据
+
+GitHub statistics cards use the standard GitHub Readme Stats theme for a cleaner, lighter presentation. These cards are rendered by the public GitHub Readme Stats service; availability and rate limits depend on that service.
+
+GitHub 统计卡片改用主流的 GitHub Readme Stats 默认主题，采用更简洁、明亮的原生样式。卡片由其公开服务渲染，显示情况受该服务可用性与限流策略影响。
+
+<p align="center">
+  <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&theme=default&hide_border=true" alt="GitHub stats" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&layout=compact&theme=default&hide_border=true" alt="Top languages" />
+</p>
