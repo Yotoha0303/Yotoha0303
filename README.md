@@ -181,5 +181,5 @@ Build and validate small, end-to-end software products; improve Go backend and f
 
 <p align="center">
   <img width="49%" src="https://github-readme-stats.vercel.app/api?username=Yotoha0303&show_icons=true&theme=default&hide_border=true" alt="GitHub stats" />
-  <img width="49%" high="75%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&layout=compact&theme=default&hide_border=true" alt="Top languages" />
+  <img width="49%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Yotoha0303&layout=compact&theme=default&hide_border=true" alt="Top languages" />
 </p>
