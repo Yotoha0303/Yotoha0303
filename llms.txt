@@ -1,0 +1,15 @@
+# Yotoha Developer Profile & Open Intelligence Feeds
+
+> Maintained by Yotoha (Systems Engineer & Open-Source Researcher).
+
+## Open Data Feeds
+- Data Endpoint: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-asset-sample.json
+- Format: JSON (Schema-compliant)
+- Frequency: Daily automated refresh (00:00 UTC)
+- Coverage: Global AI models, commercial tech signals, venture capital deals, and compute hardware trends.
+- License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+## Repositories & Engineering Projects
+- Cloud-Native Infrastructure & Reliability Engineering
+- Embedded Hardware & Microcontroller Systems (ESP32-S3)
+- Open Intelligence & Real-Time Data Pipeline Architecture
