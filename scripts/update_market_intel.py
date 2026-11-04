@@ -105,7 +105,7 @@ def harvest_hacker_news(limit: int = 15) -> List[Dict[str, Any]]:
                 "business_signals": ", ".join(signals) if signals else "General Tech",
                 "relevance_score": min(rel_score, 100),
                 "summary": f"HN Score: {score} | Comments: {story.get('descendants', 0)}",
-                "as_of": time.strftime("%Y-%m-%d"),
+                "as_of": time.strftime("%Y-%m-%d", time.gmtime()),
             })
         except Exception:
             pass
@@ -157,7 +157,7 @@ def harvest_chinese_commercial_flashes(limit: int = 15) -> List[Dict[str, Any]]:
             "business_signals": ", ".join(signals) if signals else "Industry Dynamics",
             "relevance_score": min(rel_score, 100),
             "summary": desc[:180] + ("..." if len(desc) > 180 else ""),
-            "as_of": time.strftime("%Y-%m-%d"),
+            "as_of": time.strftime("%Y-%m-%d", time.gmtime()),
         })
 
     return items
@@ -180,7 +180,7 @@ def main():
         "frequency": "daily",
         "rows_per_run": len(all_rows),
         "license": "CC BY 4.0",
-        "updated_at": time.strftime("%Y-%m-%dT%H:%M:%S+08:00"),
+        "updated_at": time.strftime("%Y-%m-%dT%H:00:00Z", time.gmtime()),
         "schema": {
             "signal_id": "string",
             "title": "string",
