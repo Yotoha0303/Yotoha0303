@@ -3,9 +3,9 @@
   "_note": "Automated open-source intelligence feed covering global AI industry trends, commercial monetization, and venture capital signals. Maintained by Yotoha.",
   "asset": "Global AI & Commercial Tech Intelligence Feed",
   "frequency": "daily",
-  "rows_per_run": 30,
+  "rows_per_run": 29,
   "license": "CC BY 4.0",
-  "updated_at": "2026-11-04T21:32:52+08:00",
+  "updated_at": "2026-11-04T21:48:22+08:00",
   "schema": {
     "signal_id": "string",
     "title": "string",
@@ -19,7 +19,7 @@
   },
   "rows": [
     {
-      "signal_id": "flash_14_1793799154",
+      "signal_id": "flash_14_1793800081",
       "title": "OpenAI将收购开发工具初创公司Pierre Computer，瞄准微软GitHub代码托管业务",
       "url": "https://www.36kr.com/newsflashes/4055381539345536",
       "source": "CommercialNewsflash",
@@ -37,7 +37,7 @@
       "category": "AI & Frontier Models",
       "business_signals": "AI & Agents",
       "relevance_score": 100,
-      "summary": "HN Score: 875 | Comments: 330",
+      "summary": "HN Score: 877 | Comments: 332",
       "as_of": "2026-11-04"
     },
     {
@@ -47,12 +47,12 @@
       "source": "HackerNews",
       "category": "AI & Frontier Models",
       "business_signals": "AI & Agents",
-      "relevance_score": 96,
-      "summary": "HN Score: 219 | Comments: 109",
+      "relevance_score": 98,
+      "summary": "HN Score: 233 | Comments: 122",
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_4_1793799154",
+      "signal_id": "flash_4_1793800081",
       "title": "Alphabet豪掷150亿美元扩建马来西亚AI数据中心",
       "url": "https://www.36kr.com/newsflashes/4055396228289666",
       "source": "CommercialNewsflash",
@@ -63,25 +63,14 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "hn_50363461",
-      "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
-      "url": "https://news.ycombinator.com/item?id=50363461",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 92,
-      "summary": "HN Score: 175 | Comments: 47",
-      "as_of": "2026-11-04"
-    },
-    {
       "signal_id": "hn_50363554",
       "title": "Geoffrey Hinton: it might turn out we were better off without AI",
       "url": "https://www.theguardian.com/uk-news/2026/nov/03/ai-godfather-geoffrey-hinton-better-off-without-ai",
       "source": "HackerNews",
       "category": "AI & Frontier Models",
       "business_signals": "AI & Agents",
-      "relevance_score": 88,
-      "summary": "HN Score: 133 | Comments: 86",
+      "relevance_score": 90,
+      "summary": "HN Score: 151 | Comments: 98",
       "as_of": "2026-11-04"
     },
     {
@@ -91,8 +80,8 @@
       "source": "HackerNews",
       "category": "Hardware & Infrastructure",
       "business_signals": "Hardware & Compute",
-      "relevance_score": 87,
-      "summary": "HN Score: 221 | Comments: 118",
+      "relevance_score": 88,
+      "summary": "HN Score: 230 | Comments: 130",
       "as_of": "2026-11-04"
     },
     {
@@ -103,7 +92,7 @@
       "category": "General Tech & Market",
       "business_signals": "General Tech",
       "relevance_score": 80,
-      "summary": "HN Score: 311 | Comments: 79",
+      "summary": "HN Score: 314 | Comments: 80",
       "as_of": "2026-11-04"
     },
     {
@@ -114,7 +103,7 @@
       "category": "General Tech & Market",
       "business_signals": "General Tech",
       "relevance_score": 80,
-      "summary": "HN Score: 664 | Comments: 210",
+      "summary": "HN Score: 668 | Comments: 211",
       "as_of": "2026-11-04"
     },
     {
@@ -125,7 +114,7 @@
       "category": "General Tech & Market",
       "business_signals": "General Tech",
       "relevance_score": 80,
-      "summary": "HN Score: 311 | Comments: 23",
+      "summary": "HN Score: 312 | Comments: 23",
       "as_of": "2026-11-04"
     },
     {
@@ -135,12 +124,12 @@
       "source": "HackerNews",
       "category": "General Tech & Market",
       "business_signals": "General Tech",
-      "relevance_score": 71,
-      "summary": "HN Score: 219 | Comments: 137",
+      "relevance_score": 72,
+      "summary": "HN Score: 225 | Comments: 139",
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_3_1793799154",
+      "signal_id": "flash_3_1793800081",
       "title": "卡夫亨氏将以6.5亿美元出售北美咖啡业务",
       "url": "https://www.36kr.com/newsflashes/4055430212244360",
       "source": "CommercialNewsflash",
@@ -151,7 +140,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_9_1793799154",
+      "signal_id": "flash_9_1793800081",
       "title": "麦当劳第三季度同店销售额同比增长1.5%，高于市场预期",
       "url": "https://www.36kr.com/newsflashes/4055416196387720",
       "source": "CommercialNewsflash",
@@ -162,7 +151,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_1_1793799154",
+      "signal_id": "flash_1_1793800081",
       "title": "美股大型科技股盘前涨跌不一，SpaceX跌超7%",
       "url": "https://www.36kr.com/newsflashes/4055445674759297",
       "source": "CommercialNewsflash",
@@ -180,7 +169,7 @@
       "category": "General Tech & Market",
       "business_signals": "General Tech",
       "relevance_score": 63,
-      "summary": "HN Score: 130 | Comments: 60",
+      "summary": "HN Score: 132 | Comments: 65",
       "as_of": "2026-11-04"
     },
     {
@@ -190,8 +179,8 @@
       "source": "HackerNews",
       "category": "General Tech & Market",
       "business_signals": "General Tech",
-      "relevance_score": 59,
-      "summary": "HN Score: 98 | Comments: 52",
+      "relevance_score": 60,
+      "summary": "HN Score: 100 | Comments: 56",
       "as_of": "2026-11-04"
     },
     {
@@ -201,8 +190,19 @@
       "source": "HackerNews",
       "category": "General Tech & Market",
       "business_signals": "General Tech",
-      "relevance_score": 57,
-      "summary": "HN Score: 78 | Comments: 23",
+      "relevance_score": 58,
+      "summary": "HN Score: 80 | Comments: 23",
+      "as_of": "2026-11-04"
+    },
+    {
+      "signal_id": "hn_50364561",
+      "title": "A map of 5000+ midterm ads",
+      "url": "https://admap.org/",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 54,
+      "summary": "HN Score: 41 | Comments: 12",
       "as_of": "2026-11-04"
     },
     {
@@ -213,18 +213,7 @@
       "category": "General Tech & Market",
       "business_signals": "General Tech",
       "relevance_score": 54,
-      "summary": "HN Score: 47 | Comments: 4",
-      "as_of": "2026-11-04"
-    },
-    {
-      "signal_id": "hn_50364561",
-      "title": "A map of 5000+ midterm ads",
-      "url": "https://admap.org/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 53,
-      "summary": "HN Score: 35 | Comments: 7",
+      "summary": "HN Score: 49 | Comments: 8",
       "as_of": "2026-11-04"
     },
     {
@@ -235,11 +224,11 @@
       "category": "General Tech & Market",
       "business_signals": "General Tech",
       "relevance_score": 53,
-      "summary": "HN Score: 30 | Comments: 21",
+      "summary": "HN Score: 36 | Comments: 28",
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_0_1793799154",
+      "signal_id": "flash_0_1793800081",
       "title": "热门中概股美股盘前普涨，哔哩哔哩涨超5%",
       "url": "https://www.36kr.com/newsflashes/4055448732324992",
       "source": "CommercialNewsflash",
@@ -250,7 +239,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_2_1793799154",
+      "signal_id": "flash_2_1793800081",
       "title": "豆包工作接入抖音生活服务经营等官方插件",
       "url": "https://www.36kr.com/newsflashes/4055439067993217",
       "source": "CommercialNewsflash",
@@ -261,7 +250,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_5_1793799154",
+      "signal_id": "flash_5_1793800081",
       "title": "统一股份：子公司与宁德时代签订冷却液战略合作协议",
       "url": "https://www.36kr.com/newsflashes/4055423576101766",
       "source": "CommercialNewsflash",
@@ -272,7 +261,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_6_1793799154",
+      "signal_id": "flash_6_1793800081",
       "title": "凯莱英：拟5亿元至7亿元回购公司股份",
       "url": "https://www.36kr.com/newsflashes/4055418624414855",
       "source": "CommercialNewsflash",
@@ -283,7 +272,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_7_1793799154",
+      "signal_id": "flash_7_1793800081",
       "title": "三环集团：拟5亿元至10亿元回购公司股份",
       "url": "https://www.36kr.com/newsflashes/4055417968595847",
       "source": "CommercialNewsflash",
@@ -294,7 +283,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_8_1793799154",
+      "signal_id": "flash_8_1793800081",
       "title": "中金公司中标第三批互换便利163亿元，完成首批质押式回购交易",
       "url": "https://www.36kr.com/newsflashes/4055413289030788",
       "source": "CommercialNewsflash",
@@ -305,7 +294,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_10_1793799154",
+      "signal_id": "flash_10_1793800081",
       "title": "倍轻松：实控人马学军因操纵证券市场被罚款1184.19万元",
       "url": "https://www.36kr.com/newsflashes/4055393723159426",
       "source": "CommercialNewsflash",
@@ -316,7 +305,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_11_1793799154",
+      "signal_id": "flash_11_1793800081",
       "title": "德明利：拟每10股派现6元合计派现1.91亿元，控股股东承诺延长一年不减持公司股票",
       "url": "https://www.36kr.com/newsflashes/4055407756694659",
       "source": "CommercialNewsflash",
@@ -327,7 +316,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_12_1793799154",
+      "signal_id": "flash_12_1793800081",
       "title": "优步预计第四季度总预订额为632.5亿至652.5亿美元",
       "url": "https://www.36kr.com/newsflashes/4055395500708992",
       "source": "CommercialNewsflash",
@@ -338,7 +327,7 @@
       "as_of": "2026-11-04"
     },
     {
-      "signal_id": "flash_13_1793799154",
+      "signal_id": "flash_13_1793800081",
       "title": "太辰光：拟以6000万元-1亿元回购公司股份",
       "url": "https://www.36kr.com/newsflashes/4055392576115584",
       "source": "CommercialNewsflash",
