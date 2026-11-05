@@ -1,0 +1,13 @@
+[Unit]
+Description=Daily Timer for FeeGate Commercial Data Harvester
+RefuseManualStart=no
+RefuseManualStop=no
+
+[Timer]
+# Runs daily at 14:00 CST (06:00 UTC)
+OnCalendar=*-*-* 14:00:00
+Persistent=true
+Unit=feegate-harvester.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,15 @@
+[Unit]
+Description=FeeGate Real-World Commercial Data Harvester
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=yotoha
+WorkingDirectory=/home/yotoha/Projects/Yotoha0303
+ExecStart=/usr/bin/python3 /home/yotoha/Projects/Yotoha0303/scripts/feegate_harvester.py
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

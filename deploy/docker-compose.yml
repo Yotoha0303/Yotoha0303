@@ -1,0 +1,35 @@
+# ==============================================================================
+# FeeGate Harvester & Data Serving Service (Self-Hosted Architecture)
+# ==============================================================================
+version: '3.8'
+
+services:
+  # 1. High-Performance Static Web Server with FeeGate x402 CORS Headers
+  feegate-web:
+    image: nginx:alpine
+    container_name: feegate-data-server
+    restart: unless-stopped
+    ports:
+      - "8402:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ../data:/usr/share/nginx/html/data:ro
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+
+  # 2. Automated Scheduled Harvester Runner
+  feegate-crawler:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile.harvester
+    container_name: feegate-crawler-cron
+    restart: unless-stopped
+    environment:
+      - PYTHONUNBUFFERED=1
+      - HARVEST_CRON_SCHEDULE=0 6 * * *
+    volumes:
+      - ../data:/app/data
+      - ../scripts:/app/scripts:ro

@@ -1,0 +1,21 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    cron \
+    ca-certificates \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY scripts /app/scripts
+COPY data /app/data
+
+# Setup cron job
+RUN echo "0 6 * * * root python3 /app/scripts/feegate_harvester.py >> /var/log/feegate-harvest.log 2>&1" > /etc/cron.d/feegate-cron \
+    && chmod 0644 /etc/cron.d/feegate-cron \
+    && crontab /etc/cron.d/feegate-cron
+
+RUN touch /var/log/feegate-harvest.log
+
+CMD ["sh", "-c", "python3 /app/scripts/feegate_harvester.py && cron -f"]
