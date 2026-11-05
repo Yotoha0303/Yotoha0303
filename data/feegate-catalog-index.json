@@ -1,0 +1,60 @@
+{
+  "catalog_version": "2.0.0",
+  "provider": "FeeGate Commercial Data Intelligence Feed",
+  "generated_at_utc": "2026-11-05T06:36:39.373297+00:00",
+  "protocol": "HTTP REST / x402 Micropayments",
+  "total_active_products": 3,
+  "products": [
+    {
+      "catalog_id": "feegate-ai-model-pricing-index",
+      "product_name": "Global AI Models Real-time Pricing & Context Benchmark",
+      "category": "AI Financial Intelligence & Token Cost Routing",
+      "target_audience": "AI Engineers, Model Routing Framework Architects (LiteLLM/LangChain), Enterprise FinOps Teams",
+      "commercial_tier": "B2B Production API ($0.05 / query)",
+      "commercial_value_proposition": "Production-grade, quantitative cost and context window matrix across 450+ models. Used to programmatically evaluate API cost trade-offs, auto-switch fallback models, and enforce cloud budget limits.",
+      "provenance": {
+        "source_origin": "OpenRouter Official Public Model Registry",
+        "source_endpoint": "https://openrouter.ai/api/v1/models",
+        "ingested_at_utc": "2026-11-05T06:36:12.071234+00:00",
+        "schema_version": "2.0.0",
+        "record_count": 455,
+        "sha256_checksum": "df4cf8e3d536d6328c4a938be25c7146d2a1c7fc33037f6a9b3ff719bbb24b1d"
+      },
+      "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-ai-model-pricing-index.json"
+    },
+    {
+      "catalog_id": "feegate-security-cve-threat-radar",
+      "product_name": "Global Open-Source & AI Stack Critical/High CVE Threat Radar",
+      "category": "Cybersecurity & Vulnerability Intelligence",
+      "target_audience": "DevSecOps Engineers, Security Compliance Auditors, Dependency Remediation Bots, CISO Offices",
+      "commercial_tier": "B2B Production API ($0.05 / query)",
+      "commercial_value_proposition": "Authoritative, machine-readable vulnerability intelligence feed. Ingested directly into CI/CD security gates to block builds containing newly published 0-day / 1-day remote code execution or data leakage CVEs.",
+      "provenance": {
+        "source_origin": "GitHub Security Advisory Database (NVD/CVE Synchronized)",
+        "source_endpoint": "https://api.github.com/advisories?per_page=20&severity=high",
+        "ingested_at_utc": "2026-11-05T06:36:16.645600+00:00",
+        "schema_version": "2.0.0",
+        "record_count": 40,
+        "sha256_checksum": "e0d9cf75adc825b86ee2060a2978d74516164ad2b18911cdc46a05ee96b09150"
+      },
+      "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-security-cve-threat-radar.json"
+    },
+    {
+      "catalog_id": "feegate-agent-frameworks-benchmark",
+      "product_name": "Global AI Agent Frameworks & Production Tooling Benchmark",
+      "category": "AI Ecosystem & Market Pulse Intelligence",
+      "target_audience": "Tech VC Investors, Enterprise AI Architects, CTOs Evaluating Open Source Stacks",
+      "commercial_tier": "B2B Market Intel API ($0.05 / query)",
+      "commercial_value_proposition": "Quantitative engineering telemetry and adoption velocity for the world's most dominant AI agent frameworks. Enables instant tech stack due diligence and open source ecosystem viability auditing.",
+      "provenance": {
+        "source_origin": "GitHub Official REST API Telemetry",
+        "source_endpoint": "https://api.github.com/repos/{owner}/{repo}",
+        "ingested_at_utc": "2026-11-05T06:36:39.372324+00:00",
+        "schema_version": "2.0.0",
+        "record_count": 12,
+        "sha256_checksum": "a21d6954b0c2c57418c5fcaad95c11722bb054a9394c4cb23da7cb90455524a5"
+      },
+      "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-agent-frameworks-benchmark.json"
+    }
+  ]
+}
