@@ -8,6 +8,109 @@ I build software around practical business workflows: order and inventory consis
 
 **Target roles:** Full-Stack Engineer · Go Backend Engineer · AI Application Engineer
 
+## Executive Positioning | 专业定位
+
+**I engineer business-critical software systems from domain rules to production operations.**
+
+我关注的不是单点功能开发，而是把复杂业务规则转化为可验证、可运行、可维护的软件系统：从领域建模、架构决策、数据一致性，到自动化质量门禁、部署、可观测性与故障恢复。
+
+**Primary capabilities**
+- **Business Systems Engineering** — transactional workflows, order/inventory consistency, idempotency, state machines, authorization boundaries.
+- **AI Product Engineering** — traceable AI workflows, evidence-linked outputs, human approval, workspace isolation and controlled publication.
+- **Reliability & Delivery Engineering** — automated testing, CI/CD, containerized deployment, observability, backup/restore and operational verification.
+
+**技术方向：** Go 后端 · TypeScript / Next.js 全栈 · AI 应用工程化 · 云原生交付。
+
+> I optimize for verifiable engineering outcomes—not technology lists, inflated scale claims, or architecture for its own sake.
+>
+> 我的工作标准是可验证的工程结果，而不是技术名词堆砌、未经证明的规模宣称，或脱离业务目标的架构复杂度。
+
+## Selected Engineering Outcomes | 技术成果与工程案例
+
+以下内容来自公开仓库中的实现、测试记录和工程文档。它们是**独立研发与协作项目的技术案例**，不代表已签约付费客户或商业营收。
+
+### 01 · AI Workflow Architecture — KnowTrace-Workflow
+
+**Problem:** AI-assisted knowledge systems can lose source context, mix generated suggestions with approved records, and make decisions difficult to reproduce.
+
+**Engineering response:** Built a record-first workflow with version-bound AI runs, evidence snapshots, human review, release-readiness gates and workspace-level isolation. AI suggestions remain pending candidates until a separately authorized human action accepts them.
+
+**Evidence available in repository:**
+- 13 business domains and 22 versioned database migrations.
+- 12-container self-hosted deployment topology documented; this topology is currently marked unverified after the VPS was decommissioned.
+- Production cloud demo with Vercel, Render and Supabase, plus scheduled health probes.
+- Documented load-test baseline: 1,000 requests / concurrency 20, 100% success, p95 161.0 ms in the recorded test environment.
+- Isolated data-layer restore drill completed in 36 seconds.
+
+**Engineering value:** Preserves source provenance, makes AI-assisted decisions reviewable, and turns publication policy into explicit, testable gates.
+
+[Repository](https://github.com/Yotoha0303/KnowTrace-Workflow) · [Live Demo](https://knowtrace-workflow.vercel.app)
+
+### 02 · Transactional Backend — Go Order & Inventory
+
+**Problem:** Retries, concurrent stock deductions and asynchronous order expiry can create duplicate orders, overselling or inconsistent business states.
+
+**Engineering response:** Implemented user-scoped idempotency, transactional stock updates, conditional SQL updates, order state transitions, Redis Lua reservation, transactional outbox and RabbitMQ TTL/DLX consumers.
+
+**Evidence available in repository:** CI workflow, business-flow documentation, integration checks, Docker Compose environment and operational metrics endpoints.
+
+**Engineering value:** Demonstrates how correctness is enforced across database transactions, cache reservations and asynchronous processing—not merely through controller-level validation.
+
+[Repository](https://github.com/Yotoha0303/go-order-management-system) · [Live Demo](https://go-order-management-system.vercel.app/)
+
+### 03 · Identity & Access Control — Go User System
+
+**Problem:** Authentication is not just token issuance; session lifecycle, revocation, replay, authorization and abuse controls must remain consistent.
+
+**Engineering response:** Built a self-hostable Go authentication service covering token lifecycle, refresh rotation, session revocation, replay detection, RBAC and account/IP rate limiting.
+
+**Engineering value:** Separates identity and authorization concerns from business services and documents the remaining production-readiness boundary.
+
+[Repository](https://github.com/Yotoha0303/go-user-system)
+
+### 04 · Quality Engineering — Containerized QA Runtime
+
+**Problem:** Test environments drift across developer machines and CI, while API, browser, performance and mobile checks often remain fragmented.
+
+**Engineering response:** Designed a containerized QA toolchain integrating Python, Pytest, Playwright, k6, Appium, PostgreSQL, Prism mock services, Allure reporting and Jira API integration.
+
+**Engineering value:** Makes test execution reproducible and brings API, UI, performance and reporting workflows into a shared delivery environment.
+
+[Repository](https://github.com/Yotoha0303/QA_Automation_Architecture)
+
+### 05 · Collaborative Protocol Engineering — Koliance
+
+**Scope:** Organization-level collaboration on an autonomous-agent trust and economic protocol. Contributions should be evaluated as specific engineering work, not as sole ownership of the full protocol.
+
+**Engineering areas:** Frontend integration, Go event-processing recovery, RPC resilience, consistent error contracts and CI quality gates.
+
+[Organization Repository](https://github.com/NeutrinoGroup/koliance)
+
+## Architecture Principles | 专业思考
+
+| Principle | Engineering position |
+| --- | --- |
+| Correctness before throughput | Define invariants, transaction boundaries and failure semantics before optimizing concurrency. |
+| AI must be auditable | Preserve input versions, model/run context, evidence and human approval boundaries. |
+| Delivery is part of design | A feature is incomplete without repeatable build, deployment, health checks and rollback/recovery paths. |
+| Observability must support decisions | Logs, metrics and traces should help identify what failed, where, and with what business impact. |
+| Complexity requires a business case | Introduce microservices, queues, caches or Kubernetes only when their operational cost is justified. |
+| Claims require evidence | Distinguish implemented, tested, deployed, load-tested and production-operated capabilities. |
+
+## Engineering Engagement Areas | 可承接的工程问题
+
+I focus on bounded, evidence-driven engineering work such as:
+
+- Go backend services and transactional business workflows.
+- AI-assisted internal tools and traceable knowledge workflows.
+- Authentication, authorization and session lifecycle design.
+- API/UI automation, CI quality gates and reproducible test environments.
+- Docker-based deployment, observability and operational hardening.
+
+合作范围以明确的问题、交付边界、验收标准和运行责任为基础。公开项目展示的是工程能力与验证记录，不构成虚构客户案例或商业交付承诺。
+
+---
+
 ## Quick Navigation | 快速导航
 
 - **[KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)** — [Live Demo](https://knowtrace-workflow.vercel.app) · AI-assisted knowledge workflow with evidence traceability
