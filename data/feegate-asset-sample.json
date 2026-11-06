@@ -3,9 +3,9 @@
   "_note": "Automated open-source intelligence feed covering global AI trends, commercial signals, and China Mobile Ecosystem Privacy & Threat Intelligence. Maintained by Yotoha.",
   "asset": "Global Tech & Mobile Privacy Threat Intelligence Feed",
   "frequency": "daily",
-  "rows_per_run": 24,
+  "rows_per_run": 4,
   "license": "CC BY 4.0",
-  "updated_at": "2026-11-05T05:00:00Z",
+  "updated_at": "2026-11-06T03:00:00Z",
   "schema": {
     "signal_id": "string",
     "title": "string",
@@ -19,29 +19,7 @@
   },
   "rows": [
     {
-      "signal_id": "hn_50369925",
-      "title": "Ripple-65B Preview: U.S. Open-Weight SOTA on Agentic Coding",
-      "url": "https://www.ricursive.com/ripple",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 100,
-      "summary": "HN Score: 267 | Comments: 94",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50366999",
-      "title": "Kimi K3.1 Pro model weights are out",
-      "url": "https://huggingface.co/moonshotai/Kimi-K3.1-Pro",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 100,
-      "summary": "HN Score: 447 | Comments: 131",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "sec_telemetry_hyperos_1793857530",
+      "signal_id": "sec_telemetry_hyperos_1793934829",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -49,10 +27,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 98,
       "summary": "实机取证发现底层守护进程 com.miui.daemon (MQSAS) 与 com.xiaomi.barrage 默认获取全局通知监听特权(NotificationMonitorService)，拦截微信、银行全部弹窗明文；通过用户空间 adb pm uninstall 可安全拔除并不影响基带与通讯。",
-      "as_of": "2026-11-05"
+      "as_of": "2026-11-06"
     },
     {
-      "signal_id": "sec_darknet_breach_mapping_1793857530",
+      "signal_id": "sec_darknet_breach_mapping_1793934829",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -60,10 +38,10 @@
       "business_signals": "Darknet Intelligence, Canary Tokens, Anti-OSINT",
       "relevance_score": 96,
       "summary": "系统解构华住会 2018 (5亿条)、微博 2020 (5.38亿条)、快递面单等地下流通数据库物理结构；提出基于数学级 k-Anonymity 零暴露本地密码探针与姓名/门牌号金丝雀暗记反向唯一归因模型。",
-      "as_of": "2026-11-05"
+      "as_of": "2026-11-06"
     },
     {
-      "signal_id": "sec_clipboard_appops_1793857530",
+      "signal_id": "sec_clipboard_appops_1793934829",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -71,10 +49,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 95,
       "summary": "抽检美团、大众点评、天猫、拼多多、网易云等应用，默认拥有 READ_CLIPBOARD: allow 权限，每次切换前台自动静默搜集剪切板口令与身份证号；通过 cmd appops set <pkg> READ_CLIPBOARD ignore 可物理免疫且不影响复制粘贴正常交互。",
-      "as_of": "2026-11-05"
+      "as_of": "2026-11-06"
     },
     {
-      "signal_id": "sec_sandbox_confinement_1793857530",
+      "signal_id": "sec_sandbox_confinement_1793934829",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -82,205 +60,7 @@
       "business_signals": "Container Security, Linux Hardening, Zero Trust",
       "relevance_score": 92,
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50371246",
-      "title": "Residential proxies detected on White House network",
-      "url": "https://layer3intel.com/blog/residential-proxies-white-house-network",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 853 | Comments: 271",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50369106",
-      "title": "A new Go API for JSON",
-      "url": "https://go.dev/blog/jsonv2",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 76,
-      "summary": "HN Score: 266 | Comments: 120",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_3_1793857539",
-      "title": "千问AI Office升级端内编辑与模板能力，Word、Excel、PPT均可按需修改",
-      "url": "https://www.36kr.com/newsflashes/4056435751048070",
-      "source": "CommercialNewsflash",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 75,
-      "summary": "11月5日，千问AI Office升级端内编辑和自定义模板能力，覆盖Word、Excel、PPT。用户可按照单位或个人的格式要求生成文件，并直接在千问内修改内容和样式，减少跨软件操作与格式返工。目前，相关功能已逐步开放体验。",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50372929",
-      "title": "A thousand fewer paths to root",
-      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 74,
-      "summary": "HN Score: 240 | Comments: 133",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50370610",
-      "title": "Insects don't swarm at LED lights",
-      "url": "https://www.birdsoutsidemywindow.org/2026/11/03/insects-dont-swarm-at-led-lights/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 71,
-      "summary": "HN Score: 213 | Comments: 115",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_2_1793857539",
-      "title": "国资委：加快培育壮大新兴产业和未来产业，构建现代化产业体系",
-      "url": "https://www.36kr.com/newsflashes/4056436707824777",
-      "source": "CommercialNewsflash",
-      "category": "Venture & Investment",
-      "business_signals": "Venture Capital",
-      "relevance_score": 70,
-      "summary": "36氪获悉，11月4日，国务院国资委党委召开国资央企传达学习贯彻党的二十届五中全会精神视频会议。会议要求，要锚定目标任务不松劲，扎实做好近期各项重点工作。要积极推进“十五五”规划落地实施，强化有效投资，加大基础研究投入，加快培育壮大新兴产业和未来产业，构建现代化产业体系，以科技强牵引产业强、经济强；大力推动改革重点任务落实，完善相关制度机制，健全穿透式监管体...",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_5_1793857539",
-      "title": "南通文虎洁净系统科技有限公司完成新一轮超千万元融资",
-      "url": "https://www.36kr.com/newsflashes/4056416532272261",
-      "source": "CommercialNewsflash",
-      "category": "Venture & Investment",
-      "business_signals": "Venture Capital",
-      "relevance_score": 70,
-      "summary": "36氪获悉，南通文虎洁净系统科技有限公司近日完成新一轮融资，融资金额超千万元人民币，投资方包括相城金控、苏高新金控以及相信相信的力量合伙人企业。",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_9_1793857539",
-      "title": "LG化学第三季度合并营收为15.50万亿韩元，预期为14.78万亿韩元",
-      "url": "https://www.36kr.com/newsflashes/4056398970033288",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Monetization & SaaS",
-      "relevance_score": 70,
-      "summary": "LG化学第三季度合并营收为15.50万亿韩元，预期为14.78万亿韩元。LG化学第三季度营业利润为5612亿韩元，高于预期的4743亿韩元。（财联社）",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50372945",
-      "title": "Images 2.6",
-      "url": "https://openai.com/index/introducing-images-2-6/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 70,
-      "summary": "HN Score: 201 | Comments: 135",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50373308",
-      "title": "Starfall – Affordable, routine access to microgravity",
-      "url": "https://www.spacex.com/starfall",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 67,
-      "summary": "HN Score: 174 | Comments: 107",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50369503",
-      "title": "Conductor is joining Meta",
-      "url": "https://www.conductor.build/announcement",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 65,
-      "summary": "HN Score: 152 | Comments: 169",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_0_1793857539",
-      "title": "创业板指午后翻绿，早盘一度涨超3%",
-      "url": "https://www.36kr.com/newsflashes/4056437723992963",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "36氪获悉，创业板指午后翻绿，早盘一度涨超3%，权重股中际旭创跌近10%，新易盛跌超8%，天孚通信跌超6%。",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_1_1793857539",
-      "title": "国内金饰价格集体上涨",
-      "url": "https://www.36kr.com/newsflashes/4056437013779337",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "国内黄金饰品价格对比显示，多家黄金珠宝品牌公布的境内足金首饰价格较昨日有所上调，周生生足金饰品报1233元/克，较昨日涨了45元；周大福足金饰品报1229元/克，较昨日涨了44元；老庙黄金足金饰品报1225元/克，较昨日涨了42元；老凤祥足金饰品报1232元/克，较昨日涨了49元。（界面）",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_4_1793857539",
-      "title": "韩国KOSDAQ指数跌逾5%，触发股市卖出侧车机制",
-      "url": "https://www.36kr.com/newsflashes/4056425695335560",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "36氪获悉，韩国交易所于当地时间14时27分31秒启动KOSDAQ市场卖出侧车机制，暂停程序卖单报价5分钟。",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_6_1793857539",
-      "title": "南向资金净卖出额达50亿港元",
-      "url": "https://www.36kr.com/newsflashes/4056410117182341",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "36氪获悉，南向资金净卖出额达50亿港元。",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_7_1793857539",
-      "title": "韩国准备应对金融市场波动加剧",
-      "url": "https://www.36kr.com/newsflashes/4056403881858177",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "韩国准备应对金融市场波动加剧。（新浪财经）",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "flash_8_1793857539",
-      "title": "华盛锂电：6万吨VC新项目预计2026年底正式投产",
-      "url": "https://www.36kr.com/newsflashes/4056402692658056",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "华盛锂电在2026年第三季度业绩说明会上表示，目前6万吨VC新项目正按计划稳步推进，预计将于2026年底正式投产。产能爬坡及满产满销的具体时间将根据市场需求、客户认证进度及生产设备调试情况而定，公司力争早日实现达产满销。（第一财经）",
-      "as_of": "2026-11-05"
-    },
-    {
-      "signal_id": "hn_50375354",
-      "title": "Lemmings CSS Animation",
-      "url": "https://markblah.github.io/lemmings/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 50,
-      "summary": "HN Score: 5 | Comments: 1",
-      "as_of": "2026-11-05"
+      "as_of": "2026-11-06"
     }
   ]
 }
