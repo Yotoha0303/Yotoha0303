@@ -6,7 +6,7 @@
 
 I build software around practical business workflows: order and inventory consistency, authentication and authorization, AI-assisted knowledge workflows, automated testing, and cloud-native delivery.
 
-**Target roles:** Full-Stack Engineer · Go Backend Engineer · AI Application Engineer
+**Engineering Focus:** Cloud-Native Go Backend · Full-Stack Systems · AI Application Engineering
 
 ## Executive Positioning | 专业定位
 
@@ -109,6 +109,12 @@ I focus on bounded, evidence-driven engineering work such as:
 
 合作范围以明确的问题、交付边界、验收标准和运行责任为基础。公开项目展示的是工程能力与验证记录，不构成虚构客户案例或商业交付承诺。
 
+**Technical discussion & collaboration | 技术交流与合作**
+
+For an architecture review, a technical discussion, or a bounded contract collaboration, open an [Issue in this profile repository](https://github.com/Yotoha0303/Yotoha0303/issues/new). Include the problem context, expected outcome, constraints, scope, and acceptance criteria. I will assess fit and feasibility before proposing an approach; opening an Issue does not imply availability or acceptance of the work.
+
+如需进行架构评审、技术交流或范围明确的合同协作，请通过 [GitHub Issue](https://github.com/Yotoha0303/Yotoha0303/issues/new) 提交问题背景、预期结果、约束条件、工作范围和验收标准。我会先评估问题与交付边界，再讨论实施方案；提交 Issue 不代表承诺接单或确认档期。
+
 ---
 
 ## Quick Navigation | 快速导航
@@ -123,17 +129,17 @@ I focus on bounded, evidence-driven engineering work such as:
 
 ---
 
-## Project Map | 项目索引
+## Engineering Portfolio | 工程项目索引
 
-| Business Scenario | Engineering Evidence |
-| --- | --- |
-| Concurrent order and inventory updates | [go-order-management-system](https://github.com/Yotoha0303/go-order-management-system) — idempotency, conditional stock updates, state transitions, timeout cancellation |
-| Secure account access and session management | [go-user-system](https://github.com/Yotoha0303/go-user-system) — token lifecycle, session revocation, RBAC, rate limiting |
-| AI-assisted knowledge review and publication | [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow) — versioned records, evidence traceability, human review, workspace isolation |
-| Repeatable deployment and failure recovery | [go-order-management-system-cloudnative-lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab) — reliable messaging, Kubernetes delivery, fault drills, backup/restore verification |
-| Quality control for AI-assisted development | [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework) — automated quality gates, negative tests, least-privilege separation |
-| Regression testing across APIs, UI, and performance | [QA_Automation_Architecture](https://github.com/Yotoha0303/QA_Automation_Architecture) — reproducible test runtime, API/UI automation, load tests, reports and CI |
-| Autonomous-agent trust infrastructure and real-time trading workflows | [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance) — trading dashboard integration, RPC failover, Go event-listener recovery, unified errors and CI quality gates |
+核心项目按其解决的问题组织。建议从对应仓库的 README、测试、CI 和部署文档核验实现范围与成熟度。
+
+- **Business transaction correctness:** [Go Order Management](https://github.com/Yotoha0303/go-order-management-system) — idempotency, inventory consistency, state transitions.
+- **Identity and access boundaries:** [Go User System](https://github.com/Yotoha0303/go-user-system) — token lifecycle, session revocation, RBAC.
+- **Traceable AI workflows:** [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow) — versioned records, evidence traceability, human review.
+- **Cloud-native validation:** [Cloud-Native Validation Lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab) — messaging reliability, Kubernetes delivery, recovery drills.
+- **AI-assisted development quality:** [AI Collaboration Framework](https://github.com/Yotoha0303/ai-collaboration-framework) — executable quality gates, negative tests, least-privilege separation.
+- **Test automation:** [QA Automation Architecture](https://github.com/Yotoha0303/QA_Automation_Architecture) — reproducible API/UI/performance test runtime.
+- **Organization collaboration:** [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance) — RPC resilience, Go event processing, CI quality gates.
 
 ## Featured Projects | 核心项目
 
@@ -226,16 +232,6 @@ A collaborative full-stack project combining a real-time trading dashboard with 
 **Stack:** Next.js, React, TypeScript, Go, PostgreSQL/Supabase, Solidity, Monad Testnet, GitHub Actions.
 
 ---
-
-## Representative Architecture | 代表性架构项目
-
-| Architecture Focus | Representative Project | Evidence to Explore |
-| --- | --- | --- |
-| AI-assisted workflow with human review | [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow) | Versioned inputs, evidence traceability, review and controlled publication |
-| Transactional business workflow | [Go Order Management](https://github.com/Yotoha0303/go-order-management-system) | Idempotency, transaction boundaries, inventory consistency, asynchronous compensation |
-| Identity and access control | [Go User System](https://github.com/Yotoha0303/go-user-system) | Token lifecycle, session revocation, RBAC and rate limiting |
-| Cloud-native recovery and delivery | [Cloud-Native Validation Lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab) | Kubernetes delivery, reliable messaging, backup/restore and fault drills |
-| Autonomous-agent trust and trading workflows | [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance) | RPC resilience, Go event processing, unified errors and CI quality gates |
 
 ## Project Planning & Automation | 项目管理与自动化
 
