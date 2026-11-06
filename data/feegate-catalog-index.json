@@ -1,7 +1,7 @@
 {
   "catalog_version": "2.0.0",
   "provider": "FeeGate Commercial Data Intelligence Feed",
-  "generated_at_utc": "2026-11-05T06:36:39.373297+00:00",
+  "generated_at_utc": "2026-11-06T13:31:17.507762+00:00",
   "protocol": "HTTP REST / x402 Micropayments",
   "total_active_products": 3,
   "products": [
@@ -15,10 +15,10 @@
       "provenance": {
         "source_origin": "OpenRouter Official Public Model Registry",
         "source_endpoint": "https://openrouter.ai/api/v1/models",
-        "ingested_at_utc": "2026-11-05T06:36:12.071234+00:00",
+        "ingested_at_utc": "2026-11-06T13:31:11.945852+00:00",
         "schema_version": "2.0.0",
-        "record_count": 455,
-        "sha256_checksum": "df4cf8e3d536d6328c4a938be25c7146d2a1c7fc33037f6a9b3ff719bbb24b1d"
+        "record_count": 453,
+        "sha256_checksum": "fd5543f991e733c19da60e4d9a0b0f4d0031ea5e389e01ad7016b7289f6ede89"
       },
       "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-ai-model-pricing-index.json"
     },
@@ -32,10 +32,10 @@
       "provenance": {
         "source_origin": "GitHub Security Advisory Database (NVD/CVE Synchronized)",
         "source_endpoint": "https://api.github.com/advisories?per_page=20&severity=high",
-        "ingested_at_utc": "2026-11-05T06:36:16.645600+00:00",
+        "ingested_at_utc": "2026-11-06T13:31:12.785355+00:00",
         "schema_version": "2.0.0",
         "record_count": 40,
-        "sha256_checksum": "e0d9cf75adc825b86ee2060a2978d74516164ad2b18911cdc46a05ee96b09150"
+        "sha256_checksum": "d48f97d51143c0ad1c3a37b3100e7d5131636927f11303dd454db355144af893"
       },
       "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-security-cve-threat-radar.json"
     },
@@ -49,10 +49,10 @@
       "provenance": {
         "source_origin": "GitHub Official REST API Telemetry",
         "source_endpoint": "https://api.github.com/repos/{owner}/{repo}",
-        "ingested_at_utc": "2026-11-05T06:36:39.372324+00:00",
+        "ingested_at_utc": "2026-11-06T13:31:17.507090+00:00",
         "schema_version": "2.0.0",
         "record_count": 12,
-        "sha256_checksum": "a21d6954b0c2c57418c5fcaad95c11722bb054a9394c4cb23da7cb90455524a5"
+        "sha256_checksum": "c3f1e823fde047812897d2cc019b2ef57c8f0a305e2c9856180884691b46bd47"
       },
       "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-agent-frameworks-benchmark.json"
     }
