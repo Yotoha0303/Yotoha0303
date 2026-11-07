@@ -1,0 +1,531 @@
+{
+  "capabilities": [
+    {
+      "declared_test_functions": 53,
+      "evidence": [
+        {
+          "declared_test_functions": 53,
+          "source": "scripts/rapid_lead_scraper_resilience.py",
+          "source_sha256": "c1b2b97df6276591922307f09f2d5a8472af282f7f40bd80bafb618a4b29331f",
+          "source_summary": "Resilient directory, lead and price extraction using the standard library.",
+          "tests": "scripts/test_rapid_lead_scraper_resilience.py",
+          "tests_sha256": "5b401d48f6c50bf0777bdc5733b04aab04976304c8737817c2b39a6f0a03d1a4"
+        }
+      ],
+      "id": "scraper",
+      "profile_origin": "repository_curated",
+      "summary": {
+        "en": "Static HTML/JSON/CSV ingestion, bounded retries, deduplication and provenance.",
+        "zh": "静态 HTML/JSON/CSV 采集、限次重试、去重与来源追踪。"
+      },
+      "title": {
+        "en": "Resilient scraper",
+        "zh": "弹性数据采集器"
+      }
+    },
+    {
+      "declared_test_functions": 91,
+      "evidence": [
+        {
+          "declared_test_functions": 44,
+          "source": "scripts/b2b_api_gateway_metering.py",
+          "source_sha256": "654c1696bbe110d5df170aa34dc2c4203adf4911df39efcb497e6f4b8a1bf1af",
+          "source_summary": "Transactional B2B API key authentication, metering, and prepaid accounting.",
+          "tests": "scripts/test_b2b_api_gateway_metering.py",
+          "tests_sha256": "ad4a18d9518adfac691f28d93e960b30ef531818232d0a702889d99ee0f63408"
+        },
+        {
+          "declared_test_functions": 47,
+          "source": "scripts/zero_support_reconciliation_engine.py",
+          "source_sha256": "831597f3aecbe25bcb5dea912ea47a87a85bde35586cf0fee62ed9ae4354b900",
+          "source_summary": "Durable billing reconciliation and quota repair using only the standard library.",
+          "tests": "scripts/test_zero_support_reconciliation_engine.py",
+          "tests_sha256": "696d456e795b81783cc1632753ed04cdac16da5adeaf8541bc50e823a70f20a6"
+        }
+      ],
+      "id": "metering_gateway",
+      "profile_origin": "repository_curated",
+      "summary": {
+        "en": "API key authentication, RPM/TPM limits, SQLite idempotent billing and reconciliation.",
+        "zh": "API 密钥鉴权、RPM/TPM 限流、SQLite 幂等计费与账单补偿。"
+      },
+      "title": {
+        "en": "API metering gateway",
+        "zh": "API 计量网关"
+      }
+    },
+    {
+      "declared_test_functions": 31,
+      "evidence": [
+        {
+          "declared_test_functions": 15,
+          "source": "scripts/agent_fleet_load_balancer.py",
+          "source_sha256": "6bcfa786245dd25073ef3536d7a7d0731809b3d1bad6dde27459b6290e2e0e68",
+          "source_summary": "High-throughput Agent Fleet Load Balancer and Token Burndown Watchdog.",
+          "tests": "scripts/test_agent_fleet_load_balancer.py",
+          "tests_sha256": "3f81ad034fd0085cd54d7bf12ee1562a89de7b99e6b949df1d402986e87ff36c"
+        },
+        {
+          "declared_test_functions": 16,
+          "source": "scripts/decentralized_state_sync_protocol.py",
+          "source_sha256": "e69f714f1fc74844771563500164d3684a5fb95c0974ff31783ad44748e759a4",
+          "source_summary": "Offline peer-to-peer state replication using CRDTs and a Merkle DAG.",
+          "tests": "scripts/test_decentralized_state_sync_protocol.py",
+          "tests_sha256": "c0345b21e2e419138e4380aca4c789e0648fc21cfff6f311f0657f0985b4b404"
+        }
+      ],
+      "id": "multi_agent_mesh",
+      "profile_origin": "repository_curated",
+      "summary": {
+        "en": "Agent routing, circuit breakers/backoff, CRDT conflict merging and Merkle state sync.",
+        "zh": "智能体路由、熔断与退避、CRDT 冲突合并和 Merkle 状态同步。"
+      },
+      "title": {
+        "en": "Multi-agent mesh",
+        "zh": "多智能体协作网格"
+      }
+    }
+  ],
+  "deliverable_cards": [
+    {
+      "acceptance": [
+        {
+          "en": "Agreed fixtures match expected fields, deduplication and provenance.",
+          "zh": "约定样例输出字段、去重结果和来源信息与预期一致。"
+        },
+        {
+          "en": "429/timeout retry and maximum-wait tests pass; reproducible run command included.",
+          "zh": "429/超时重试次数与等待上限测试通过；附可重复运行命令。"
+        }
+      ],
+      "currency": "CNY",
+      "deliverables": [
+        {
+          "en": "Source code, example configuration and README startup/recovery runbook.",
+          "zh": "完整源代码、配置样例与 README 启动/恢复手册。"
+        },
+        {
+          "en": "Automated acceptance tests, fixture results and a file SHA-256 delivery manifest.",
+          "zh": "自动化验收测试、样例结果与含文件 SHA-256 的交付清单。"
+        }
+      ],
+      "delivery_hours": 48,
+      "escrow_terms": {
+        "deposit_percent": 100,
+        "release": {
+          "en": "Escrow provider confirms full funding; release follows explicit client acceptance; disputes follow the provider's process.",
+          "zh": "由托管方确认全额入金，客户明确验收后放款；争议依托管平台流程处理。"
+        },
+        "verification": {
+          "en": "This hash checks scope, price, SLA and evidence integrity; it does not prove escrow funding.",
+          "zh": "此哈希仅校验范围、价格、SLA 与证据是否改动，不证明托管款已到账。"
+        }
+      },
+      "escrow_verification_hash": "ff41aa834efcf9108e48fcc17907d3d5b9b0b7ea6f70ef49a43cd4f188fee525",
+      "evidence": [
+        {
+          "declared_test_functions": 53,
+          "source": "scripts/rapid_lead_scraper_resilience.py",
+          "source_sha256": "c1b2b97df6276591922307f09f2d5a8472af282f7f40bd80bafb618a4b29331f",
+          "source_summary": "Resilient directory, lead and price extraction using the standard library.",
+          "tests": "scripts/test_rapid_lead_scraper_resilience.py",
+          "tests_sha256": "5b401d48f6c50bf0777bdc5733b04aab04976304c8737817c2b39a6f0a03d1a4"
+        }
+      ],
+      "exclusions": {
+        "en": "Excludes JS rendering, CAPTCHA handling, paid data acquisition and ongoing hosting.",
+        "zh": "不含 JS 渲染、验证码处理、付费数据采购与长期托管。"
+      },
+      "hash_scheme": "SHA-256; sorted keys; compact JSON; UTF-8; exclude escrow_verification_hash",
+      "id": "scraper",
+      "price_cny": 1500,
+      "schema_version": "1.0",
+      "scope": {
+        "en": "One authorized site, up to 3 static page templates and 10 fields; JSON/CSV export.",
+        "zh": "1 个授权站点、最多 3 个静态页面模板、10 个字段；JSON/CSV 导出。"
+      },
+      "sla": {
+        "acceptance": {
+          "en": "Review agreed fixtures within 24 elapsed hours of handoff or list defects; escrow releases only on explicit acceptance, with no automatic release on timeout.",
+          "zh": "交付后 24 个自然小时内按约定样例验收或列明缺陷；托管款仅在明确验收后释放，逾期不自动放款。"
+        },
+        "acceptance_hours": 24,
+        "clock_pause": {
+          "en": "Missing client inputs/access or client dependency outages pause the clock with recorded, mutually agreed stop/resume times; scope changes require a new quote.",
+          "zh": "客户资料或权限缺失、客户依赖服务中断时，记录原因与双方确认的暂停/恢复时间；变更范围另行报价。"
+        },
+        "clock_start": {
+          "en": "48 elapsed hours start after scope, acceptance fixtures and booking are agreed, inputs/access are ready and the provider confirms full escrow funding.",
+          "zh": "双方确认固定范围、验收样例与档期，资料/访问权限齐备且托管方确认全额入金后，48 个自然小时开始计时。"
+        },
+        "coverage": {
+          "en": "Mon–Fri 09:00–18:00, Asia/Shanghai; business hours accrue only in this window.",
+          "zh": "周一至周五 09:00–18:00，Asia/Shanghai，按此工作时段计时。"
+        },
+        "delivery_hours": 48,
+        "included_revision_rounds": 1,
+        "late_credit_cap_percent": 30,
+        "late_credit_percent_per_started_24h": 10,
+        "remediation_business_hours": 9,
+        "remedy": {
+          "en": "Supplier delivery delay earns 10% fee credit per started 24 hours, capped at 30%; missed remediation deadlines earn the same credit, with a combined 30% cap.",
+          "zh": "供应方延迟交付每开始 24 小时抵扣服务费 10%，上限 30%；修复时限违约按同一比例抵扣，合计不超过 30%。"
+        },
+        "response_business_hours": 4,
+        "support": {
+          "en": "For 7 calendar days after handoff: acknowledge in-scope defects within 4 business hours and fix or provide a working workaround within 9 business hours; one in-scope revision included.",
+          "zh": "交付后 7 个自然日内，范围内缺陷 4 个工作小时响应、9 个工作小时修复或提供可用替代方案；含一轮范围内修订。"
+        },
+        "support_calendar_days": 7
+      },
+      "title": {
+        "en": "Resilient scraper",
+        "zh": "弹性数据采集器"
+      }
+    },
+    {
+      "acceptance": [
+        {
+          "en": "Invalid keys are rejected; retries charge once; concurrent debits cannot overdraw.",
+          "zh": "无效密钥拒绝；重复请求只扣费一次；并发请求不透支。"
+        },
+        {
+          "en": "Ledger survives restart; idempotent payment fixtures and overdue compensation tests pass.",
+          "zh": "重启后账本可复核；支付样例幂等入账与超期补偿测试通过。"
+        }
+      ],
+      "currency": "CNY",
+      "deliverables": [
+        {
+          "en": "Source code, example configuration and README startup/recovery runbook.",
+          "zh": "完整源代码、配置样例与 README 启动/恢复手册。"
+        },
+        {
+          "en": "Automated acceptance tests, fixture results and a file SHA-256 delivery manifest.",
+          "zh": "自动化验收测试、样例结果与含文件 SHA-256 的交付清单。"
+        }
+      ],
+      "delivery_hours": 48,
+      "escrow_terms": {
+        "deposit_percent": 100,
+        "release": {
+          "en": "Escrow provider confirms full funding; release follows explicit client acceptance; disputes follow the provider's process.",
+          "zh": "由托管方确认全额入金，客户明确验收后放款；争议依托管平台流程处理。"
+        },
+        "verification": {
+          "en": "This hash checks scope, price, SLA and evidence integrity; it does not prove escrow funding.",
+          "zh": "此哈希仅校验范围、价格、SLA 与证据是否改动，不证明托管款已到账。"
+        }
+      },
+      "escrow_verification_hash": "9f53786767e02040fb3062b9a1b70322ebb1ccc77bf152660392127e3fd31f2d",
+      "evidence": [
+        {
+          "declared_test_functions": 44,
+          "source": "scripts/b2b_api_gateway_metering.py",
+          "source_sha256": "654c1696bbe110d5df170aa34dc2c4203adf4911df39efcb497e6f4b8a1bf1af",
+          "source_summary": "Transactional B2B API key authentication, metering, and prepaid accounting.",
+          "tests": "scripts/test_b2b_api_gateway_metering.py",
+          "tests_sha256": "ad4a18d9518adfac691f28d93e960b30ef531818232d0a702889d99ee0f63408"
+        },
+        {
+          "declared_test_functions": 47,
+          "source": "scripts/zero_support_reconciliation_engine.py",
+          "source_sha256": "831597f3aecbe25bcb5dea912ea47a87a85bde35586cf0fee62ed9ae4354b900",
+          "source_summary": "Durable billing reconciliation and quota repair using only the standard library.",
+          "tests": "scripts/test_zero_support_reconciliation_engine.py",
+          "tests_sha256": "696d456e795b81783cc1632753ed04cdac16da5adeaf8541bc50e823a70f20a6"
+        }
+      ],
+      "exclusions": {
+        "en": "Excludes payment-provider onboarding, tax invoicing, multi-region HA and upstream API fees.",
+        "zh": "不含真实支付渠道开户、税务发票、跨区高可用与上游 API 费用。"
+      },
+      "hash_scheme": "SHA-256; sorted keys; compact JSON; UTF-8; exclude escrow_verification_hash",
+      "id": "metering_gateway",
+      "price_cny": 3500,
+      "schema_version": "1.0",
+      "scope": {
+        "en": "One upstream API, one SQLite ledger, up to 3 RPM/TPM/prepaid quota configurations.",
+        "zh": "1 个上游 API、1 个 SQLite 账本、最多 3 档 RPM/TPM/预付配额配置。"
+      },
+      "sla": {
+        "acceptance": {
+          "en": "Review agreed fixtures within 24 elapsed hours of handoff or list defects; escrow releases only on explicit acceptance, with no automatic release on timeout.",
+          "zh": "交付后 24 个自然小时内按约定样例验收或列明缺陷；托管款仅在明确验收后释放，逾期不自动放款。"
+        },
+        "acceptance_hours": 24,
+        "clock_pause": {
+          "en": "Missing client inputs/access or client dependency outages pause the clock with recorded, mutually agreed stop/resume times; scope changes require a new quote.",
+          "zh": "客户资料或权限缺失、客户依赖服务中断时，记录原因与双方确认的暂停/恢复时间；变更范围另行报价。"
+        },
+        "clock_start": {
+          "en": "48 elapsed hours start after scope, acceptance fixtures and booking are agreed, inputs/access are ready and the provider confirms full escrow funding.",
+          "zh": "双方确认固定范围、验收样例与档期，资料/访问权限齐备且托管方确认全额入金后，48 个自然小时开始计时。"
+        },
+        "coverage": {
+          "en": "Mon–Fri 09:00–18:00, Asia/Shanghai; business hours accrue only in this window.",
+          "zh": "周一至周五 09:00–18:00，Asia/Shanghai，按此工作时段计时。"
+        },
+        "delivery_hours": 48,
+        "included_revision_rounds": 1,
+        "late_credit_cap_percent": 30,
+        "late_credit_percent_per_started_24h": 10,
+        "remediation_business_hours": 9,
+        "remedy": {
+          "en": "Supplier delivery delay earns 10% fee credit per started 24 hours, capped at 30%; missed remediation deadlines earn the same credit, with a combined 30% cap.",
+          "zh": "供应方延迟交付每开始 24 小时抵扣服务费 10%，上限 30%；修复时限违约按同一比例抵扣，合计不超过 30%。"
+        },
+        "response_business_hours": 4,
+        "support": {
+          "en": "For 7 calendar days after handoff: acknowledge in-scope defects within 4 business hours and fix or provide a working workaround within 9 business hours; one in-scope revision included.",
+          "zh": "交付后 7 个自然日内，范围内缺陷 4 个工作小时响应、9 个工作小时修复或提供可用替代方案；含一轮范围内修订。"
+        },
+        "support_calendar_days": 7
+      },
+      "title": {
+        "en": "API metering gateway",
+        "zh": "API 计量网关"
+      }
+    },
+    {
+      "acceptance": [
+        {
+          "en": "Failed peers trigger circuit breaking/rerouting; retry budgets and backoff match configuration.",
+          "zh": "故障节点触发熔断/路由切换；重试预算与退避符合配置。"
+        },
+        {
+          "en": "CRDT merges and Merkle sync pass disconnect/reconnect and reordered/duplicate snapshot fixtures.",
+          "zh": "断连重连与乱序/重复快照下，CRDT 合并及 Merkle 状态同步样例通过。"
+        }
+      ],
+      "currency": "CNY",
+      "deliverables": [
+        {
+          "en": "Source code, example configuration and README startup/recovery runbook.",
+          "zh": "完整源代码、配置样例与 README 启动/恢复手册。"
+        },
+        {
+          "en": "Automated acceptance tests, fixture results and a file SHA-256 delivery manifest.",
+          "zh": "自动化验收测试、样例结果与含文件 SHA-256 的交付清单。"
+        }
+      ],
+      "delivery_hours": 48,
+      "escrow_terms": {
+        "deposit_percent": 100,
+        "release": {
+          "en": "Escrow provider confirms full funding; release follows explicit client acceptance; disputes follow the provider's process.",
+          "zh": "由托管方确认全额入金，客户明确验收后放款；争议依托管平台流程处理。"
+        },
+        "verification": {
+          "en": "This hash checks scope, price, SLA and evidence integrity; it does not prove escrow funding.",
+          "zh": "此哈希仅校验范围、价格、SLA 与证据是否改动，不证明托管款已到账。"
+        }
+      },
+      "escrow_verification_hash": "7c260bf42f41aa37805460d24f59dfecd5ad497514c40f3300d8fbb2222b7090",
+      "evidence": [
+        {
+          "declared_test_functions": 15,
+          "source": "scripts/agent_fleet_load_balancer.py",
+          "source_sha256": "6bcfa786245dd25073ef3536d7a7d0731809b3d1bad6dde27459b6290e2e0e68",
+          "source_summary": "High-throughput Agent Fleet Load Balancer and Token Burndown Watchdog.",
+          "tests": "scripts/test_agent_fleet_load_balancer.py",
+          "tests_sha256": "3f81ad034fd0085cd54d7bf12ee1562a89de7b99e6b949df1d402986e87ff36c"
+        },
+        {
+          "declared_test_functions": 16,
+          "source": "scripts/decentralized_state_sync_protocol.py",
+          "source_sha256": "e69f714f1fc74844771563500164d3684a5fb95c0974ff31783ad44748e759a4",
+          "source_summary": "Offline peer-to-peer state replication using CRDTs and a Merkle DAG.",
+          "tests": "scripts/test_decentralized_state_sync_protocol.py",
+          "tests_sha256": "c0345b21e2e419138e4380aca4c789e0648fc21cfff6f311f0657f0985b4b404"
+        }
+      ],
+      "exclusions": {
+        "en": "Excludes model training, inference fees, public-node operations and production-scale performance commitments.",
+        "zh": "不含模型训练、模型调用费、公网节点运维与生产规模性能承诺。"
+      },
+      "hash_scheme": "SHA-256; sorted keys; compact JSON; UTF-8; exclude escrow_verification_hash",
+      "id": "multi_agent_mesh",
+      "price_cny": 8000,
+      "schema_version": "1.0",
+      "scope": {
+        "en": "Up to 3 agents/peers in one runtime environment and one workflow; routing, failover and state-sync demo.",
+        "zh": "单一运行环境中最多 3 个智能体/节点、1 条工作流；路由、熔断与状态同步演示。"
+      },
+      "sla": {
+        "acceptance": {
+          "en": "Review agreed fixtures within 24 elapsed hours of handoff or list defects; escrow releases only on explicit acceptance, with no automatic release on timeout.",
+          "zh": "交付后 24 个自然小时内按约定样例验收或列明缺陷；托管款仅在明确验收后释放，逾期不自动放款。"
+        },
+        "acceptance_hours": 24,
+        "clock_pause": {
+          "en": "Missing client inputs/access or client dependency outages pause the clock with recorded, mutually agreed stop/resume times; scope changes require a new quote.",
+          "zh": "客户资料或权限缺失、客户依赖服务中断时，记录原因与双方确认的暂停/恢复时间；变更范围另行报价。"
+        },
+        "clock_start": {
+          "en": "48 elapsed hours start after scope, acceptance fixtures and booking are agreed, inputs/access are ready and the provider confirms full escrow funding.",
+          "zh": "双方确认固定范围、验收样例与档期，资料/访问权限齐备且托管方确认全额入金后，48 个自然小时开始计时。"
+        },
+        "coverage": {
+          "en": "Mon–Fri 09:00–18:00, Asia/Shanghai; business hours accrue only in this window.",
+          "zh": "周一至周五 09:00–18:00，Asia/Shanghai，按此工作时段计时。"
+        },
+        "delivery_hours": 48,
+        "included_revision_rounds": 1,
+        "late_credit_cap_percent": 30,
+        "late_credit_percent_per_started_24h": 10,
+        "remediation_business_hours": 9,
+        "remedy": {
+          "en": "Supplier delivery delay earns 10% fee credit per started 24 hours, capped at 30%; missed remediation deadlines earn the same credit, with a combined 30% cap.",
+          "zh": "供应方延迟交付每开始 24 小时抵扣服务费 10%，上限 30%；修复时限违约按同一比例抵扣，合计不超过 30%。"
+        },
+        "response_business_hours": 4,
+        "support": {
+          "en": "For 7 calendar days after handoff: acknowledge in-scope defects within 4 business hours and fix or provide a working workaround within 9 business hours; one in-scope revision included.",
+          "zh": "交付后 7 个自然日内，范围内缺陷 4 个工作小时响应、9 个工作小时修复或提供可用替代方案；含一轮范围内修订。"
+        },
+        "support_calendar_days": 7
+      },
+      "title": {
+        "en": "Multi-agent mesh",
+        "zh": "多智能体协作网格"
+      }
+    }
+  ],
+  "inventory": {
+    "declared_test_functions": 1850,
+    "implementation_files": 53,
+    "inventory_sha256": "3139f0ba149546e0aee03eeff8940059c62b85df4cde79dcc3c1628d9dc3a864",
+    "method": "static_ast",
+    "test_files": 52,
+    "tests_executed": false
+  },
+  "outreach": {
+    "en": {
+      "body": "Hello, we offer verifiable fixed-scope engineering deliveries: Resilient scraper ¥1,500；API metering gateway ¥3,500；Multi-agent mesh ¥8,000. Static inventory: 1,850 declared unit-test functions across 52 test files; the exporter did not execute them. No run supplied; pass rate is unverified. Delivery is 48 hours after inputs, written scope, booking and full escrow funding are confirmed; includes 7-day defect support and a SHA-256 terms hash. Share sample inputs and acceptance goals to confirm fit.",
+      "subject": "48-hour fixed-scope engineering | Yotoha Engineering"
+    },
+    "zh": {
+      "body": "您好，我们提供可验收的固定范围工程交付：弹性数据采集器 ¥1,500；API 计量网关 ¥3,500；多智能体协作网格 ¥8,000. 静态盘点：1,850 个单元测试函数声明，分布于 52 个测试文件；此导出器未执行测试。 未提供执行结果，通过率未验证。 资料、书面范围、档期与全额托管入金确认后 48 小时交付；含 7 日缺陷支持和条款 SHA-256 校验。请提供输入样例与验收目标，以确认适配范围。",
+      "subject": "48 小时固定范围技术交付 | Yotoha 工程交付"
+    }
+  },
+  "provider": {
+    "en": "Yotoha Engineering",
+    "zh": "Yotoha 工程交付"
+  },
+  "schema_version": "1.0",
+  "source_manifest": {
+    "scripts/agent_fleet_load_balancer.py": "6bcfa786245dd25073ef3536d7a7d0731809b3d1bad6dde27459b6290e2e0e68",
+    "scripts/ai_subscription_pricing_crawler.py": "42b1256d1b911217ac94ef7578ae1f05c02bfca5d17823ed0b6fd22e34c4dd9d",
+    "scripts/android_privacy_guard.py": "7d350736b65203378781093cd9957d7b3ba3cda87ba8226b81bea4d5e6595765",
+    "scripts/anti_ban_human_behavior_engine.py": "229f8ef46c152da1924655b449baaf008bcf166b84ffe891b4237b22ced39aff",
+    "scripts/audio_stream_stress_tester.py": "4c30e80af2ebd26555b503294e90d3d9601b4eb7a8f837a3bc4f47eb53ee2c2f",
+    "scripts/audio_vad_segmenter.py": "038386d67d24b83065fe43ef3e8731add6ac1b89f803aab6d99a8c16c18248f1",
+    "scripts/automated_delivery_verification_harness.py": "c7c33c155c6d3fba12171db1c96f539b1d3feedab98b628224600a8738740211",
+    "scripts/b2b_api_gateway_metering.py": "654c1696bbe110d5df170aa34dc2c4203adf4911df39efcb497e6f4b8a1bf1af",
+    "scripts/canary_tripwire_guard.py": "ebbb6ca1544d7858d38ace8b20936a2d399d3b202cbf6ea58e9a448d50558d01",
+    "scripts/china_remote_job_board_aggregator.py": "4fee6874eaf5b8d9d5a1f8410e49a9c1f0001acff62fffbe2c4e1a6d96bc77ce",
+    "scripts/client_lead_enricher_and_scoring.py": "0d9a0fd44a5b29188ab7cfba8a376310102e20f0d6dfb564f0f53f3117c1ae07",
+    "scripts/commercial_bounty_crawler.py": "d18ad36cee5ee3a653e7f05486e14c4aba229d5d0ae184eaea51522bf99aa9c0",
+    "scripts/commercial_portfolio_spec_exporter.py": "5c8033ece527009124de15f580ca44616314b195273436710c6bb893596c32e6",
+    "scripts/commercial_viability_scoring_engine.py": "954dd3bd1cd64e54c819b419ab38037d0e1397b5815143f4b3db7b7ce8f66046",
+    "scripts/cross_chain_mev_protection_engine.py": "ecdf868af6ce1da343a044dc10bcd8c791b3da1aaa54395a1475ef8ab5ad547f",
+    "scripts/cross_platform_portfolio_card_renderer.py": "587c9bead512aa559b387a0757b3c847f0657ad9cef0e78844d5ab07ecf1fe54",
+    "scripts/cto_personalized_pitch_synthesizer.py": "de2ff4952bc1daa9f2c11d3c80d8c6572db95946cb9380abd9e98b3714553642",
+    "scripts/decentralized_state_sync_protocol.py": "e69f714f1fc74844771563500164d3684a5fb95c0974ff31783ad44748e759a4",
+    "scripts/defi_liquidity_stress_fuzzer.py": "fcc81b6b28bb1ee10ab9d38fb39c34a10639d1c4e5d4397493c97a65f25af99e",
+    "scripts/desktop_leak_sentinel.py": "4946da48a16e1f9d4f423faf253f744b5fb6e525db89fc3b095980d26a6c834c",
+    "scripts/emergency_liquidity_ledger.py": "5ea5e1c950db8a6577e365054d3dd3448faad3d050adef821159d4eed70c6e3c",
+    "scripts/esp32_audio_bridge.py": "76651813ae447e3e4b007ce5b13b906f94385f934375f49105cd28cbb832e8ed",
+    "scripts/feegate_harvester.py": "a08f51fe9e1f33129b23f8eb20f64a187bb588bc9860431679aab6c4768262ec",
+    "scripts/feegate_hk_talent_scraper.py": "7d6b91643e14a8c4f80a89126ae364b202e5814242d69dd36f38b40a5f6a778e",
+    "scripts/feegate_x402_merchant_gateway.py": "d37c592e1278c4a845a19f9e33c91f8225eba6eb4e5793b675ec152642930ea4",
+    "scripts/freelance_chat_assistant_daemon.py": "8d1ac255ba96380b13b1dc18b316459d372b611d3a7c839719a7eb949651983d",
+    "scripts/freelance_client_intake_engine.py": "d869fd06a18aa693562814ff3791b9534da6e66e826e44b235ea0aaae54365aa",
+    "scripts/freelance_contract_escrow_audit.py": "b531fce3da9d2038ecc75fb68e061e0435a14f10fe654ad1c9c0bf9ea9006dcf",
+    "scripts/freelance_delivery_showcase_server.py": "784c7548a11a7834bfe12030f9bc25a4e1a78f5bb83178804290539bbeb21aa9",
+    "scripts/geo_content_marketing_generator.py": "cc3054bf924ccc9530629cb9a6669a4230b49deda5b871cc8f078cfb17e4336d",
+    "scripts/github_bounty_hunter_engine.py": "9b6010db16d60eaa470f3ea719a3fc918035fa563a16734914fcae6867b5f692",
+    "scripts/harvest_daemon.py": "3022d80298ffe7e9e0466a02f3139da6fa4a618e105f501a33877393cf76163d",
+    "scripts/impermanent_loss_simulator.py": "63662c9a05e501690e3e310456265c8e1a2833383e152f22b8b44f67a79d6aef",
+    "scripts/local_whisper_gateway.py": "394bb602dcabff29d4703789e5bc39ebbe774466a1f681ae5c17413b79f5d448",
+    "scripts/meilisearch_job_indexer.py": "6976a44ae71ad3e23e9b5979eafca55d4e1250a21d2abac91fc93ae1ed12856e",
+    "scripts/morning_briefing_action_dashboard.py": "84dd7629a9c1035837d1e1b3cdbd5b23a8bf3a47a0e9ed853311c20ac7e464d2",
+    "scripts/multi_protocol_engine.py": "3e091fc9f97cadf10f2a5a6ed6d6c5e99bb4b715d2541147c3b3e2db24fd6e53",
+    "scripts/outbound_pitch_automation_engine.py": "98ec1d63252a21628906e91036c5bc8f1721b80e9ff4c63f9c1242cde32c5277",
+    "scripts/phalanx_base.py": "2519630e319f18868d69c2d467e3474b335161d04fa8f9efd34f66d931964a20",
+    "scripts/privacy_threat_sanitizer.py": "4e7021911dda11ff0678514225aa07547e1cf208b6a855e0a5a762c698437c18",
+    "scripts/productized_service_packager.py": "d8a6b597faf2786a8106996e6cc3678c7f5f3ed856fb5b7eb7ca701716f6b00f",
+    "scripts/rad01_commercial_radar_daemon.py": "0348ab50cd35bcea352c7122b8467d414cc6167915005fabc6919d035eeceb7b",
+    "scripts/radar_meilisearch_pipeline.py": "d4cf275658fe96877841c5a4ba7ffaff05b30739322ec388a4b11a35a757cfd8",
+    "scripts/rapid_lead_scraper_resilience.py": "c1b2b97df6276591922307f09f2d5a8472af282f7f40bd80bafb618a4b29331f",
+    "scripts/rentgpu_arbitrage_scanner.py": "57706b5855e19cb7b23a93b8035e40efc43c2476d8ea757e0ecb4ad31f92e7b0",
+    "scripts/solo_founder_cashflow_modeler.py": "5daa49b8851bd6380e5db2f1e73165dc8fd9ea8de61dea5e15fa0f42d0903d1b",
+    "scripts/sovereign_yield_harvester.py": "79ca55041cdd4bd5815ca290517a1aae0f164b353e5d17c17492b8375c3a4d4f",
+    "scripts/system_telemetry_blackhole.py": "67096cc5ff1f0e34c479d78b6ce9c145890adef64391edf64f3f7ca5bfa121fb",
+    "scripts/tablet_truanlevay_isolation.py": "5e99e9b3c9d92cfede721f68edebc1645be767b92695c823ca110fe36b8d051b",
+    "scripts/test_agent_fleet_load_balancer.py": "3f81ad034fd0085cd54d7bf12ee1562a89de7b99e6b949df1d402986e87ff36c",
+    "scripts/test_ai_subscription_pricing_crawler.py": "44a8fb5eb9eeed880e54f6a0cbee0079457f3c6ff487e451c82b38252f02804c",
+    "scripts/test_android_privacy_guard.py": "1adb63f7cc122f134395d8a8bde88d92d21958668811a9f3c9582a1d37d1f980",
+    "scripts/test_anti_ban_human_behavior_engine.py": "ea990d210c46e56ef090300fe9e35ee7dafa62c9099b56a0825bfa2e8f6e762b",
+    "scripts/test_audio_stream_stress_tester.py": "a7f81832083792c8a28392cb988bea07cbaeb8fd127cc854295c2fc2de3a6c44",
+    "scripts/test_audio_vad_segmenter.py": "2e20427eeafdeb46bcc0f2006a0c76308ef715f962c323add70d6f6e14315a97",
+    "scripts/test_automated_delivery_verification_harness.py": "a21a9a521801fc52f9c24a3a1fbfea643e3b2e8b0b66b46e4ef44cbaa6a88166",
+    "scripts/test_b2b_api_gateway_metering.py": "ad4a18d9518adfac691f28d93e960b30ef531818232d0a702889d99ee0f63408",
+    "scripts/test_canary_tripwire_guard.py": "01de09c3e2a4c825c40ed413e48a0fe915f0ec645c6a41012ab40b1b853f37ea",
+    "scripts/test_catalog_integrity.py": "562f1845d2b8e1a7e87ff862efa10ad7dbc06d8cd1ea31d2aeadd043cfd4fde0",
+    "scripts/test_china_remote_job_board_aggregator.py": "3b80cf7ba6350f7d4a5455610d908df833c32e6b145c2c2c79b1ca0a1d8af488",
+    "scripts/test_client_lead_enricher_and_scoring.py": "47f9e00651534fc0978acff744cf5ab0aa577e8786fd6492bf0fa40076206ebd",
+    "scripts/test_commercial_bounty_crawler.py": "335ad2c7360024cea4b063c28c9819b355fe67ba9cfdaaee62d8c876e76ca1c5",
+    "scripts/test_commercial_portfolio_spec_exporter.py": "879ac4e7c95c0ec3679b69dab9c8f3c39ec7a04f5a5def375498a28af4d3a478",
+    "scripts/test_commercial_viability_scoring_engine.py": "4561d6d385e982ae5ce5dde1e8dbd2df87b3af1a3202d5b32e257a61d0e5f1b7",
+    "scripts/test_cross_chain_mev_protection_engine.py": "81e5739a3dd504737a7959436dfb82eaa10c1046f2a2e2aa9dc53f28bda63f2e",
+    "scripts/test_cross_platform_portfolio_card_renderer.py": "a092608a36c47879ad408b0128019210e9f64ef3e61c522be47f3a614a83bc08",
+    "scripts/test_cto_personalized_pitch_synthesizer.py": "cbef1a296933d4dabfbb0c350dcdce6d0488554833e43357283147fc43c120ec",
+    "scripts/test_decentralized_state_sync_protocol.py": "c0345b21e2e419138e4380aca4c789e0648fc21cfff6f311f0657f0985b4b404",
+    "scripts/test_defi_liquidity_stress_fuzzer.py": "07582826b5f40bdcc6d4cc1538b2f69931d76c45e2f6831148b86f0906e34aa4",
+    "scripts/test_desktop_leak_sentinel.py": "dea207cf2096b311481218c589ffcfcc3e5af108fb55f4e9a2a46ae44385b0c5",
+    "scripts/test_emergency_liquidity_ledger.py": "74bdfb188ac563a0697c701274605b054299b7972c373f9e0a5c0868e6c34e90",
+    "scripts/test_esp32_audio_bridge.py": "9b65af9cfde4fe72812f16982acc1117c84624a1664e0c43af139ac4d5c5d6ca",
+    "scripts/test_feegate_hk_talent_scraper.py": "56e81b919cf0083dadfd017124c064bf00daa78ab6952b35b05576963e533276",
+    "scripts/test_feegate_x402_merchant_gateway.py": "acbbfd50a2b42ba2e6e4b76d5de8520d854a33fd6192439fa1b184a2fb4cb5dc",
+    "scripts/test_freelance_chat_assistant_daemon.py": "01783d309a87c0f008f21391cee20c698b50ace6a5d5ae7b74c8fe3a2b387a2b",
+    "scripts/test_freelance_client_intake_engine.py": "84a1b152ab7457df5f01aaa21b2036e755c75af3f9a3819e6bc3a9428b7c306c",
+    "scripts/test_freelance_contract_escrow_audit.py": "576572282a5ede9dc0682ea412dd9f811a56671a52eca37c85486b280c1bfd99",
+    "scripts/test_freelance_delivery_showcase_server.py": "d5a7c0ebc82ae49f8e279e61fc836644b4d732c47f3b0502e4e9c98ce85f3210",
+    "scripts/test_geo_content_marketing_generator.py": "19ca0419ed610ea64727b1d8439caf87904ba169f2ab4a625f30f16d2c1fb3d5",
+    "scripts/test_github_bounty_hunter_engine.py": "c80c4706e3e71504d701e9b4a863aced56b0554ba991763714e9d1c09c1f886c",
+    "scripts/test_harvest_automation.py": "c173c024da46b8be888297dfb609fe41689247f4d4b9fcb70a070c233853c4a7",
+    "scripts/test_impermanent_loss_simulator.py": "5de4bd9c91b09b2988e16a04b551734c2baaee20cbe6f9ec1d445c9251ac8cb6",
+    "scripts/test_local_whisper_gateway.py": "de93b54b1db28a95452a28629435a5bb70bdf9b26f002e738c7362c5df4c34c3",
+    "scripts/test_meilisearch_job_indexer.py": "113a1a78d0cf493d4397404540921ded62c89180d4936b00f179f30e1025c589",
+    "scripts/test_morning_briefing_action_dashboard.py": "0e54aa13be4f8cfefab83fde82d8fe2dc133a5846e36d5b6860110dafb7d239a",
+    "scripts/test_multi_protocol_engine.py": "9af9a6f1216c3069cd58dfcd777e530985c0eddaf5d9ac8b364503b7148f9511",
+    "scripts/test_outbound_pitch_automation_engine.py": "26d853a6589cb49f9c94ade39397369a39bc13ee5a612b24137ae1332eb3ea4a",
+    "scripts/test_phalanx_base.py": "12b1c0494c41de5ba61e5d9fd6ec3ea76470fd733750657d025aa461c6dd5e95",
+    "scripts/test_privacy_threat_sanitizer.py": "c4a57e3f75885ba8694cb4846dbd00203c7147bf99586f5b374d1657513b1932",
+    "scripts/test_productized_service_packager.py": "841178036fde7d2d05dd7798c6bfb78de284472dae2d0ef7dffabd069944c8d1",
+    "scripts/test_rad01_commercial_radar_daemon.py": "c4736697620ee798e3c01f579280bc35e6a6cd4509c69ca9774acec211e1f2f3",
+    "scripts/test_radar_meilisearch_pipeline.py": "77396f477065198591dd61faea0a96a34cac020fd6f7275517a1f3f99d5f25aa",
+    "scripts/test_rapid_lead_scraper_resilience.py": "5b401d48f6c50bf0777bdc5733b04aab04976304c8737817c2b39a6f0a03d1a4",
+    "scripts/test_rentgpu_arbitrage_scanner.py": "76915f6e15ca14b877de9847dff0e7aae8650401ebeced0360d606a8df965ff7",
+    "scripts/test_solo_founder_cashflow_modeler.py": "61bc837ef74683a36c004768528688895ccc0e164ebb647b25ef7718fafc13cf",
+    "scripts/test_sovereign_yield_harvester.py": "bb01b17b2a2fbc9a220b327f7dceeccd6a193ad28386034865b96b1b204cfcfe",
+    "scripts/test_system_telemetry_blackhole.py": "fbef6bcdaf766770dcc011ddb835b42c7573b0ff06675eb8353b06f79f3c2214",
+    "scripts/test_tablet_truanlevay_isolation.py": "5c2b862e89bd30851de42f896b5ea6ec805b5f806b6ec3de8c14ad5ed47f3f92",
+    "scripts/test_token_cost_arbitrage_advisor.py": "57f5ac61a11586cb8a403c1acf438d231fcba1bf936ece8feb355a6f99b423ae",
+    "scripts/test_yield_integrity_auditor.py": "1b17b839434cfe4c1dbae89897a9824fcc1c0e6bf6fb4dbb2b05ef82a5196b27",
+    "scripts/test_zero_support_reconciliation_engine.py": "696d456e795b81783cc1632753ed04cdac16da5adeaf8541bc50e823a70f20a6",
+    "scripts/token_cost_arbitrage_advisor.py": "49d242116f10e2b4805cf89e7a1da305459dccef4ac5c29afdffcb2978768d6f",
+    "scripts/update_market_intel.py": "fdc63cd035fa1fe4005f2cf597b9879ee669b5747ecd604277cd8885c9dc9bbd",
+    "scripts/yield_integrity_auditor.py": "35a224a85c7f79df154d27ef3367603974b085244f7ece10f1f2096d540023c0",
+    "scripts/zero_support_reconciliation_engine.py": "831597f3aecbe25bcb5dea912ea47a87a85bde35586cf0fee62ed9ae4354b900"
+  },
+  "spec_sheets": {
+    "en": "# Yotoha Engineering · CTO capability spec sheet\n\nFixed-scope engineering · 48-hour delivery · fixed CNY fees; subject to booking and written scope agreement.\n\nStatic inventory: 1,850 declared unit-test functions across 52 test files; the exporter did not execute them. No run supplied; pass rate is unverified.\n\n| Capability | Implementation scope | Test declarations |\n| --- | --- | ---: |\n| Resilient scraper | Static HTML/JSON/CSV ingestion, bounded retries, deduplication and provenance. | 53 |\n| API metering gateway | API key authentication, RPM/TPM limits, SQLite idempotent billing and reconciliation. | 91 |\n| Multi-agent mesh | Agent routing, circuit breakers/backoff, CRDT conflict merging and Merkle state sync. | 31 |\n\n| Deliverable | Fixed fee | Scope limit |\n| --- | ---: | --- |\n| Resilient scraper | ¥1,500 | One authorized site, up to 3 static page templates and 10 fields; JSON/CSV export. |\n| API metering gateway | ¥3,500 | One upstream API, one SQLite ledger, up to 3 RPM/TPM/prepaid quota configurations. |\n| Multi-agent mesh | ¥8,000 | Up to 3 agents/peers in one runtime environment and one workflow; routing, failover and state-sync demo. |\n\n**Delivery & SLA**\n\n- 48 elapsed hours start after scope, acceptance fixtures and booking are agreed, inputs/access are ready and the provider confirms full escrow funding.\n- Missing client inputs/access or client dependency outages pause the clock with recorded, mutually agreed stop/resume times; scope changes require a new quote.\n- For 7 calendar days after handoff: acknowledge in-scope defects within 4 business hours and fix or provide a working workaround within 9 business hours; one in-scope revision included. Mon–Fri 09:00–18:00, Asia/Shanghai; business hours accrue only in this window.\n- Supplier delivery delay earns 10% fee credit per started 24 hours, capped at 30%; missed remediation deadlines earn the same credit, with a combined 30% cap.\n\n**Acceptance & escrow**: Review agreed fixtures within 24 elapsed hours of handoff or list defects; escrow releases only on explicit acceptance, with no automatic release on timeout. This hash checks scope, price, SLA and evidence integrity; it does not prove escrow funding.\n\nHandoff: source, configuration, startup/recovery docs, acceptance tests, fixtures and SHA-256 file manifest; each card includes a verifiable terms hash.\n\nEvidence: scripts/rapid\\_lead\\_scraper\\_resilience.py; scripts/b2b\\_api\\_gateway\\_metering.py / scripts/zero\\_support\\_reconciliation\\_engine.py; scripts/agent\\_fleet\\_load\\_balancer.py / scripts/decentralized\\_state\\_sync\\_protocol.py\n\nShare your objective, sample inputs, runtime constraints and acceptance criteria to confirm booking and scope.\n",
+    "zh": "# Yotoha 工程交付 · CTO 技术能力规格表\n\n固定范围工程交付 · 48 小时 · CNY 一口价；档期与书面范围确认后生效。\n\n静态盘点：1,850 个单元测试函数声明，分布于 52 个测试文件；此导出器未执行测试。 未提供执行结果，通过率未验证。\n\n| 能力 | 实现范围 | 测试声明 |\n| --- | --- | ---: |\n| 弹性数据采集器 | 静态 HTML/JSON/CSV 采集、限次重试、去重与来源追踪。 | 53 |\n| API 计量网关 | API 密钥鉴权、RPM/TPM 限流、SQLite 幂等计费与账单补偿。 | 91 |\n| 多智能体协作网格 | 智能体路由、熔断与退避、CRDT 冲突合并和 Merkle 状态同步。 | 31 |\n\n| 交付包 | 固定价格 | 范围上限 |\n| --- | ---: | --- |\n| 弹性数据采集器 | ¥1,500 | 1 个授权站点、最多 3 个静态页面模板、10 个字段；JSON/CSV 导出。 |\n| API 计量网关 | ¥3,500 | 1 个上游 API、1 个 SQLite 账本、最多 3 档 RPM/TPM/预付配额配置。 |\n| 多智能体协作网格 | ¥8,000 | 单一运行环境中最多 3 个智能体/节点、1 条工作流；路由、熔断与状态同步演示。 |\n\n**交付与 SLA**\n\n- 双方确认固定范围、验收样例与档期，资料/访问权限齐备且托管方确认全额入金后，48 个自然小时开始计时。\n- 客户资料或权限缺失、客户依赖服务中断时，记录原因与双方确认的暂停/恢复时间；变更范围另行报价。\n- 交付后 7 个自然日内，范围内缺陷 4 个工作小时响应、9 个工作小时修复或提供可用替代方案；含一轮范围内修订。 周一至周五 09:00–18:00，Asia/Shanghai，按此工作时段计时。\n- 供应方延迟交付每开始 24 小时抵扣服务费 10%，上限 30%；修复时限违约按同一比例抵扣，合计不超过 30%。\n\n**验收与托管**：交付后 24 个自然小时内按约定样例验收或列明缺陷；托管款仅在明确验收后释放，逾期不自动放款。 此哈希仅校验范围、价格、SLA 与证据是否改动，不证明托管款已到账。\n\n交付含源代码、配置、启动/恢复文档、验收测试、样例与 SHA-256 文件清单；每张交付卡含可复核的条款哈希。\n\n证据：scripts/rapid\\_lead\\_scraper\\_resilience.py; scripts/b2b\\_api\\_gateway\\_metering.py / scripts/zero\\_support\\_reconciliation\\_engine.py; scripts/agent\\_fleet\\_load\\_balancer.py / scripts/decentralized\\_state\\_sync\\_protocol.py\n\n请提供目标、输入样例、环境限制与验收标准，以确认档期及固定范围。\n"
+  },
+  "test_run": null,
+  "unavailable_tiers": []
+}

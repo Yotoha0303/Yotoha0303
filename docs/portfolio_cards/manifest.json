@@ -1,0 +1,121 @@
+{
+  "artifacts": {
+    "README.md": {
+      "bytes": 1280,
+      "sha256": "ad3a1cd7bfd88ae40d282cf1f7a540f6b98988e651b0c191af3a77447bf96691"
+    },
+    "eleduck.md": {
+      "bytes": 4430,
+      "sha256": "9459681f373096fecaff1fbc81cadcb90222d0e5770a7ee42b57538d58152ed1"
+    },
+    "eleduck/PKG-01.md": {
+      "bytes": 2411,
+      "sha256": "0d335e893e82debdb8ac990cfd51103fdd67744fc8cd652df29498dc4436cccf"
+    },
+    "eleduck/PKG-02.md": {
+      "bytes": 2543,
+      "sha256": "572c6003491fd263e03d15c80efeca8f6af7c6ebb78b14c88c3eb2743ba13fad"
+    },
+    "eleduck/PKG-03.md": {
+      "bytes": 2575,
+      "sha256": "ede031c8609bc323ff1c1c29e8956bb9df6704921dff21fe77a23cee44771b11"
+    },
+    "github.md": {
+      "bytes": 4701,
+      "sha256": "62b43b1a0354b7e820dd2dea06427f03a9417f3ff4f87c398872f28a03fa6db3"
+    },
+    "github/PKG-01.md": {
+      "bytes": 2510,
+      "sha256": "e0a90faeafc15cb6a71b39f690a923c0cbd8726133537d67c59e92b1b9ac9475"
+    },
+    "github/PKG-02.md": {
+      "bytes": 2649,
+      "sha256": "3424d077fda8f27cbedf92eed699fa5efd7f312b78b84c7c70f725cfdc7861b6"
+    },
+    "github/PKG-03.md": {
+      "bytes": 2671,
+      "sha256": "82068baba8cccf58021e597de9f2896d2a239d3e26d1f21bd310ca274c32644a"
+    },
+    "payments.md": {
+      "bytes": 777,
+      "sha256": "a236c157bf754d3e994ca81a36ab925ab0ccf2d12bb30871ca69d9909987ecff"
+    },
+    "portfolio.json": {
+      "bytes": 40535,
+      "sha256": "b203d4c67476dc30fb70355c5a0c0aa80d9b1df3e142f621800a90134adf4374"
+    },
+    "terminal.ansi": {
+      "bytes": 6747,
+      "sha256": "37be7d3acdc3d1c5ce1a2f50d2a77a4eda9915190fbc5fc9f704e60a83e3ec5d"
+    },
+    "terminal/PKG-01.ansi": {
+      "bytes": 3923,
+      "sha256": "71f4dc988c7e048bbead48732cd01b75f213b68062c96fafda25caaaa24d043a"
+    },
+    "terminal/PKG-02.ansi": {
+      "bytes": 4016,
+      "sha256": "fd8322c4cd6f87c55603f50ef2431d0ae7cfd8539cd824cd5d2b457cc19c9de8"
+    },
+    "terminal/PKG-03.ansi": {
+      "bytes": 4016,
+      "sha256": "e4c33e63eadf367f29b6aff53162df01a991aa572dc6f8c9d9835725a223f132"
+    },
+    "v2ex.md": {
+      "bytes": 4412,
+      "sha256": "4f84ba0928f198db4838b7043398c2e68586468980b65758f771f93f2da7ab10"
+    },
+    "v2ex/PKG-01.md": {
+      "bytes": 2302,
+      "sha256": "0d21053bd009186293f005d403b3408741587dea731daf29eeb40b7bdadac49c"
+    },
+    "v2ex/PKG-02.md": {
+      "bytes": 2434,
+      "sha256": "ef817a8712d6f78441f0c8b0e83914f5c496987dd07b56e5333855baf7969443"
+    },
+    "v2ex/PKG-03.md": {
+      "bytes": 2466,
+      "sha256": "ae98623fb6b48c0da53df86acc2cf419ff4c589ba7555e93272881c6a45e5b80"
+    },
+    "xianyu.txt": {
+      "bytes": 2878,
+      "sha256": "72c045ef8a48f16e3bde5cea29447db0e25c5b26cbebbf195c293b23fab6306c"
+    },
+    "xianyu/PKG-01.txt": {
+      "bytes": 1681,
+      "sha256": "06d9bac0195f3380d7cfc5c2060b7eeda4dd6b257ce86e0e9e7305ee6af174d4"
+    },
+    "xianyu/PKG-02.txt": {
+      "bytes": 1684,
+      "sha256": "852a43b1b376d0b75517ba2490f950676a8acb8752a94237d39eba72c20ffa0a"
+    },
+    "xianyu/PKG-03.txt": {
+      "bytes": 1723,
+      "sha256": "c4c0880ee40c189ffd284c0a8184aced09cdace72021290a74a9b977e93e33f8"
+    }
+  },
+  "packages": [
+    {
+      "id": "PKG-01",
+      "name": "Web Harvester",
+      "price_cny": 1500,
+      "source_id": "scraper",
+      "terms_sha256": "ff41aa834efcf9108e48fcc17907d3d5b9b0b7ea6f70ef49a43cd4f188fee525"
+    },
+    {
+      "id": "PKG-02",
+      "name": "Zero-Support Gateway",
+      "price_cny": 3500,
+      "source_id": "metering_gateway",
+      "terms_sha256": "9f53786767e02040fb3062b9a1b70322ebb1ccc77bf152660392127e3fd31f2d"
+    },
+    {
+      "id": "PKG-03",
+      "name": "Agent Mesh",
+      "price_cny": 8000,
+      "source_id": "multi_agent_mesh",
+      "terms_sha256": "7c260bf42f41aa37805460d24f59dfecd5ad497514c40f3300d8fbb2222b7090"
+    }
+  ],
+  "payment_links_configured": [],
+  "schema_version": "1.0"
+}

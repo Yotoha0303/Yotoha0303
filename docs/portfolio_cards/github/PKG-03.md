@@ -1,0 +1,43 @@
+<div align="center">
+
+<h1>Yotoha Engineering</h1>
+
+<p>Data ingestion · API reliability · Agent orchestration</p>
+
+<p>Fixed scope · Source + tests + runbook · CNY pricing</p>
+
+</div>
+
+## Engineering packages
+
+| Package | Fixed fee | Delivery |
+| :--- | ---: | :--- |
+| PKG-03 · Agent Mesh | ¥8,000 CNY | 48h, subject to agreed start conditions |
+
+Source and test files are available for review. Acceptance criteria describe the agreed handoff; no test pass rate is inferred.
+
+### PKG-03 · Agent Mesh · ¥8,000 CNY
+
+智能体路由、熔断与退避、CRDT 冲突合并和 Merkle 状态同步。
+
+- **固定范围**：单一运行环境中最多 3 个智能体/节点、1 条工作流；路由、熔断与状态同步演示。
+- **交付物**：完整源代码、配置样例与 README 启动/恢复手册。 自动化验收测试、样例结果与含文件 SHA-256 的交付清单。
+- **验收标准**：故障节点触发熔断/路由切换；重试预算与退避符合配置。 断连重连与乱序/重复快照下，CRDT 合并及 Merkle 状态同步样例通过。
+- **范围外**：不含模型训练、模型调用费、公网节点运维与生产规模性能承诺。
+- **工程证据**：[源码 1](https://github.com/Yotoha0303/Yotoha0303/blob/main/scripts/agent_fleet_load_balancer.py) · [源码 2](https://github.com/Yotoha0303/Yotoha0303/blob/main/scripts/decentralized_state_sync_protocol.py)
+- **条款 SHA-256**：`7c260bf42f41aa37805460d24f59dfecd5ad497514c40f3300d8fbb2222b7090`
+
+## 交付与合作约定
+
+- 双方确认固定范围、验收样例与档期，资料/访问权限齐备且托管方确认全额入金后，48 个自然小时开始计时。
+- 客户资料或权限缺失、客户依赖服务中断时，记录原因与双方确认的暂停/恢复时间；变更范围另行报价。
+- 交付后 24 个自然小时内按约定样例验收或列明缺陷；托管款仅在明确验收后释放，逾期不自动放款。
+- 交付后 7 个自然日内，范围内缺陷 4 个工作小时响应、9 个工作小时修复或提供可用替代方案；含一轮范围内修订。
+- 周一至周五 09:00–18:00，Asia/Shanghai，按此工作时段计时。
+- 供应方延迟交付每开始 24 小时抵扣服务费 10%，上限 30%；修复时限违约按同一比例抵扣，合计不超过 30%。
+- 由托管方确认全额入金，客户明确验收后放款；争议依托管平台流程处理。
+- 此哈希仅校验范围、价格、SLA 与证据是否改动，不证明托管款已到账。
+
+[完整双语规格与原始条款](../portfolio.json)
+
+[Discuss a scoped project](https://github.com/Yotoha0303/Yotoha0303/issues/new)

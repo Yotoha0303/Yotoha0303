@@ -1,0 +1,35 @@
+[36m┌──────────────────────────────────────────────────────────────────────────────────────┐[0m
+[1;36m│ Yotoha Engineering                                                                   │[0m
+│ FIXED-SCOPE ENGINEERING | CNY | SOURCE + TESTS + RUNBOOK                             │
+[36m├──────────────────────────────────────────────────────────────────────────────────────┤[0m
+[1;36m│ PKG-03  Agent Mesh                                                                   │[0m
+[1;32m│ CNY 8,000 | 48h after agreed start conditions                                        │[0m
+│ Scope: Up to 3 agents/peers in one runtime environment and one workflow; routing,    │
+│ failover and state-sync demo.                                                        │
+│ Handoff: Source code, example configuration and README startup/recovery runbook.     │
+│ Automated acceptance tests, fixture results and a file SHA-256 delivery manifest.    │
+│ Acceptance: Failed peers trigger circuit breaking/rerouting; retry budgets and       │
+│ backoff match configuration. CRDT merges and Merkle sync pass disconnect/reconnect   │
+│ and reordered/duplicate snapshot fixtures.                                           │
+│ Excludes: Excludes model training, inference fees, public-node operations and        │
+│ production-scale performance commitments.                                            │
+│ Terms SHA-256: 7c260bf42f41aa37805460d24f59dfecd5ad497514c40f3300d8fbb2222b7090      │
+[36m├──────────────────────────────────────────────────────────────────────────────────────┤[0m
+│ 48 elapsed hours start after scope, acceptance fixtures and booking are agreed,      │
+│ inputs/access are ready and the provider confirms full escrow funding.               │
+│ Missing client inputs/access or client dependency outages pause the clock with       │
+│ recorded, mutually agreed stop/resume times; scope changes require a new quote.      │
+│ Review agreed fixtures within 24 elapsed hours of handoff or list defects; escrow    │
+│ releases only on explicit acceptance, with no automatic release on timeout.          │
+│ For 7 calendar days after handoff: acknowledge in-scope defects within 4 business    │
+│ hours and fix or provide a working workaround within 9 business hours; one in-scope  │
+│ revision included.                                                                   │
+│ Mon–Fri 09:00–18:00, Asia/Shanghai; business hours accrue only in this window.       │
+│ Supplier delivery delay earns 10% fee credit per started 24 hours, capped at 30%;    │
+│ missed remediation deadlines earn the same credit, with a combined 30% cap.          │
+│ Escrow provider confirms full funding; release follows explicit client acceptance;   │
+│ disputes follow the provider's process.                                              │
+│ This hash checks scope, price, SLA and evidence integrity; it does not prove escrow  │
+│ funding.                                                                             │
+│ Discuss scope and sample inputs before booking.                                      │
+[36m└──────────────────────────────────────────────────────────────────────────────────────┘[0m
