@@ -1,11 +1,11 @@
 {
   "channel": "Yotoha Personal Privacy & Threat Intelligence",
   "channel_description": "专注于国产手机系统后门、应用流氓行为排查、暗网泄露溯源与沙盒防御的个人专属定制阅读流",
-  "updated_at": "2026-11-07 08:50:38",
+  "updated_at": "2026-11-07 11:08:23",
   "total_signals": 4,
   "articles": [
     {
-      "signal_id": "sec_telemetry_hyperos_1794012638",
+      "signal_id": "sec_telemetry_hyperos_1794020895",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -16,7 +16,7 @@
       "as_of": "2026-11-07"
     },
     {
-      "signal_id": "sec_clipboard_appops_1794012638",
+      "signal_id": "sec_clipboard_appops_1794020895",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -27,7 +27,7 @@
       "as_of": "2026-11-07"
     },
     {
-      "signal_id": "sec_darknet_breach_mapping_1794012638",
+      "signal_id": "sec_darknet_breach_mapping_1794020895",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -38,7 +38,7 @@
       "as_of": "2026-11-07"
     },
     {
-      "signal_id": "sec_sandbox_confinement_1794012638",
+      "signal_id": "sec_sandbox_confinement_1794020895",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -48,5 +48,10 @@
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
       "as_of": "2026-11-07"
     }
-  ]
+  ],
+  "threat_schema_version": "1.0.0",
+  "threat_count": 0,
+  "checksum_scope": "threats; UTF-8 JSON; sort_keys=true; separators=(',', ':'); ensure_ascii=false",
+  "sha256_checksum": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+  "threats": []
 }
