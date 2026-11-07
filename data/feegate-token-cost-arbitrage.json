@@ -1,0 +1,505 @@
+{
+  "schema_version": "1.0.0",
+  "catalog_id": "feegate-token-cost-arbitrage",
+  "generated_at": "2026-11-07T00:00:00+00:00",
+  "data_status": "mock",
+  "ingestion_error_count": 0,
+  "market_summary": {
+    "offer_count": 9,
+    "eligible_count": 6,
+    "discount_signal_count": 6,
+    "actionable_discount_count": 0,
+    "cheapest_eligible_for_1m_tokens": {
+      "Claude 3.5 Sonnet": {
+        "offer_id": "a177c625c67cf01f68b9",
+        "vendor": "Synthetic Discount",
+        "cash_cost_cny": "56.00"
+      },
+      "DeepSeek V3": {
+        "offer_id": "e45c7447636f6efac945",
+        "vendor": "Synthetic Discount",
+        "cash_cost_cny": "24.00"
+      },
+      "GPT-4o": {
+        "offer_id": "6e33e90e9b3384afc255",
+        "vendor": "Synthetic Discount",
+        "cash_cost_cny": "40.00"
+      }
+    }
+  },
+  "records": [
+    {
+      "offer_id": "a177c625c67cf01f68b9",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Discount",
+      "model": "Claude 3.5 Sonnet",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "56",
+      "native_output_per_1m": "56",
+      "native_monthly": null,
+      "input_cny_per_1m": "56",
+      "output_cny_per_1m": "56",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": false,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "low",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": true,
+      "gate_reasons": [],
+      "blended_cny_per_1m": "56",
+      "comparison_cash_cost_cny": "56.00"
+    },
+    {
+      "offer_id": "e45c7447636f6efac945",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Discount",
+      "model": "DeepSeek V3",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "24",
+      "native_output_per_1m": "24",
+      "native_monthly": null,
+      "input_cny_per_1m": "24",
+      "output_cny_per_1m": "24",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": false,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "low",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": true,
+      "gate_reasons": [],
+      "blended_cny_per_1m": "24",
+      "comparison_cash_cost_cny": "24.00"
+    },
+    {
+      "offer_id": "6e33e90e9b3384afc255",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Discount",
+      "model": "GPT-4o",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "40",
+      "native_output_per_1m": "40",
+      "native_monthly": null,
+      "input_cny_per_1m": "40",
+      "output_cny_per_1m": "40",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": false,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "low",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": true,
+      "gate_reasons": [],
+      "blended_cny_per_1m": "40",
+      "comparison_cash_cost_cny": "40.00"
+    },
+    {
+      "offer_id": "51a20739ea7d063f968f",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Official",
+      "model": "Claude 3.5 Sonnet",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "140",
+      "native_output_per_1m": "140",
+      "native_monthly": null,
+      "input_cny_per_1m": "140",
+      "output_cny_per_1m": "140",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": true,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "low",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": true,
+      "gate_reasons": [],
+      "blended_cny_per_1m": "140",
+      "comparison_cash_cost_cny": "140.00"
+    },
+    {
+      "offer_id": "d1e215d23384687cd6c1",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Official",
+      "model": "DeepSeek V3",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "60",
+      "native_output_per_1m": "60",
+      "native_monthly": null,
+      "input_cny_per_1m": "60",
+      "output_cny_per_1m": "60",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": true,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "low",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": true,
+      "gate_reasons": [],
+      "blended_cny_per_1m": "60",
+      "comparison_cash_cost_cny": "60.00"
+    },
+    {
+      "offer_id": "67548f2bd0f6d203269f",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Official",
+      "model": "GPT-4o",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "100",
+      "native_output_per_1m": "100",
+      "native_monthly": null,
+      "input_cny_per_1m": "100",
+      "output_cny_per_1m": "100",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": true,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "low",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": true,
+      "gate_reasons": [],
+      "blended_cny_per_1m": "100",
+      "comparison_cash_cost_cny": "100.00"
+    },
+    {
+      "offer_id": "16ca6a07f5eb700d6b6b",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Shared Account",
+      "model": "Claude 3.5 Sonnet",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "5",
+      "native_output_per_1m": "5",
+      "native_monthly": null,
+      "input_cny_per_1m": "5",
+      "output_cny_per_1m": "5",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": false,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "high",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": false,
+      "gate_reasons": [
+        "ban_risk_high"
+      ],
+      "blended_cny_per_1m": "5",
+      "comparison_cash_cost_cny": "5.00"
+    },
+    {
+      "offer_id": "937e5b57da52610e1861",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Shared Account",
+      "model": "DeepSeek V3",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "5",
+      "native_output_per_1m": "5",
+      "native_monthly": null,
+      "input_cny_per_1m": "5",
+      "output_cny_per_1m": "5",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": false,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "high",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": false,
+      "gate_reasons": [
+        "ban_risk_high"
+      ],
+      "blended_cny_per_1m": "5",
+      "comparison_cash_cost_cny": "5.00"
+    },
+    {
+      "offer_id": "830f5c1412a4a00b2fdd",
+      "source": "synthetic-advisor-fixture",
+      "vendor": "Synthetic Shared Account",
+      "model": "GPT-4o",
+      "plan": null,
+      "billing_kind": "tokens",
+      "currency": "CNY",
+      "native_input_per_1m": "5",
+      "native_output_per_1m": "5",
+      "native_monthly": null,
+      "input_cny_per_1m": "5",
+      "output_cny_per_1m": "5",
+      "monthly_cny": null,
+      "monthly_token_quota": null,
+      "billing_months": null,
+      "minimum_purchase_cny": "0",
+      "official": false,
+      "observed_at": "2026-11-07T00:00:00+00:00",
+      "data_status": "mock",
+      "source_urls": [
+        "https://example.org/synthetic-token-pricing"
+      ],
+      "payment_methods": [
+        "Alipay"
+      ],
+      "ban_risk": "high",
+      "domain_age_flag": "established",
+      "reputation_score": "85",
+      "eligible": false,
+      "gate_reasons": [
+        "ban_risk_high"
+      ],
+      "blended_cny_per_1m": "5",
+      "comparison_cash_cost_cny": "5.00"
+    }
+  ],
+  "opportunities": [
+    {
+      "model": "Claude 3.5 Sonnet",
+      "offer_id": "16ca6a07f5eb700d6b6b",
+      "vendor": "Synthetic Shared Account",
+      "reference_offer_id": "51a20739ea7d063f968f",
+      "reference_vendor": "Synthetic Official",
+      "billing_kind": "tokens",
+      "comparison_tokens": 1000000,
+      "candidate_cost_cny": "5.00",
+      "reference_cost_cny": "140.00",
+      "savings_cny": "135.00",
+      "discount_pct": "96.4286",
+      "actionable": false,
+      "gate_reasons": [
+        "ban_risk_high",
+        "mock_data"
+      ],
+      "data_status": "mock"
+    },
+    {
+      "model": "GPT-4o",
+      "offer_id": "830f5c1412a4a00b2fdd",
+      "vendor": "Synthetic Shared Account",
+      "reference_offer_id": "67548f2bd0f6d203269f",
+      "reference_vendor": "Synthetic Official",
+      "billing_kind": "tokens",
+      "comparison_tokens": 1000000,
+      "candidate_cost_cny": "5.00",
+      "reference_cost_cny": "100.00",
+      "savings_cny": "95.00",
+      "discount_pct": "95.0000",
+      "actionable": false,
+      "gate_reasons": [
+        "ban_risk_high",
+        "mock_data"
+      ],
+      "data_status": "mock"
+    },
+    {
+      "model": "DeepSeek V3",
+      "offer_id": "937e5b57da52610e1861",
+      "vendor": "Synthetic Shared Account",
+      "reference_offer_id": "d1e215d23384687cd6c1",
+      "reference_vendor": "Synthetic Official",
+      "billing_kind": "tokens",
+      "comparison_tokens": 1000000,
+      "candidate_cost_cny": "5.00",
+      "reference_cost_cny": "60.00",
+      "savings_cny": "55.00",
+      "discount_pct": "91.6667",
+      "actionable": false,
+      "gate_reasons": [
+        "ban_risk_high",
+        "mock_data"
+      ],
+      "data_status": "mock"
+    },
+    {
+      "model": "GPT-4o",
+      "offer_id": "6e33e90e9b3384afc255",
+      "vendor": "Synthetic Discount",
+      "reference_offer_id": "67548f2bd0f6d203269f",
+      "reference_vendor": "Synthetic Official",
+      "billing_kind": "tokens",
+      "comparison_tokens": 1000000,
+      "candidate_cost_cny": "40.00",
+      "reference_cost_cny": "100.00",
+      "savings_cny": "60.00",
+      "discount_pct": "60.0000",
+      "actionable": false,
+      "gate_reasons": [
+        "mock_data"
+      ],
+      "data_status": "mock"
+    },
+    {
+      "model": "Claude 3.5 Sonnet",
+      "offer_id": "a177c625c67cf01f68b9",
+      "vendor": "Synthetic Discount",
+      "reference_offer_id": "51a20739ea7d063f968f",
+      "reference_vendor": "Synthetic Official",
+      "billing_kind": "tokens",
+      "comparison_tokens": 1000000,
+      "candidate_cost_cny": "56.00",
+      "reference_cost_cny": "140.00",
+      "savings_cny": "84.00",
+      "discount_pct": "60.0000",
+      "actionable": false,
+      "gate_reasons": [
+        "mock_data"
+      ],
+      "data_status": "mock"
+    },
+    {
+      "model": "DeepSeek V3",
+      "offer_id": "e45c7447636f6efac945",
+      "vendor": "Synthetic Discount",
+      "reference_offer_id": "d1e215d23384687cd6c1",
+      "reference_vendor": "Synthetic Official",
+      "billing_kind": "tokens",
+      "comparison_tokens": 1000000,
+      "candidate_cost_cny": "24.00",
+      "reference_cost_cny": "60.00",
+      "savings_cny": "36.00",
+      "discount_pct": "60.0000",
+      "actionable": false,
+      "gate_reasons": [
+        "mock_data"
+      ],
+      "data_status": "mock"
+    }
+  ],
+  "methodology": {
+    "input_share": "0.75",
+    "usd_to_cny": "7.2",
+    "comparison_tokens": 1000000,
+    "cash_rounding": "ceil each model/provider cash charge to fen; budgets require whole fen",
+    "scope": "one offer per model; no shared quotas, account stacking, tax or resale revenue",
+    "risk_policy": {
+      "min_reputation": 70,
+      "max_age_hours": 72,
+      "allow_medium_risk": false,
+      "allow_mock": true
+    },
+    "discount_reference": "cheapest eligible explicitly official quote for the same model, workload and billing kind; strictly greater than 50%"
+  },
+  "seo": {
+    "title": "AI token pricing comparison: CNY API costs and subscription risk",
+    "description": "Compare input, output and blended token costs with dated source evidence and explainable procurement risk gates.",
+    "keywords": [
+      "AI token pricing",
+      "CNY token cost",
+      "API comparison",
+      "subscription comparison",
+      "x402 data"
+    ]
+  },
+  "structured_data": {
+    "@context": "https://schema.org",
+    "@type": "Dataset",
+    "name": "AI token pricing comparison: CNY API costs and subscription risk",
+    "description": "Compare input, output and blended token costs with dated source evidence and explainable procurement risk gates.",
+    "dateModified": "2026-11-07T00:00:00+00:00",
+    "citation": [
+      "https://example.org/synthetic-token-pricing"
+    ],
+    "variableMeasured": [
+      "input CNY per 1M tokens",
+      "output CNY per 1M tokens",
+      "procurement risk gates"
+    ]
+  },
+  "transport": {
+    "protocol": "x402-v2",
+    "route": "/api/token-cost-arbitrage",
+    "enforcement": "feegate_x402_merchant_gateway.py; configure the same amount and recipient",
+    "payment_required": null,
+    "payment_required_header": null
+  },
+  "sha256_checksum": "2fa9ccff0d65c05a29dc2f8de22055fb4aa1d60bfc9c6f4fd254902d4196de70"
+}
