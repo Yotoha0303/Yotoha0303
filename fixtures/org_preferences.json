@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "updated_at": "2026-11-07T22:50:00+08:00",
+    "authority": "CMD-00",
+    "steward": "EXE-01",
+    "description": "Immutable organizational preference baseline and physical invariants for autonomous agents."
+  },
+  "hardware_pinouts": {
+    "esp32s3_alientek_dnesp32s3": {
+      "display": {
+        "model": "ST7789",
+        "size_inches": 1.3,
+        "resolution": [240, 240],
+        "color_format": "RGB565",
+        "spi_bus": 2,
+        "pins": {
+          "mosi": 11,
+          "sclk": 12,
+          "cs": 10,
+          "dc": 13,
+          "rst": 1,
+          "backlight": 45
+        }
+      },
+      "audio_codec": {
+        "model": "ES8388",
+        "interface": "I2S",
+        "sample_rate_hz": 16000,
+        "channels": 1,
+        "format": "Opus/PCM16LE",
+        "pins": {
+          "mclk": 0,
+          "bclk": 1,
+          "ws": 2,
+          "dout": 3,
+          "din": 4,
+          "i2c_sda": 41,
+          "i2c_scl": 42
+        }
+      },
+      "amplifier": {
+        "model": "NS4168",
+        "pins": {
+          "enable": 46
+        }
+      },
+      "supported_emotions": [
+        "happy",
+        "laughing",
+        "funny",
+        "sad",
+        "angry",
+        "loving",
+        "embarrassed",
+        "surprised",
+        "cool",
+        "relaxed",
+        "thinking",
+        "neutral"
+      ]
+    }
+  },
+  "vendor_trust_and_rate_limits": {
+    "api666_zzzcoding": {
+      "trust_tier": "B+",
+      "max_concurrency": 1,
+      "max_turns_per_task": 25,
+      "task_timeout_sec": 1200,
+      "cooldown_on_429_sec": 60,
+      "base_url": "https://api666.zzzcoding.org/v1"
+    },
+    "local_services": {
+      "clash_verge_proxy": "127.0.0.1:7890",
+      "edge_tts_daemon": "127.0.0.1:5174",
+      "instabox_meilisearch": "127.0.0.1:7700",
+      "cc_switch_gateway": "127.0.0.1:15721"
+    }
+  },
+  "system_guardrails_invariants": {
+    "token_sweet_spot_min": 40000,
+    "token_sweet_spot_max": 80000,
+    "max_prompt_chars": 10000,
+    "max_task_timeout_sec": 1200,
+    "steps_to_first_dollar_p0_gate": true,
+    "account_freeze_period": {
+      "samalas318": "2026-11-10",
+      "truanlevay": "2026-11-10"
+    }
+  },
+  "commercial_pricing_tiers": {
+    "data_commodity_query_usd": 0.05,
+    "contract_templates": {
+      "consulting_audit": { "cny": 1500, "days": 1 },
+      "data_pipeline": { "cny": 3500, "days": 3 },
+      "embedded_iot_firmware": { "cny": 5000, "days": 5 },
+      "agent_swarm_orchestration": { "cny": 8000, "days": 7 }
+    }
+  }
+}
