@@ -234,6 +234,16 @@ class IsolationTests(unittest.TestCase):
         self.assertEqual(code, 1)
         self.assertIn("target unavailable", error)
 
+    def test_uninstall_debloat_mode_generates_correct_actions(self):
+        adb = MockADB({"com.miui.misightservice", "com.xiaomi.security.onetrack"})
+        audit = isolation.audit_device(adb.serial, adb)
+        plan = isolation.make_plan(audit, adb, debloat_mode="uninstall")
+        self.assertEqual(len(plan["actions"]), 2)
+        for act in plan["actions"]:
+            self.assertEqual(act["kind"], "uninstall")
+            self.assertEqual(act["command"][:5], ["shell", "pm", "uninstall", "-k", "--user"])
+            self.assertEqual(act["rollback"][:5], ["shell", "cmd", "package", "install-existing", "--user"])
+
     def test_secondary_user_plan_targets_only_that_user(self):
         adb = MockADB({"com.miui.misightservice", "com.taobao.idlefish"}, user_id=10)
         code, stdout, error = self.cli(adb, "--prepare-env", "--user-id", "10", "--apply")

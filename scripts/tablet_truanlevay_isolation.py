@@ -143,7 +143,7 @@ def audit_device(serial, runner=subprocess.run, user_id=0):
     }
 
 
-def make_plan(audit, runner=subprocess.run):
+def make_plan(audit, runner=subprocess.run, debloat_mode="disable"):
     packages = audit["packages"]
     disabled = audit["disabled"]
     serial = audit.get("serial")
@@ -152,11 +152,18 @@ def make_plan(audit, runner=subprocess.run):
     notes = []
     for package in OEM_DISABLE:
         if package in packages and package not in disabled:
-            actions.append({
-                "kind": "disable", "package": package,
-                "command": ["shell", "pm", "disable-user", "--user", user, package],
-                "rollback": ["shell", "pm", "enable", "--user", user, package],
-            })
+            if debloat_mode == "uninstall":
+                actions.append({
+                    "kind": "uninstall", "package": package,
+                    "command": ["shell", "pm", "uninstall", "-k", "--user", user, package],
+                    "rollback": ["shell", "cmd", "package", "install-existing", "--user", user, package],
+                })
+            else:
+                actions.append({
+                    "kind": "disable", "package": package,
+                    "command": ["shell", "pm", "disable-user", "--user", user, package],
+                    "rollback": ["shell", "pm", "enable", "--user", user, package],
+                })
     for package in INVASIVE_APPS:
         if package not in packages or package in disabled:
             continue
@@ -201,6 +208,8 @@ def validate_action(action, user_id=0):
         raise ValueError("protected package cannot be changed")
     if action.get("kind") == "disable" and package in OEM_DISABLE:
         expected = ["shell", "pm", "disable-user", "--user", user, package]
+    elif action.get("kind") == "uninstall" and package in OEM_DISABLE:
+        expected = ["shell", "pm", "uninstall", "-k", "--user", user, package]
     elif action.get("kind") == "appops" and package in INVASIVE_APPS and action.get("op") in APP_OPS:
         expected = ["shell", "cmd", "appops", "set", "--user", user,
                     package, action["op"], "ignore"]
@@ -231,7 +240,7 @@ def execute_plan(audit, plan, runner=subprocess.run):
     results = []
     for action in plan["actions"]:
         output = run_adb(action["command"], serial, runner)
-        if output.strip().startswith(("Failure", "Error")):
+        if output.strip().startswith(("Failure", "Error")) or "SecurityException" in output:
             raise ADBError(f"device rejected {action['package']}: {output.strip()}")
         results.append({"package": action["package"], "kind": action["kind"],
                         "op": action.get("op"), "status": "applied"})
@@ -270,6 +279,8 @@ def main(argv=None, runner=subprocess.run):
     parser.add_argument("--dry-run", action="store_true", help="print report without writing or applying")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="report directory")
     parser.add_argument("--user-id", type=int, default=0, help="Android user ID (default: 0)")
+    parser.add_argument("--debloat-mode", choices=("disable", "uninstall"), default="disable",
+                        help="per-user debloat strategy (default: disable; use uninstall on HyperOS)")
     parser.add_argument("--mock-packages", type=Path, help="offline pm-list fixture for audit/planning")
     args = parser.parse_args(argv)
     if args.apply and not args.prepare_env:
@@ -288,7 +299,7 @@ def main(argv=None, runner=subprocess.run):
         else:
             serial = select_device(attached_devices(runner))
             audit = audit_device(serial, runner, args.user_id)
-        plan = make_plan(audit, runner) if args.prepare_env else {"actions": [], "notes": []}
+        plan = make_plan(audit, runner, debloat_mode=args.debloat_mode) if args.prepare_env else {"actions": [], "notes": []}
         report = render_report(audit, plan)
         payload = json.dumps(report, indent=2, ensure_ascii=True) + "\n"
         stem = "plan" if args.prepare_env else "audit"
