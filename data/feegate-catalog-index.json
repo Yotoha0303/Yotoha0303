@@ -1,10 +1,27 @@
 {
-  "catalog_version": "2.0.0",
+  "catalog_version": "2.1.0",
   "provider": "FeeGate Commercial Data Intelligence Feed",
-  "generated_at_utc": "2026-11-06T13:31:17.507762+00:00",
+  "generated_at_utc": "2026-11-07T02:37:00.000000+00:00",
   "protocol": "HTTP REST / x402 Micropayments",
-  "total_active_products": 3,
+  "total_active_products": 4,
   "products": [
+    {
+      "catalog_id": "feegate-sovereign-defi-yields",
+      "product_name": "FeeGate Sovereign DeFi Yield & Treasury Intelligence",
+      "category": "Web3 Financial Engineering & Quantitative Yield Oracles",
+      "target_audience": "B2B Treasury Managers, FinOps Architects, Web3 Yield Aggregators, Algorithmic Arbitrageurs",
+      "commercial_tier": "B2B Production API ($0.05 / query)",
+      "commercial_value_proposition": "First-party sovereign on-chain yield intelligence. Autonomously harvests raw rates from Lido stETH, Aave v3, Sky/Maker DSR, and Ethena sUSDe directly via Ethereum RPCs, smart contract state calls, and consensus APIs. Zero third-party scraping dependency, mathematically proven APY compounding, and cryptographic SHA-256 integrity checksums.",
+      "provenance": {
+        "source_origin": "Direct Ethereum RPC State Calls, Lido Official Consensus API, Sky/Maker Chainlog & Contracts",
+        "source_endpoint": "https://ethereum-rpc.publicnode.com; https://eth-api.lido.fi/v1/protocol/steth/apr/sma",
+        "ingested_at_utc": "2026-11-07T02:37:00+00:00",
+        "schema_version": "1.0.0",
+        "record_count": 6,
+        "sha256_checksum": "91b5e47c96f6ce6ce2275dbe6c43688d649ff8c5984a9bb45a53179bfaa36d07"
+      },
+      "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-sovereign-defi-yields.json"
+    },
     {
       "catalog_id": "feegate-ai-model-pricing-index",
       "product_name": "Global AI Models Real-time Pricing & Context Benchmark",
