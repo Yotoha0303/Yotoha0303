@@ -1,7 +1,7 @@
 {
   "catalog_version": "2.1.0",
   "provider": "FeeGate Commercial Data Intelligence Feed",
-  "generated_at_utc": "2026-11-07T02:38:13+00:00",
+  "generated_at_utc": "2026-11-07T12:12:39.357555+00:00",
   "protocol": "HTTP REST / x402 Micropayments",
   "total_active_products": 4,
   "products": [
@@ -15,7 +15,7 @@
       "provenance": {
         "source_origin": "Direct Ethereum RPC State Calls, Lido Official Consensus API, Sky/Maker Chainlog & Contracts",
         "source_endpoint": "https://ethereum-rpc.publicnode.com; https://eth-api.lido.fi/v1/protocol/steth/apr/sma",
-        "ingested_at_utc": "2026-11-07T02:38:13+00:00",
+        "ingested_at_utc": "2026-11-07T02:38:13Z",
         "schema_version": "1.0.0",
         "record_count": 6,
         "sha256_checksum": "cb12f00817b3940434d662c2f2cadfd71f5230dc66c631545e3f5b210842d8bf"
@@ -32,10 +32,10 @@
       "provenance": {
         "source_origin": "OpenRouter Official Public Model Registry",
         "source_endpoint": "https://openrouter.ai/api/v1/models",
-        "ingested_at_utc": "2026-11-06T13:31:11.945852+00:00",
+        "ingested_at_utc": "2026-11-07T12:12:34.149229+00:00",
         "schema_version": "2.0.0",
-        "record_count": 453,
-        "sha256_checksum": "fd5543f991e733c19da60e4d9a0b0f4d0031ea5e389e01ad7016b7289f6ede89"
+        "record_count": 460,
+        "sha256_checksum": "24c774f87bc8ed6df0b88a20f4098605b1144ed95238cab8d39ada253ac0defa"
       },
       "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-ai-model-pricing-index.json"
     },
@@ -49,10 +49,10 @@
       "provenance": {
         "source_origin": "GitHub Security Advisory Database (NVD/CVE Synchronized)",
         "source_endpoint": "https://api.github.com/advisories?per_page=20&severity=high",
-        "ingested_at_utc": "2026-11-06T13:31:12.785355+00:00",
+        "ingested_at_utc": "2026-11-07T12:12:34.963176+00:00",
         "schema_version": "2.0.0",
         "record_count": 40,
-        "sha256_checksum": "d48f97d51143c0ad1c3a37b3100e7d5131636927f11303dd454db355144af893"
+        "sha256_checksum": "f66e519c0e681ad4c6d362062ef5a1b6f0b1c395485e1ec375356950da0047f9"
       },
       "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-security-cve-threat-radar.json"
     },
@@ -66,10 +66,10 @@
       "provenance": {
         "source_origin": "GitHub Official REST API Telemetry",
         "source_endpoint": "https://api.github.com/repos/{owner}/{repo}",
-        "ingested_at_utc": "2026-11-06T13:31:17.507090+00:00",
+        "ingested_at_utc": "2026-11-07T12:12:39.356831+00:00",
         "schema_version": "2.0.0",
         "record_count": 12,
-        "sha256_checksum": "c3f1e823fde047812897d2cc019b2ef57c8f0a305e2c9856180884691b46bd47"
+        "sha256_checksum": "126357757f40c717a05c68a222ac778062d8b5a8417386a0670437f3e1ed2773"
       },
       "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-agent-frameworks-benchmark.json"
     }

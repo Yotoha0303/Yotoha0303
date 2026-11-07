@@ -8,14 +8,14 @@
   "provenance": {
     "source_origin": "GitHub Official REST API Telemetry",
     "source_endpoint": "https://api.github.com/repos/{owner}/{repo}",
-    "ingested_at_utc": "2026-11-06T13:31:17.507090+00:00",
+    "ingested_at_utc": "2026-11-07T12:12:39.356831+00:00",
     "schema_version": "2.0.0",
     "record_count": 12,
-    "sha256_checksum": "c3f1e823fde047812897d2cc019b2ef57c8f0a305e2c9856180884691b46bd47"
+    "sha256_checksum": "126357757f40c717a05c68a222ac778062d8b5a8417386a0670437f3e1ed2773"
   },
   "summary": {
     "total_frameworks_indexed": 12,
-    "aggregate_stars": 1117769,
+    "aggregate_stars": 1118279,
     "top_starred_framework": "ollama/ollama"
   },
   "records": [
@@ -24,16 +24,16 @@
       "framework_category": "Local LLM Execution Runtime",
       "description": "Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
       "metrics": {
-        "stars_count": 186092,
-        "forks_count": 18925,
-        "open_issues_count": 4583,
-        "subscribers_count": 1021
+        "stars_count": 186221,
+        "forks_count": 18946,
+        "open_issues_count": 4604,
+        "subscribers_count": 1022
       },
       "engineering_health": {
         "primary_language": "Go",
         "license_spdx": "MIT",
         "has_wiki": false,
-        "last_pushed_at_utc": "2026-11-06T02:08:23Z",
+        "last_pushed_at_utc": "2026-11-07T02:44:07Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/ollama/ollama"
@@ -43,16 +43,16 @@
       "framework_category": "Foundational Open Model Architecture",
       "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
       "metrics": {
-        "stars_count": 168584,
-        "forks_count": 35123,
-        "open_issues_count": 1053,
+        "stars_count": 168621,
+        "forks_count": 35128,
+        "open_issues_count": 1055,
         "subscribers_count": 1242
       },
       "engineering_health": {
         "primary_language": "Python",
         "license_spdx": "Apache-2.0",
         "has_wiki": true,
-        "last_pushed_at_utc": "2026-11-06T12:58:43Z",
+        "last_pushed_at_utc": "2026-11-07T11:52:51Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/huggingface/transformers"
@@ -62,16 +62,16 @@
       "framework_category": "Enterprise LLM Application Platform",
       "description": "Build Agentic workflows, RAG pipelines, with rich AI model and tool support on one collaborative workspace. Deploy on cloud, VPC, or self-hosted, so teams move from prototype to production without rebuilding the stack.",
       "metrics": {
-        "stars_count": 160539,
-        "forks_count": 25403,
-        "open_issues_count": 1200,
-        "subscribers_count": 837
+        "stars_count": 160606,
+        "forks_count": 25412,
+        "open_issues_count": 1194,
+        "subscribers_count": 838
       },
       "engineering_health": {
         "primary_language": "Python",
         "license_spdx": "NOASSERTION",
         "has_wiki": false,
-        "last_pushed_at_utc": "2026-11-06T13:28:47Z",
+        "last_pushed_at_utc": "2026-11-07T12:11:32Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/langgenius/dify"
@@ -81,16 +81,16 @@
       "framework_category": "High-Throughput LLM Serving Engine",
       "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
       "metrics": {
-        "stars_count": 96455,
-        "forks_count": 24482,
-        "open_issues_count": 9946,
+        "stars_count": 96506,
+        "forks_count": 24514,
+        "open_issues_count": 9994,
         "subscribers_count": 603
       },
       "engineering_health": {
         "primary_language": "Python",
         "license_spdx": "Apache-2.0",
         "has_wiki": false,
-        "last_pushed_at_utc": "2026-11-06T13:28:01Z",
+        "last_pushed_at_utc": "2026-11-07T10:57:47Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/vllm-project/vllm"
@@ -100,16 +100,16 @@
       "framework_category": "Autonomous Software Engineering Agent",
       "description": "🙌 OpenHands: AI-Driven Development",
       "metrics": {
-        "stars_count": 92799,
-        "forks_count": 12380,
-        "open_issues_count": 1131,
-        "subscribers_count": 495
+        "stars_count": 92866,
+        "forks_count": 12396,
+        "open_issues_count": 1148,
+        "subscribers_count": 496
       },
       "engineering_health": {
         "primary_language": "TypeScript",
         "license_spdx": "MIT",
         "has_wiki": true,
-        "last_pushed_at_utc": "2026-11-06T13:18:07Z",
+        "last_pushed_at_utc": "2026-11-07T12:07:13Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/OpenHands/OpenHands"
@@ -119,9 +119,9 @@
       "framework_category": "Official Model Context Protocol Reference Servers",
       "description": "Model Context Protocol Reference Servers",
       "metrics": {
-        "stars_count": 91825,
-        "forks_count": 11921,
-        "open_issues_count": 13,
+        "stars_count": 91847,
+        "forks_count": 11923,
+        "open_issues_count": 16,
         "subscribers_count": 628
       },
       "engineering_health": {
@@ -138,16 +138,16 @@
       "framework_category": "Universal LLM Proxy & Token Cost Routing",
       "description": "The fastest, litest AI Gateway. Rust core with Python SDK. Call 100+ LLM APIs in OpenAI (or native) format with cost tracking, guardrails, load balancing, and logging [Bedrock, Azure, OpenAI, Anthropic, OpenAI, VertexAI, vLLM, Nvidia NIM]",
       "metrics": {
-        "stars_count": 62828,
-        "forks_count": 13069,
-        "open_issues_count": 5743,
+        "stars_count": 62861,
+        "forks_count": 13083,
+        "open_issues_count": 5717,
         "subscribers_count": 236
       },
       "engineering_health": {
         "primary_language": "Python",
         "license_spdx": "NOASSERTION",
         "has_wiki": true,
-        "last_pushed_at_utc": "2026-11-06T13:23:46Z",
+        "last_pushed_at_utc": "2026-11-07T12:08:35Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/BerriAI/litellm"
@@ -157,9 +157,9 @@
       "framework_category": "Conversational Multi-Agent Framework",
       "description": "A programming framework for agentic AI",
       "metrics": {
-        "stars_count": 61731,
-        "forks_count": 9376,
-        "open_issues_count": 1151,
+        "stars_count": 61738,
+        "forks_count": 9380,
+        "open_issues_count": 1161,
         "subscribers_count": 521
       },
       "engineering_health": {
@@ -176,16 +176,16 @@
       "framework_category": "Multi-Agent Role Collaboration",
       "description": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intelligence, CrewAI empowers agents to work together seamlessly, tackling complex tasks.",
       "metrics": {
-        "stars_count": 60564,
-        "forks_count": 9072,
-        "open_issues_count": 1163,
+        "stars_count": 60600,
+        "forks_count": 9087,
+        "open_issues_count": 1182,
         "subscribers_count": 387
       },
       "engineering_health": {
         "primary_language": "Python",
         "license_spdx": "MIT",
         "has_wiki": false,
-        "last_pushed_at_utc": "2026-11-06T12:06:17Z",
+        "last_pushed_at_utc": "2026-11-07T03:24:13Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/crewAIInc/crewAI"
@@ -195,16 +195,16 @@
       "framework_category": "Data Framework for LLM / RAG",
       "description": "LlamaIndex is the document processing platform for AI",
       "metrics": {
-        "stars_count": 52831,
-        "forks_count": 8527,
-        "open_issues_count": 1280,
-        "subscribers_count": 283
+        "stars_count": 52839,
+        "forks_count": 8532,
+        "open_issues_count": 1310,
+        "subscribers_count": 284
       },
       "engineering_health": {
         "primary_language": "Python",
         "license_spdx": "MIT",
         "has_wiki": false,
-        "last_pushed_at_utc": "2026-11-05T10:09:25Z",
+        "last_pushed_at_utc": "2026-11-06T22:58:11Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/run-llama/llama_index"
@@ -214,8 +214,8 @@
       "framework_category": "Orchestration & State Machine",
       "description": "Build resilient agents.",
       "metrics": {
-        "stars_count": 44560,
-        "forks_count": 7670,
+        "stars_count": 44610,
+        "forks_count": 7683,
         "open_issues_count": 461,
         "subscribers_count": 186
       },
@@ -223,7 +223,7 @@
         "primary_language": "Python",
         "license_spdx": "MIT",
         "has_wiki": false,
-        "last_pushed_at_utc": "2026-11-06T13:03:23Z",
+        "last_pushed_at_utc": "2026-11-06T17:24:12Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/langchain-ai/langgraph"
@@ -233,8 +233,8 @@
       "framework_category": "Self-Optimizing LM Pipelines",
       "description": "DSPy: The framework for programming—not prompting—language models",
       "metrics": {
-        "stars_count": 38961,
-        "forks_count": 3488,
+        "stars_count": 38964,
+        "forks_count": 3489,
         "open_issues_count": 765,
         "subscribers_count": 209
       },
@@ -242,7 +242,7 @@
         "primary_language": "Python",
         "license_spdx": "MIT",
         "has_wiki": true,
-        "last_pushed_at_utc": "2026-11-06T03:39:54Z",
+        "last_pushed_at_utc": "2026-11-06T14:40:07Z",
         "default_branch": "main"
       },
       "repository_url": "https://github.com/stanfordnlp/dspy"

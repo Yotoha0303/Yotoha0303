@@ -8,14 +8,14 @@
   "provenance": {
     "source_origin": "OpenRouter Official Public Model Registry",
     "source_endpoint": "https://openrouter.ai/api/v1/models",
-    "ingested_at_utc": "2026-11-06T13:31:11.945852+00:00",
+    "ingested_at_utc": "2026-11-07T12:12:34.149229+00:00",
     "schema_version": "2.0.0",
-    "record_count": 453,
-    "sha256_checksum": "fd5543f991e733c19da60e4d9a0b0f4d0031ea5e389e01ad7016b7289f6ede89"
+    "record_count": 460,
+    "sha256_checksum": "24c774f87bc8ed6df0b88a20f4098605b1144ed95238cab8d39ada253ac0defa"
   },
   "market_summary": {
-    "total_models_indexed": 453,
-    "free_tier_count": 15,
+    "total_models_indexed": 460,
+    "free_tier_count": 16,
     "max_context_window": 2000000,
     "distinct_providers_count": 69
   },
@@ -1370,9 +1370,9 @@
       "provider": "deepseek",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.058,
+        "prompt": 0.0487,
         "completion": 0.3,
-        "blended_3to1_ratio": 0.1185
+        "blended_3to1_ratio": 0.1115
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -1382,6 +1382,27 @@
       },
       "top_provider_info": {
         "max_completion_tokens": 943718,
+        "is_moderated": false
+      }
+    },
+    {
+      "model_id": "deepseek/deepseek-v4-flash-0731:batch",
+      "name": "DeepSeek: DeepSeek V4 Flash 0731 (batch)",
+      "provider": "deepseek",
+      "context_window_tokens": 1048576,
+      "pricing_per_1m_tokens_usd": {
+        "prompt": 0.048,
+        "completion": 0.144,
+        "blended_3to1_ratio": 0.072
+      },
+      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "architecture": {
+        "modality": "text->text",
+        "tokenizer": "DeepSeek",
+        "instruct_type": null
+      },
+      "top_provider_info": {
+        "max_completion_tokens": 384000,
         "is_moderated": false
       }
     },
@@ -1412,9 +1433,9 @@
       "provider": "deepseek",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.894,
-        "completion": 1.788,
-        "blended_3to1_ratio": 1.1175
+        "prompt": 0.7383,
+        "completion": 1.4766,
+        "blended_3to1_ratio": 0.9229
       },
       "cost_tier": "Mid-range / Workhorse Tier ($0.50 - $3.00/M)",
       "architecture": {
@@ -2357,9 +2378,9 @@
       "provider": "google",
       "context_window_tokens": 262144,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.09,
-        "completion": 0.3,
-        "blended_3to1_ratio": 0.1425
+        "prompt": 0.0675,
+        "completion": 0.225,
+        "blended_3to1_ratio": 0.1069
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -2651,9 +2672,9 @@
       "provider": "inclusionai",
       "context_window_tokens": 1000000,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.075,
-        "completion": 0.225,
-        "blended_3to1_ratio": 0.1125
+        "prompt": 0.045,
+        "completion": 0.135,
+        "blended_3to1_ratio": 0.0675
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -2772,6 +2793,48 @@
       }
     },
     {
+      "model_id": "liquid/lfm-3-1.7b",
+      "name": "LiquidAI: LFM3-1.7B",
+      "provider": "liquid",
+      "context_window_tokens": 262144,
+      "pricing_per_1m_tokens_usd": {
+        "prompt": 0.08,
+        "completion": 0.2,
+        "blended_3to1_ratio": 0.11
+      },
+      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "architecture": {
+        "modality": "text->text",
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "top_provider_info": {
+        "max_completion_tokens": 8192,
+        "is_moderated": false
+      }
+    },
+    {
+      "model_id": "liquid/lfm-3-1.7b:free",
+      "name": "LiquidAI: LFM3-1.7B (free)",
+      "provider": "liquid",
+      "context_window_tokens": 262144,
+      "pricing_per_1m_tokens_usd": {
+        "prompt": 0.0,
+        "completion": 0.0,
+        "blended_3to1_ratio": 0.0
+      },
+      "cost_tier": "Free Tier",
+      "architecture": {
+        "modality": "text->text",
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "top_provider_info": {
+        "max_completion_tokens": 8192,
+        "is_moderated": false
+      }
+    },
+    {
       "model_id": "mancer/weaver",
       "name": "Mancer: Weaver (alpha)",
       "provider": "mancer",
@@ -2822,6 +2885,27 @@
         "prompt": 0.3,
         "completion": 1.2,
         "blended_3to1_ratio": 0.525
+      },
+      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "architecture": {
+        "modality": "text+image->text",
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "top_provider_info": {
+        "max_completion_tokens": 16384,
+        "is_moderated": false
+      }
+    },
+    {
+      "model_id": "meta/muse-glimmer-30b:batch",
+      "name": "Meta: Muse Glimmer 30B (batch)",
+      "provider": "meta",
+      "context_window_tokens": 131072,
+      "pricing_per_1m_tokens_usd": {
+        "prompt": 0.24,
+        "completion": 0.96,
+        "blended_3to1_ratio": 0.42
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -3197,9 +3281,9 @@
       "provider": "minimax",
       "context_window_tokens": 204800,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.27,
-        "completion": 0.95,
-        "blended_3to1_ratio": 0.44
+        "prompt": 0.3,
+        "completion": 1.2,
+        "blended_3to1_ratio": 0.525
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -3208,7 +3292,7 @@
         "instruct_type": null
       },
       "top_provider_info": {
-        "max_completion_tokens": 32768,
+        "max_completion_tokens": 58982,
         "is_moderated": false
       }
     },
@@ -3272,6 +3356,27 @@
       },
       "top_provider_info": {
         "max_completion_tokens": 524288,
+        "is_moderated": false
+      }
+    },
+    {
+      "model_id": "minimax/minimax-m3:batch",
+      "name": "MiniMax: MiniMax M3 (batch)",
+      "provider": "minimax",
+      "context_window_tokens": 524288,
+      "pricing_per_1m_tokens_usd": {
+        "prompt": 0.224,
+        "completion": 0.88,
+        "blended_3to1_ratio": 0.388
+      },
+      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "architecture": {
+        "modality": "text+image+video->text",
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "top_provider_info": {
+        "max_completion_tokens": 512000,
         "is_moderated": false
       }
     },
@@ -5687,7 +5792,7 @@
       },
       "top_provider_info": {
         "max_completion_tokens": 128000,
-        "is_moderated": false
+        "is_moderated": true
       }
     },
     {
@@ -6137,9 +6242,9 @@
       "provider": "openai",
       "context_window_tokens": 131072,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.025,
-        "completion": 0.093,
-        "blended_3to1_ratio": 0.042
+        "prompt": 0.02,
+        "completion": 0.074,
+        "blended_3to1_ratio": 0.0335
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -7497,6 +7602,27 @@
       }
     },
     {
+      "model_id": "qwen/qwen3.8-27b:batch",
+      "name": "Qwen: Qwen3.8 27B (batch)",
+      "provider": "qwen",
+      "context_window_tokens": 262144,
+      "pricing_per_1m_tokens_usd": {
+        "prompt": 0.16,
+        "completion": 2.0,
+        "blended_3to1_ratio": 0.62
+      },
+      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "architecture": {
+        "modality": "text+image+video->text",
+        "tokenizer": "Qwen",
+        "instruct_type": null
+      },
+      "top_provider_info": {
+        "max_completion_tokens": 235929,
+        "is_moderated": false
+      }
+    },
+    {
       "model_id": "qwen/qwen3.8-flash",
       "name": "Qwen: Qwen3.8 Flash",
       "provider": "qwen",
@@ -7708,7 +7834,7 @@
     },
     {
       "model_id": "ricursiveai/ripple-65b-preview",
-      "name": "ricursiveAI/Ripple-65B-Preview",
+      "name": "Ricursive: Ripple 65B Preview",
       "provider": "ricursiveai",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
@@ -8240,6 +8366,27 @@
         "prompt": 0.45,
         "completion": 1.2,
         "blended_3to1_ratio": 0.6375
+      },
+      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "architecture": {
+        "modality": "text+image+audio->text",
+        "tokenizer": "Other",
+        "instruct_type": null
+      },
+      "top_provider_info": {
+        "max_completion_tokens": 262144,
+        "is_moderated": false
+      }
+    },
+    {
+      "model_id": "thinkingmachines/inkling-small:batch",
+      "name": "Thinking Machines: Inkling Small (batch)",
+      "provider": "thinkingmachines",
+      "context_window_tokens": 524288,
+      "pricing_per_1m_tokens_usd": {
+        "prompt": 0.36,
+        "completion": 0.96,
+        "blended_3to1_ratio": 0.51
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -9266,9 +9413,9 @@
       "provider": "~deepseek",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.058,
+        "prompt": 0.0487,
         "completion": 0.3,
-        "blended_3to1_ratio": 0.1185
+        "blended_3to1_ratio": 0.1115
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -9497,9 +9644,9 @@
       "provider": "~z-ai",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.0284,
+        "prompt": 0.0285,
         "completion": 0.0923,
-        "blended_3to1_ratio": 0.0444
+        "blended_3to1_ratio": 0.0445
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
