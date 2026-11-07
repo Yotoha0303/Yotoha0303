@@ -30,6 +30,9 @@ curl -I http://localhost:8402/data/feegate-catalog-index.json
 
 ## 🛠️ 方式二：原生 Linux Systemd 定时服务部署 (免 Docker)
 
+Systemd 每 6 小时采集 sovereign yields，并校验全部 4 个产品。
+完整的命令、日志与指标位置、失败处理说明见 [HARVESTER.md](HARVESTER.md)。
+
 ### 1. 安装 Service 与 Timer
 ```bash
 # 复制脚本到 systemd 用户目录

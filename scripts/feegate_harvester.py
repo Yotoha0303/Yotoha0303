@@ -28,6 +28,10 @@ import urllib.error
 import subprocess
 from typing import Dict, List, Any, Optional
 
+from test_catalog_integrity import (
+    SOVEREIGN_ID, check_metadata, product_metadata, read_json, records_checksum,
+)
+
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 os.makedirs(DATA_DIR, exist_ok=True)
@@ -361,7 +365,7 @@ def generate_master_catalog(products: List[Dict[str, Any]]) -> Dict[str, Any]:
     print("[+] Generating FeeGate Master Product Catalog Index...")
     now_utc = datetime.datetime.now(datetime.timezone.utc).isoformat()
     catalog = {
-        "catalog_version": "2.0.0",
+        "catalog_version": "2.1.0",
         "provider": "FeeGate Commercial Data Intelligence Feed",
         "generated_at_utc": now_utc,
         "protocol": "HTTP REST / x402 Micropayments",
@@ -381,6 +385,24 @@ def generate_master_catalog(products: List[Dict[str, Any]]) -> Dict[str, Any]:
             "data_url": f"https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/{p.get('catalog_id')}.json"
         })
 
+    # The daily legacy job refreshes three products. Retain the independently
+    # harvested sovereign product so this job cannot downgrade the active catalog.
+    if not any(product["catalog_id"] == SOVEREIGN_ID for product in catalog["products"]):
+        existing = read_json(os.path.join(DATA_DIR, "feegate-catalog-index.json"))
+        sovereign_entries = [entry for entry in existing["products"] if entry["catalog_id"] == SOVEREIGN_ID]
+        if len(sovereign_entries) != 1:
+            raise ValueError("existing catalog must contain exactly one sovereign product")
+        sovereign = read_json(os.path.join(DATA_DIR, SOVEREIGN_ID + ".json"))
+        metadata = product_metadata(SOVEREIGN_ID, sovereign)
+        errors = []
+        check_metadata(metadata, SOVEREIGN_ID, "1.0.0", len(sovereign["records"]),
+                       records_checksum(SOVEREIGN_ID, sovereign["records"]), errors)
+        if sovereign.get("catalog_id") != SOVEREIGN_ID or errors:
+            raise ValueError("invalid sovereign dataset: " + "; ".join(errors))
+        entry = sovereign_entries[0]
+        entry["provenance"].update(metadata)
+        catalog["products"].insert(0, entry)
+    catalog["total_active_products"] = len(catalog["products"])
     verify_airgap(catalog)
     return catalog
 
@@ -426,7 +448,7 @@ def main():
     save_json(catalog_path, catalog)
 
     print("=" * 80)
-    print("✅ All 3 commercial products and master catalog index generated successfully!")
+    print("✅ Refreshed 3 commercial products; retained sovereign yields in the 4-product catalog!")
     print(f"   1. Model Pricing:      {len(product_pricing['records'])} records")
     print(f"   2. Security CVE Radar: {len(product_security['records'])} records")
     print(f"   3. Agent Benchmarks:   {len(product_frameworks['records'])} records")

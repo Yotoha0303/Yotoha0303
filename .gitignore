@@ -3,3 +3,6 @@ __pycache__/
 *.py[cod]
 *$py.class
 .venv/
+var/feegate-harvester/
+data/.feegate-harvest.lock
+data/.feegate-stage-*/

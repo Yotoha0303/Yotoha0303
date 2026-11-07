@@ -1,15 +1,18 @@
 [Unit]
-Description=FeeGate Real-World Commercial Data Harvester
+Description=FeeGate Sovereign Yield Harvest and Catalog Integrity Check
 After=network-online.target
 Wants=network-online.target
 
 [Service]
 Type=oneshot
-User=yotoha
-WorkingDirectory=/home/yotoha/Projects/Yotoha0303
-ExecStart=/usr/bin/python3 /home/yotoha/Projects/Yotoha0303/scripts/feegate_harvester.py
+# User unit; adjust the repository path if your checkout is elsewhere.
+WorkingDirectory=%h/Projects/Yotoha0303
+ExecStart=/usr/bin/python3 %h/Projects/Yotoha0303/scripts/harvest_daemon.py --once --state-dir %S/feegate-harvester
+StateDirectory=feegate-harvester
+TimeoutStartSec=35min
+TimeoutStopSec=15s
+KillMode=control-group
+NoNewPrivileges=true
+UMask=0022
 StandardOutput=journal
 StandardError=journal
-
-[Install]
-WantedBy=default.target

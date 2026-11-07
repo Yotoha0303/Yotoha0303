@@ -1,12 +1,12 @@
 [Unit]
-Description=Daily Timer for FeeGate Commercial Data Harvester
-RefuseManualStart=no
-RefuseManualStop=no
+Description=Harvest FeeGate sovereign yields and validate all products every six hours
 
 [Timer]
-# Runs daily at 14:00 CST (06:00 UTC)
-OnCalendar=*-*-* 14:00:00
+# Explicit UTC schedule: 00:00, 06:00, 12:00, 18:00 (plus up to 5m jitter).
+OnCalendar=*-*-* 00/6:00:00 UTC
 Persistent=true
+RandomizedDelaySec=5min
+AccuracySec=1min
 Unit=feegate-harvester.service
 
 [Install]

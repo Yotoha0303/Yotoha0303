@@ -1,7 +1,7 @@
 {
   "catalog_version": "2.1.0",
   "provider": "FeeGate Commercial Data Intelligence Feed",
-  "generated_at_utc": "2026-11-07T02:37:00.000000+00:00",
+  "generated_at_utc": "2026-11-07T02:38:13+00:00",
   "protocol": "HTTP REST / x402 Micropayments",
   "total_active_products": 4,
   "products": [
@@ -15,10 +15,10 @@
       "provenance": {
         "source_origin": "Direct Ethereum RPC State Calls, Lido Official Consensus API, Sky/Maker Chainlog & Contracts",
         "source_endpoint": "https://ethereum-rpc.publicnode.com; https://eth-api.lido.fi/v1/protocol/steth/apr/sma",
-        "ingested_at_utc": "2026-11-07T02:37:00+00:00",
+        "ingested_at_utc": "2026-11-07T02:38:13+00:00",
         "schema_version": "1.0.0",
         "record_count": 6,
-        "sha256_checksum": "91b5e47c96f6ce6ce2275dbe6c43688d649ff8c5984a9bb45a53179bfaa36d07"
+        "sha256_checksum": "cb12f00817b3940434d662c2f2cadfd71f5230dc66c631545e3f5b210842d8bf"
       },
       "data_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-sovereign-defi-yields.json"
     },
