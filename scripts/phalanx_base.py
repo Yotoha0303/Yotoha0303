@@ -29,6 +29,24 @@ T = TypeVar("T")
 
 
 # ==============================================================================
+# 0. Canonical Domain Exceptions
+# ==============================================================================
+
+class PhalanxError(Exception):
+    """Base exception for all domain and infrastructure errors."""
+    pass
+
+
+class SecurityValidationError(PhalanxError):
+    """Raised when security boundaries, injection inputs, or payload constraints are violated.
+    
+    Pass 2 hardening workers MUST raise this exception on hostile input instead of
+    swallowing exceptions silently with `except: pass`.
+    """
+    pass
+
+
+# ==============================================================================
 # 1. Thread-Safe SQLite WAL Connection & Migration Manager
 # ==============================================================================
 
