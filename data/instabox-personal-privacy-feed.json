@@ -50,8 +50,61 @@
     }
   ],
   "threat_schema_version": "1.0.0",
-  "threat_count": 0,
+  "threat_count": 4,
   "checksum_scope": "threats; UTF-8 JSON; sort_keys=true; separators=(',', ':'); ensure_ascii=false",
-  "sha256_checksum": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
-  "threats": []
+  "sha256_checksum": "eb03fba54fc3f37d3783283f7eb16db659a52b3f810495cbbfc7e57682b00a15",
+  "threats": [
+    {
+      "threat_id": "privacy_7c924d0212d7dc94d8ad6c6f",
+      "severity": "Medium",
+      "component_type": "Telemetry Daemon",
+      "package_name": "com.xiaomi.security.onetrack",
+      "risk_description": "Xiaomi OneTrack package is installed; inspect its role manually.",
+      "mitigation_rules": {
+        "adb_disable_commands": [],
+        "private_dns_block_domains": [],
+        "firewall_block_domains": [],
+        "firewall_rules": []
+      }
+    },
+    {
+      "threat_id": "privacy_7ec50c92f1fd32d784ade923",
+      "severity": "Medium",
+      "component_type": "Telemetry Daemon",
+      "package_name": "com.miui.misightservice",
+      "risk_description": "MIUI diagnostics service is installed; inspect its role manually.",
+      "mitigation_rules": {
+        "adb_disable_commands": [],
+        "private_dns_block_domains": [],
+        "firewall_block_domains": [],
+        "firewall_rules": []
+      }
+    },
+    {
+      "threat_id": "privacy_ae6053d33487c37bd195bb07",
+      "severity": "Medium",
+      "component_type": "OEM Framework",
+      "package_name": "com.qualcomm.qti.services.systemhelper",
+      "risk_description": "System helper package is installed; inspect its role manually.",
+      "mitigation_rules": {
+        "adb_disable_commands": [],
+        "private_dns_block_domains": [],
+        "firewall_block_domains": [],
+        "firewall_rules": []
+      }
+    },
+    {
+      "threat_id": "privacy_af7b85cedfabd35e059b9b0e",
+      "severity": "Medium",
+      "component_type": "Security Guard",
+      "package_name": "com.miui.securitycenter",
+      "risk_description": "Security Center is installed; inspect its network and permission settings manually.",
+      "mitigation_rules": {
+        "adb_disable_commands": [],
+        "private_dns_block_domains": [],
+        "firewall_block_domains": [],
+        "firewall_rules": []
+      }
+    }
+  ]
 }

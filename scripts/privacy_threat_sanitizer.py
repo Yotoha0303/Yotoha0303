@@ -19,6 +19,8 @@ import tempfile
 from pathlib import Path
 from urllib.parse import unquote, urlsplit, urlunsplit
 
+from android_privacy_guard import APP_OPS, is_protected_package
+
 
 DEFAULT_OUTPUT = Path(__file__).resolve().parents[1] / "data/instabox-personal-privacy-feed.json"
 CHECKSUM_SCOPE = "threats; UTF-8 JSON; sort_keys=true; separators=(',', ':'); ensure_ascii=false"
@@ -186,13 +188,35 @@ def normalize_record(record, kind):
     description = sanitize_text(description)
     if not description:
         raise ValueError("risk_description is empty after sanitization")
+    profile = record.get("mitigation_profile")
+    previous_rules = record.get("mitigation_rules", {})
+    if profile is None:
+        if "appops_commands" in previous_rules:
+            profile = "appops"
+        elif "adb_disable_commands" in previous_rules and not previous_rules["adb_disable_commands"]:
+            profile = "observe"
+        else:
+            profile = "debloat"
+    if profile not in {"debloat", "appops", "observe"}:
+        raise ValueError("invalid mitigation_profile")
+    if package and is_protected_package(package):
+        profile = "observe"
+    if profile == "appops" and package is None:
+        raise ValueError("AppOps profile requires package_name")
+    ops = record.get("appops", list(APP_OPS) if "appops_commands" in previous_rules else [])
+    if profile == "appops" and (not isinstance(ops, list) or not ops or
+                                any(op not in APP_OPS for op in ops) or len(set(ops)) != len(ops)):
+        raise ValueError("invalid appops list")
     rules = {
-        "adb_disable_commands": [f"adb shell pm disable-user --user 0 {package}"] if package else [],
+        "adb_disable_commands": [f"adb shell pm disable-user --user 0 {package}"]
+                                if package and profile == "debloat" else [],
         "private_dns_block_domains": domains,
         "firewall_block_domains": domains,
         "firewall_rules": [{"action": "deny", "direction": "outbound", "destination_domain": domain}
                            for domain in domains],
     }
+    if profile == "appops":
+        rules["appops_commands"] = [f"adb shell cmd appops set {package} {op} ignore" for op in ops]
     normalized = {"severity": severity.title(), "component_type": component,
                   "package_name": package, "risk_description": description,
                   "mitigation_rules": rules}

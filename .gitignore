@@ -4,5 +4,7 @@ __pycache__/
 *$py.class
 .venv/
 var/feegate-harvester/
+var/android-privacy-guard/
+var/
 data/.feegate-harvest.lock
 data/.feegate-stage-*/

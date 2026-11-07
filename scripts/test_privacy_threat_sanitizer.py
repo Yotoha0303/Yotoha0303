@@ -110,6 +110,12 @@ class SanitizerTests(unittest.TestCase):
         self.assertEqual({item["component_type"] for item in threats}, {"Security Guard", "Ad SDK"})
         self.assertTrue(any(item["package_name"] is None for item in threats))
 
+    def test_protected_package_never_gets_disable_command(self):
+        self.write_input([report(package_name="com.android.phone")])
+        self.assertEqual(self.run_cli()[0], 0)
+        threat = sanitizer.read_json(self.output)["threats"][0]
+        self.assertEqual(threat["mitigation_rules"]["adb_disable_commands"], [])
+
     def test_safe_article_path_remains_and_existing_threats_survive_refresh(self):
         self.write_input([report()])
         self.assertEqual(self.run_cli()[0], 0)
