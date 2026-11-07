@@ -299,7 +299,7 @@ def estimate_complexity(inquiry):
             "scope_counts": counts, "factors": factors}
 
 
-_AMOUNT = r"\d{1,12}(?:,\d{3})*(?:\.\d{1,2})?\s*[k千万]?(?![\d.])"
+_AMOUNT = r"\d{1,12}(?:,\d{3})*(?:\.\d{1,2})?\s*[k千万]?(?!\d|\.\d)"
 _BUDGET = re.compile(
     rf"(?:预算|budget|最多|上限)\s*(?:是|为|of|is|:|=|不超过|约|大约|around|up to)?\s*"
     rf"(?:cny|rmb|[¥￥])?\s*({_AMOUNT})\s*(?:元|块|cny|rmb|yuan)?"
