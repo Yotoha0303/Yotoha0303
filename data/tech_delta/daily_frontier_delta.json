@@ -1,0 +1,268 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-01-01T08:00:00Z",
+  "window_start": "2025-12-31T08:00:00Z",
+  "mode": "mock",
+  "topics": [
+    "ai-agent",
+    "llm",
+    "multi-agent",
+    "systems-architecture"
+  ],
+  "sources": {
+    "github": {
+      "status": "mock",
+      "record_count": 5,
+      "errors": []
+    },
+    "hacker_news": {
+      "status": "mock",
+      "record_count": 1,
+      "errors": []
+    }
+  },
+  "records": [
+    {
+      "id": "176001014913d58f3ae9",
+      "source": "github",
+      "kind": "repository",
+      "title": "Nous Research Hermes",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "summary": "Synthetic offline reference. Evaluate reusable skills and persistent memory against a fixed task set.",
+      "tags": [
+        "ai-agent"
+      ],
+      "observed_at": "2026-01-01T08:00:00Z",
+      "event_at": null,
+      "evidence": "mock",
+      "repo": "NousResearch/hermes-agent",
+      "stars": 1000,
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/NousResearch/hermes-agent/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "657a6bead556c8fd2976",
+      "source": "github",
+      "kind": "repository",
+      "title": "OpenHands",
+      "url": "https://github.com/All-Hands-AI/OpenHands",
+      "summary": "Synthetic offline reference. Borrow isolated execution and replayable tool events.",
+      "tags": [
+        "llm"
+      ],
+      "observed_at": "2026-01-01T08:00:00Z",
+      "event_at": null,
+      "evidence": "mock",
+      "repo": "All-Hands-AI/OpenHands",
+      "stars": 2000,
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/All-Hands-AI/OpenHands/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "ac3cf0445fc827662ebe",
+      "source": "github",
+      "kind": "repository",
+      "title": "SWE-agent",
+      "url": "https://github.com/SWE-agent/SWE-agent",
+      "summary": "Synthetic offline reference. Reuse the task harness and constrained command interface.",
+      "tags": [
+        "systems-architecture"
+      ],
+      "observed_at": "2026-01-01T08:00:00Z",
+      "event_at": null,
+      "evidence": "mock",
+      "repo": "SWE-agent/SWE-agent",
+      "stars": 4000,
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/SWE-agent/SWE-agent/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "e17d670a7a559759fff4",
+      "source": "github",
+      "kind": "repository",
+      "title": "AutoGen",
+      "url": "https://github.com/microsoft/autogen",
+      "summary": "Synthetic offline reference. Prototype typed agent messages and bounded orchestration.",
+      "tags": [
+        "multi-agent"
+      ],
+      "observed_at": "2026-01-01T08:00:00Z",
+      "event_at": null,
+      "evidence": "mock",
+      "repo": "microsoft/autogen",
+      "stars": 3000,
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/microsoft/autogen/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "fd83d3bbe025bb824520",
+      "source": "github",
+      "kind": "repository",
+      "title": "Cline",
+      "url": "https://github.com/cline/cline",
+      "summary": "Synthetic offline reference. Borrow approval checkpoints and inspect tool integration boundaries.",
+      "tags": [
+        "ai-agent"
+      ],
+      "observed_at": "2026-01-01T08:00:00Z",
+      "event_at": null,
+      "evidence": "mock",
+      "repo": "cline/cline",
+      "stars": 5000,
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/cline/cline/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "id": "b763228d8879a05b97ee",
+      "source": "hacker_news",
+      "kind": "story",
+      "title": "Synthetic: sandboxed agents and tool protocols",
+      "url": "https://news.ycombinator.com/item?id=10000000",
+      "summary": "Synthetic architecture discussion for offline briefing validation.",
+      "tags": [
+        "ai-agent",
+        "systems-architecture"
+      ],
+      "observed_at": "2026-01-01T08:00:00Z",
+      "event_at": "2026-01-01T07:00:00Z",
+      "evidence": "mock",
+      "repo": null,
+      "stars": null,
+      "latest_release": null
+    }
+  ],
+  "framework_matrix": [
+    {
+      "name": "Nous Research Hermes",
+      "repo": "NousResearch/hermes-agent",
+      "reference_url": "https://github.com/NousResearch/hermes-agent",
+      "design_patterns": [
+        "persistent memory",
+        "skill acquisition",
+        "tool protocols"
+      ],
+      "adopt": "Evaluate reusable skills and persistent memory against a fixed task set.",
+      "risk": "Learned skills need review, versioning and regression checks.",
+      "pattern_evidence": "curated_reference; recheck upstream docs before adoption",
+      "record_id": "176001014913d58f3ae9",
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/NousResearch/hermes-agent/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "name": "OpenHands",
+      "repo": "All-Hands-AI/OpenHands",
+      "reference_url": "https://github.com/All-Hands-AI/OpenHands",
+      "design_patterns": [
+        "sandboxing",
+        "event stream",
+        "agent runtime"
+      ],
+      "adopt": "Borrow isolated execution and replayable tool events.",
+      "risk": "Sandbox escape boundaries and runtime resource costs need measurement.",
+      "pattern_evidence": "curated_reference; recheck upstream docs before adoption",
+      "record_id": "657a6bead556c8fd2976",
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/All-Hands-AI/OpenHands/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "name": "AutoGen",
+      "repo": "microsoft/autogen",
+      "reference_url": "https://github.com/microsoft/autogen",
+      "design_patterns": [
+        "multi-agent messaging",
+        "event-driven orchestration",
+        "tool protocols"
+      ],
+      "adopt": "Prototype typed agent messages and bounded orchestration.",
+      "risk": "Check current maintenance guidance before choosing a framework version.",
+      "pattern_evidence": "curated_reference; recheck upstream docs before adoption",
+      "record_id": "e17d670a7a559759fff4",
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/microsoft/autogen/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "name": "SWE-agent",
+      "repo": "SWE-agent/SWE-agent",
+      "reference_url": "https://github.com/SWE-agent/SWE-agent",
+      "design_patterns": [
+        "agent-computer interface",
+        "sandboxing",
+        "evaluation harness"
+      ],
+      "adopt": "Reuse the task harness and constrained command interface.",
+      "risk": "Benchmark gains may not transfer to production repositories.",
+      "pattern_evidence": "curated_reference; recheck upstream docs before adoption",
+      "record_id": "ac3cf0445fc827662ebe",
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/SWE-agent/SWE-agent/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    },
+    {
+      "name": "Cline",
+      "repo": "cline/cline",
+      "reference_url": "https://github.com/cline/cline",
+      "design_patterns": [
+        "human approval",
+        "tool protocols",
+        "context management"
+      ],
+      "adopt": "Borrow approval checkpoints and inspect tool integration boundaries.",
+      "risk": "Editor access and tool permissions require explicit scopes.",
+      "pattern_evidence": "curated_reference; recheck upstream docs before adoption",
+      "record_id": "fd83d3bbe025bb824520",
+      "latest_release": {
+        "status": "mock",
+        "tag": "synthetic-example",
+        "url": "https://github.com/cline/cline/releases",
+        "published_at": "2026-01-01T06:00:00Z",
+        "observed_at": "2026-01-01T08:00:00Z"
+      }
+    }
+  ],
+  "record_count": 6,
+  "content_sha256": "18fd3bbe52bccfe96d0b7581d1b6b3bd0ae7835d675dc2ba0ebd36d5f7faf882"
+}
