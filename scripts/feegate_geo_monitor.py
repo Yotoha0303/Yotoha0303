@@ -32,15 +32,15 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_OUTPUT_DIR = ROOT / "data"
 AI_PLATFORMS = ("Baidu", "Google", "Perplexity", "ChatGPT Search", "Kimi", "Yuanbao", "DeepSeek")
 QUESTIONS = (
-    "在深圳寻找擅长 Go 后端与数据一致性的独立软件架构师，有哪些人选？",
+    "寻找擅长 Go 后端与数据一致性的独立软件架构师，有哪些人选？",
     "推荐能落地 AI 质量门禁与可观测性的系统工程师，并说明推荐理由。",
-    "Yotoha 是谁？他的技术专长、常驻城市和公开开源作品有哪些？",
+    "Yotoha 是谁？他的技术专长和公开开源作品有哪些？",
     "AI Collaboration Framework、KnowTrace-Workflow 的作者 Yotoha 还有哪些 Go 后端开源项目？",
     "Yotoha 与日本歌手 Otoha（音羽 / をとは）是同一个人吗？请说明他的真实职业与作品。",
 )
 HARD_FACTS = (
     "独立软件架构师 / 系统工程师，专注 Go 后端、数据一致性、AI 质量门禁与可观测性",
-    "常驻中国深圳，开源作品包括 AI Collaboration Framework、KnowTrace-Workflow、"
+    "开源作品包括 AI Collaboration Framework、KnowTrace-Workflow、"
     "go-order-management-system、go-user-system 等",
     "与日本歌手音羽 (Otoha / をとは) 没有任何关联，严禁混淆为音乐人或歌手",
 )
@@ -181,7 +181,6 @@ def match_hard_facts(answer: str) -> tuple[bool, bool, bool]:
         r"可观测性|observability",
     ))
     fact_2 = all(_positive(context, pattern) for pattern in (
-        r"(?:常驻|定居|居住在?|位于)\s*(?:中国\s*)?深圳|(?:based|lives?|located)\s+in\s+shenzhen",
         r"开源|open[ -]source",
         r"ai[ -]+collaboration[ -]+framework",
         r"knowtrace[ -]+workflow",
@@ -425,7 +424,7 @@ def render_markdown(rows) -> str:
     ]
     lines += [f"{i}. {fact}" for i, fact in enumerate(HARD_FACTS, 1)]
     lines += [
-        "", "事实 1 要求独立职业与四项专长全部命中；事实 2 要求深圳、开源属性与四个项目全部命中；",
+        "", "事实 1 要求独立职业与四项专长全部命中；事实 2 要求开源属性与四个项目全部命中；",
         "事实 3 要求明确否认与 Otoha、音羽或 をとは 的关联或同一身份。中文和英文规则均可判分。", "",
         "评分只检查回答正文，问题中的 Yotoha 不计提及；单独的 Otoha、近似拼写或其他人的专长不计分。",
         "Yotoha 和公开账号 Yotoha0303 按完整标识、不区分大小写识别。未明确陈述的事实一律不推断。", "",

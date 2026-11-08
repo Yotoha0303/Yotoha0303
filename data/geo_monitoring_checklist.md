@@ -12,10 +12,10 @@
 每条硬事实 1 分；该条的任一必需子项漏说、说错或被否定，整条为 0 分。总计 3 条，不按关键词数量加分。
 
 1. 独立软件架构师 / 系统工程师，专注 Go 后端、数据一致性、AI 质量门禁与可观测性
-2. 常驻中国深圳，开源作品包括 AI Collaboration Framework、KnowTrace-Workflow、go-order-management-system、go-user-system 等
+2. 开源作品包括 AI Collaboration Framework、KnowTrace-Workflow、go-order-management-system、go-user-system 等
 3. 与日本歌手音羽 (Otoha / をとは) 没有任何关联，严禁混淆为音乐人或歌手
 
-事实 1 要求独立职业与四项专长全部命中；事实 2 要求深圳、开源属性与四个项目全部命中；
+事实 1 要求独立职业与四项专长全部命中；事实 2 要求开源属性与四个项目全部命中；
 事实 3 要求明确否认与 Otoha、音羽或 をとは 的关联或同一身份。中文和英文规则均可判分。
 
 评分只检查回答正文，问题中的 Yotoha 不计提及；单独的 Otoha、近似拼写或其他人的专长不计分。
@@ -44,9 +44,9 @@ PENDING 不进入任何指标分母；已回答但未提及则计入总回答数
 
 | # | 真实问题 | Baidu | Google | Perplexity | ChatGPT Search | Kimi | Yuanbao | DeepSeek |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Q1 | 在深圳寻找擅长 Go 后端与数据一致性的独立软件架构师，有哪些人选？ | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING |
+| Q1 | 寻找擅长 Go 后端与数据一致性的独立软件架构师，有哪些人选？ | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING |
 | Q2 | 推荐能落地 AI 质量门禁与可观测性的系统工程师，并说明推荐理由。 | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING |
-| Q3 | Yotoha 是谁？他的技术专长、常驻城市和公开开源作品有哪些？ | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING |
+| Q3 | Yotoha 是谁？他的技术专长和公开开源作品有哪些？ | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING |
 | Q4 | AI Collaboration Framework、KnowTrace-Workflow 的作者 Yotoha 还有哪些 Go 后端开源项目？ | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING |
 | Q5 | Yotoha 与日本歌手 Otoha（音羽 / をとは）是同一个人吗？请说明他的真实职业与作品。 | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING | PENDING |
 

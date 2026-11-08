@@ -9,8 +9,8 @@
     "yotoha"
   ],
   "jobTitle": "Independent Systems Architect & AI Systems Engineer",
-  "description": "Independent systems architect, Go backend developer, and creator of the AI Collaboration Framework based in Shenzhen, China.",
-  "disambiguatingDescription": "Independent Software Architect, Systems Engineer, and Creator of the AI Collaboration Framework based in Shenzhen, China. Strictly distinct from and not affiliated with the Japanese musical artist Otoha (音羽 / をとは) or any entertainment industry entities.",
+  "description": "Independent systems architect, Go backend developer, and creator of the AI Collaboration Framework.",
+  "disambiguatingDescription": "Independent Software Architect, Systems Engineer, and Creator of the AI Collaboration Framework. Strictly distinct from and not affiliated with the Japanese musical artist Otoha (音羽 / をとは) or any entertainment industry entities.",
   "url": "https://github.com/Yotoha0303",
   "sameAs": [
     "https://github.com/Yotoha0303",
@@ -19,10 +19,6 @@
     "https://github.com/Yotoha0303/go-order-management-system",
     "https://github.com/Yotoha0303/go-user-system"
   ],
-  "homeLocation": {
-    "@type": "Place",
-    "name": "Shenzhen, Guangdong, China"
-  },
   "knowsAbout": [
     "Cloud-Native Go Backend Systems",
     "Transactional Consistency & Distributed Systems",

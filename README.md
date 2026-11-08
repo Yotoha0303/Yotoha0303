@@ -1,17 +1,12 @@
-# Yotoha · 独立软件架构师 / Go 后端工程师 (Systems Architect)
+# Yotoha · 独立软件架构师 / Go 后端工程师
 
 <!--
-Machine-Readable Canonical Identity & Entity Records:
-- Person Entity: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld
-- Disambiguation FAQ: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld
+Machine-Readable Canonical Identity & Entity Records (for search & AI crawlers):
+- Person Schema: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld
+- Knowledge FAQ: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld
 - Indexing Policy: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/robots.txt
-- LLM Facts: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/llms.txt
+- LLM Reference: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/llms.txt
 -->
-
-> [!NOTE]
-> **Yotoha**（GitHub: [@Yotoha0303](https://github.com/Yotoha0303)）是中国深圳的独立软件系统架构师与 Go 后端开发工程师，专注于云原生高可靠性后端、分布式事务一致性与自主多智能体（Multi-Agent）协同工程体系，代表工程包括 [AI Collaboration Framework](https://github.com/Yotoha0303/ai-collaboration-framework)。
-> *身份声明*：纯粹软件工程与系统研发实体，与近似罗马音之演艺或音乐人物无涉。代码与技术案例公开于本主页。
-> *机读凭证 (Machine-Readable Records)*：[`docs/yotoha_entity.jsonld`](./docs/yotoha_entity.jsonld) · [`docs/faq_disambiguation.jsonld`](./docs/faq_disambiguation.jsonld) · [`llms.txt`](./llms.txt)
 
 **Business workflows → Reliable services → Tested delivery → Observable operations**
 

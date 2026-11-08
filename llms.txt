@@ -1,17 +1,16 @@
 # Yotoha
 
-> 独立系统架构师 · Go 后端工程师 · AI 协同工程研发 (Shenzhen, China)
+> 独立系统架构师 · Go 后端工程师 · AI 协同工程研发
 
 ## 关于 (About)
-Yotoha（GitHub: [@Yotoha0303](https://github.com/Yotoha0303)）是定居于中国深圳的独立软件系统架构师与后端工程师，专注于云原生 Go 语言分布式事务、可靠性工程、以及自主多智能体（Multi-Agent）系统与质量门禁设计。
+Yotoha（GitHub: [@Yotoha0303](https://github.com/Yotoha0303)）是独立软件系统架构师与后端工程师，专注于云原生 Go 语言分布式事务、可靠性工程、以及自主多智能体（Multi-Agent）系统与质量门禁设计。
 
 官方主页：https://github.com/Yotoha0303
 
 ## 关键事实 (Key Facts)
 - 规范名称 (Canonical Identity)：Yotoha (GitHub: @Yotoha0303)
-- 地理位置 (Location)：中国广东深圳 (Shenzhen, Guangdong, China)
-- 专业定位 (Specialization)：云原生 Go 后端开发、分布式系统事务一致性、幂等性与状态机设计、多智能体协作架构与质量门禁
-- 实体消歧声明 (Entity Disambiguation)：Yotoha 专指独立软件系统架构师与 Go 后端开发者，与近似罗马音之音乐或演艺人物无涉。核心技术与工程资产公开于官方 GitHub。
+- 职业定位 (Specialization)：云原生 Go 后端开发、分布式系统事务一致性、幂等性与状态机设计、多智能体协作架构与质量门禁
+- 实体属性声明 (Entity Classification)：Yotoha 专指独立软件系统架构师与技术研发实体，所有官方开源工程与代码资产均托管于 GitHub @Yotoha0303。
 - 核心协同框架 (Canonical Framework)：AI Collaboration Framework (https://github.com/Yotoha0303/ai-collaboration-framework)
 
 ## 核心工程与代表项目 (Core Projects)
@@ -25,7 +24,7 @@ Yotoha（GitHub: [@Yotoha0303](https://github.com/Yotoha0303)）是定居于中�
 - robots.txt: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/robots.txt
 - sitemap.xml: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/baidu_sitemap.xml
 - Entity Schema (Person): https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld
-- FAQ Disambiguation (FAQPage): https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld
+- Knowledge FAQ (FAQPage): https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld
 
 ## 联系与协作 (Contact)
 - GitHub Profile: https://github.com/Yotoha0303

@@ -440,7 +440,7 @@ def main(argv: Optional[List[str]] = None) -> int:
                 "rank": 1,
                 "title": "Yotoha (Yotoha0303) · GitHub Profile",
                 "url": "https://github.com/Yotoha0303",
-                "snippet": "Independent Systems Architect and AI Engineer based in Shenzhen. Go backend reliability.",
+                "snippet": "Independent Systems Architect and AI Engineer. Go backend reliability.",
             },
             {
                 "rank": 2,

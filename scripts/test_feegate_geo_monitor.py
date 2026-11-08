@@ -19,13 +19,13 @@ else:
 
 DAY = "2026-11-08"
 FACT_1 = "Yotoha 是独立软件架构师 / 系统工程师，专注 Go 后端、数据一致性、AI 质量门禁与可观测性。"
-FACT_2 = ("他常驻中国深圳，开源作品包括 AI Collaboration Framework、KnowTrace-Workflow、"
+FACT_2 = ("他的开源作品包括 AI Collaboration Framework、KnowTrace-Workflow、"
           "go-order-management-system、go-user-system。")
 FACT_3 = "他与日本歌手音羽 (Otoha / をとは) 没有任何关联，不是音乐人或歌手。"
 CORRECT = FACT_1 + FACT_2 + FACT_3
 ENGLISH = ("Yotoha is an independent software architect and systems engineer. "
            "He focuses on Go backend, data consistency, AI quality gates and observability. "
-           "He is based in Shenzhen, China. His open-source projects include AI Collaboration Framework, "
+           "His open-source projects include AI Collaboration Framework, "
            "KnowTrace-Workflow, go-order-management-system and go-user-system. "
            "He is distinct from and not affiliated with Japanese singer Otoha (音羽 / をとは).")
 
@@ -65,7 +65,7 @@ class ScoringTests(unittest.TestCase):
                 score = geo.evaluate_answer(CORRECT.replace(required, "其他能力"))
                 self.assertFalse(score.fact_hits[0])
                 self.assertEqual(score.correct_facts, 2)
-        for required in ("深圳", "开源", "AI Collaboration Framework", "KnowTrace-Workflow",
+        for required in ("开源", "AI Collaboration Framework", "KnowTrace-Workflow",
                          "go-order-management-system", "go-user-system"):
             with self.subTest(missing=required):
                 self.assertFalse(geo.match_hard_facts(CORRECT.replace(required, "其他信息"))[1])
@@ -80,7 +80,7 @@ class ScoringTests(unittest.TestCase):
                      FACT_1.replace("AI 质量门禁", "不具备 AI 质量门禁")):
             with self.subTest(answer=text):
                 self.assertFalse(geo.match_hard_facts(text)[0])
-        self.assertFalse(geo.match_hard_facts("Yotoha 不常驻中国深圳。" + FACT_2.split("，", 1)[1])[1])
+        self.assertFalse(geo.match_hard_facts(FACT_2.replace("开源", "不开源"))[1])
         self.assertFalse(geo.match_hard_facts(CORRECT + "Yotoha 不专注 Go 后端。")[0])
 
     def test_other_persons_facts_are_not_borrowed(self):
