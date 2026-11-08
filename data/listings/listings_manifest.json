@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0.0",
+  "product": "Developer Curated Intel v1",
+  "product_attributes": {
+    "name_zh": "开发者精选情报库",
+    "kind": "公开资源链接、分类与元数据的静态快照",
+    "formats": [
+      "SQLite FTS5",
+      "JSONL"
+    ],
+    "fields": [
+      "title",
+      "url",
+      "category_path",
+      "domain",
+      "add_date",
+      "tags"
+    ],
+    "requires": "启用 FTS5 的 SQLite；Python 使用标准库 sqlite3",
+    "scope": "交付的是公开资源链接、分类与元数据；目标网站内容与商标归其权利人所有。本版是静态快照，未在线验证链接可用性，不附带目标网站内容或账号访问权。当前价格不承诺终身更新，后续版本与团队授权可另行定价。"
+  },
+  "metrics": {
+    "source_records": 2176,
+    "total_records": 2176,
+    "unique_urls": 2168,
+    "unique_domains": 1746,
+    "top_level_categories": 14,
+    "category_paths": 54,
+    "sample_count": 50,
+    "filtered_records": 0,
+    "missing_add_dates": 0
+  },
+  "category_distribution": [
+    {
+      "name": "01_AI前沿与模型工程",
+      "records": 99
+    },
+    {
+      "name": "02_Web3与加密极客",
+      "records": 167
+    },
+    {
+      "name": "03_架构开发与工程基建",
+      "records": 308
+    },
+    {
+      "name": "04_网络安全与渗透取证",
+      "records": 129
+    },
+    {
+      "name": "05_商业情报与产品运营",
+      "records": 150
+    },
+    {
+      "name": "06_全域求职与职场进阶",
+      "records": 209
+    },
+    {
+      "name": "07_搜索引擎与学术科研",
+      "records": 171
+    },
+    {
+      "name": "08_独立开发与生产力工具",
+      "records": 255
+    },
+    {
+      "name": "09_设计灵感与多媒体资产",
+      "records": 323
+    },
+    {
+      "name": "10_极客资讯与深度阅读",
+      "records": 166
+    },
+    {
+      "name": "11_网络路由与科学互联",
+      "records": 23
+    },
+    {
+      "name": "12_视听娱乐与数字生活",
+      "records": 87
+    },
+    {
+      "name": "13_待办速记与测试缓冲",
+      "records": 67
+    },
+    {
+      "name": "14_系统直达与核心工作台",
+      "records": 22
+    }
+  ],
+  "pricing_strategy": {
+    "price_cny": 29.9,
+    "price_usd": 4.99,
+    "settlement": "按销售渠道选择一种货币结算，一次购买交付 v1 完整版",
+    "lifetime_updates_included": false
+  },
+  "free_trial": {
+    "file": "sample_developer_curated_intel_v1.json",
+    "format": "JSON",
+    "records": 50,
+    "selection": "源文件顺序中的前 50 条",
+    "public_source_url": "https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/products/sample_developer_curated_intel_v1.json"
+  },
+  "delivery_files": [
+    "developer_curated_intel_v1.sqlite",
+    "developer_curated_intel_v1.jsonl",
+    "DEVELOPER_INTEL_PRODUCT_MANIFEST.md"
+  ],
+  "commerce": {
+    "payment_links_configured": false,
+    "auto_delivery_configured": false
+  },
+  "platforms": {
+    "eleduck": {
+      "title": "开发者精选情报库：把个人书签整理成可检索的数据作品",
+      "file": "eleduck_project_card.md",
+      "placement": "项目广场 / 个人作品",
+      "price_cny": 29.9,
+      "price_usd": 4.99,
+      "settlement_currency": "由实际商品渠道选择 CNY 或 USD",
+      "delivery_files": [
+        "developer_curated_intel_v1.sqlite",
+        "developer_curated_intel_v1.jsonl",
+        "DEVELOPER_INTEL_PRODUCT_MANIFEST.md"
+      ],
+      "sha256": "ffa2b07edd28017226728a90dd5e5091c935d12aecaae4749b980c610c48ac84"
+    },
+    "xianyu": {
+      "title": "开发者精选情报库｜极客技术数据包 SQLite+JSONL",
+      "file": "xianyu_product_listing.md",
+      "placement": "技术数据包",
+      "price_cny": 29.9,
+      "price_usd": 4.99,
+      "settlement_currency": "CNY",
+      "delivery_files": [
+        "developer_curated_intel_v1.sqlite",
+        "developer_curated_intel_v1.jsonl",
+        "DEVELOPER_INTEL_PRODUCT_MANIFEST.md"
+      ],
+      "sha256": "79d6d571488606051edd01be2fa36438eab1e323dfdadc928047be0683a0f87c"
+    },
+    "v2ex": {
+      "title": "[分享创造] 用 SQLite FTS5 整理 2,176 条开发者资源链接（附 50 条样例）",
+      "file": "v2ex_showcase_post.md",
+      "placement": "/go/create",
+      "price_cny": 29.9,
+      "price_usd": 4.99,
+      "settlement_currency": "由实际商品渠道选择 CNY 或 USD",
+      "delivery_files": [
+        "developer_curated_intel_v1.sqlite",
+        "developer_curated_intel_v1.jsonl",
+        "DEVELOPER_INTEL_PRODUCT_MANIFEST.md"
+      ],
+      "sha256": "6547610feb83e290e66b12a3a0767b70373b333048700e16f4160d2162e35e75"
+    }
+  },
+  "sources": {
+    "DEVELOPER_INTEL_PRODUCT_MANIFEST.md": "90b829eec477ccc47958ce46c2769fec5c81bd22f7d0ec3df1a295f204ca3b4f",
+    "sample_developer_curated_intel_v1.json": "74770a697fa9128212faf032107861e9d3969dba5a14438fe93f836c836a7ac2"
+  }
+}
