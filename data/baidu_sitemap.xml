@@ -6,23 +6,38 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://github.com/Yotoha0303/ai-collaboration-framework</loc>
+    <loc>https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/llms.txt</loc>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://github.com/Yotoha0303/ai-collaboration-framework</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
   </url>
   <url>
     <loc>https://github.com/Yotoha0303/KnowTrace-Workflow</loc>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://github.com/Yotoha0303/go-order-management-system</loc>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://github.com/Yotoha0303/go-user-system</loc>
     <changefreq>daily</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>

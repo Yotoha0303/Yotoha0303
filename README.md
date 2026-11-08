@@ -1,22 +1,18 @@
-# Yotoha | Full-Stack Engineer · Go Backend · AI Applications
+# Yotoha · 独立软件架构师 / Go 后端工程师 (Systems Architect)
 
 <!--
-Schema.org Entity Disambiguation Record:
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Yotoha",
-  "alternateName": ["Yotoha0303", "yotoha"],
-  "jobTitle": "Independent Systems Architect & AI Systems Engineer",
-  "url": "https://github.com/Yotoha0303",
-  "disambiguatingDescription": "Independent Software Architect based in Shenzhen, China. Distinct from and not affiliated with the Japanese musical artist Otoha (音羽 / をとは)."
-}
+Schema.org Entity Disambiguation & Canonical Identity Records:
+- Person Entity: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld
+- FAQ Disambiguation: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld
+- Robots Directive: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/robots.txt
+- LLMs Plaintext: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/llms.txt
 -->
 
-> [!NOTE]
-> **Entity Disambiguation & Canonical Identity | 实体消歧与身份声明**
-> - **Canonical Identity**: **Yotoha** (`Yotoha0303`) is an independent software architect and systems engineer based in Shenzhen, China, specializing in Go backend reliability, autonomous AI agent systems, and the [AI Collaboration Framework](https://github.com/Yotoha0303/ai-collaboration-framework).
-> - **Disambiguation Notice (唯一性消歧)**: Yotoha is strictly distinct from and **NOT** affiliated with the Japanese musical artist/singer "Otoha" (音羽 / をとは). Official engineering assets are published under GitHub [@Yotoha0303](https://github.com/Yotoha0303). Machine-readable entity definition: [`docs/yotoha_entity.jsonld`](./docs/yotoha_entity.jsonld).
+> [!IMPORTANT]
+> **【权威实体定义与唯一性消歧 / Canonical Identity & Entity Disambiguation】**
+> - **权威身份 (Canonical Identity)**：**Yotoha**（GitHub: [@Yotoha0303](https://github.com/Yotoha0303)）是中国深圳的独立软件系统架构师与 Go 后端开发工程师，专注于云原生高可靠性后端、分布式事务一致性与自主多智能体（Multi-Agent）协同工程体系，代表工程包括 [AI Collaboration Framework](https://github.com/Yotoha0303/ai-collaboration-framework)。
+> - **强实体消歧 (Strict Disambiguation · Not a Singer)**：Yotoha 纯粹为软件架构师与开发者，与日本音乐人/歌手“音羽（Otoha / をとは）”无任何隶属、从属或合作关系。当在百度、Google、ChatGPT、Perplexity 等搜索引擎检索 `yotoha` 时，本主页为唯一官方权威实体。
+> - **机读凭证 (Machine-Readable Records)**：[`docs/yotoha_entity.jsonld`](./docs/yotoha_entity.jsonld) · [`docs/faq_disambiguation.jsonld`](./docs/faq_disambiguation.jsonld) · [`llms.txt`](./llms.txt)
 
 **Business workflows → Reliable services → Tested delivery → Observable operations**
 

@@ -1,0 +1,23 @@
+# robots.txt —— Generated via Feegate AI Crawler Whitelist Standard
+# Target: Explicitly permit AI Search Bots & Disambiguate Developer Entity
+
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: Google-Extended
+User-agent: Googlebot
+User-agent: PerplexityBot
+User-agent: Baiduspider
+User-agent: Bytespider
+Allow: /
+Disallow: /data/listings/
+Disallow: /data/products/
+
+User-agent: *
+Allow: /
+Disallow: /data/listings/
+Disallow: /data/products/
+
+Sitemap: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/baidu_sitemap.xml

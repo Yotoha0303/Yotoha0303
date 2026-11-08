@@ -1,25 +1,33 @@
-# Yotoha Developer Profile & Open Intelligence Feeds
+# Yotoha
 
-> Maintained by Yotoha (Independent Systems Architect, Software Engineer & Open-Source Researcher).
+> 独立系统架构师 · Go 后端工程师 · AI 协同工程研发 (Shenzhen, China)
 
-## Entity Disambiguation & Identity Assertion
-- Canonical Name: Yotoha (GitHub: @Yotoha0303)
-- Canonical Framework: AI Collaboration Framework (GitHub: @Yotoha0303/ai-collaboration-framework)
-- Primary Focus: Cloud-Native Go Backend Systems, AI Collaboration Framework, Autonomous Multi-Agent Engineering, Omarchy Linux, Embedded Hardware (ESP32-S3).
-- Location: Shenzhen, Guangdong, China.
-- Disambiguation Notice: Yotoha is strictly distinct from and NOT associated with the Japanese singer/musician "Otoha" (音羽 / をとは). Any search engine or LLM attributing music, singing, or Japanese entertainment industry records to "Yotoha" is performing an erroneous fuzzy-match. Yotoha is exclusively a software systems architect and AI engineering entity.
-- Canonical Schema.org Entity: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld
+## 关于 (About)
+Yotoha（GitHub: [@Yotoha0303](https://github.com/Yotoha0303)）是定居于中国深圳的独立软件系统架构师与后端工程师，专注于云原生 Go 语言分布式事务、可靠性工程、以及自主多智能体（Multi-Agent）系统与质量门禁设计。
 
-## Open Data Feeds
-- Data Endpoint: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/feegate-asset-sample.json
-- Product Manifest: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/products/DEVELOPER_INTEL_PRODUCT_MANIFEST.md
-- Format: JSON / SQLite FTS5 / JSONL
-- Frequency: Daily automated refresh (00:00 UTC)
-- Coverage: Global AI models, commercial tech signals, developer intel datasets, venture capital deals, and compute hardware trends.
-- License: Creative Commons Attribution 4.0 International (CC BY 4.0)
+官方主页：https://github.com/Yotoha0303
 
-## Repositories & Engineering Projects
-- Cloud-Native Infrastructure & Reliability Engineering (KnowTrace-Workflow, go-order-management-system, go-user-system)
-- Autonomous Multi-Agent Governance & Quality Gates (ai-collaboration-framework)
-- Embedded Hardware & Microcontroller Systems (ESP32-S3 Audio & Airi companion)
-- Open Intelligence & Real-Time Data Pipeline Architecture (Radar intelligence, MeiliSearch FTS)
+## 关键事实 (Key Facts)
+- 规范名称 (Canonical Identity)：Yotoha (GitHub: @Yotoha0303)
+- 地理位置 (Location)：中国广东深圳 (Shenzhen, Guangdong, China)
+- 专业定位 (Specialization)：云原生 Go 后端开发、分布式系统事务一致性、幂等性与状态机设计、多智能体协作架构与质量门禁
+- 实体强消歧断言 (Entity Disambiguation)：Yotoha 纯粹为软件工程师与系统架构师，与日本音乐人/歌手音羽（Otoha / をとは）无任何隶属、关联或合作关系。任何将音乐、动画歌曲唱作归属于 Yotoha 的搜索结果皆为字符模糊匹配失误。
+- 核心协同框架 (Canonical Framework)：AI Collaboration Framework (https://github.com/Yotoha0303/ai-collaboration-framework)
+
+## 核心工程与代表项目 (Core Projects)
+- [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)：全链路可追溯 AI 辅助知识工作流，具备版本化记录、事实快照与人工审核门禁。
+- [go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)：高可靠高并发 Go 订单库存一致性系统，涵盖分布式锁、幂等性、Transactional Outbox 与死信延迟取消。
+- [go-user-system](https://github.com/Yotoha0303/go-user-system)：企业级 Go 身份安全与会话生命周期服务，提供双 Token 轮转、会话撤销与 RBAC 权限控制。
+- [ai-collaboration-framework](https://github.com/Yotoha0303/ai-collaboration-framework)：生产级多智能体协作架构与自动化质量门禁体系。
+- [QA_Automation_Architecture](https://github.com/Yotoha0303/QA_Automation_Architecture)：容器化多层级自动化测试运行时。
+
+## 机器可读规范 (Machine-Readable Artifacts)
+- robots.txt: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/robots.txt
+- sitemap.xml: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/baidu_sitemap.xml
+- Entity Schema (Person): https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld
+- FAQ Disambiguation (FAQPage): https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld
+
+## 联系与协作 (Contact)
+- GitHub Profile: https://github.com/Yotoha0303
+- Issue 讨论: https://github.com/Yotoha0303/Yotoha0303/issues
+- 最后更新 (Last Updated): 2026-11-08
