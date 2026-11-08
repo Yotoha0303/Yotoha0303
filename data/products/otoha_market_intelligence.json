@@ -1,0 +1,873 @@
+{
+  "anime_ip_tie_ins": [
+    {
+      "ip_title": "Bocchi the Rock!",
+      "note": "Composition credit; the recording is performed by Kessoku Band.",
+      "role": "opening_composer",
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "status": "reference",
+      "track_id": "seishun-complex"
+    },
+    {
+      "ip_title": "Black Butler",
+      "note": "Public School Arc opening theme; no streaming rank is asserted.",
+      "role": "opening_performer",
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "status": "reference",
+      "track_id": "parade-of-battlers"
+    },
+    {
+      "ip_title": "Dr. Stone",
+      "note": "SCIENCE FUTURE, second cour ending theme; no streaming rank is asserted.",
+      "role": "ending_performer",
+      "source_ids": [
+        "artist_official"
+      ],
+      "status": "reference",
+      "track_id": "no-mans-world"
+    }
+  ],
+  "artist": {
+    "aliases": [
+      "音羽",
+      "Otoha"
+    ],
+    "canonical_name": "音羽-otoha-",
+    "domain": "music",
+    "entity_id": "music:otoha-jp",
+    "genres": [
+      "J-Pop",
+      "rock",
+      "anison"
+    ],
+    "label_context": "Sony Music is a feature-space term; label affiliation is not independently verified here.",
+    "scope": "Selected cited works and research coverage, not a complete discography."
+  },
+  "audience_funnel": {
+    "attribution": "Synthetic single cohort; cross-platform audiences are not deduplicated or summed.",
+    "counts": {
+      "activated_users": {
+        "definition": "Synthetic single attributable cohort: activated_users",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "people",
+        "value": 500
+      },
+      "destination_visits": {
+        "definition": "Synthetic single attributable cohort: destination_visits",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "people",
+        "value": 2000
+      },
+      "engaged_users": {
+        "definition": "Synthetic single attributable cohort: engaged_users",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "people",
+        "value": 10000
+      },
+      "impressions": {
+        "definition": "Synthetic single attributable cohort: impressions",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "impressions",
+        "value": 100000
+      },
+      "retained_users": {
+        "definition": "Synthetic single attributable cohort: retained_users",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "people",
+        "value": 100
+      }
+    },
+    "period_end": "2025-12-31",
+    "period_start": "2025-12-01",
+    "rates": {
+      "activation_rate": {
+        "definition": "activated_users / destination_visits",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": 0.25
+      },
+      "click_through_rate": {
+        "definition": "destination_visits / impressions",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": 0.02
+      },
+      "engagement_rate": {
+        "definition": "engaged_users / impressions",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": 0.1
+      },
+      "retention_rate": {
+        "definition": "retained_users / activated_users",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": 0.2
+      }
+    },
+    "status": "mock"
+  },
+  "catalog_id": "otoha-market-intelligence",
+  "category": "Cultural and entertainment intelligence",
+  "commercial": {
+    "distribution": "HTTP REST / x402",
+    "pricing_status": "hypothesis",
+    "production_ready": false,
+    "proposed_price_usd_per_query": 0.05,
+    "provider": "FeeGate",
+    "publication_status": "offline_fixture",
+    "rights_status": "Source and redistribution rights review required before sale"
+  },
+  "commercial_value_proposition": "Cited music credits, normalized channel coverage and entity-safe search documents",
+  "discography": [
+    {
+      "credit_role": "composer",
+      "performer": "Kessoku Band",
+      "release_date": null,
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "status": "reference",
+      "title": "青春コンプレックス",
+      "track_id": "seishun-complex"
+    },
+    {
+      "credit_role": "performer",
+      "performer": "音羽-otoha-",
+      "release_date": null,
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "status": "reference",
+      "title": "狂信者のパレード -The Parade of Battlers",
+      "track_id": "parade-of-battlers"
+    },
+    {
+      "credit_role": "performer",
+      "performer": "音羽-otoha-",
+      "release_date": "2024-02-14",
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "status": "reference",
+      "title": "大生解",
+      "track_id": "daiseikai"
+    },
+    {
+      "credit_role": "performer",
+      "performer": "音羽-otoha-",
+      "release_date": "2024-02-14",
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "status": "reference",
+      "title": "ハッピー・エンド・ロール",
+      "track_id": "happy-end-roll"
+    },
+    {
+      "credit_role": "performer",
+      "performer": "音羽-otoha-",
+      "release_date": "2025-07-11",
+      "source_ids": [
+        "artist_official",
+        "artist_release_official"
+      ],
+      "status": "reference",
+      "title": "no man's world",
+      "track_id": "no-mans-world"
+    }
+  ],
+  "entity_disambiguation": {
+    "artist": {
+      "classification": {
+        "label": "music_artist",
+        "music_score": 1.0,
+        "technology_score": 0.0
+      },
+      "entity_id": "music:otoha-jp",
+      "profile": "J-Pop rock anison Sony Music",
+      "vector": [
+        1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "decision_rule": "At least two features in one domain; any mixed-domain evidence abstains.",
+    "developer": {
+      "classification": {
+        "label": "software_developer",
+        "music_score": 0.0,
+        "technology_score": 1.0
+      },
+      "entity_id": "https://github.com/Yotoha0303#identity",
+      "profile": "Go backend distributed systems multi-agent frameworks AI Collaboration Framework",
+      "vector": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "feature_names": [
+      "j_pop",
+      "rock",
+      "anison",
+      "sony_music",
+      "go_backend",
+      "distributed_systems",
+      "multi_agent_frameworks",
+      "ai_collaboration_framework"
+    ],
+    "l1_distance": 8,
+    "name_policy": "A romanization or similar name alone never establishes identity or affiliation.",
+    "unresolved_name_variants": [
+      "をとは"
+    ]
+  },
+  "limitations": [
+    "All numeric reach examples in mock mode are synthetic, not artist measurements.",
+    "Reference credits carry citations, not independent live verification of every claim.",
+    "No top-track ranking, deduplicated audience, causal uplift or artist affiliation is claimed.",
+    "Streaming trajectories and funnels need authorized analytics before commercial use."
+  ],
+  "mode": "mock",
+  "platform_reach": [
+    {
+      "account_id": "@otoha_official",
+      "account_status": "reference",
+      "account_url": "https://www.youtube.com/@otoha_official",
+      "developer_application": "Caption a short systems demo and link to a reproducible walkthrough.",
+      "entity_id": "music:otoha-jp",
+      "limitation": "Public channel and MV counters; stable channel/video IDs required.",
+      "metrics": {
+        "mv_views": {
+          "definition": "mv views",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "views",
+          "value": 1000000
+        },
+        "subscribers": {
+          "definition": "subscribers",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "people",
+          "value": 100000
+        }
+      },
+      "name": "YouTube",
+      "period_end": "2025-12-31",
+      "period_start": "2025-12-01",
+      "platform_id": "youtube",
+      "source_ids": [
+        "artist_official"
+      ],
+      "viral_mechanism": "Performance hook -> full music video -> repeat viewing"
+    },
+    {
+      "account_id": null,
+      "account_status": "unverified",
+      "account_url": null,
+      "developer_application": "Route a tutorial to an evergreen documentation series.",
+      "entity_id": "music:otoha-jp",
+      "limitation": "Monthly listeners and stream totals are not supplied by ordinary catalog APIs.",
+      "metrics": {
+        "monthly_listeners": {
+          "definition": "monthly listeners",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "people",
+          "value": 50000
+        },
+        "streams": {
+          "definition": "streams",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "plays",
+          "value": 200000
+        }
+      },
+      "name": "Spotify",
+      "period_end": "2025-12-31",
+      "period_start": "2025-12-01",
+      "platform_id": "spotify",
+      "source_ids": [],
+      "viral_mechanism": "Anime discovery -> artist catalog -> saves and repeat listening"
+    },
+    {
+      "account_id": null,
+      "account_status": "unverified",
+      "account_url": null,
+      "developer_application": "Use a curated project index with clear next steps.",
+      "entity_id": "music:otoha-jp",
+      "limitation": "Listener and play analytics require an authorized artist export.",
+      "metrics": {
+        "monthly_listeners": {
+          "definition": "monthly listeners",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "people",
+          "value": 50000
+        },
+        "streams": {
+          "definition": "streams",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "plays",
+          "value": 200000
+        }
+      },
+      "name": "Apple Music",
+      "period_end": "2025-12-31",
+      "period_start": "2025-12-01",
+      "platform_id": "apple_music",
+      "source_ids": [],
+      "viral_mechanism": "Editorial or search discovery -> catalog listening"
+    },
+    {
+      "account_id": "_______0108",
+      "account_status": "reference",
+      "account_url": "https://twitter.com/_______0108",
+      "developer_application": "Publish a measured engineering result with a demo and tagged documentation link.",
+      "entity_id": "music:otoha-jp",
+      "limitation": "Engagement uses interactions / impressions for the same post cohort and period.",
+      "metrics": {
+        "engagement_rate": {
+          "definition": "interactions / impressions",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "ratio",
+          "value": 0.05
+        },
+        "followers": {
+          "definition": "followers",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "people",
+          "value": 20000
+        },
+        "impressions": {
+          "definition": "impressions",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "impressions",
+          "value": 100000
+        },
+        "interactions": {
+          "definition": "interactions",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "interactions",
+          "value": 5000
+        }
+      },
+      "name": "X / Twitter",
+      "period_end": "2025-12-31",
+      "period_start": "2025-12-01",
+      "platform_id": "x",
+      "source_ids": [
+        "artist_official"
+      ],
+      "viral_mechanism": "Release clip -> discussion -> destination link"
+    },
+    {
+      "account_id": "@_.otoha._0108",
+      "account_status": "reference",
+      "account_url": "https://www.tiktok.com/@_.otoha._0108",
+      "developer_application": "Show one visible before/after result with captions and a tutorial link.",
+      "entity_id": "music:otoha-jp",
+      "limitation": "Engagement uses interactions / views; this denominator differs from X.",
+      "metrics": {
+        "engagement_rate": {
+          "definition": "interactions / views",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "ratio",
+          "value": 0.05
+        },
+        "followers": {
+          "definition": "followers",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "people",
+          "value": 20000
+        },
+        "interactions": {
+          "definition": "interactions",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "interactions",
+          "value": 5000
+        },
+        "views": {
+          "definition": "views",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "views",
+          "value": 100000
+        }
+      },
+      "name": "TikTok",
+      "period_end": "2025-12-31",
+      "period_start": "2025-12-01",
+      "platform_id": "tiktok",
+      "source_ids": [
+        "artist_official"
+      ],
+      "viral_mechanism": "Immediate hook -> reusable short clip -> profile visit"
+    },
+    {
+      "account_id": null,
+      "account_status": "unverified",
+      "account_url": null,
+      "developer_application": "Localize technical subtitles, terminology and a minimal runnable example.",
+      "entity_id": "music:otoha-jp",
+      "limitation": "No official artist account has been established in this baseline.",
+      "metrics": {
+        "followers": {
+          "definition": "followers",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "people",
+          "value": 20000
+        },
+        "views": {
+          "definition": "views",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "views",
+          "value": 100000
+        }
+      },
+      "name": "Bilibili",
+      "period_end": "2025-12-31",
+      "period_start": "2025-12-01",
+      "platform_id": "bilibili",
+      "source_ids": [],
+      "viral_mechanism": "Subtitled explanation -> community discussion -> collection"
+    },
+    {
+      "account_id": null,
+      "account_status": "unverified",
+      "account_url": null,
+      "developer_application": "Localize documentation keywords and preserve canonical project links.",
+      "entity_id": "music:otoha-jp",
+      "limitation": "Catalog availability and an official artist ID require regional verification.",
+      "metrics": {
+        "followers": {
+          "definition": "followers",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "people",
+          "value": 20000
+        },
+        "streams": {
+          "definition": "streams",
+          "observed_at_utc": null,
+          "source_ids": [],
+          "status": "mock",
+          "unit": "plays",
+          "value": 200000
+        }
+      },
+      "name": "NetEase Music",
+      "period_end": "2025-12-31",
+      "period_start": "2025-12-01",
+      "platform_id": "netease_music",
+      "source_ids": [],
+      "viral_mechanism": "Localized title search -> catalog discovery -> repeat listening"
+    }
+  ],
+  "product_name": "Otoha Multi-Platform Market Intelligence",
+  "provenance": {
+    "content_sha256": "943ed94c51af82494801a704aa583e901792878beb321b42b2f7fe9bb1d20a79",
+    "coverage": "partial",
+    "ingested_at_utc": "2026-01-01T00:00:00Z",
+    "record_count": 12,
+    "schema_version": "1.0.0",
+    "sha256_checksum": "34c7664d2a8fc43e2368f75dbf65a2001e8e6c885b8e80d336bb29b4a60c0cfb",
+    "source_origin": "Official reference pages and explicitly synthetic offline examples"
+  },
+  "records": [
+    {
+      "data_status": "reference",
+      "entity_id": "music:otoha-jp",
+      "record_id": "track:seishun-complex",
+      "record_type": "track",
+      "search_terms": [
+        "音羽-otoha-",
+        "青春コンプレックス",
+        "composer"
+      ],
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "title": "青春コンプレックス"
+    },
+    {
+      "data_status": "reference",
+      "entity_id": "music:otoha-jp",
+      "record_id": "track:parade-of-battlers",
+      "record_type": "track",
+      "search_terms": [
+        "音羽-otoha-",
+        "狂信者のパレード -The Parade of Battlers",
+        "performer"
+      ],
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "title": "狂信者のパレード -The Parade of Battlers"
+    },
+    {
+      "data_status": "reference",
+      "entity_id": "music:otoha-jp",
+      "record_id": "track:daiseikai",
+      "record_type": "track",
+      "search_terms": [
+        "音羽-otoha-",
+        "大生解",
+        "performer"
+      ],
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "title": "大生解"
+    },
+    {
+      "data_status": "reference",
+      "entity_id": "music:otoha-jp",
+      "record_id": "track:happy-end-roll",
+      "record_type": "track",
+      "search_terms": [
+        "音羽-otoha-",
+        "ハッピー・エンド・ロール",
+        "performer"
+      ],
+      "source_ids": [
+        "black_butler_official"
+      ],
+      "title": "ハッピー・エンド・ロール"
+    },
+    {
+      "data_status": "reference",
+      "entity_id": "music:otoha-jp",
+      "record_id": "track:no-mans-world",
+      "record_type": "track",
+      "search_terms": [
+        "音羽-otoha-",
+        "no man's world",
+        "performer"
+      ],
+      "source_ids": [
+        "artist_official",
+        "artist_release_official"
+      ],
+      "title": "no man's world"
+    },
+    {
+      "data_status": "mock",
+      "entity_id": "music:otoha-jp",
+      "record_id": "platform:youtube",
+      "record_type": "platform",
+      "search_terms": [
+        "音羽-otoha-",
+        "YouTube"
+      ],
+      "source_ids": [
+        "artist_official"
+      ],
+      "title": "YouTube"
+    },
+    {
+      "data_status": "mock",
+      "entity_id": "music:otoha-jp",
+      "record_id": "platform:spotify",
+      "record_type": "platform",
+      "search_terms": [
+        "音羽-otoha-",
+        "Spotify"
+      ],
+      "source_ids": [],
+      "title": "Spotify"
+    },
+    {
+      "data_status": "mock",
+      "entity_id": "music:otoha-jp",
+      "record_id": "platform:apple_music",
+      "record_type": "platform",
+      "search_terms": [
+        "音羽-otoha-",
+        "Apple Music"
+      ],
+      "source_ids": [],
+      "title": "Apple Music"
+    },
+    {
+      "data_status": "mock",
+      "entity_id": "music:otoha-jp",
+      "record_id": "platform:x",
+      "record_type": "platform",
+      "search_terms": [
+        "音羽-otoha-",
+        "X / Twitter"
+      ],
+      "source_ids": [
+        "artist_official"
+      ],
+      "title": "X / Twitter"
+    },
+    {
+      "data_status": "mock",
+      "entity_id": "music:otoha-jp",
+      "record_id": "platform:tiktok",
+      "record_type": "platform",
+      "search_terms": [
+        "音羽-otoha-",
+        "TikTok"
+      ],
+      "source_ids": [
+        "artist_official"
+      ],
+      "title": "TikTok"
+    },
+    {
+      "data_status": "mock",
+      "entity_id": "music:otoha-jp",
+      "record_id": "platform:bilibili",
+      "record_type": "platform",
+      "search_terms": [
+        "音羽-otoha-",
+        "Bilibili"
+      ],
+      "source_ids": [],
+      "title": "Bilibili"
+    },
+    {
+      "data_status": "mock",
+      "entity_id": "music:otoha-jp",
+      "record_id": "platform:netease_music",
+      "record_type": "platform",
+      "search_terms": [
+        "音羽-otoha-",
+        "NetEase Music"
+      ],
+      "source_ids": [],
+      "title": "NetEase Music"
+    }
+  ],
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "error_code": null,
+      "matched_tokens": [],
+      "retrieved_at_utc": null,
+      "sha256": null,
+      "source_id": "black_butler_official",
+      "status": "reference",
+      "title": "Black Butler: Public School Arc official music credits",
+      "url": "https://www.kuroshitsuji.tv/music/"
+    },
+    {
+      "error_code": null,
+      "matched_tokens": [],
+      "retrieved_at_utc": null,
+      "sha256": null,
+      "source_id": "bocchi_official",
+      "status": "reference",
+      "title": "Bocchi the Rock! official music directory",
+      "url": "https://bocchi.rocks/tv/music/"
+    },
+    {
+      "error_code": null,
+      "matched_tokens": [],
+      "retrieved_at_utc": null,
+      "sha256": null,
+      "source_id": "artist_official",
+      "status": "reference",
+      "title": "Official artist profile, anime credits and social account cross-links",
+      "url": "https://otohaofficial.com/profiles"
+    },
+    {
+      "error_code": null,
+      "matched_tokens": [],
+      "retrieved_at_utc": null,
+      "sha256": null,
+      "source_id": "artist_release_official",
+      "status": "reference",
+      "title": "Official no man's world digital release; 2025-07-11",
+      "url": "https://otohaofficial.com/musics/19736"
+    }
+  ],
+  "streaming_trajectory": [
+    {
+      "growth_rate": {
+        "definition": "(current - previous) / previous; same platform",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": null
+      },
+      "period": "2025-11",
+      "platform_id": "spotify",
+      "streams": {
+        "definition": "Monthly plays; synthetic cohort",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "plays",
+        "value": 100000
+      }
+    },
+    {
+      "growth_rate": {
+        "definition": "(current - previous) / previous; same platform",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": 0.2
+      },
+      "period": "2025-12",
+      "platform_id": "spotify",
+      "streams": {
+        "definition": "Monthly plays; synthetic cohort",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "plays",
+        "value": 120000
+      }
+    },
+    {
+      "growth_rate": {
+        "definition": "(current - previous) / previous; same platform",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": null
+      },
+      "period": "2025-11",
+      "platform_id": "apple_music",
+      "streams": {
+        "definition": "Monthly plays; synthetic cohort",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "plays",
+        "value": 100000
+      }
+    },
+    {
+      "growth_rate": {
+        "definition": "(current - previous) / previous; same platform",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": 0.2
+      },
+      "period": "2025-12",
+      "platform_id": "apple_music",
+      "streams": {
+        "definition": "Monthly plays; synthetic cohort",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "plays",
+        "value": 120000
+      }
+    },
+    {
+      "growth_rate": {
+        "definition": "(current - previous) / previous; same platform",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": null
+      },
+      "period": "2025-11",
+      "platform_id": "netease_music",
+      "streams": {
+        "definition": "Monthly plays; synthetic cohort",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "plays",
+        "value": 100000
+      }
+    },
+    {
+      "growth_rate": {
+        "definition": "(current - previous) / previous; same platform",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "ratio",
+        "value": 0.2
+      },
+      "period": "2025-12",
+      "platform_id": "netease_music",
+      "streams": {
+        "definition": "Monthly plays; synthetic cohort",
+        "observed_at_utc": null,
+        "source_ids": [],
+        "status": "mock",
+        "unit": "plays",
+        "value": 120000
+      }
+    }
+  ],
+  "target_audience": "Music analysts, developer advocates and dataset engineers"
+}
