@@ -1,0 +1,569 @@
+{
+  "product": "Developer Curated Intel v1",
+  "schema_version": "1.0.0",
+  "sample_count": 50,
+  "total_records": 2176,
+  "records": [
+    {
+      "title": "Grokipedia",
+      "url": "https://grokipedia.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "grokipedia.com",
+      "add_date": 1765113873,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "ChatGPT",
+      "url": "https://chatgpt.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "chatgpt.com",
+      "add_date": 1716364822,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Claude",
+      "url": "https://claude.ai/new",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "claude.ai",
+      "add_date": 1729567902,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Gemini",
+      "url": "https://gemini.google.com/app",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "gemini.google.com",
+      "add_date": 1717160859,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Grok",
+      "url": "https://grok.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "grok.com",
+      "add_date": 1746691412,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Untitled prompt | Google AI Studio",
+      "url": "https://aistudio.google.com/app/prompts/new_chat",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "aistudio.google.com",
+      "add_date": 1717161598,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Coze",
+      "url": "https://www.coze.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "www.coze.com",
+      "add_date": 1717237473,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Chromox",
+      "url": "https://chromox.alkaidvision.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "chromox.alkaidvision.com",
+      "add_date": 1728175953,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Perplexity",
+      "url": "https://www.perplexity.ai/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "www.perplexity.ai",
+      "add_date": 1728175969,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "我的看板 - Albus AI App",
+      "url": "https://studio.albus.org/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "studio.albus.org",
+      "add_date": 1728177014,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "character.ai | Personalized AI for every moment of your day",
+      "url": "https://character.ai/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "character.ai",
+      "add_date": 1729568157,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "海螺AI—MiniMax 旗下生产力产品，你的AI伙伴，10倍速提升工作学习效率",
+      "url": "https://hailuoai.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "hailuoai.com",
+      "add_date": 1729883837,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Cursor - The AI Code Editor",
+      "url": "https://www.cursor.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "www.cursor.com",
+      "add_date": 1745343674,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "MiniMax-与用户共创智能",
+      "url": "https://www.minimaxi.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "www.minimaxi.com",
+      "add_date": 1747217388,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "纳米AI搜索",
+      "url": "https://www.n.cn/?fr=none",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "www.n.cn",
+      "add_date": 1747217406,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Kimi - An AI assistant that can perform deductive reasoning and is capable of deep thinking.",
+      "url": "https://kimi.moonshot.cn/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "kimi.moonshot.cn",
+      "add_date": 1747615095,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "法行宝-您的免费AI律师",
+      "url": "https://ailegal.baidu.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "ailegal.baidu.com",
+      "add_date": 1748527502,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "DeepSeek - Into the Unknown",
+      "url": "https://chat.deepseek.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "chat.deepseek.com",
+      "add_date": 1749732237,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "智谱AI开放平台",
+      "url": "https://bigmodel.cn/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "bigmodel.cn",
+      "add_date": 1774250719,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "OpenRouter",
+      "url": "https://openrouter.ai/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "openrouter.ai",
+      "add_date": 1774771937,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "llama.cpp - C与C++大模型推理端",
+      "url": "https://github.com/ggerganov/llama.cpp",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "llamafile - 单文件跨平台运行工具",
+      "url": "https://github.com/Mozilla-Ocho/llamafile",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "KoboldCpp - 轻量级GGUF推理服务",
+      "url": "https://github.com/LostRuins/koboldcpp",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Cortex.cpp - 本地大模型定制核心库",
+      "url": "https://github.com/janhq/cortex.cpp",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "LocalAI - 本地API兼容替代品",
+      "url": "https://github.com/mudler/LocalAI",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Aphrodite Engine - 大规模专用推理引擎",
+      "url": "https://github.com/PygmalionAI/aphrodite-engine",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Petals - 分布式大模型推理网络",
+      "url": "https://petals.dev/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "petals.dev",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Nexa SDK - 端侧硬件推理开发套件",
+      "url": "https://github.com/NexaAI/nexa-sdk",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Lemonade - 高性能推理配置工具",
+      "url": "https://github.com/lemonade-sdk/lemonade",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Browser LLM - 浏览器本地推理演示",
+      "url": "https://github.com/andreinwald/browser-llm",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "AI 日报 - 速读最新AI资讯",
+      "url": "https://ibywind.github.io/ai-daily-news/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "ibywind.github.io",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "AI资讯日报 - 汇总每日AI前沿信息",
+      "url": "https://gorden-sun.notion.site/527689cd2b294e60912f040095e803c5?v=4f6cc12006c94f47aee4dc909511aeb5",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "gorden-sun.notion.site",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "AI资讯日报 (GitHub版) - 浏览每日AI新闻与工具",
+      "url": "https://wjjzl519.github.io/ai-news-daily",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "wjjzl519.github.io",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "AIHOT - 追踪AI行业最新热点",
+      "url": "https://aihot.virxact.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "aihot.virxact.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "3MinTop - 速读3分钟AI日报",
+      "url": "https://ai.3min.top/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "ai.3min.top",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "AI 开发者日报 - 浏览面向开发者的AI新闻",
+      "url": "https://ainews.liduos.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "ainews.liduos.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Agently.top - 追踪AI开源趋势与动态",
+      "url": "https://agently.top/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "agently.top",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Github Trending Spider - 抓取AI开源趋势与社区热议",
+      "url": "https://github.com/wenbochang888/github-trending-spider/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Alpha News - 阅读AI驱动精选日报",
+      "url": "https://alphanews.club/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "alphanews.club",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Chatbene - 检索AI对话与知识库门户",
+      "url": "https://chatbene.com/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "chatbene.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "AI今日热榜 - 浏览AI垂直领域每日热榜",
+      "url": "https://aihot.today/",
+      "category_path": "01_AI前沿与模型工程 / 01_核心大模型与协议",
+      "domain": "aihot.today",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "核心大模型与协议"
+      ]
+    },
+    {
+      "title": "Smithery - Model Context Protocol Registry",
+      "url": "https://smithery.ai/",
+      "category_path": "01_AI前沿与模型工程 / 02_Agent与MCP生态",
+      "domain": "smithery.ai",
+      "add_date": 1745343607,
+      "tags": [
+        "AI前沿与模型工程",
+        "Agent与MCP生态"
+      ]
+    },
+    {
+      "title": "Hugging Face – The AI community building the future.",
+      "url": "https://huggingface.co/",
+      "category_path": "01_AI前沿与模型工程 / 03_数据集微调与算力评估",
+      "domain": "huggingface.co",
+      "add_date": 1743413728,
+      "tags": [
+        "AI前沿与模型工程",
+        "数据集微调与算力评估"
+      ]
+    },
+    {
+      "title": "硅基流动，加速 AGI 普惠人类",
+      "url": "https://siliconflow.cn/zh-cn/",
+      "category_path": "01_AI前沿与模型工程 / 03_数据集微调与算力评估",
+      "domain": "siliconflow.cn",
+      "add_date": 1745406077,
+      "tags": [
+        "AI前沿与模型工程",
+        "数据集微调与算力评估"
+      ]
+    },
+    {
+      "title": "unsloth - LLM大语言模型极速微调框架",
+      "url": "https://github.com/unslothai/unsloth?tab=readme-ov-file#-finetune-for-free",
+      "category_path": "01_AI前沿与模型工程 / 03_数据集微调与算力评估",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "数据集微调与算力评估"
+      ]
+    },
+    {
+      "title": "DeepSpeed - 深度学习分布式优化与训练库",
+      "url": "https://www.deepspeed.ai/",
+      "category_path": "01_AI前沿与模型工程 / 03_数据集微调与算力评估",
+      "domain": "www.deepspeed.ai",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "数据集微调与算力评估"
+      ]
+    },
+    {
+      "title": "Netron - 神经网络深度学习模型可视化",
+      "url": "https://github.com/lutzroeder/netron",
+      "category_path": "01_AI前沿与模型工程 / 03_数据集微调与算力评估",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "数据集微调与算力评估"
+      ]
+    },
+    {
+      "title": "MMDeploy - 深度学习模型多平台部署框架",
+      "url": "https://mmdeploy.readthedocs.io/en/latest",
+      "category_path": "01_AI前沿与模型工程 / 03_数据集微调与算力评估",
+      "domain": "mmdeploy.readthedocs.io",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "数据集微调与算力评估"
+      ]
+    },
+    {
+      "title": "Cyberbotics - Webots开源机器人物理仿真",
+      "url": "https://cyberbotics.com/",
+      "category_path": "01_AI前沿与模型工程 / 03_数据集微调与算力评估",
+      "domain": "cyberbotics.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "数据集微调与算力评估"
+      ]
+    },
+    {
+      "title": "Chroma - AI原生开源嵌入式向量数据库",
+      "url": "https://github.com/chroma-core/chroma",
+      "category_path": "01_AI前沿与模型工程 / 04_向量数据库与RAG",
+      "domain": "github.com",
+      "add_date": 1794128930,
+      "tags": [
+        "AI前沿与模型工程",
+        "向量数据库与RAG"
+      ]
+    }
+  ],
+  "upgrade_info": {
+    "product": "Developer Curated Intel v1 完整版",
+    "price_cny": 29.9,
+    "price_usd": 4.99,
+    "full_version_files": [
+      "developer_curated_intel_v1.sqlite",
+      "developer_curated_intel_v1.jsonl",
+      "DEVELOPER_INTEL_PRODUCT_MANIFEST.md"
+    ],
+    "purchase_instructions": "返回获取此样例的商品页面或联系该页面卖家，购买完整版，解锁全部记录及 SQLite/FTS5 检索。付款后下载完整交付包。"
+  }
+}
