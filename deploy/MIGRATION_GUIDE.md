@@ -4,7 +4,7 @@
 
 ---
 
-## 🚀 方式一：Docker 一键容器化部署 (推荐 · 跨平台零污染)
+## 方式一：Docker 一键容器化部署 (推荐 · 跨平台零污染)
 
 ### 1. 迁移准备
 在私人服务器上克隆仓库：
@@ -28,7 +28,7 @@ curl -I http://localhost:8402/data/feegate-catalog-index.json
 
 ---
 
-## 🛠️ 方式二：原生 Linux Systemd 定时服务部署 (免 Docker)
+## 方式二：原生 Linux Systemd 定时服务部署 (免 Docker)
 
 Systemd 每 6 小时采集 sovereign yields，并校验全部 4 个产品。
 完整的命令、日志与指标位置、失败处理说明见 [HARVESTER.md](HARVESTER.md)。

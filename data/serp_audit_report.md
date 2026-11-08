@@ -1,4 +1,4 @@
-# 🛡️ SERP Sovereignty Audit Report | 搜索主权巡检总账
+# SERP Sovereignty Audit Report | 搜索主权巡检总账
 
 - **Target Entity (目标实体)**: `yotoha`
 - **Sovereignty Status (主权状态)**: `CONTESTED`
@@ -8,10 +8,10 @@
 - **Intruder Collisions (音羽歌手混淆数)**: `1`
 - **Highest Intruder Rank (混淆最高排位)**: `4`
 
-## 📋 Recommendations | 行动建议
+## Recommendations | 行动建议
 - WARNING: Intruder present on page 1 (Rank 4). Increase content freshness and IndexNow pings.
 
-## 🔍 Classified SERP Items | 结果分类明细
+## Classified SERP Items | 结果分类明细
 | Rank | Status | Title | URL | Clues |
 | :--- | :--- | :--- | :--- | :--- |
 | 1 | SOVEREIGN | Yotoha (Yotoha0303) · GitHub Profile | https://github.com/Yotoha0303 | official_prefix:https://github.com/Yotoha0303 |
