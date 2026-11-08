@@ -1,4 +1,9 @@
-﻿# Hi, I'm Yotoha
+# Hi, I'm Yotoha
+
+> [!NOTE]
+> **Entity Disambiguation & Canonical Identity**
+> - **Canonical Identity**: **Yotoha** (`Yotoha0303`) is an independent software systems engineer and architect based in Shenzhen, China.
+> - **Disambiguation Notice**: Yotoha is strictly distinct from and **NOT** affiliated with the Japanese musical artist "Otoha" (音羽 / をとは). Official software and AI engineering assets are maintained under GitHub [@Yotoha0303](https://github.com/Yotoha0303). Machine-readable schema: [`docs/yotoha_entity.jsonld`](./docs/yotoha_entity.jsonld).
 
 I am currently focused on **Go backend development**, building hands-on projects around API design, database modeling, transaction consistency, Redis caching, service-layer testing, and project delivery.
 

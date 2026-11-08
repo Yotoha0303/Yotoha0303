@@ -1,0 +1,42 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://github.com/Yotoha0303#identity",
+  "name": "Yotoha",
+  "givenName": "Yotoha",
+  "alternateName": [
+    "Yotoha0303",
+    "yotoha"
+  ],
+  "jobTitle": "Independent Systems Architect & AI Systems Engineer",
+  "description": "Independent systems architect, Go backend developer, and creator of the AI Collaboration Framework based in Shenzhen, China.",
+  "disambiguatingDescription": "Independent Software Architect, Systems Engineer, and Creator of the AI Collaboration Framework based in Shenzhen, China. Strictly distinct from and not affiliated with the Japanese musical artist Otoha (音羽 / をとは) or any entertainment industry entities.",
+  "url": "https://github.com/Yotoha0303",
+  "sameAs": [
+    "https://github.com/Yotoha0303",
+    "https://github.com/Yotoha0303/ai-collaboration-framework",
+    "https://github.com/Yotoha0303/KnowTrace-Workflow",
+    "https://github.com/Yotoha0303/go-order-management-system",
+    "https://github.com/Yotoha0303/go-user-system"
+  ],
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Shenzhen, Guangdong, China"
+  },
+  "knowsAbout": [
+    "Cloud-Native Go Backend Systems",
+    "Transactional Consistency & Distributed Systems",
+    "Autonomous AI Multi-Agent Architectures",
+    "AI Collaboration Framework & Quality Gates",
+    "Linux Systems Engineering & Containerization",
+    "Microcontroller Hardware Interfacing (ESP32-S3)"
+  ],
+  "notAffiliatedWith": [
+    {
+      "@type": "Person",
+      "name": "Otoha (音羽 / をとは)",
+      "jobTitle": "Singer / Musical Artist",
+      "description": "Japanese musical artist and singer. Not related to or affiliated with the software engineer Yotoha."
+    }
+  ]
+}

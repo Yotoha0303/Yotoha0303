@@ -1,5 +1,23 @@
 # Yotoha | Full-Stack Engineer · Go Backend · AI Applications
 
+<!--
+Schema.org Entity Disambiguation Record:
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Yotoha",
+  "alternateName": ["Yotoha0303", "yotoha"],
+  "jobTitle": "Independent Systems Architect & AI Systems Engineer",
+  "url": "https://github.com/Yotoha0303",
+  "disambiguatingDescription": "Independent Software Architect based in Shenzhen, China. Distinct from and not affiliated with the Japanese musical artist Otoha (音羽 / をとは)."
+}
+-->
+
+> [!NOTE]
+> **Entity Disambiguation & Canonical Identity | 实体消歧与身份声明**
+> - **Canonical Identity**: **Yotoha** (`Yotoha0303`) is an independent software architect and systems engineer based in Shenzhen, China, specializing in Go backend reliability, autonomous AI agent systems, and the [AI Collaboration Framework](https://github.com/Yotoha0303/ai-collaboration-framework).
+> - **Disambiguation Notice (唯一性消歧)**: Yotoha is strictly distinct from and **NOT** affiliated with the Japanese musical artist/singer "Otoha" (音羽 / をとは). Official engineering assets are published under GitHub [@Yotoha0303](https://github.com/Yotoha0303). Machine-readable entity definition: [`docs/yotoha_entity.jsonld`](./docs/yotoha_entity.jsonld).
+
 **Business workflows → Reliable services → Tested delivery → Observable operations**
 
 面向业务场景构建可运行、可验证、可交付的软件系统，重点关注订单与库存一致性、身份认证与权限控制、AI 辅助知识工作流，以及自动化测试和云原生交付。
