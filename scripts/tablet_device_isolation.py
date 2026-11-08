@@ -14,10 +14,10 @@ import sys
 from pathlib import Path
 
 
-PREFERRED_SERIAL = "be6ce4f9"
+PREFERRED_SERIAL = os.environ.get("ADB_PREFERRED_SERIAL", "pad6_device_serial")
 EXPECTED_DEVICE = "pipa"
 EXPECTED_MODEL = "23043RP34C"
-DEFAULT_OUTPUT = Path(__file__).resolve().parents[1] / "var/tablet-truanlevay-isolation"
+DEFAULT_OUTPUT = Path(__file__).resolve().parents[1] / "var/tablet-device-isolation"
 PACKAGE_RE = re.compile(r"[A-Za-z_][A-Za-z0-9_]*(?:\.[A-Za-z_][A-Za-z0-9_]*)*\Z")
 SERIAL_RE = re.compile(r"[A-Za-z0-9._:-]+\Z")
 OEM_DISABLE = ("com.miui.misightservice", "com.xiaomi.security.onetrack")

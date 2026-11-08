@@ -1,9 +1,9 @@
 {
   "meta": {
     "version": "1.0.0",
-    "updated_at": "2026-11-07T22:50:00+08:00",
-    "authority": "CMD-00",
-    "steward": "EXE-01",
+    "updated_at": "2026-11-09T02:00:00+08:00",
+    "authority": "SOVEREIGN_ARCHITECT",
+    "steward": "ORCHESTRATOR_STEWARD",
     "description": "Immutable organizational preference baseline and physical invariants for autonomous agents."
   },
   "hardware_pinouts": {
@@ -62,19 +62,19 @@
     }
   },
   "vendor_trust_and_rate_limits": {
-    "api666_zzzcoding": {
+    "primary_ai_gateway": {
       "trust_tier": "B+",
       "max_concurrency": 1,
       "max_turns_per_task": 25,
       "task_timeout_sec": 1200,
       "cooldown_on_429_sec": 60,
-      "base_url": "https://api666.zzzcoding.org/v1"
+      "base_url": "https://api.example.com/v1"
     },
     "local_services": {
-      "clash_verge_proxy": "127.0.0.1:7890",
-      "edge_tts_daemon": "127.0.0.1:5174",
-      "instabox_meilisearch": "127.0.0.1:7700",
-      "cc_switch_gateway": "127.0.0.1:15721"
+      "proxy_daemon": "127.0.0.1:7890",
+      "tts_daemon": "127.0.0.1:5174",
+      "search_indexer": "127.0.0.1:7700",
+      "gateway_router": "127.0.0.1:15721"
     }
   },
   "system_guardrails_invariants": {
@@ -83,9 +83,9 @@
     "max_prompt_chars": 10000,
     "max_task_timeout_sec": 1200,
     "steps_to_first_dollar_p0_gate": true,
-    "account_freeze_period": {
-      "samalas318": "2026-11-10",
-      "truanlevay": "2026-11-10"
+    "account_cooling_period": {
+      "account_primary_sandbox": "2026-11-10",
+      "account_secondary_sandbox": "2026-11-10"
     }
   },
   "commercial_pricing_tiers": {

@@ -1,15 +1,14 @@
 # Xiaomi Pad 6 account isolation SOP
 
-Scope: Xiaomi Pad 6 `pipa`, model `23043RP34C`, preferred ADB serial
-`be6ce4f9`. This procedure is for the designated high-value Google account
-during its current seven-day observation period. It reduces local account
-mixing and some optional OEM collection surfaces. It cannot guarantee that
-Google will accept the session, prevent a restriction, or hide device and
-network signals from services the user signs into.
+Scope: Android Tablet (Xiaomi Pad 6 `pipa` or compatible HyperOS devices), target ADB serial.
+This procedure is for dedicated testing profiles during account observation and isolation periods.
+It reduces local account mixing and optional OEM telemetry collection surfaces. It cannot guarantee
+that Google will accept the session, prevent a restriction, or hide device and network signals from
+services the user signs into.
 
 ## 1. Current read-only findings
 
-Observed on the connected tablet on 2026-11-07:
+Observed baseline findings on the reference tablet:
 
 | Item | Finding | Treatment |
 | --- | --- | --- |
@@ -31,19 +30,18 @@ Do not infer that disabling it is safe.
 ## 2. Audit and review
 
 Requires Python 3 and Android Platform Tools (`adb`). Authorize USB debugging
-on the tablet. The script uses serial `be6ce4f9` when present; if it is absent,
-it accepts exactly one other authorized device for audit and plan generation.
+on the tablet. The script accepts an attached authorized device for audit and plan generation.
 Applying changes requires that device to report `pipa` and `23043RP34C`.
 No account names, passwords, tokens, or Android account database are read.
 
 ```bash
 adb devices -l
-python3 scripts/tablet_truanlevay_isolation.py --audit
-python3 scripts/tablet_truanlevay_isolation.py --prepare-env --dry-run
-python3 scripts/tablet_truanlevay_isolation.py --prepare-env
+python3 scripts/tablet_device_isolation.py --audit
+python3 scripts/tablet_device_isolation.py --prepare-env --dry-run
+python3 scripts/tablet_device_isolation.py --prepare-env
 ```
 
-`--audit` writes `var/tablet-truanlevay-isolation/audit.json`;
+`--audit` writes `var/tablet-device-isolation/audit.json`;
 `--prepare-env` writes `plan.json` with commands and per-action rollback
 commands. Both are read-only on the device. `--dry-run` prints JSON and
 writes nothing. `--output DIR` changes the report directory. Reports are
@@ -51,7 +49,7 @@ created with owner-only file permissions because they contain device
 identifiers and app inventory.
 
 After creating the dedicated secondary Android user, find its numeric ID with
-`adb -s be6ce4f9 shell pm list users`. Repeat audit and planning with
+`adb shell pm list users`. Repeat audit and planning with
 `--user-id ID`; this writes `audit-user-ID.json` and
 `plan-user-ID.json`, and targets only that Android user. Review those
 actions independently. The default remains user 0.
@@ -60,7 +58,7 @@ For an offline fixture, put `package:com.example.name` lines in a text file
 and run:
 
 ```bash
-python3 scripts/tablet_truanlevay_isolation.py --prepare-env --mock-packages packages.txt --dry-run
+python3 scripts/tablet_device_isolation.py --prepare-env --mock-packages packages.txt --dry-run
 ```
 
 Mock input cannot be applied to a device. An absent or ambiguous ADB target
@@ -68,7 +66,7 @@ is an error rather than an implicit target switch.
 
 ## 3. Account isolation checklist
 
-1. Keep the designated Google account out of Android Settings > Accounts,
+1. Keep the designated account out of Android Settings > Accounts,
    Google Play, Gmail, Chrome, and other apps on the owner profile. Do not
    add it as a device-wide Google account.
 2. Create a dedicated Android secondary user from Settings > Additional
@@ -90,7 +88,7 @@ is an error rather than an implicit target switch.
    off. Keep recovery and two-step verification methods current.
 6. Avoid repeatedly switching accounts, browsers, IP regions, VPN endpoints,
    or devices during the observation period. These controls do not bypass
-   Google's risk decisions. If sign-in is unnecessary during the seven days,
+   Google's risk decisions. If sign-in is unnecessary during the cooling period,
    wait until the period ends.
 7. Keep the tablet updated, use a strong device lock, and revoke USB debugging
    authorization after setup. Review active sessions and security alerts in
@@ -106,8 +104,8 @@ seeing that device or its network.
 Review `plan.json` before applying. The only automatic package actions are:
 
 ```bash
-adb -s be6ce4f9 shell pm disable-user --user 0 com.miui.misightservice
-adb -s be6ce4f9 shell pm disable-user --user 0 com.xiaomi.security.onetrack
+adb shell pm disable-user --user 0 com.miui.misightservice
+adb shell pm disable-user --user 0 com.xiaomi.security.onetrack
 ```
 
 The script does not uninstall packages. It never targets `android`,
@@ -129,9 +127,9 @@ device. Package updates may reset AppOps.
 To apply only the allowlisted actions after review:
 
 ```bash
-python3 scripts/tablet_truanlevay_isolation.py --prepare-env --apply
+python3 scripts/tablet_device_isolation.py --prepare-env --apply
 # After reviewing the separate user's plan:
-python3 scripts/tablet_truanlevay_isolation.py --prepare-env --apply --user-id ID
+python3 scripts/tablet_device_isolation.py --prepare-env --apply --user-id ID
 ```
 
 The plan is written before mutation. The script rechecks device identity,
@@ -142,8 +140,8 @@ succeeded.
 Rollback for the two OEM candidates:
 
 ```bash
-adb -s be6ce4f9 shell pm enable --user 0 com.miui.misightservice
-adb -s be6ce4f9 shell pm enable --user 0 com.xiaomi.security.onetrack
+adb shell pm enable --user 0 com.miui.misightservice
+adb shell pm enable --user 0 com.xiaomi.security.onetrack
 ```
 
 For AppOps, use the corresponding `rollback` array in `plan.json`, which
@@ -164,8 +162,8 @@ provider that supports it; the Private DNS field accepts only a hostname.
 Verify the setting and connectivity:
 
 ```bash
-adb -s be6ce4f9 shell settings get global private_dns_mode
-adb -s be6ce4f9 shell settings get global private_dns_specifier
+adb shell settings get global private_dns_mode
+adb shell settings get global private_dns_specifier
 ```
 
 Expected mode for a configured hostname is `hostname`; the specifier should

@@ -89,11 +89,11 @@ class TestDesktopLeakSentinel(unittest.TestCase):
         self.assertIn("[REDACTED_JWT_TOKEN]", redacted)
 
     def test_clipboard_sanitizer_email(self):
-        text = "Contact samalas318@gmail.com and truanlevay@gmail.com for account recovery."
+        text = "Contact user_alpha_test@gmail.com and user_beta_test@gmail.com for account recovery."
         redacted, findings = sentinel.ClipboardSanitizer.sanitize(text)
 
-        self.assertNotIn("samalas318", redacted)
-        self.assertNotIn("truanlevay", redacted)
+        self.assertNotIn("user_alpha_test", redacted)
+        self.assertNotIn("user_beta_test", redacted)
         self.assertIn("[REDACTED_EMAIL]", redacted)
         self.assertEqual(len(findings), 2)
 

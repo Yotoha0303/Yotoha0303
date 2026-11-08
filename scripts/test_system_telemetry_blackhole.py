@@ -130,9 +130,9 @@ package:com.android.settings
 
     def test_connected_devices_mock(self):
         mock_runner = Mock()
-        mock_runner.return_value = Mock(stdout="List of devices attached\nbe6ce4f9\tdevice\nemulator-5554\toffline\n", returncode=0)
+        mock_runner.return_value = Mock(stdout="List of devices attached\ntest_dev_01\tdevice\nemulator-5554\toffline\n", returncode=0)
         devices = blackhole.connected_devices(runner=mock_runner)
-        self.assertIn("be6ce4f9", devices)
+        self.assertIn("test_dev_01", devices)
         self.assertNotIn("emulator-5554", devices)
 
     def test_run_adb_error(self):

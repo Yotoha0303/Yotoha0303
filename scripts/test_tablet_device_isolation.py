@@ -8,11 +8,11 @@ import tempfile
 import unittest
 from pathlib import Path
 
-import tablet_truanlevay_isolation as isolation
+import tablet_device_isolation as isolation
 
 
 class MockADB:
-    def __init__(self, packages=(), serial="be6ce4f9", model="23043RP34C", user_id=0):
+    def __init__(self, packages=(), serial="pad6_device_serial", model="23043RP34C", user_id=0):
         self.packages = set(packages)
         self.disabled = set()
         self.serial = serial
@@ -104,7 +104,7 @@ class IsolationTests(unittest.TestCase):
                          {"android", "com.miui.misightservice"})
 
     def test_device_selection_prefers_target_and_fails_closed(self):
-        self.assertEqual(isolation.select_device(["other", "be6ce4f9"]), "be6ce4f9")
+        self.assertEqual(isolation.select_device(["other", "pad6_device_serial"]), "pad6_device_serial")
         self.assertEqual(isolation.select_device(["one"]), "one")
         for devices in ([], ["one", "two"]):
             with self.assertRaises(isolation.ADBError):
@@ -193,7 +193,7 @@ class IsolationTests(unittest.TestCase):
         self.assertEqual(code, 0, error)
         self.assertEqual(len(json.loads(stdout)["results"]), 4)
         self.assertEqual(adb.disabled, set(isolation.OEM_DISABLE))
-        self.assertTrue(all(call[:3] == ["adb", "-s", "be6ce4f9"]
+        self.assertTrue(all(call[:3] == ["adb", "-s", "pad6_device_serial"]
                             for call in adb.calls if call[1:2] == ["-s"]))
         self.assertFalse(any(isolation.OEM_REVIEW in call and "disable-user" in call
                              for call in adb.calls))
