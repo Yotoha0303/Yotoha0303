@@ -1,0 +1,82 @@
+{
+  "title": "AI Model Cost & Routing Arbitrage Index (Public Sample)",
+  "license": "CC-BY-NC-4.0 / Model Arbitrage Protocol",
+  "generated_at": "2026-11-08T03:54:54Z",
+  "upgrade_info": {
+    "pro_feed_refresh": "Every 10 minutes",
+    "micro_payment_mcp_url": "https://api.modelarbitrage.io/v1/agent-routing/stream",
+    "accepted_payments": [
+      "x402-HTTP",
+      "USDT/Base",
+      "Alipay/WeChat-Invoice"
+    ]
+  },
+  "sample_routes": [
+    {
+      "task_archetype": "coding_dense",
+      "model_id": "deepseek-v3",
+      "target_provider": "deepseek-direct",
+      "baseline_reference_provider": "azure-openai",
+      "input_cost_per_m_usd": 0.14,
+      "output_cost_per_m_usd": 0.28,
+      "savings_pct_vs_baseline": 94.4,
+      "p95_latency_ms": 340,
+      "context_window_tokens": 65536,
+      "sla_reliability_score": 99.2,
+      "ban_risk_level": "LOW",
+      "is_actionable": true,
+      "verification_timestamp": "2026-11-08T03:54:54Z",
+      "fallback_route": {
+        "model_id": "claude-3-5-sonnet",
+        "provider": "inceptionlabs",
+        "input_cost_per_m_usd": 3.0,
+        "output_cost_per_m_usd": 15.0
+      },
+      "signature": "1ce3a7d6874a0fbf"
+    },
+    {
+      "task_archetype": "fast_reasoning",
+      "model_id": "mercury-3",
+      "target_provider": "inceptionlabs",
+      "baseline_reference_provider": "openai-direct",
+      "input_cost_per_m_usd": 0.6,
+      "output_cost_per_m_usd": 1.2,
+      "savings_pct_vs_baseline": 88.0,
+      "p95_latency_ms": 220,
+      "context_window_tokens": 131072,
+      "sla_reliability_score": 99.9,
+      "ban_risk_level": "NONE",
+      "is_actionable": true,
+      "verification_timestamp": "2026-11-08T03:54:54Z",
+      "fallback_route": {
+        "model_id": "gpt-4o-mini",
+        "provider": "openai-direct",
+        "input_cost_per_m_usd": 0.15,
+        "output_cost_per_m_usd": 0.6
+      },
+      "signature": "e7f4e3b9bd50ce82"
+    },
+    {
+      "task_archetype": "deep_research",
+      "model_id": "claude-3-5-sonnet",
+      "target_provider": "claude-tier4-api",
+      "baseline_reference_provider": "retail-monthly-card",
+      "input_cost_per_m_usd": 3.0,
+      "output_cost_per_m_usd": 15.0,
+      "savings_pct_vs_baseline": 85.0,
+      "p95_latency_ms": 680,
+      "context_window_tokens": 200000,
+      "sla_reliability_score": 99.5,
+      "ban_risk_level": "NONE",
+      "is_actionable": true,
+      "verification_timestamp": "2026-11-08T03:54:54Z",
+      "fallback_route": {
+        "model_id": "deepseek-v3",
+        "provider": "deepseek-direct",
+        "input_cost_per_m_usd": 0.14,
+        "output_cost_per_m_usd": 0.28
+      },
+      "signature": "16b49c0fd36eea93"
+    }
+  ]
+}
