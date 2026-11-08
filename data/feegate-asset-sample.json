@@ -3,9 +3,9 @@
   "_note": "Automated open-source intelligence feed covering global AI trends, commercial signals, and China Mobile Ecosystem Privacy & Threat Intelligence. Maintained by Yotoha.",
   "asset": "Global Tech & Mobile Privacy Threat Intelligence Feed",
   "frequency": "daily",
-  "rows_per_run": 24,
+  "rows_per_run": 14,
   "license": "CC BY 4.0",
-  "updated_at": "2026-11-07T03:00:00Z",
+  "updated_at": "2026-11-08T03:00:00Z",
   "schema": {
     "signal_id": "string",
     "title": "string",
@@ -19,29 +19,18 @@
   },
   "rows": [
     {
-      "signal_id": "flash_7_1794020897",
-      "title": "OpenAI：将继续推进其美国数据中心扩张计划",
-      "url": "https://www.36kr.com/newsflashes/4058954305049481",
-      "source": "CommercialNewsflash",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents, Venture Capital, Hardware & Compute",
-      "relevance_score": 100,
-      "summary": "OpenAI首席财务官萨拉·弗莱尔(Sarah Friar)周五表示，尽管本周民主党中期选举引发了对AI基础设施进行更严格审查的担忧，但公司将继续推进其美国数据中心扩张计划。由于担心民主党横扫中期选举可能会减缓对AI繁荣至关重要的设施的建设，周四美国股市蒸发了约2.5万亿美元，投资者正在权衡芯片、云和网络行业的影响，这些行业一直是支出狂潮的最大受益者。不过，...",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "hn_50388001",
-      "title": "US FAA says it will phase out floppy disks from air traffic control by 2028",
-      "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05/",
+      "signal_id": "hn_50406563",
+      "title": "The end of Microsoft Research's AI Frontiers group",
+      "url": "https://hunch.net/?p=13764006",
       "source": "HackerNews",
       "category": "AI & Frontier Models",
       "business_signals": "AI & Agents",
       "relevance_score": 100,
-      "summary": "HN Score: 290 | Comments: 229",
-      "as_of": "2026-11-07"
+      "summary": "HN Score: 420 | Comments: 244",
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "sec_telemetry_hyperos_1794020895",
+      "signal_id": "sec_telemetry_hyperos_1794109614",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -49,10 +38,21 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 98,
       "summary": "实机取证发现底层守护进程 com.miui.daemon (MQSAS) 与 com.xiaomi.barrage 默认获取全局通知监听特权(NotificationMonitorService)，拦截微信、银行全部弹窗明文；通过用户空间 adb pm uninstall 可安全拔除并不影响基带与通讯。",
-      "as_of": "2026-11-07"
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "sec_darknet_breach_mapping_1794020895",
+      "signal_id": "hn_50407882",
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 98,
+      "summary": "HN Score: 231 | Comments: 149",
+      "as_of": "2026-11-08"
+    },
+    {
+      "signal_id": "sec_darknet_breach_mapping_1794109614",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -60,21 +60,10 @@
       "business_signals": "Darknet Intelligence, Canary Tokens, Anti-OSINT",
       "relevance_score": 96,
       "summary": "系统解构华住会 2018 (5亿条)、微博 2020 (5.38亿条)、快递面单等地下流通数据库物理结构；提出基于数学级 k-Anonymity 零暴露本地密码探针与姓名/门牌号金丝雀暗记反向唯一归因模型。",
-      "as_of": "2026-11-07"
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "hn_50397994",
-      "title": "AI is dramatically accelerating AI research",
-      "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 96,
-      "summary": "HN Score: 218 | Comments: 166",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "sec_clipboard_appops_1794020895",
+      "signal_id": "sec_clipboard_appops_1794109614",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -82,10 +71,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 95,
       "summary": "抽检美团、大众点评、天猫、拼多多、网易云等应用，默认拥有 READ_CLIPBOARD: allow 权限，每次切换前台自动静默搜集剪切板口令与身份证号；通过 cmd appops set <pkg> READ_CLIPBOARD ignore 可物理免疫且不影响复制粘贴正常交互。",
-      "as_of": "2026-11-07"
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "sec_sandbox_confinement_1794020895",
+      "signal_id": "sec_sandbox_confinement_1794109614",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -93,194 +82,95 @@
       "business_signals": "Container Security, Linux Hardening, Zero Trust",
       "relevance_score": 92,
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
-      "as_of": "2026-11-07"
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "flash_3_1794020897",
-      "title": "北京：支持超节点服务器、AI终端、超级智能体、量子计算云平台、下一代移动通信等新技术新产品",
-      "url": "https://www.36kr.com/newsflashes/4059085316166784",
-      "source": "CommercialNewsflash",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents, Hardware & Compute",
-      "relevance_score": 90,
-      "summary": "36氪获悉，北京经济技术开发区管理委员会印发《北京经济技术开发区关于加快建设开源开放信创产业高地的若干措施》的通知。其中提到， 鼓励软硬件上下游企业开展生态结盟、联合适配攻关，打造标杆应用场景。充分发挥应用牵引作用，支持企业联合用户单位开展集成创新，“串珠成链”形成一体化解决方案，推动产品及服务向复杂、关键业务场景拓展。支持超节点服务器、AI终端、超级智能体...",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "flash_0_1794020897",
-      "title": "iPhone Duo仍有大量热门应用未适配",
-      "url": "https://www.36kr.com/newsflashes/4059008321983625",
-      "source": "CommercialNewsflash",
-      "category": "Mobile OS & Privacy Security",
-      "business_signals": "Privacy & Security",
-      "relevance_score": 80,
-      "summary": "苹果宣布，上市仅两周的折叠屏iPhone Duo已经有超过10万款应用完成优化。 这些应用均基于iOS 27.1及以上版本SDK开发，可完整适配内外屏的全宽显示，并针对状态栏垂直控件布局完成调整，所有适配应用在App Store中带有专属“Made for iPhone Duo”标识，方便用户识别。 苹果全球开发者关系副总裁Susan Prescott表示，...",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "hn_50397429",
-      "title": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
-      "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 361 | Comments: 82",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "hn_50391456",
-      "title": "Tesla to wind down Cybertruck production",
-      "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 875 | Comments: 1737",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "hn_50399933",
-      "title": "Libghostty 1.0",
-      "url": "https://mitchellh.com/writing/libghostty-1-0",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 76,
-      "summary": "HN Score: 266 | Comments: 45",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "flash_9_1794020897",
-      "title": "谷歌发布新一代视频生成模型",
-      "url": "https://www.36kr.com/newsflashes/4059044006302593",
-      "source": "CommercialNewsflash",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 75,
-      "summary": "谷歌发布Gemini Omni 1.2 Flash 单段视频时长增至15秒 谷歌宣布推出AI视频生成模型Gemini Omni 1.2 Flash，支持原生生成最长15秒的视频，并新增多轮对话式编辑能力。相比上一代模型，其视频时长上限从10秒提高至15秒，延长50%。 用户可按1秒为单位，将生成时长设定在3秒至15秒之间。谷歌称，新模型提升了对参考内容的遵循...",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "hn_50399991",
-      "title": "RealPage rent-pricing case wraps with nearly $360M to renters",
-      "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553/",
+      "signal_id": "hn_50406292",
+      "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+      "url": "https://github.com/hedgerow-dev/coldframe",
       "source": "HackerNews",
       "category": "General Tech & Market",
       "business_signals": "Monetization & SaaS",
-      "relevance_score": 73,
-      "summary": "HN Score: 35 | Comments: 9",
-      "as_of": "2026-11-07"
+      "relevance_score": 90,
+      "summary": "HN Score: 202 | Comments: 44",
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "hn_50397219",
-      "title": "Firecracker VM Escape: PwnEscape Part 2",
-      "url": "https://pwn.ai/blog/firecracker-escape",
+      "signal_id": "hn_50377661",
+      "title": "Uranium cubes reveal why the German nuclear project failed",
+      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 83,
+      "summary": "HN Score: 84 | Comments: 47",
+      "as_of": "2026-11-08"
+    },
+    {
+      "signal_id": "hn_50406670",
+      "title": "What I run on my $10 USD OpenStick homelab",
+      "url": "https://blog.bosscher.ch/posts/openstick/",
       "source": "HackerNews",
       "category": "General Tech & Market",
       "business_signals": "General Tech",
-      "relevance_score": 68,
-      "summary": "HN Score: 182 | Comments: 82",
-      "as_of": "2026-11-07"
+      "relevance_score": 80,
+      "summary": "HN Score: 403 | Comments: 90",
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "flash_2_1794020897",
-      "title": "北京：加快布局人工智能、量子信息、6G等前沿领域技术转化、试验验证、中试熟化等共性技术赋能中心",
-      "url": "https://www.36kr.com/newsflashes/4059085964923785",
-      "source": "CommercialNewsflash",
-      "category": "Hardware & Infrastructure",
-      "business_signals": "Hardware & Compute",
-      "relevance_score": 65,
-      "summary": "36氪获悉，北京经济技术开发区管理委员会印发《北京经济技术开发区关于加快建设开源开放信创产业高地的若干措施》的通知。其中提到， 支持一批关键信息基础设施行业信创实验室、信息安全测评机构、软硬件适配测试中心、产教融合基地、综合服务平台建设，加快布局人工智能、量子信息、6G等前沿领域技术转化、试验验证、中试熟化等共性技术赋能中心。对实体化运行的相关平台，根据平台...",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "flash_4_1794020897",
-      "title": "北京：支持企业面向基础硬件、基础软件、工业软件、网络安全等领域开展自主攻关",
-      "url": "https://www.36kr.com/newsflashes/4059084204348548",
-      "source": "CommercialNewsflash",
-      "category": "Hardware & Infrastructure",
-      "business_signals": "Hardware & Compute",
-      "relevance_score": 65,
-      "summary": "北京经济技术开发区管理委员会印发《北京经济技术开发区关于加快建设开源开放信创产业高地的若干措施》的通知。其中提到， 支持企业面向基础硬件、基础软件、工业软件、网络安全等领域开展自主攻关；聚焦通用人工智能“极基础+极应用”，支持企业在算法理论、软件框架、智算芯片、新型算力集群，以及软件智能、工业智能、数据智能、具身智能等方向创新突破；加快布局量子计算、6G、脑...",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "hn_50354097",
-      "title": "Can GROUP BY still be optimized after all these years?",
-      "url": "https://pivotlake.io/blog/know-your-limit-faster-top-k-aggregation/",
+      "signal_id": "hn_50403052",
+      "title": "Need for Speed Underground 2 online in the browser",
+      "url": "https://nfsu2.xyz/",
       "source": "HackerNews",
       "category": "General Tech & Market",
       "business_signals": "General Tech",
-      "relevance_score": 54,
-      "summary": "HN Score: 49 | Comments: 2",
-      "as_of": "2026-11-07"
+      "relevance_score": 80,
+      "summary": "HN Score: 850 | Comments: 232",
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "hn_50400597",
-      "title": "I Toured Unitree's Factory. I'm More Bullish on the West",
-      "url": "https://josef.cn/blog/unitree",
+      "signal_id": "hn_50406222",
+      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
       "source": "HackerNews",
       "category": "General Tech & Market",
       "business_signals": "General Tech",
-      "relevance_score": 53,
-      "summary": "HN Score: 38 | Comments: 23",
-      "as_of": "2026-11-07"
+      "relevance_score": 72,
+      "summary": "HN Score: 223 | Comments: 67",
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "hn_50360810",
-      "title": "Greece has its own Pompeii: Thera buried Akrotiri in ash 17th-16th century BCE",
-      "url": "https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747/",
+      "signal_id": "hn_50408931",
+      "title": "GitHub New pull request overview page in public preview",
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
       "source": "HackerNews",
       "category": "General Tech & Market",
       "business_signals": "General Tech",
-      "relevance_score": 53,
-      "summary": "HN Score: 34 | Comments: 2",
-      "as_of": "2026-11-07"
+      "relevance_score": 58,
+      "summary": "HN Score: 82 | Comments: 61",
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "flash_1_1794020897",
-      "title": "券商密集召开业绩说明会 业绩可持续性受关注",
-      "url": "https://www.36kr.com/newsflashes/4058968012264329",
-      "source": "CommercialNewsflash",
+      "signal_id": "hn_50408713",
+      "title": "Making any integer with four 2s (2025)",
+      "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
+      "source": "HackerNews",
       "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "",
-      "as_of": "2026-11-07"
+      "business_signals": "General Tech",
+      "relevance_score": 57,
+      "summary": "HN Score: 77 | Comments: 21",
+      "as_of": "2026-11-08"
     },
     {
-      "signal_id": "flash_5_1794020897",
-      "title": "北京：实施雁阵领航行动，打造产业集群战略高地",
-      "url": "https://www.36kr.com/newsflashes/4059083587097481",
-      "source": "CommercialNewsflash",
+      "signal_id": "hn_50351954",
+      "title": "Amsterdam School",
+      "url": "https://architecture-history.org/schools/AMSTERDAM%20SCHOOL.html",
+      "source": "HackerNews",
       "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
+      "business_signals": "General Tech",
       "relevance_score": 50,
-      "summary": "36氪获悉，北京经济技术开发区管理委员会印发《北京经济技术开发区关于加快建设开源开放信创产业高地的若干措施》的通知。其中提到， 实施“雁阵计划”，持续推动信息技术产业强链补链、聚链成群。聚焦人工智能、6G、量子信息等前沿领域，加快打造创新引领、联动高效的信息技术产业集群，构建梯度衔接、大中小企业协同的“雁阵”式发展格局。支持企业提升创新创造能力，加大研发力度...",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "flash_6_1794020897",
-      "title": "iPhone 20或取消自定义按键",
-      "url": "https://www.36kr.com/newsflashes/4058948700230532",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "多方爆料显示，苹果计划2027年推出的新一代iPhone跳过数字19，直接命名为iPhone 20，以此纪念iPhone问世20周年。除了外观设计可能迎来重大变化，新机在按键布局上也有望进行调整。（新浪新闻）",
-      "as_of": "2026-11-07"
-    },
-    {
-      "signal_id": "flash_8_1794020897",
-      "title": "何立峰与美国财政部长贝森特、贸易代表格里尔举行视频通话",
-      "url": "https://www.36kr.com/newsflashes/4058960006894470",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "北京时间11月6日晚，中美经贸中方牵头人、国务院副总理何立峰与美方牵头人、美国财政部长贝森特和贸易代表格里尔举行视频通话。双方围绕落实好中美元首北京和华盛顿会晤重要共识和经贸磋商成果，就彼此关心的重要经贸问题进行了坦诚、深入、建设性的交流。中方就近期美对华经贸限制措施表达严正关切。双方同意在两国元首战略引领下，继续发挥好中美经贸磋商机制作用，持续加强合作，妥...",
-      "as_of": "2026-11-07"
+      "summary": "HN Score: 8 | Comments: 1",
+      "as_of": "2026-11-08"
     }
   ]
 }
