@@ -1,5 +1,6 @@
-# robots.txt —— Generated via Feegate AI Crawler Whitelist Standard
-# Target: Explicitly permit AI Search Bots & Disambiguate Developer Entity
+# robots.txt —— Standard Search Engine & AI Crawler Policy
+# Repository: https://github.com/Yotoha0303
+# Explicitly whitelist modern AI search agents and verified search bots
 
 User-agent: GPTBot
 User-agent: OAI-SearchBot

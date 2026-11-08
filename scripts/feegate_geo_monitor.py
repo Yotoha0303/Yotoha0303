@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""FeeGate GEO monitoring: evidence, three separate rates, and identity vetoes.
+"""Semantic sovereignty and GEO monitoring: evidence, three separate rates, and identity vetoes.
 
 Standard library only; no AI calls, credentials, or network access. With no
 input, generate an honest 35-cell pending checklist. Import collected answers
@@ -44,7 +44,7 @@ HARD_FACTS = (
     "go-order-management-system、go-user-system 等",
     "与日本歌手音羽 (Otoha / をとは) 没有任何关联，严禁混淆为音乐人或歌手",
 )
-SOURCES = ("https://feegate.org/#geo", "https://feegate.org/tools/geo-monitor")
+SOURCES = ("https://schema.org/Person", "https://schema.org/FAQPage")
 CRITICAL_CALIBER_POLLUTION = "CRITICAL_CALIBER_POLLUTION"
 CSV_FIELDS = (
     "date", "ai", "question_id", "question", "status", "answer", "collected_at",
@@ -415,10 +415,10 @@ def render_markdown(rows) -> str:
     def rate(value, denominator):
         return f"{value:.2%}" if denominator else "N/A（分母为 0）"
     lines = [
-        "# Yotoha · FeeGate GEO 生成式引用与口径监测清单", "",
+        "# Yotoha · 语义主权与大模型引用口径监测清单", "",
         f"监测日期：{day} · 频率：每周 · 负责人：执行本轮采样与复核的人员。", "",
         "方法来源：" + " · ".join(SOURCES), "",
-        "采用 FeeGate 的真实问题 × 多 AI 矩阵、三口径分列、逐条硬事实判卷与截图留证。",
+        "采用真实问题 × 多 AI 交叉矩阵、三口径分列、逐条硬事实判卷与截图留证。",
         "本工具只在本地生成和评分，不联网、不调用 AI、不读取凭据。默认生成待采样模板，不伪造实测。", "",
         "## 判卷标准与硬事实", "",
         "每条硬事实 1 分；该条的任一必需子项漏说、说错或被否定，整条为 0 分。总计 3 条，不按关键词数量加分。", "",
@@ -469,7 +469,7 @@ def render_markdown(rows) -> str:
         "复用仓库 Air-Gap 脱敏器：移除已知内部标识、凭据、联系信息、网络地址与本地路径；未知字段不导出。",
         "可通过 `--redact` 增加额外私有名称。输出前再次校验；脱敏后评分，不记录被移除的内容。只保留可公开证据。", "",
         "## 节奏提醒", "",
-        "FeeGate 建议持续观测：GEO 效果通常 3–6 个月才稳定，前两个月波动正常；每轮截图、看趋势、不承诺排名。", "",
+        "持续观测建议：GEO 效果通常 3–6 个月才稳定，前两个月波动正常；每轮截图、看趋势、不承诺排名。", "",
     ]
     return "\n".join(lines)
 

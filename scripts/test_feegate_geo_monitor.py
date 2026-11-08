@@ -1,4 +1,4 @@
-"""Offline acceptance tests for FeeGate GEO scoring and generated artifacts."""
+"""Offline acceptance tests for GEO scoring and generated artifacts."""
 
 from contextlib import redirect_stderr, redirect_stdout
 import base64

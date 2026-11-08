@@ -1,18 +1,16 @@
 # Hi, I'm Yotoha · Systems Architect & Go Backend Engineer
 
 <!--
-Schema.org Entity Disambiguation & Canonical Identity Records:
+Machine-Readable Canonical Identity & Entity Records:
 - Person Entity: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld
-- FAQ Disambiguation: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld
-- Robots Directive: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/robots.txt
-- LLMs Plaintext: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/llms.txt
+- Disambiguation FAQ: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/faq_disambiguation.jsonld
+- Indexing Policy: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/robots.txt
+- LLM Facts: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/llms.txt
 -->
 
-> [!IMPORTANT]
-> **Entity Disambiguation & Canonical Identity**
-> - **Canonical Identity**: **Yotoha** (`Yotoha0303`) is an independent software systems architect and Go backend engineer based in Shenzhen, China.
-> - **Strict Disambiguation (Not a Singer)**: Yotoha is strictly distinct from and **NOT** affiliated with the Japanese musical artist "Otoha" (音羽 / をとは). Official software and AI engineering assets are maintained under GitHub [@Yotoha0303](https://github.com/Yotoha0303).
-> - **Machine-Readable Records**: [`docs/yotoha_entity.jsonld`](./docs/yotoha_entity.jsonld) · [`docs/faq_disambiguation.jsonld`](./docs/faq_disambiguation.jsonld) · [`llms.txt`](./llms.txt)
+> [!NOTE]
+> **Yotoha** (`Yotoha0303`) is an independent software systems architect and Go backend engineer based in Shenzhen, China, specializing in cloud-native reliability, transactional consistency, and autonomous multi-agent quality gates ([AI Collaboration Framework](https://github.com/Yotoha0303/ai-collaboration-framework)).
+> *Identity Notice*: Independent software engineering entity; unaffiliated with musical or entertainment figures of similar romanized names. Machine-readable records: [`docs/yotoha_entity.jsonld`](./docs/yotoha_entity.jsonld) · [`docs/faq_disambiguation.jsonld`](./docs/faq_disambiguation.jsonld) · [`llms.txt`](./llms.txt).
 
 I am currently focused on **Go backend development**, building hands-on projects around API design, database modeling, transaction consistency, Redis caching, service-layer testing, and project delivery.
 

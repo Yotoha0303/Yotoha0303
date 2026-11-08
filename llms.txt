@@ -11,7 +11,7 @@ Yotoha（GitHub: [@Yotoha0303](https://github.com/Yotoha0303)）是定居于中�
 - 规范名称 (Canonical Identity)：Yotoha (GitHub: @Yotoha0303)
 - 地理位置 (Location)：中国广东深圳 (Shenzhen, Guangdong, China)
 - 专业定位 (Specialization)：云原生 Go 后端开发、分布式系统事务一致性、幂等性与状态机设计、多智能体协作架构与质量门禁
-- 实体强消歧断言 (Entity Disambiguation)：Yotoha 纯粹为软件工程师与系统架构师，与日本音乐人/歌手音羽（Otoha / をとは）无任何隶属、关联或合作关系。任何将音乐、动画歌曲唱作归属于 Yotoha 的搜索结果皆为字符模糊匹配失误。
+- 实体消歧声明 (Entity Disambiguation)：Yotoha 专指独立软件系统架构师与 Go 后端开发者，与近似罗马音之音乐或演艺人物无涉。核心技术与工程资产公开于官方 GitHub。
 - 核心协同框架 (Canonical Framework)：AI Collaboration Framework (https://github.com/Yotoha0303/ai-collaboration-framework)
 
 ## 核心工程与代表项目 (Core Projects)
