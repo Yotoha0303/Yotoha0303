@@ -1,0 +1,47 @@
+{
+  "meta": {
+    "dataset_id": "feegate-temp-single-record",
+    "purpose": "临时单条样本：Feegate 手动创建请求的取数地址测试",
+    "record_count": 1,
+    "source": "data-hub/ai-web3-research (OpenAlex CC0)",
+    "as_of": "2026-11-10",
+    "license": "CC0（OpenAlex 原始数据）· 派生索引 CC BY 4.0",
+    "primary_key": "record_id"
+  },
+  "records": [
+    {
+      "record_id": "W1040365884",
+      "doi": "https://doi.org/10.1007/978-3-642-29219-4_26",
+      "title": "Zero Knowledge Proof in Secret Sharing Scheme Using Elliptic Curve Cryptography",
+      "publication_year": 2012,
+      "publication_date": "2012-01-01",
+      "work_type": "conference-paper",
+      "cited_by_count": 5,
+      "language": "en",
+      "is_oa": false,
+      "oa_status": "closed",
+      "primary_source": "Communications in computer and information science",
+      "publisher": "Springer Science+Business Media",
+      "landing_page_url": "https://doi.org/10.1007/978-3-642-29219-4_26",
+      "primary_topic": "Cryptography and Data Security",
+      "primary_topic_score": 0.9976000189781189,
+      "topic_domain": "Physical Sciences",
+      "topic_field": "Computer Science",
+      "topic_subfield": "Computer Networks and Communications",
+      "author_count": 3,
+      "first_author": "Anususya Sardar",
+      "first_institution": "University of Hyderabad",
+      "institutions": [
+        "University of Hyderabad"
+      ],
+      "countries": [
+        "IN"
+      ],
+      "query_tag": "zkp",
+      "source_url": "https://api.openalex.org/works/W1040365884",
+      "content_hash": "01ea7e8ed0fbbcf058d456403c2d3ab97df3ff7de43080afeac2036dc701175a",
+      "data_as_of": "2026-11-09",
+      "fetched_at": "2026-11-09T13:19:15Z"
+    }
+  ]
+}
