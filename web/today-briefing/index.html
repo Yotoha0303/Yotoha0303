@@ -371,6 +371,123 @@
       line-height: 1.5;
     }
 
+    /* Multi-Platform Hub Styles */
+    .launcher-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .launcher-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 14px;
+      border-radius: 6px;
+      border: 1px solid var(--border-color);
+      background: var(--bg-secondary);
+      color: var(--text-heading);
+      text-decoration: none;
+      font-size: 12px;
+      font-family: var(--font-mono);
+      transition: all 0.15s ease;
+    }
+
+    .launcher-btn:hover {
+      border-color: var(--accent-cyan);
+      background: var(--bg-tertiary);
+      color: var(--accent-cyan);
+    }
+
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 16px;
+      padding: 10px 14px;
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+    }
+
+    .filter-label {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-right: 4px;
+    }
+
+    .filter-btn {
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      color: var(--text-muted);
+      padding: 3px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: var(--font-mono);
+      cursor: pointer;
+    }
+
+    .filter-btn.active, .filter-btn:hover {
+      color: var(--accent-cyan);
+      border-color: var(--accent-cyan);
+    }
+
+    .feed-card {
+      background: var(--bg-secondary);
+      border: 1px solid var(--border-color);
+      border-radius: 6px;
+      padding: 14px 18px;
+      margin-bottom: 12px;
+      transition: border-color 0.15s ease;
+    }
+
+    .feed-card:hover {
+      border-color: var(--accent-blue);
+    }
+
+    .feed-meta {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-family: var(--font-mono);
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-bottom: 6px;
+      flex-wrap: wrap;
+    }
+
+    .source-badge {
+      padding: 1px 6px;
+      border-radius: 3px;
+      background: var(--bg-tertiary);
+      border: 1px solid var(--border-color);
+      color: var(--accent-cyan);
+      font-weight: 600;
+    }
+
+    .feed-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-heading);
+      text-decoration: none;
+      line-height: 1.4;
+    }
+
+    .feed-title:hover {
+      color: var(--accent-blue);
+      text-decoration: underline;
+    }
+
+    .feed-desc {
+      font-size: 13px;
+      color: var(--text-main);
+      margin-top: 6px;
+      line-height: 1.5;
+    }
+
     /* JSON / Markdown Viewers */
     .code-view {
       display: none;
@@ -491,6 +608,7 @@
   <div class="controls-bar">
     <div class="tab-group">
       <button class="tab-btn active" onclick="switchView('visual')">人类晨读视图 (UI View)</button>
+      <button class="tab-btn" onclick="switchView('platforms')">跨平台全景聚合 (Multi-Platform)</button>
       <button class="tab-btn" onclick="switchView('markdown')">人机共用 Markdown</button>
       <button class="tab-btn" onclick="switchView('json')">商业化交付 JSON</button>
     </div>
@@ -584,6 +702,48 @@
             优先复用经过实战验证的沙箱（如 OpenHands）、技能（Hermes）或类型化消息通信组件，并在文档中记录决策证据。
           </div>
         </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- VIEW 4: Multi-Platform Hub View (个人多信息聚合阅读平台) -->
+  <div id="view-platforms" style="display: none;">
+    <section>
+      <h2 class="section-title">01 / 跨平台全景直达门户 (Direct Platform Access)</h2>
+      <div class="launcher-grid">
+        <a class="launcher-btn" href="https://news.ycombinator.com" target="_blank">[HN] Hacker News</a>
+        <a class="launcher-btn" href="https://github.com/trending" target="_blank">[GH] GitHub Trending</a>
+        <a class="launcher-btn" href="https://36kr.com/newsflashes" target="_blank">[36Kr] 实时商业快讯</a>
+        <a class="launcher-btn" href="https://lobste.rs" target="_blank">[LOB] Lobste.rs 极客社区</a>
+        <a class="launcher-btn" href="https://arxiv.org/list/cs.AI/recent" target="_blank">[ARXIV] cs.AI 论文</a>
+        <a class="launcher-btn" href="https://www.producthunt.com" target="_blank">[PH] Product Hunt</a>
+        <a class="launcher-btn" href="https://v2ex.com/go/programmer" target="_blank">[V2EX] 程序员社区</a>
+      </div>
+    </section>
+
+    <section>
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; flex-wrap: wrap; gap: 8px;">
+        <h2 class="section-title" style="margin-bottom: 0;">02 / 个人多信息聚合资讯流 (Multi-Source Intelligence Stream)</h2>
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-cyan);" id="feed-count">跨平台高价值信号</span>
+      </div>
+
+      <div class="filter-bar">
+        <span class="filter-label">信源平台:</span>
+        <button class="filter-btn active" id="filter-p-all" onclick="filterPlatform('all')">全部平台</button>
+        <button class="filter-btn" id="filter-p-hn" onclick="filterPlatform('HackerNews')">Hacker News</button>
+        <button class="filter-btn" id="filter-p-gh" onclick="filterPlatform('GitHub')">GitHub</button>
+        <button class="filter-btn" id="filter-p-36kr" onclick="filterPlatform('36Kr')">36Kr 快讯</button>
+        <button class="filter-btn" id="filter-p-lob" onclick="filterPlatform('Lobsters')">Lobste.rs</button>
+
+        <span class="filter-label" style="margin-left: 12px;">分类标签:</span>
+        <button class="filter-btn active" id="filter-c-all" onclick="filterCategory('all')">全部分类</button>
+        <button class="filter-btn" id="filter-c-ai" onclick="filterCategory('AI')">AI/智能体</button>
+        <button class="filter-btn" id="filter-c-biz" onclick="filterCategory('商业')">商业变现/出海</button>
+        <button class="filter-btn" id="filter-c-hw" onclick="filterCategory('硬件')">芯片硬件</button>
+      </div>
+
+      <div id="multi-feed-container">
+        <!-- Rendered dynamically -->
       </div>
     </section>
   </div>
@@ -801,16 +961,148 @@ status: degraded
 
   function switchView(view) {
     document.getElementById('view-visual').style.display = view === 'visual' ? 'block' : 'none';
+    document.getElementById('view-platforms').style.display = view === 'platforms' ? 'block' : 'none';
     document.getElementById('view-markdown').style.display = view === 'markdown' ? 'block' : 'none';
     document.getElementById('view-json').style.display = view === 'json' ? 'block' : 'none';
 
     document.querySelectorAll('.tab-btn').forEach((btn, idx) => {
       btn.classList.toggle('active', 
         (view === 'visual' && idx === 0) ||
-        (view === 'markdown' && idx === 1) ||
-        (view === 'json' && idx === 2)
+        (view === 'platforms' && idx === 1) ||
+        (view === 'markdown' && idx === 2) ||
+        (view === 'json' && idx === 3)
       );
     });
+
+    if (view === 'platforms') {
+      applyFilters();
+    }
+  }
+
+  const MULTI_PLATFORM_FEEDS = [
+    {
+      id: "hn_01",
+      platform: "HackerNews",
+      title: "Show HN: Open-Source Autonomous Agent Runtime with Reversible Actions",
+      url: "https://news.ycombinator.com",
+      time: "2026-11-09 16:30",
+      category: "AI",
+      tags: ["AI/智能体", "开源架构"],
+      meta: "Score: 245 | Comments: 89",
+      desc: "An isolated execution harness for LLM agents with deterministic state rollback and sandbox evaluation."
+    },
+    {
+      id: "gh_01",
+      platform: "GitHub",
+      title: "NousResearch/hermes-agent: Universal Tool Calling & Memory Harness",
+      url: "https://github.com/NousResearch/hermes-agent",
+      time: "2026-11-09 15:40",
+      category: "AI",
+      tags: ["AI/智能体", "工具调用"],
+      meta: "Stars: 14.8k | Forks: 1.2k",
+      desc: "Structured function calling standards and long-horizon persistent memory for reasoning models."
+    },
+    {
+      id: "36kr_01",
+      platform: "36Kr",
+      title: "智能体商业化提速：垂直领域 AI 专家系统海外 ARR 破千万美元",
+      url: "https://36kr.com",
+      time: "2026-11-09 14:15",
+      category: "商业",
+      tags: ["商业变现/出海", "创投资本"],
+      meta: "快讯 | 商业化追踪",
+      desc: "多家头部企业加速将自主 Agent 落地至跨境电商客服、代码自动化交付及金融风控领域，形成稳定订阅制现金流。"
+    },
+    {
+      id: "lob_01",
+      platform: "Lobsters",
+      title: "Designing Zero-Telemetry Sandboxed Agent Pipelines on Arch Linux",
+      url: "https://lobste.rs",
+      time: "2026-11-09 12:20",
+      category: "AI",
+      tags: ["AI/智能体", "安全防御"],
+      meta: "Comments: 42 | Lobste.rs",
+      desc: "Deep dive into local container isolation, network air-gap barriers, and preventing telemetry harvesting by cloud vendors."
+    },
+    {
+      id: "gh_02",
+      platform: "GitHub",
+      title: "All-Hands-AI/OpenHands: Software Development Agent in Docker Sandbox",
+      url: "https://github.com/All-Hands-AI/OpenHands",
+      time: "2026-11-09 11:05",
+      category: "AI",
+      tags: ["AI/智能体", "沙箱安全"],
+      meta: "Stars: 39.5k | All-Hands AI",
+      desc: "Autonomous software engineer agent capable of executing bash commands, editing code, and browsing documentation in real-time."
+    },
+    {
+      id: "36kr_02",
+      platform: "36Kr",
+      title: "芯片算力与边缘硬件：ESP32-S3 与端侧 NPU 混合架构成为离线智能体新趋势",
+      url: "https://36kr.com",
+      time: "2026-11-09 10:18",
+      category: "硬件",
+      tags: ["芯片硬件", "端侧AI"],
+      meta: "硬件科技 | 产业雷达",
+      desc: "物联网设备厂商正将轻量量化小模型通过语音交互模块移至 ESP32-S3 等超低功耗微控制器，实现脱机隐私保全。"
+    }
+  ];
+
+  let activePlatform = 'all';
+  let activeCategory = 'all';
+
+  function filterPlatform(platform) {
+    activePlatform = platform;
+    document.querySelectorAll('[id^="filter-p-"]').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    const target = document.getElementById('filter-p-' + (platform === 'all' ? 'all' : (platform === 'HackerNews' ? 'hn' : (platform === 'GitHub' ? 'gh' : (platform === '36Kr' ? '36kr' : 'lob')))));
+    if (target) target.classList.add('active');
+    applyFilters();
+  }
+
+  function filterCategory(category) {
+    activeCategory = category;
+    document.querySelectorAll('[id^="filter-c-"]').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    const target = document.getElementById('filter-c-' + (category === 'all' ? 'all' : (category === 'AI' ? 'ai' : (category === '商业' ? 'biz' : 'hw'))));
+    if (target) target.classList.add('active');
+    applyFilters();
+  }
+
+  function applyFilters() {
+    const filtered = MULTI_PLATFORM_FEEDS.filter(item => {
+      const matchP = activePlatform === 'all' || item.platform === activePlatform;
+      const matchC = activeCategory === 'all' || item.category === activeCategory;
+      return matchP && matchC;
+    });
+    renderMultiFeed(filtered);
+    const countEl = document.getElementById('feed-count');
+    if (countEl) {
+      countEl.textContent = '匹配到 ' + filtered.length + ' 条信号 (全部 ' + MULTI_PLATFORM_FEEDS.length + ' 条)';
+    }
+  }
+
+  function renderMultiFeed(items) {
+    const container = document.getElementById('multi-feed-container');
+    if (!container) return;
+    if (items.length === 0) {
+      container.innerHTML = '<div class="card card-empty">[*] 暂无匹配该筛选条件的跨平台资讯。</div>';
+      return;
+    }
+    container.innerHTML = items.map(item => `
+      <div class="feed-card">
+        <div class="feed-meta">
+          <span class="source-badge">${item.platform}</span>
+          <span>${item.time}</span>
+          <span>${item.meta}</span>
+          ${item.tags.map(t => `<span class="pattern-tag">${t}</span>`).join('')}
+        </div>
+        <a class="feed-title" href="${item.url}" target="_blank">${item.title}</a>
+        <div class="feed-desc">${item.desc}</div>
+      </div>
+    `).join('');
   }
 
   function copyContent(elementId) {
