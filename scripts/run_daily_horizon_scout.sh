@@ -36,11 +36,21 @@ fi
 echo "=== [2/3] Verifying Cache Schema and Integrity ==="
 "$PYTHON_BIN" "$SCOUT_CLI" --output "$OUTPUT_JSON" --verify
 
-echo "=== [3/3] Daily Pipeline Execution Report ==="
+echo "=== [3/3] Daily Pipeline Execution Report & Obsidian Sync ==="
 LATEST_BRIEFING="$(ls -t "$REPORTS_DIR"/MORNING_TECH_BRIEFING_*.md 2>/dev/null | head -n 1 || true)"
 if [[ -n "$LATEST_BRIEFING" && -f "$LATEST_BRIEFING" ]]; then
     echo "Latest Morning Briefing: $LATEST_BRIEFING"
     echo "Lines: $(wc -l < "$LATEST_BRIEFING")"
+
+    # Obsidian Dual-View Synchronization ("历史的新闻看 Obsidian")
+    OBSIDIAN_VAULT_DIR="${OBSIDIAN_VAULT_DIR:-/home/yotoha/Documents/Obsidian/Obsidian main/AI KnowTrace/前沿技术情报/晨报归档}"
+    if [[ -d "$OBSIDIAN_VAULT_DIR" ]]; then
+        BRIEFING_FILENAME="$(basename "$LATEST_BRIEFING")"
+        cp -f "$LATEST_BRIEFING" "$OBSIDIAN_VAULT_DIR/$BRIEFING_FILENAME"
+        echo "[PASS] Synchronized latest briefing to Obsidian: $OBSIDIAN_VAULT_DIR/$BRIEFING_FILENAME"
+    else
+        echo "[INFO] Obsidian target directory not found; skipped sync ($OBSIDIAN_VAULT_DIR)."
+    fi
 else
     echo "[WARN] No briefing file located in $REPORTS_DIR"
 fi

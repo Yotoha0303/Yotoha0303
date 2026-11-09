@@ -689,6 +689,8 @@ class BriefingRendererTests(unittest.TestCase):
     def test_render_briefing_contains_header_metadata(self):
         snapshot = scout.build_snapshot(mock=True)
         content = scout.render_markdown_briefing(snapshot)
+        self.assertTrue(content.startswith("---\n"))
+        self.assertIn("type: tech-briefing", content)
         self.assertIn("- 日期 / UTC: " + snapshot["generated_at"], content)
         self.assertIn("- 观察窗口 / Window: " + snapshot["window_start"], content)
         self.assertIn("- 数据状态 / Evidence: mock", content)

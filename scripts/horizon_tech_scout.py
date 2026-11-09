@@ -597,8 +597,21 @@ def render_markdown_briefing(snapshot):
     start, end = parse_time(snapshot["window_start"]), parse_time(snapshot["generated_at"])
     gh_status = snapshot["sources"]["github"]["status"]
     hn_status = snapshot["sources"]["hacker_news"]["status"]
+    briefing_date = snapshot["generated_at"][:10]
 
     lines = [
+        "---",
+        f"title: \"Frontier Tech Morning Briefing ({briefing_date})\"",
+        f"date: {briefing_date}",
+        "type: tech-briefing",
+        "tags:",
+        "  - tech-delta",
+        "  - prior-art",
+        "  - intelligence",
+        "  - morning-briefing",
+        f"status: {snapshot['mode']}",
+        "---",
+        "",
         "# Frontier Tech Morning Briefing",
         "",
         f"- 日期 / UTC: {snapshot['generated_at']}",

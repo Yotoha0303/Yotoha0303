@@ -1,7 +1,19 @@
+---
+title: "Frontier Tech Morning Briefing (2026-11-09)"
+date: 2026-11-09
+type: tech-briefing
+tags:
+  - tech-delta
+  - prior-art
+  - intelligence
+  - morning-briefing
+status: degraded
+---
+
 # Frontier Tech Morning Briefing
 
-- 日期 / UTC: 2026-11-09T08:24:46Z
-- 观察窗口 / Window: 2026-11-08T08:24:46Z to 2026-11-09T08:24:46Z
+- 日期 / UTC: 2026-11-09T08:41:44Z
+- 观察窗口 / Window: 2026-11-08T08:41:44Z to 2026-11-09T08:41:44Z
 - 阅读时间 / Reading time: 3 minutes
 - 数据状态 / Evidence: degraded; GitHub mock; Hacker News live
 
