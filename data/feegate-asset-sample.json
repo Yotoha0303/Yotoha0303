@@ -3,9 +3,9 @@
   "_note": "Automated open-source intelligence feed covering global AI trends, commercial signals, and China Mobile Ecosystem Privacy & Threat Intelligence. Maintained by Yotoha.",
   "asset": "Global Tech & Mobile Privacy Threat Intelligence Feed",
   "frequency": "daily",
-  "rows_per_run": 14,
+  "rows_per_run": 4,
   "license": "CC BY 4.0",
-  "updated_at": "2026-11-08T03:00:00Z",
+  "updated_at": "2026-11-09T03:00:00Z",
   "schema": {
     "signal_id": "string",
     "title": "string",
@@ -19,18 +19,7 @@
   },
   "rows": [
     {
-      "signal_id": "hn_50406563",
-      "title": "The end of Microsoft Research's AI Frontiers group",
-      "url": "https://hunch.net/?p=13764006",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 100,
-      "summary": "HN Score: 420 | Comments: 244",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "sec_telemetry_hyperos_1794109614",
+      "signal_id": "sec_telemetry_hyperos_1794196229",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -38,21 +27,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 98,
       "summary": "实机取证发现底层守护进程 com.miui.daemon (MQSAS) 与 com.xiaomi.barrage 默认获取全局通知监听特权(NotificationMonitorService)，拦截微信、银行全部弹窗明文；通过用户空间 adb pm uninstall 可安全拔除并不影响基带与通讯。",
-      "as_of": "2026-11-08"
+      "as_of": "2026-11-09"
     },
     {
-      "signal_id": "hn_50407882",
-      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 98,
-      "summary": "HN Score: 231 | Comments: 149",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "sec_darknet_breach_mapping_1794109614",
+      "signal_id": "sec_darknet_breach_mapping_1794196229",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -60,10 +38,10 @@
       "business_signals": "Darknet Intelligence, Canary Tokens, Anti-OSINT",
       "relevance_score": 96,
       "summary": "系统解构华住会 2018 (5亿条)、微博 2020 (5.38亿条)、快递面单等地下流通数据库物理结构；提出基于数学级 k-Anonymity 零暴露本地密码探针与姓名/门牌号金丝雀暗记反向唯一归因模型。",
-      "as_of": "2026-11-08"
+      "as_of": "2026-11-09"
     },
     {
-      "signal_id": "sec_clipboard_appops_1794109614",
+      "signal_id": "sec_clipboard_appops_1794196229",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -71,10 +49,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 95,
       "summary": "抽检美团、大众点评、天猫、拼多多、网易云等应用，默认拥有 READ_CLIPBOARD: allow 权限，每次切换前台自动静默搜集剪切板口令与身份证号；通过 cmd appops set <pkg> READ_CLIPBOARD ignore 可物理免疫且不影响复制粘贴正常交互。",
-      "as_of": "2026-11-08"
+      "as_of": "2026-11-09"
     },
     {
-      "signal_id": "sec_sandbox_confinement_1794109614",
+      "signal_id": "sec_sandbox_confinement_1794196229",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -82,95 +60,7 @@
       "business_signals": "Container Security, Linux Hardening, Zero Trust",
       "relevance_score": 92,
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "hn_50406292",
-      "title": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
-      "url": "https://github.com/hedgerow-dev/coldframe",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "Monetization & SaaS",
-      "relevance_score": 90,
-      "summary": "HN Score: 202 | Comments: 44",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "hn_50377661",
-      "title": "Uranium cubes reveal why the German nuclear project failed",
-      "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed/",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 83,
-      "summary": "HN Score: 84 | Comments: 47",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "hn_50406670",
-      "title": "What I run on my $10 USD OpenStick homelab",
-      "url": "https://blog.bosscher.ch/posts/openstick/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 403 | Comments: 90",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "hn_50403052",
-      "title": "Need for Speed Underground 2 online in the browser",
-      "url": "https://nfsu2.xyz/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 850 | Comments: 232",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "hn_50406222",
-      "title": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
-      "url": "https://maxxbench.unlap.ai/research/why-maxxbench/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 72,
-      "summary": "HN Score: 223 | Comments: 67",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "hn_50408931",
-      "title": "GitHub New pull request overview page in public preview",
-      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 58,
-      "summary": "HN Score: 82 | Comments: 61",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "hn_50408713",
-      "title": "Making any integer with four 2s (2025)",
-      "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 57,
-      "summary": "HN Score: 77 | Comments: 21",
-      "as_of": "2026-11-08"
-    },
-    {
-      "signal_id": "hn_50351954",
-      "title": "Amsterdam School",
-      "url": "https://architecture-history.org/schools/AMSTERDAM%20SCHOOL.html",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 50,
-      "summary": "HN Score: 8 | Comments: 1",
-      "as_of": "2026-11-08"
+      "as_of": "2026-11-09"
     }
   ]
 }
