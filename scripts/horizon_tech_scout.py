@@ -106,6 +106,19 @@ def parse_time(value):
     return datetime.fromisoformat(value.replace("Z", "+00:00"))
 
 
+def format_human_time(value):
+    """Format an ISO 8601 UTC timestamp or date string into human-friendly 'YYYY-MM-DD HH:MM'.
+
+    E.g. '2026-11-08T08:41:44Z' -> '2026-11-08 08:41'.
+    """
+    if not isinstance(value, str) or not value:
+        return ""
+    clean = value.replace("T", " ").rstrip("Z")
+    if len(clean) >= 16:
+        return clean[:16]
+    return clean
+
+
 def digest(value):
     encoded = json.dumps(value, ensure_ascii=False, sort_keys=True,
                          separators=(",", ":"), allow_nan=False).encode("utf-8")
@@ -548,7 +561,7 @@ def format_summary(snapshot):
     verify_snapshot(snapshot)
     start, end = parse_time(snapshot["window_start"]), parse_time(snapshot["generated_at"])
     lines = ["Frontier Tech Morning Briefing | 3-minute read",
-             "As of: " + snapshot["generated_at"] + " | Mode: " + snapshot["mode"],
+             "As of: " + format_human_time(snapshot["generated_at"]) + " | Mode: " + snapshot["mode"],
              "Coverage: GitHub topic leaders + pinned frameworks; first ten HN top stories.",
              "GitHub ranking uses total stars; it is not a daily growth or official Trending metric.",
              "Evidence: " + "; ".join(name + "=" + source["status"] for name, source in snapshot["sources"].items()),
@@ -563,7 +576,7 @@ def format_summary(snapshot):
         elif row["kind"] == "story" and start <= parse_time(row["event_at"]) <= end:
             events.append((row["event_at"], row["title"], row["url"]))
     for when, title, url in sorted(events, reverse=True)[:5]:
-        lines.append("- " + title[:130] + " | " + when + " | " + url)
+        lines.append("- " + title[:130] + " | " + format_human_time(when) + " | " + url)
     if not events:
         lines.append("- No verified live releases or matching HN stories within this window.")
     if snapshot["mode"] != "live":
@@ -576,7 +589,7 @@ def format_summary(snapshot):
                      + ". Latest stable release: " + version + " [" + release["status"] + "].")
         lines.append("  " + item["adopt"] + " " + item["reference_url"])
         if release["status"] in ("live", "cached"):
-            lines.append("  Release evidence: " + release["published_at"] + " | " + release["url"])
+            lines.append("  Release evidence: " + format_human_time(release["published_at"]) + " | " + release["url"])
     lines.extend(["", SECTIONS[2],
                   "- Tool protocols can lower integration cost; verify protocol support and permission scopes per release.",
                   "- Agent runtimes compete on reliable execution and evaluation; popularity alone does not establish maturity.",
@@ -614,9 +627,10 @@ def render_markdown_briefing(snapshot):
         "",
         "# Frontier Tech Morning Briefing",
         "",
-        f"- 日期 / UTC: {snapshot['generated_at']}",
-        f"- 观察窗口 / Window: {snapshot['window_start']} to {snapshot['generated_at']}",
+        f"- 日期 / UTC: {format_human_time(snapshot['generated_at'])}",
+        f"- 观察窗口 / Window: {format_human_time(snapshot['window_start'])} to {format_human_time(snapshot['generated_at'])}",
         "- 阅读时间 / Reading time: 3 minutes",
+        "- 固定入口 / Universal Dashboard: http://localhost:8765",
         f"- 数据状态 / Evidence: {snapshot['mode']}; GitHub {gh_status}; Hacker News {hn_status}",
         "",
         "## " + SECTIONS[0],
@@ -636,7 +650,7 @@ def render_markdown_briefing(snapshot):
         for when, title, tag, url in sorted(events, reverse=True)[:5]:
             desc = f"{title} {tag}" if tag else title
             lines.append(f"- {desc}")
-            lines.append(f"- 发布时间 / Published: {when}; 原始来源 / Source: {url}")
+            lines.append(f"- 发布时间 / Published: {format_human_time(when)}; 原始来源 / Source: {url}")
     else:
         lines.append("- 过去 24 小时内未检测到新的实时验证发布或相关讨论。缓存与合成样本已保留原有时间戳。")
     lines.append("- 仅列入窗口内有时间证据的实时发布和相关 HN 讨论。缓存保留原始观察时间，合成样本不作为今日新闻；没有实时证据时明确写明。")

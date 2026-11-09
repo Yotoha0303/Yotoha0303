@@ -499,7 +499,7 @@ class BriefingTests(unittest.TestCase):
         summary = scout.format_summary(live_snapshot())
         breakthroughs = summary.split(scout.SECTIONS[0])[1].split(scout.SECTIONS[1])[0]
         self.assertIn("v1.2.3", breakthroughs)
-        self.assertIn("2026-01-01T06:00:00Z", breakthroughs)
+        self.assertIn("2026-01-01 06:00", breakthroughs)
         self.assertIn("https://github.com/", breakthroughs)
         self.assertIn("https://news.ycombinator.com/item?id=101", breakthroughs)
         self.assertLessEqual(breakthroughs.count("\n- "), 5)
@@ -691,9 +691,15 @@ class BriefingRendererTests(unittest.TestCase):
         content = scout.render_markdown_briefing(snapshot)
         self.assertTrue(content.startswith("---\n"))
         self.assertIn("type: tech-briefing", content)
-        self.assertIn("- 日期 / UTC: " + snapshot["generated_at"], content)
-        self.assertIn("- 观察窗口 / Window: " + snapshot["window_start"], content)
+        self.assertIn("- 日期 / UTC: " + scout.format_human_time(snapshot["generated_at"]), content)
+        self.assertIn("- 观察窗口 / Window: " + scout.format_human_time(snapshot["window_start"]), content)
+        self.assertIn("- 固定入口 / Universal Dashboard: http://localhost:8765", content)
         self.assertIn("- 数据状态 / Evidence: mock", content)
+
+    def test_format_human_time(self):
+        self.assertEqual(scout.format_human_time("2026-11-08T08:41:44Z"), "2026-11-08 08:41")
+        self.assertEqual(scout.format_human_time("2026-11-08"), "2026-11-08")
+        self.assertEqual(scout.format_human_time(""), "")
 
     def test_render_briefing_has_zero_emojis(self):
         snapshot = scout.build_snapshot(mock=True)

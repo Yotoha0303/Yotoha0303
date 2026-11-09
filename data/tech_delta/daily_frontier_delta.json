@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-11-09T08:41:44Z",
-  "window_start": "2026-11-08T08:41:44Z",
+  "generated_at": "2026-11-09T09:00:37Z",
+  "window_start": "2026-11-08T09:00:37Z",
   "mode": "degraded",
   "topics": [
     "ai-agent",
@@ -248,5 +248,5 @@
     }
   ],
   "record_count": 5,
-  "content_sha256": "032e8260780a6d44aaa53bde6c43382894d063cef7366e8c39cb4a860b2e8b85"
+  "content_sha256": "e9f386528134fa1897ac9655ca4837833818e199f4bd56c91df6b6920b7015f5"
 }

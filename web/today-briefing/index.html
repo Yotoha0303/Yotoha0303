@@ -454,9 +454,14 @@
   <!-- Terminal Header -->
   <header>
     <div class="top-bar">
-      <div class="brand">PHALANX INTELLIGENCE // 今日前沿晨报</div>
+      <div>
+        <div class="brand">PHALANX INTELLIGENCE // 今日前沿晨报</div>
+        <div style="font-family: var(--font-mono); font-size: 11px; color: var(--accent-cyan); margin-top: 4px;">
+          固定日常访问地址: <a href="http://127.0.0.1:8765" style="color: var(--accent-cyan); text-decoration: underline;">http://127.0.0.1:8765</a> (开机常驻服务，建议 Ctrl+D 添加书签)
+        </div>
+      </div>
       <div class="badges">
-        <span class="badge" id="badge-date">DATE: 2026-11-09</span>
+        <span class="badge" id="badge-date">DATE: 2026-11-09 08:41</span>
         <span class="badge badge-degraded" id="badge-status">STATUS: DEGRADED</span>
         <span class="badge">WINDOW: 24H</span>
         <span class="badge">READ TIME: 3 MIN</span>
@@ -465,7 +470,7 @@
     <div class="meta-grid">
       <div class="meta-item">
         <span class="meta-label">观察窗口 (UTC)</span>
-        <span class="meta-value" id="meta-window">2026-11-08T08:41:44Z - 2026-11-09T08:41:44Z</span>
+        <span class="meta-value" id="meta-window">2026-11-08 08:41 - 2026-11-09 08:41</span>
       </div>
       <div class="meta-item">
         <span class="meta-label">信源状态</span>
@@ -685,9 +690,10 @@ status: degraded
 
 # Frontier Tech Morning Briefing
 
-- 日期 / UTC: 2026-11-09T08:41:44Z
-- 观察窗口 / Window: 2026-11-08T08:41:44Z to 2026-11-09T08:41:44Z
+- 日期 / UTC: 2026-11-09 08:41
+- 观察窗口 / Window: 2026-11-08 08:41 to 2026-11-09 08:41
 - 阅读时间 / Reading time: 3 minutes
+- 固定入口 / Universal Dashboard: http://localhost:8765
 - 数据状态 / Evidence: degraded; GitHub mock; Hacker News live
 
 ## 过去 24 小时突破性技术成果 (Breakthroughs & Releases)
@@ -743,10 +749,16 @@ status: degraded
     }
   }
 
+  function formatHumanTime(isoStr) {
+    if (!isoStr) return '';
+    const clean = isoStr.replace('T', ' ').replace('Z', '');
+    return clean.length >= 16 ? clean.slice(0, 16) : clean;
+  }
+
   function renderVisual(data) {
-    document.getElementById('badge-date').textContent = 'DATE: ' + data.generated_at.slice(0, 10);
+    document.getElementById('badge-date').textContent = 'DATE: ' + formatHumanTime(data.generated_at);
     document.getElementById('badge-status').textContent = 'STATUS: ' + data.mode.toUpperCase();
-    document.getElementById('meta-window').textContent = data.window_start + ' -> ' + data.generated_at;
+    document.getElementById('meta-window').textContent = formatHumanTime(data.window_start) + ' -> ' + formatHumanTime(data.generated_at);
     document.getElementById('meta-sha').textContent = data.content_sha256 ? data.content_sha256.slice(0, 24) + '...' : 'VERIFIED';
 
     const container = document.getElementById('matrix-container');

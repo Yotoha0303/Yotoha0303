@@ -12,9 +12,10 @@ status: degraded
 
 # Frontier Tech Morning Briefing
 
-- 日期 / UTC: 2026-11-09T08:41:44Z
-- 观察窗口 / Window: 2026-11-08T08:41:44Z to 2026-11-09T08:41:44Z
+- 日期 / UTC: 2026-11-09 09:00
+- 观察窗口 / Window: 2026-11-08 09:00 to 2026-11-09 09:00
 - 阅读时间 / Reading time: 3 minutes
+- 固定入口 / Universal Dashboard: http://localhost:8765
 - 数据状态 / Evidence: degraded; GitHub mock; Hacker News live
 
 ## 过去 24 小时突破性技术成果 (Breakthroughs & Releases)
