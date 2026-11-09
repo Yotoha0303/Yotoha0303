@@ -8,13 +8,13 @@
   "provenance": {
     "source_origin": "OpenRouter Official Public Model Registry",
     "source_endpoint": "https://openrouter.ai/api/v1/models",
-    "ingested_at_utc": "2026-11-08T12:32:30.676439+00:00",
+    "ingested_at_utc": "2026-11-09T14:50:30.012213+00:00",
     "schema_version": "2.0.0",
-    "record_count": 461,
-    "sha256_checksum": "7499a24947b3da44019a87914df57f13a175765d38dbc2810e671606e4450879"
+    "record_count": 462,
+    "sha256_checksum": "8941001df0df96b15ee52bf9b9fff21ea80db91c4eca3fa055e34d4eeea367fc"
   },
   "market_summary": {
-    "total_models_indexed": 461,
+    "total_models_indexed": 462,
     "free_tier_count": 16,
     "max_context_window": 2000000,
     "distinct_providers_count": 68
@@ -1433,11 +1433,11 @@
       "provider": "deepseek",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.2617,
-        "completion": 0.5234,
-        "blended_3to1_ratio": 0.3271
+        "prompt": 0.894,
+        "completion": 1.788,
+        "blended_3to1_ratio": 1.1175
       },
-      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "cost_tier": "Mid-range / Workhorse Tier ($0.50 - $3.00/M)",
       "architecture": {
         "modality": "text->text",
         "tokenizer": "DeepSeek",
@@ -1476,8 +1476,8 @@
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
         "prompt": 0.051,
-        "completion": 0.41,
-        "blended_3to1_ratio": 0.1407
+        "completion": 0.567,
+        "blended_3to1_ratio": 0.18
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -2358,8 +2358,8 @@
       "context_window_tokens": 131072,
       "pricing_per_1m_tokens_usd": {
         "prompt": 0.08,
-        "completion": 0.35,
-        "blended_3to1_ratio": 0.1475
+        "completion": 0.45,
+        "blended_3to1_ratio": 0.1725
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -2399,9 +2399,9 @@
       "provider": "google",
       "context_window_tokens": 262144,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.0675,
-        "completion": 0.225,
-        "blended_3to1_ratio": 0.1069
+        "prompt": 0.09,
+        "completion": 0.3,
+        "blended_3to1_ratio": 0.1425
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -2998,7 +2998,7 @@
         "instruct_type": null
       },
       "top_provider_info": {
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       }
     },
@@ -3050,9 +3050,9 @@
       "provider": "meta-llama",
       "context_window_tokens": 131072,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.05,
-        "completion": 0.08,
-        "blended_3to1_ratio": 0.0575
+        "prompt": 0.02,
+        "completion": 0.04,
+        "blended_3to1_ratio": 0.025
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -3061,7 +3061,7 @@
         "instruct_type": "llama3"
       },
       "top_provider_info": {
-        "max_completion_tokens": 117964,
+        "max_completion_tokens": 16384,
         "is_moderated": false
       }
     },
@@ -3722,9 +3722,9 @@
       "provider": "mistralai",
       "context_window_tokens": 256000,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.075,
-        "completion": 0.2,
-        "blended_3to1_ratio": 0.1062
+        "prompt": 0.1,
+        "completion": 0.3,
+        "blended_3to1_ratio": 0.15
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -3733,7 +3733,7 @@
         "instruct_type": null
       },
       "top_provider_info": {
-        "max_completion_tokens": 16384,
+        "max_completion_tokens": 26214,
         "is_moderated": false
       }
     },
@@ -3995,9 +3995,9 @@
       "provider": "moonshotai",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.997,
+        "prompt": 0.883,
         "completion": 6.0,
-        "blended_3to1_ratio": 2.2477
+        "blended_3to1_ratio": 2.1623
       },
       "cost_tier": "Mid-range / Workhorse Tier ($0.50 - $3.00/M)",
       "architecture": {
@@ -6242,9 +6242,9 @@
       "provider": "openai",
       "context_window_tokens": 131072,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.027,
-        "completion": 0.098,
-        "blended_3to1_ratio": 0.0447
+        "prompt": 0.15,
+        "completion": 0.6,
+        "blended_3to1_ratio": 0.2625
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -7292,18 +7292,18 @@
       "provider": "qwen",
       "context_window_tokens": 262144,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.5,
+        "prompt": 0.6,
         "completion": 3.6,
-        "blended_3to1_ratio": 1.275
+        "blended_3to1_ratio": 1.35
       },
-      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "cost_tier": "Mid-range / Workhorse Tier ($0.50 - $3.00/M)",
       "architecture": {
         "modality": "text+image+video->text",
         "tokenizer": "Qwen3",
         "instruct_type": null
       },
       "top_provider_info": {
-        "max_completion_tokens": 235929,
+        "max_completion_tokens": 64000,
         "is_moderated": false
       }
     },
@@ -7652,6 +7652,27 @@
         "prompt": 2.0,
         "completion": 6.0,
         "blended_3to1_ratio": 3.0
+      },
+      "cost_tier": "Mid-range / Workhorse Tier ($0.50 - $3.00/M)",
+      "architecture": {
+        "modality": "text+image+video->text",
+        "tokenizer": "Qwen",
+        "instruct_type": null
+      },
+      "top_provider_info": {
+        "max_completion_tokens": 131072,
+        "is_moderated": false
+      }
+    },
+    {
+      "model_id": "qwen/qwen3.8-max-0902:batch",
+      "name": "Qwen: Qwen3.8 Max (0902) (batch)",
+      "provider": "qwen",
+      "context_window_tokens": 262144,
+      "pricing_per_1m_tokens_usd": {
+        "prompt": 1.15,
+        "completion": 3.45,
+        "blended_3to1_ratio": 1.725
       },
       "cost_tier": "Mid-range / Workhorse Tier ($0.50 - $3.00/M)",
       "architecture": {
@@ -8909,9 +8930,9 @@
       "provider": "z-ai",
       "context_window_tokens": 131072,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.13,
-        "completion": 0.85,
-        "blended_3to1_ratio": 0.31
+        "prompt": 0.2,
+        "completion": 1.1,
+        "blended_3to1_ratio": 0.425
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -9119,11 +9140,11 @@
       "provider": "z-ai",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.37,
-        "completion": 1.5,
-        "blended_3to1_ratio": 0.6525
+        "prompt": 0.623,
+        "completion": 1.271,
+        "blended_3to1_ratio": 0.785
       },
-      "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
+      "cost_tier": "Mid-range / Workhorse Tier ($0.50 - $3.00/M)",
       "architecture": {
         "modality": "text->text",
         "tokenizer": "Other",
@@ -9266,9 +9287,9 @@
       "provider": "z-ai",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.37,
-        "completion": 1.5,
-        "blended_3to1_ratio": 0.6525
+        "prompt": 0.45,
+        "completion": 2.0,
+        "blended_3to1_ratio": 0.8375
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
@@ -9277,7 +9298,7 @@
         "instruct_type": null
       },
       "top_provider_info": {
-        "max_completion_tokens": 943718,
+        "max_completion_tokens": 131072,
         "is_moderated": false
       }
     },
@@ -9497,9 +9518,9 @@
       "provider": "~moonshotai",
       "context_window_tokens": 1048576,
       "pricing_per_1m_tokens_usd": {
-        "prompt": 0.1605,
-        "completion": 10.1583,
-        "blended_3to1_ratio": 2.66
+        "prompt": 0.1634,
+        "completion": 10.5539,
+        "blended_3to1_ratio": 2.761
       },
       "cost_tier": "Economy / Edge Tier (<= $0.50/M)",
       "architecture": {
