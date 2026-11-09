@@ -6,6 +6,7 @@ from copy import deepcopy
 from datetime import datetime, timezone
 from io import BytesIO, StringIO
 import json
+import os
 from pathlib import Path
 import subprocess
 import sys
@@ -551,6 +552,7 @@ class BriefingTests(unittest.TestCase):
                    (115, 104, 101, 110, 122, 104, 101, 110),
                    (20013, 22269, 28145, 22323))
         paths = [Path(scout.__file__), Path(__file__),
+                 Path(__file__).resolve().parent / "run_daily_horizon_scout.sh",
                  scout.DEFAULT_OUTPUT.parent / "MORNING_TECH_BRIEFING_TEMPLATE.md"]
         public_text = json.dumps(scout.build_snapshot(mock=True), ensure_ascii=False)
         public_text += "\n".join(path.read_text(encoding="utf-8") for path in paths)
@@ -659,6 +661,155 @@ class CliTests(unittest.TestCase):
                 scout.main(["--verify", "--output", str(path)])
             self.assertEqual(caught.exception.code, 1)
             self.assertIn("fields", stderr.getvalue())
+
+
+class BriefingRendererTests(unittest.TestCase):
+    def test_render_briefing_default_path(self):
+        with tempfile.TemporaryDirectory() as directory:
+            output_json = Path(directory) / "delta.json"
+            briefing_file = Path(directory) / "reports/custom.md"
+            with redirect_stdout(StringIO()) as stdout:
+                code = scout.main(["--mock", "--output", str(output_json), "--render-briefing", str(briefing_file)])
+            self.assertEqual(code, 0)
+            self.assertTrue(briefing_file.is_file())
+            content = briefing_file.read_text(encoding="utf-8")
+            self.assertIn("# Frontier Tech Morning Briefing", content)
+            self.assertIn(scout.SECTIONS[0], content)
+            self.assertIn(scout.SECTIONS[1], content)
+            self.assertIn(scout.SECTIONS[2], content)
+            self.assertIn(scout.SECTIONS[3], content)
+
+    def test_render_briefing_contains_all_frameworks_in_table(self):
+        snapshot = scout.build_snapshot(mock=True)
+        content = scout.render_markdown_briefing(snapshot)
+        for item in scout.FRAMEWORKS:
+            self.assertIn(item.name, content)
+            self.assertIn("| " + item.name + " |", content)
+
+    def test_render_briefing_contains_header_metadata(self):
+        snapshot = scout.build_snapshot(mock=True)
+        content = scout.render_markdown_briefing(snapshot)
+        self.assertIn("- 日期 / UTC: " + snapshot["generated_at"], content)
+        self.assertIn("- 观察窗口 / Window: " + snapshot["window_start"], content)
+        self.assertIn("- 数据状态 / Evidence: mock", content)
+
+    def test_render_briefing_has_zero_emojis(self):
+        snapshot = scout.build_snapshot(mock=True)
+        content = scout.render_markdown_briefing(snapshot)
+        self.assertIsNone(scout.EMOJI.search(content))
+
+    def test_render_briefing_with_live_events(self):
+        snapshot = scout.build_snapshot(mock=True)
+        live_url = "https://github.com/example/live-project"
+        live_id = scout.digest(["github", "repository", live_url])[:20]
+        snapshot["records"].append({
+            "id": live_id,
+            "source": "github",
+            "kind": "repository",
+            "title": "Example Live Project",
+            "url": live_url,
+            "summary": "Live release in window",
+            "tags": ["ai-agent"],
+            "observed_at": scout.MOCK_TIME,
+            "event_at": None,
+            "evidence": "live",
+            "repo": "example/live-project",
+            "stars": 500,
+            "latest_release": {
+                "status": "live",
+                "tag": "v1.0.0",
+                "url": live_url + "/releases/tag/v1.0.0",
+                "published_at": "2026-01-01T07:30:00Z",
+                "observed_at": scout.MOCK_TIME,
+            }
+        })
+        snapshot["record_count"] = len(snapshot["records"])
+        snapshot["sources"]["github"]["record_count"] += 1
+        snapshot["sources"]["github"]["status"] = "partial"
+        snapshot["mode"] = "degraded"
+        scout.seal(snapshot)
+        content = scout.render_markdown_briefing(snapshot)
+        self.assertIn("Example Live Project v1.0.0", content)
+        self.assertIn(live_url + "/releases/tag/v1.0.0", content)
+
+    def test_render_briefing_with_live_hn_story(self):
+        snapshot = scout.build_snapshot(mock=True)
+        hn_url = "https://news.ycombinator.com/item?id=99999999"
+        hn_id = scout.digest(["hacker_news", "story", hn_url])[:20]
+        snapshot["records"].append({
+            "id": hn_id,
+            "source": "hacker_news",
+            "kind": "story",
+            "title": "Discussion on Novel Agent Protocols",
+            "url": hn_url,
+            "summary": "HN architecture/AI keyword match: ai-agent.",
+            "tags": ["ai-agent"],
+            "observed_at": scout.MOCK_TIME,
+            "event_at": "2026-01-01T07:45:00Z",
+            "evidence": "live",
+            "repo": None,
+            "stars": None,
+            "latest_release": None,
+        })
+        snapshot["record_count"] = len(snapshot["records"])
+        snapshot["sources"]["hacker_news"]["record_count"] += 1
+        snapshot["sources"]["hacker_news"]["status"] = "partial"
+        snapshot["mode"] = "degraded"
+        scout.seal(snapshot)
+        content = scout.render_markdown_briefing(snapshot)
+        self.assertIn("Discussion on Novel Agent Protocols", content)
+        self.assertIn(hn_url, content)
+
+    def test_render_briefing_feed_degradation_reporting(self):
+        snapshot = scout.build_snapshot(mock=True)
+        snapshot["sources"]["github"]["errors"] = ["rate_limited"]
+        scout.seal(snapshot)
+        content = scout.render_markdown_briefing(snapshot)
+        self.assertIn("rate_limited", content)
+        self.assertIn("Feed degradation", content)
+
+    def test_render_briefing_empty_events_fallback_text(self):
+        snapshot = scout.build_snapshot(mock=True)
+        content = scout.render_markdown_briefing(snapshot)
+        self.assertIn("未检测到新的实时验证发布或相关讨论", content)
+
+    def test_render_briefing_invalid_snapshot_raises(self):
+        with self.assertRaises(ValueError):
+            scout.render_markdown_briefing({"invalid": "snapshot"})
+
+    def test_write_briefing_creates_parents_atomically(self):
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory) / "deeply/nested/path/briefing.md"
+            scout.write_briefing("Test content\n", target)
+            self.assertTrue(target.is_file())
+            self.assertEqual(target.read_text(encoding="utf-8"), "Test content\n")
+
+    def test_runner_script_exists_and_is_executable(self):
+        runner = Path(__file__).resolve().parent / "run_daily_horizon_scout.sh"
+        self.assertTrue(runner.is_file())
+        self.assertTrue(os.access(runner, os.X_OK))
+
+    def test_runner_script_syntax_valid(self):
+        runner = Path(__file__).resolve().parent / "run_daily_horizon_scout.sh"
+        res = subprocess.run(["bash", "-n", str(runner)], capture_output=True, text=True)
+        self.assertEqual(res.returncode, 0, res.stderr)
+
+    def test_render_briefing_default_naming_convention(self):
+        snapshot = scout.build_snapshot(mock=True)
+        with tempfile.TemporaryDirectory() as directory:
+            output_json = Path(directory) / "delta.json"
+            with patch.object(scout, "DEFAULT_REPORTS_DIR", Path(directory) / "reports"):
+                with redirect_stdout(StringIO()):
+                    code = scout.main(["--mock", "--output", str(output_json), "--render-briefing"])
+                self.assertEqual(code, 0)
+                expected_file = Path(directory) / "reports" / f"MORNING_TECH_BRIEFING_{snapshot['generated_at'][:10]}.md"
+                self.assertTrue(expected_file.is_file())
+
+    def test_cli_render_briefing_help(self):
+        res = subprocess.run([sys.executable, str(Path(scout.__file__).resolve()), "--help"],
+                             capture_output=True, text=True)
+        self.assertEqual(res.returncode, 0)
+        self.assertIn("--render-briefing", res.stdout)
 
 
 if __name__ == "__main__":

@@ -1,8 +1,8 @@
 {
   "schema_version": "1.0.0",
-  "generated_at": "2026-01-01T08:00:00Z",
-  "window_start": "2025-12-31T08:00:00Z",
-  "mode": "mock",
+  "generated_at": "2026-11-09T08:24:46Z",
+  "window_start": "2026-11-08T08:24:46Z",
+  "mode": "degraded",
   "topics": [
     "ai-agent",
     "llm",
@@ -13,11 +13,13 @@
     "github": {
       "status": "mock",
       "record_count": 5,
-      "errors": []
+      "errors": [
+        "http_403"
+      ]
     },
     "hacker_news": {
-      "status": "mock",
-      "record_count": 1,
+      "status": "live",
+      "record_count": 0,
       "errors": []
     }
   },
@@ -136,24 +138,6 @@
         "published_at": "2026-01-01T06:00:00Z",
         "observed_at": "2026-01-01T08:00:00Z"
       }
-    },
-    {
-      "id": "b763228d8879a05b97ee",
-      "source": "hacker_news",
-      "kind": "story",
-      "title": "Synthetic: sandboxed agents and tool protocols",
-      "url": "https://news.ycombinator.com/item?id=10000000",
-      "summary": "Synthetic architecture discussion for offline briefing validation.",
-      "tags": [
-        "ai-agent",
-        "systems-architecture"
-      ],
-      "observed_at": "2026-01-01T08:00:00Z",
-      "event_at": "2026-01-01T07:00:00Z",
-      "evidence": "mock",
-      "repo": null,
-      "stars": null,
-      "latest_release": null
     }
   ],
   "framework_matrix": [
@@ -263,6 +247,6 @@
       }
     }
   ],
-  "record_count": 6,
-  "content_sha256": "18fd3bbe52bccfe96d0b7581d1b6b3bd0ae7835d675dc2ba0ebd36d5f7faf882"
+  "record_count": 5,
+  "content_sha256": "f5fc7957d88c7e17eac688577a0543db2622b423f172e6e7ecf9a63af5e4c8a2"
 }

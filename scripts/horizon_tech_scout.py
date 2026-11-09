@@ -26,6 +26,7 @@ import urllib.request
 
 
 DEFAULT_OUTPUT = Path(__file__).resolve().parents[1] / "data/tech_delta/daily_frontier_delta.json"
+DEFAULT_REPORTS_DIR = Path(__file__).resolve().parents[1] / "data/tech_delta/reports"
 SCHEMA_VERSION = "1.0.0"
 MOCK_TIME = "2026-01-01T08:00:00Z"
 TIMEOUT = 5
@@ -591,12 +592,117 @@ def format_summary(snapshot):
     return "\n".join(lines) + "\n"
 
 
+def render_markdown_briefing(snapshot):
+    verify_snapshot(snapshot)
+    start, end = parse_time(snapshot["window_start"]), parse_time(snapshot["generated_at"])
+    gh_status = snapshot["sources"]["github"]["status"]
+    hn_status = snapshot["sources"]["hacker_news"]["status"]
+
+    lines = [
+        "# Frontier Tech Morning Briefing",
+        "",
+        f"- 日期 / UTC: {snapshot['generated_at']}",
+        f"- 观察窗口 / Window: {snapshot['window_start']} to {snapshot['generated_at']}",
+        "- 阅读时间 / Reading time: 3 minutes",
+        f"- 数据状态 / Evidence: {snapshot['mode']}; GitHub {gh_status}; Hacker News {hn_status}",
+        "",
+        "## " + SECTIONS[0],
+        "",
+    ]
+    events = []
+    for row in snapshot["records"]:
+        if row["evidence"] != "live":
+            continue
+        release = row["latest_release"]
+        if release and release["status"] == "live" and start <= parse_time(release["published_at"]) <= end:
+            events.append((release["published_at"], row["title"], release["tag"], release["url"]))
+        elif row["kind"] == "story" and start <= parse_time(row["event_at"]) <= end:
+            events.append((row["event_at"], row["title"], None, row["url"]))
+
+    if events:
+        for when, title, tag, url in sorted(events, reverse=True)[:5]:
+            desc = f"{title} {tag}" if tag else title
+            lines.append(f"- {desc}")
+            lines.append(f"- 发布时间 / Published: {when}; 原始来源 / Source: {url}")
+    else:
+        lines.append("- 过去 24 小时内未检测到新的实时验证发布或相关讨论。缓存与合成样本已保留原有时间戳。")
+    lines.append("- 仅列入窗口内有时间证据的实时发布和相关 HN 讨论。缓存保留原始观察时间，合成样本不作为今日新闻；没有实时证据时明确写明。")
+
+    lines.extend([
+        "",
+        "## " + SECTIONS[1],
+        "",
+        "| Project | Patterns to evaluate | Latest stable release / Evidence | Adoption experiment |",
+        "| --- | --- | --- | --- |",
+    ])
+
+    experiment_map = {
+        "Nous Research Hermes": "Review skill reuse on one repeatable task",
+        "OpenHands": "Replay a failed tool operation in isolation",
+        "AutoGen": "Compare typed messages with the current task flow",
+        "SWE-agent": "Reuse a constrained repository task harness",
+        "Cline": "Evaluate tool permissions and approval checkpoints",
+    }
+
+    for item in snapshot["framework_matrix"]:
+        patterns_str = ", ".join(item["design_patterns"]).capitalize()
+        rel = item["latest_release"]
+        rel_str = rel["tag"] + " [" + rel["status"] + "]" if rel["tag"] else rel["status"]
+        if rel.get("published_at"):
+            rel_str += " (" + rel["published_at"][:10] + ")"
+        exp_str = experiment_map.get(item["name"], item["adopt"])
+        lines.append(f"| {item['name']} | {patterns_str} | {rel_str} | {exp_str} |")
+
+    lines.extend([
+        "",
+        "架构条目是供评估的公开参考资料。采用前复查上游文档、许可证和维护状态；星标数不等于成熟度。未知版本标为 `unknown`，合成版本标为 `mock`，缓存版本标为 `cached` 并保留原始时间及发布链接。",
+        "",
+        "## " + SECTIONS[2],
+        "",
+        "- Tool protocols can lower integration cost; verify protocol support and permission scopes per release.",
+        "- Agent runtimes compete on reliable execution and evaluation; popularity alone does not establish maturity.",
+        f"- {snapshot['framework_matrix'][0]['risk']}",
+        f"- {snapshot['framework_matrix'][2]['risk']}",
+    ])
+    if any(source["errors"] for source in snapshot["sources"].values()):
+        errs = "; ".join(name + ": " + ", ".join(source["errors"]) for name, source in snapshot["sources"].items() if source["errors"])
+        lines.append(f"- 数据降级 / Feed degradation: {errs}")
+
+    lines.extend([
+        "",
+        "## " + SECTIONS[3],
+        "",
+        "1. 今天用 30 分钟对照两个现有框架，完成同一个代表性任务。",
+        "2. 固定一个候选版本，记录成功率、执行成本及工具失败后的恢复行为。",
+        "3. 优先复用一个经过验证的沙箱、技能或消息组件，并记录采用决定及上游链接。",
+        "",
+        "采集范围：GitHub 四个主题 `ai-agent`、`llm`、`multi-agent`、`systems-architecture` 各取星标排名前三，同时监控上述五个项目及其最新稳定发布；HN 只读取前十条热门故事并按 AI 与架构关键词筛选。GitHub 使用总星标排名，不能据此推断当日增长。",
+        "",
+        "运行方式：`python3 scripts/horizon_tech_scout.py --summary`。离线演示：`python3 scripts/horizon_tech_scout.py --mock --summary --verify`。验证现有文件：`python3 scripts/horizon_tech_scout.py --verify`，验证过程不修改文件。每天由已有的 cron 或任务调度器运行一次即可；脚本不会自行安装调度任务。",
+        ""
+    ])
+    return "\n".join(lines)
+
+
+def write_briefing(content, path):
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    temporary = path.with_name(path.name + ".tmp")
+    try:
+        temporary.write_text(content, encoding="utf-8")
+        temporary.replace(path)
+    finally:
+        temporary.unlink(missing_ok=True)
+
+
 def build_parser():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--mock", action="store_true", help="Generate deterministic offline synthetic records")
     parser.add_argument("--verify", action="store_true", help="Validate existing output; with --mock, generate and validate")
     parser.add_argument("--summary", action="store_true", help="Print a concise morning briefing")
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT, help="Output JSON and fallback cache path")
+    parser.add_argument("--render-briefing", nargs="?", const="", default=None, metavar="PATH",
+                        help="Render Markdown morning briefing; optional path defaults to data/tech_delta/reports/MORNING_TECH_BRIEFING_YYYY-MM-DD.md")
     return parser
 
 
@@ -604,7 +710,7 @@ def main(argv=None):
     parser = build_parser()
     args = parser.parse_args(argv)
     try:
-        if args.verify and not args.mock:
+        if args.verify and not args.mock and args.render_briefing is None:
             snapshot = read_snapshot(args.output)
             verify_snapshot(snapshot)
         else:
@@ -612,7 +718,16 @@ def main(argv=None):
             write_snapshot(snapshot, args.output)
         if args.summary:
             print(format_summary(snapshot), end="")
-        else:
+        if args.render_briefing is not None:
+            if args.render_briefing == "":
+                briefing_date = snapshot["generated_at"][:10]
+                target_path = DEFAULT_REPORTS_DIR / f"MORNING_TECH_BRIEFING_{briefing_date}.md"
+            else:
+                target_path = Path(args.render_briefing)
+            content = render_markdown_briefing(snapshot)
+            write_briefing(content, target_path)
+            print(f"Rendered morning briefing to {target_path}")
+        elif not args.summary:
             print("Verified " + str(snapshot["record_count"]) + " records [" + snapshot["mode"] + "]")
         return 0
     except (OSError, ValueError, TypeError, OverflowError) as error:
