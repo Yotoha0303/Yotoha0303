@@ -3,9 +3,9 @@
   "_note": "Automated open-source intelligence feed covering global AI trends, commercial signals, and China Mobile Ecosystem Privacy & Threat Intelligence. Maintained by Yotoha.",
   "asset": "Global Tech & Mobile Privacy Threat Intelligence Feed",
   "frequency": "daily",
-  "rows_per_run": 4,
+  "rows_per_run": 24,
   "license": "CC BY 4.0",
-  "updated_at": "2026-11-09T03:00:00Z",
+  "updated_at": "2026-11-10T02:00:00Z",
   "schema": {
     "signal_id": "string",
     "title": "string",
@@ -19,7 +19,73 @@
   },
   "rows": [
     {
-      "signal_id": "sec_telemetry_hyperos_1794196229",
+      "signal_id": "hn_50429426",
+      "title": "Google Gemini routes personal Drive files and emails to human annotators",
+      "url": "https://github.com/thisisme6598/gemini_files/",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 100,
+      "summary": "HN Score: 428 | Comments: 104",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50431144",
+      "title": "Claude Fable 5.2 Scores 65 on Artificial Analysis, Highest So Far",
+      "url": "https://artificialanalysis.ai/models/claude-fable-5-2",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 100,
+      "summary": "HN Score: 292 | Comments: 207",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50429906",
+      "title": "Claude Fable 5.2 and Mythos 5.2",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 100,
+      "summary": "HN Score: 958 | Comments: 585",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50427362",
+      "title": "Payments Canada announces launch of Canada's Real-Time Rail (RTR) payment system",
+      "url": "https://www.payments.ca/canada-launches-real-time-rail-bringing-247-payment-infrastructure-national-economy",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 100,
+      "summary": "HN Score: 471 | Comments: 259",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50424581",
+      "title": "Foldable Flight: The Best Paper Airplanes",
+      "url": "https://www.foldableflight.com",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 100,
+      "summary": "HN Score: 855 | Comments: 139",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50429024",
+      "title": "Our Smallest, Most Efficient Model: Muse Ember",
+      "url": "https://research.meta.ai/blog/muse-ember",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 100,
+      "summary": "HN Score: 250 | Comments: 105",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "sec_telemetry_hyperos_1794276583",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -27,10 +93,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 98,
       "summary": "实机取证发现底层守护进程 com.miui.daemon (MQSAS) 与 com.xiaomi.barrage 默认获取全局通知监听特权(NotificationMonitorService)，拦截微信、银行全部弹窗明文；通过用户空间 adb pm uninstall 可安全拔除并不影响基带与通讯。",
-      "as_of": "2026-11-09"
+      "as_of": "2026-11-10"
     },
     {
-      "signal_id": "sec_darknet_breach_mapping_1794196229",
+      "signal_id": "sec_darknet_breach_mapping_1794276583",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -38,10 +104,10 @@
       "business_signals": "Darknet Intelligence, Canary Tokens, Anti-OSINT",
       "relevance_score": 96,
       "summary": "系统解构华住会 2018 (5亿条)、微博 2020 (5.38亿条)、快递面单等地下流通数据库物理结构；提出基于数学级 k-Anonymity 零暴露本地密码探针与姓名/门牌号金丝雀暗记反向唯一归因模型。",
-      "as_of": "2026-11-09"
+      "as_of": "2026-11-10"
     },
     {
-      "signal_id": "sec_clipboard_appops_1794196229",
+      "signal_id": "sec_clipboard_appops_1794276583",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -49,10 +115,21 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 95,
       "summary": "抽检美团、大众点评、天猫、拼多多、网易云等应用，默认拥有 READ_CLIPBOARD: allow 权限，每次切换前台自动静默搜集剪切板口令与身份证号；通过 cmd appops set <pkg> READ_CLIPBOARD ignore 可物理免疫且不影响复制粘贴正常交互。",
-      "as_of": "2026-11-09"
+      "as_of": "2026-11-10"
     },
     {
-      "signal_id": "sec_sandbox_confinement_1794196229",
+      "signal_id": "flash_3_1794276598",
+      "title": "Anthropic拟通过首次公开募股筹集至多693亿美元",
+      "url": "https://www.36kr.com/newsflashes/4063279194592131",
+      "source": "CommercialNewsflash",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents, Venture Capital",
+      "relevance_score": 95,
+      "summary": "Anthropic拟通过首次公开募股筹集至多693亿美元，发行价区间为每股70至80美元。Anthropic拟在IPO中发行866，666，664股A类股。（新浪财经）",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "sec_sandbox_confinement_1794276583",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -60,7 +137,150 @@
       "business_signals": "Container Security, Linux Hardening, Zero Trust",
       "relevance_score": 92,
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
-      "as_of": "2026-11-09"
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50431058",
+      "title": "USPS now offers official ZIP Code boundary polygons",
+      "url": "https://postalpro.usps.com/zcb",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 80,
+      "summary": "HN Score: 487 | Comments: 246",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50429734",
+      "title": "E-means: Outperforming k-means in one-tenth the epochs",
+      "url": "https://e-means.github.io/",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 77,
+      "summary": "HN Score: 276 | Comments: 20",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_0_1794276598",
+      "title": "国机精工：航天特种轴承相关业务正逐步为公司带来新的增量",
+      "url": "https://www.36kr.com/newsflashes/4063288781738881",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Monetization & SaaS",
+      "relevance_score": 70,
+      "summary": "国机精工近日接受机构调研时表示，航天特种轴承作为公司盈利的“压舱石”，传统优势地位持续稳固。产品全面覆盖卫星、运载火箭全系统关键部位，国内主流航天企业均为公司客户。可重复使用运载火箭方面，有力保障长征十号乙等国家重大航天工程任务顺利实施，配套朱雀三号重复使用遥二运载火箭完成发射与回收任务验证。随着商业航天进入常态化高频发射阶段，相关业务正逐步为公司带来新的增...",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_4_1794276598",
+      "title": "澳航与埃森哲达成多年期战略合作，未来数年约850个岗位将受影响",
+      "url": "https://www.36kr.com/newsflashes/4063234067403657",
+      "source": "CommercialNewsflash",
+      "category": "Venture & Investment",
+      "business_signals": "Venture Capital",
+      "relevance_score": 70,
+      "summary": "澳洲航空集团（Qantas Group）宣布与埃森哲达成多年期战略合作，推进后台系统、业务流程和数据平台现代化，并加大人工智能投资。合作将涉及企业职能调整，部分服务将转由埃森哲提供，主要由其印度团队及部分澳大利亚团队负责，后续进一步引入自动化和人工智能。澳航预计，未来数年集团约850个岗位将受到影响，首批调整预计于2027年年中前实施。公司表示，将与受影响员...",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_5_1794276598",
+      "title": "中信证券：家电行业需求波动，龙头经营韧性凸显",
+      "url": "https://www.36kr.com/newsflashes/4063233540248448",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Monetization & SaaS",
+      "relevance_score": 70,
+      "summary": "36氪获悉，中信证券研报称，受内销需求偏弱、原材料成本上涨及汇率波动等因素影响，2026年第三季度家电行业盈利能力阶段性承压。分板块看，白电收入承压但盈利保持韧性；黑电受益于全球份额提升及高端化推进，收入保持增长、毛利率改善；小家电收入增长，但盈利有所分化；厨电仍受地产后周期拖累；上游收入稳健增长。展望后续，随着内销低基数效应显现、海外销售旺季到来，以及龙头...",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50432831",
+      "title": "TPU 8tx and TPU 8i Max",
+      "url": "https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 70,
+      "summary": "HN Score: 207 | Comments: 52",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_9_1794276598",
+      "title": "恒指开盘涨0.7%，恒生科技指数涨0.78%",
+      "url": "https://www.36kr.com/newsflashes/4063262120367237",
+      "source": "CommercialNewsflash",
+      "category": "Hardware & Infrastructure",
+      "business_signals": "Hardware & Compute",
+      "relevance_score": 65,
+      "summary": "36氪获悉，恒指开盘涨0.7%，恒生科技指数涨0.78%；半导体、医药生物、硬件设备板块领涨，海光芯正涨超9%，百济神州涨超7%，纳芯微涨超5%；石油石化、煤炭、消费者服务板块跌幅居前，山东墨龙跌超2%，首钢资源、沪上阿姨跌超1%。",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "hn_50433659",
+      "title": "Fable 5.2 one-shotted my nephew's dream game",
+      "url": "https://notesbylex.com/fable-5-2-one-shotted-my-nephews-dream-game",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 64,
+      "summary": "HN Score: 143 | Comments: 104",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_1_1794276598",
+      "title": "宇树科技涨超10%，市值重回三千亿元上方",
+      "url": "https://www.36kr.com/newsflashes/4063296722801795",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "36氪获悉，宇树科技涨超10%，市值重回三千亿元上方。",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_2_1794276598",
+      "title": "马斯克透露擎天柱机器人最新消息",
+      "url": "https://www.36kr.com/newsflashes/4063283749589897",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "特斯拉的人形机器人“擎天柱”是市场关注的焦点产品之一，特斯拉公司首席执行官马斯克日前表示，“擎天柱”将在2027年底左右开始交付，但交付形式可能是“租”而不是“卖”。马斯克表示，擎天柱的初期成本可能与电动汽车差不多，每台机器人的初始成本约为3万美元，之后会降至2万美元左右。马斯克预计擎天柱至少需要一年时间才能达到全面量产，在对外交付前，擎天柱将先在特斯拉的自...",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_6_1794276598",
+      "title": "日本央行会议纪要显示部分委员支持更快加息",
+      "url": "https://www.36kr.com/newsflashes/4063232796169096",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "根据公布的日本央行10月份会议纪要显示，鉴于基础通胀率已达到该行2%的目标，部分决策者主张加快加息步伐。其中一位委员表示：“此前加息的影响尚未完全显现，金融环境依然保持宽松。日本已进入一个新阶段，日本央行需要加快将政策利率调整至中性水平的步伐。”会议纪要显示，日本央行的九人决策委员会中，另有两名成员主张尽快将政策利率上调至被视为对经济呈“中性”的水平。（新浪...",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_7_1794276598",
+      "title": "A股三大指数集体高开，新股N钶锐涨超298%",
+      "url": "https://www.36kr.com/newsflashes/4063265733759878",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "36氪获悉，A股三大指数集体高开，沪指涨0.58%，深成指涨1.51%，创业板指涨2.44%；新股N钶锐涨超298%；通信设备、电子元器件、半导体板块领涨，新易盛涨超6%，源杰科技、腾景科技涨超5%，石油天然气、煤炭、航运板块跌幅居前，中国石油跌超2%，陕西煤业、中远海能跌超1%。",
+      "as_of": "2026-11-10"
+    },
+    {
+      "signal_id": "flash_8_1794276598",
+      "title": "央行今日开展1900亿元隔夜逆回购操作，操作利率为1.25%",
+      "url": "https://www.36kr.com/newsflashes/4063262380840070",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "36氪获悉，央行今日开展1900亿元隔夜逆回购操作，操作利率为1.25%。",
+      "as_of": "2026-11-10"
     }
   ]
 }
