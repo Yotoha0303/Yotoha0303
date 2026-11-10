@@ -1,11 +1,11 @@
 {
   "channel": "Yotoha Personal Privacy & Threat Intelligence",
   "channel_description": "专注于国产手机系统后门、应用流氓行为排查、暗网泄露溯源与沙盒防御的个人专属定制阅读流",
-  "updated_at": "2026-11-09 11:50:29",
+  "updated_at": "2026-11-10 10:10:08",
   "total_signals": 4,
   "articles": [
     {
-      "signal_id": "sec_telemetry_hyperos_1794196229",
+      "signal_id": "sec_telemetry_hyperos_1794276583",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -13,10 +13,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 98,
       "summary": "实机取证发现底层守护进程 com.miui.daemon (MQSAS) 与 com.xiaomi.barrage 默认获取全局通知监听特权(NotificationMonitorService)，拦截微信、银行全部弹窗明文；通过用户空间 adb pm uninstall 可安全拔除并不影响基带与通讯。",
-      "as_of": "2026-11-09"
+      "as_of": "2026-11-10"
     },
     {
-      "signal_id": "sec_clipboard_appops_1794196229",
+      "signal_id": "sec_clipboard_appops_1794276583",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -24,10 +24,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 95,
       "summary": "抽检美团、大众点评、天猫、拼多多、网易云等应用，默认拥有 READ_CLIPBOARD: allow 权限，每次切换前台自动静默搜集剪切板口令与身份证号；通过 cmd appops set <pkg> READ_CLIPBOARD ignore 可物理免疫且不影响复制粘贴正常交互。",
-      "as_of": "2026-11-09"
+      "as_of": "2026-11-10"
     },
     {
-      "signal_id": "sec_darknet_breach_mapping_1794196229",
+      "signal_id": "sec_darknet_breach_mapping_1794276583",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -35,10 +35,10 @@
       "business_signals": "Darknet Intelligence, Canary Tokens, Anti-OSINT",
       "relevance_score": 96,
       "summary": "系统解构华住会 2018 (5亿条)、微博 2020 (5.38亿条)、快递面单等地下流通数据库物理结构；提出基于数学级 k-Anonymity 零暴露本地密码探针与姓名/门牌号金丝雀暗记反向唯一归因模型。",
-      "as_of": "2026-11-09"
+      "as_of": "2026-11-10"
     },
     {
-      "signal_id": "sec_sandbox_confinement_1794196229",
+      "signal_id": "sec_sandbox_confinement_1794276583",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -46,7 +46,7 @@
       "business_signals": "Container Security, Linux Hardening, Zero Trust",
       "relevance_score": 92,
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
-      "as_of": "2026-11-09"
+      "as_of": "2026-11-10"
     }
   ],
   "threat_schema_version": "1.0.0",
