@@ -9,3 +9,4 @@ var/
 data/.feegate-harvest.lock
 data/.feegate-stage-*/
 scratch/
+data/billing/
