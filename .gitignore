@@ -10,3 +10,13 @@ data/.feegate-harvest.lock
 data/.feegate-stage-*/
 scratch/
 data/billing/
+
+# Full FeeGate snapshots withdrawn on 2026-11-10; keep local only.
+/data/feegate-ai-model-pricing-index.json
+/data/feegate-security-cve-threat-radar.json
+/data/feegate-agent-frameworks-benchmark.json
+/data/feegate-sovereign-defi-yields.json
+/data/feegate-catalog-index.json
+/real-data/ai-web3-research.json
+/real-data/hf-model-ecosystem.json
+/real-data/so-developer-qa.json
