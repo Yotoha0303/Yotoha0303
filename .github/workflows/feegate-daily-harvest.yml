@@ -1,10 +1,14 @@
-name: FeeGate Commercial Datasets Automated Harvester
+name: FeeGate Hourly Dataset Refresh
 
 on:
   schedule:
-    # Runs daily at 06:00 UTC (14:00 CST)
-    - cron: "0 6 * * *"
+    # Run once per hour; GitHub may queue scheduled runs during busy periods.
+    - cron: "0 * * * *"
   workflow_dispatch:
+
+concurrency:
+  group: feegate-dataset-refresh-main
+  cancel-in-progress: false
 
 permissions:
   contents: write
@@ -12,6 +16,7 @@ permissions:
 jobs:
   harvest-and-publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -27,14 +32,22 @@ jobs:
         run: |
           python scripts/feegate_harvester.py
 
+      - name: Validate all four catalog products before publication
+        run: python scripts/test_catalog_integrity.py
+
       - name: Commit and push updated datasets if changed
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/
+          git add -- \
+            data/feegate-ai-model-pricing-index.json \
+            data/feegate-security-cve-threat-radar.json \
+            data/feegate-agent-frameworks-benchmark.json \
+            data/feegate-catalog-index.json
           if git diff --staged --quiet; then
             echo "No data changes detected. Skipping commit."
           else
-            git commit -m "chore(data): daily automated feegate real-world datasets ingestion [skip ci]"
-            git push origin main
+            git commit -m "chore(data): hourly FeeGate dataset refresh [skip ci]"
+            git pull --rebase origin main
+            git push origin HEAD:main
           fi

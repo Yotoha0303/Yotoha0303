@@ -385,7 +385,7 @@ def generate_master_catalog(products: List[Dict[str, Any]]) -> Dict[str, Any]:
             "data_url": f"https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/{p.get('catalog_id')}.json"
         })
 
-    # The daily legacy job refreshes three products. Retain the independently
+    # The scheduled job refreshes three products. Retain the independently
     # harvested sovereign product so this job cannot downgrade the active catalog.
     if not any(product["catalog_id"] == SOVEREIGN_ID for product in catalog["products"]):
         existing = read_json(os.path.join(DATA_DIR, "feegate-catalog-index.json"))
@@ -459,7 +459,7 @@ def main():
         print("[+] Performing automated Git commit and push to remote...")
         cwd = BASE_DIR
         subprocess.run(["git", "add", "data/"], cwd=cwd, check=True)
-        commit_msg = f"chore(data): daily automated feegate real-world datasets ingestion ({datetime.date.today().isoformat()}) [skip ci]"
+        commit_msg = f"chore(data): FeeGate dataset refresh ({datetime.date.today().isoformat()}) [skip ci]"
         subprocess.run(["git", "commit", "-m", commit_msg], cwd=cwd, check=True)
         subprocess.run(["git", "push", "origin", "main"], cwd=cwd, check=True)
         print("[✓] Pushed live datasets to GitHub successfully!")

@@ -25,7 +25,7 @@ Each daemon cycle runs `sovereign_yield_harvester.py` against a staged copy of t
 data, preserving the existing yield cache. It synchronizes sovereign provenance
 in the staged catalog and runs `test_catalog_integrity.py` against all four
 products. A successful validation publishes the new yield dataset and catalog.
-The other three datasets retain their existing contents. The legacy daily
+The other three datasets retain their existing contents. The hourly scheduled
 `feegate_harvester.py` refreshes those three and now retains the sovereign entry.
 
 Each published JSON replacement is atomic. Ordinary publication errors restore
@@ -85,7 +85,42 @@ Systemd stores state under `%S/feegate-harvester` (normally
 `~/.local/state/feegate-harvester`). Manual runs default to
 `var/feegate-harvester/` in the repository. For unattended operation after logout,
 the user's systemd manager must remain running, for example via login lingering.
-The Docker deployment retains its separate daily legacy harvester schedule.
+The optional Docker deployment has a separate daily legacy schedule; it is not
+the active GitHub Actions upload path described below.
+
+## Hourly cloud refresh and upload
+
+The active workflow is `.github/workflows/feegate-daily-harvest.yml` (the filename
+is retained for compatibility; its display name is **FeeGate Hourly Dataset
+Refresh**). It runs at `0 * * * *` and supports manual dispatch. GitHub may queue
+scheduled jobs, so this is an hourly batch schedule rather than a strict latency
+guarantee.
+
+Each run fetches the three upstream APIs using `scripts/feegate_harvester.py`,
+validates the four-product catalog, then immediately commits and pushes these
+four output files to the repository's `main` branch:
+
+- `data/feegate-ai-model-pricing-index.json`
+- `data/feegate-security-cve-threat-radar.json`
+- `data/feegate-agent-frameworks-benchmark.json`
+- `data/feegate-catalog-index.json`
+
+Only successful collections and validation reach the upload step. Runs of this
+workflow do not overlap. The source uses the runner's `GITHUB_TOKEN`; FeeGate
+passwords and session cookies are not needed by or copied into this workflow.
+
+Published JSON files are public at
+`https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/data/<filename>`.
+FeeGate stores the asset/tool configuration and reads these source URLs when
+serving its tools. It is not a separate upload destination for the full datasets.
+Verify the timestamp returned by the FeeGate digest when checking end-to-end
+freshness; platform or GitHub caching can delay visibility after a push.
+
+This is batch upload immediately after a successful crawl, not a stream that
+uploads individual records as they arrive. GitHub Actions uses a temporary
+runner checkout; local `data/` files update only when this local checkout runs
+the collector or pulls the published Git commits. WorkBuddy's three snapshots
+and the independently collected DeFi snapshot are outside this hourly workflow.
 
 ## Verification
 
