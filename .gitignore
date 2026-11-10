@@ -8,3 +8,4 @@ var/android-privacy-guard/
 var/
 data/.feegate-harvest.lock
 data/.feegate-stage-*/
+scratch/
