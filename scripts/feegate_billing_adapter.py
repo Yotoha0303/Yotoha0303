@@ -135,20 +135,24 @@ def order_fields(order, products):
 
 
 class Billing:
-    def __init__(self, database, products, *, secret, api_key, mock=False, now=None, facilitator=None):
+    def __init__(self, database, products, *, secret, api_key, mock=False, now=None, facilitator=None, mock_x402=False):
         require(isinstance(secret, str) and len(secret.encode()) >= 32, "secret_requires_32_bytes")
         require(isinstance(api_key, str) and bool(api_key), "api_key_required")
         self.secret, self.api_key = secret.encode(), api_key
         self.products, self.mock = products, mock
         self.now = moment(now).strftime(TIME)
         self.facilitator = facilitator
-        path = Path(database)
-        require(not path.is_symlink(), "symlink_database")
-        path.parent.mkdir(parents=True, exist_ok=True)
-        descriptor = os.open(path, os.O_CREAT | os.O_RDWR | os.O_NOFOLLOW, 0o600)
-        os.fchmod(descriptor, 0o600)
-        os.close(descriptor)
-        self.db = sqlite3.connect(path, timeout=10, isolation_level=None)
+        require(not mock_x402 or (mock and str(database) == ":memory:" and facilitator is not None
+                                 and getattr(facilitator, "offline_only", False) is True), "mock_x402_requires_offline_memory")
+        self.mock_x402 = mock_x402
+        if str(database) != ":memory:":
+            path = Path(database)
+            require(not path.is_symlink(), "symlink_database")
+            path.parent.mkdir(parents=True, exist_ok=True)
+            descriptor = os.open(path, os.O_CREAT | os.O_RDWR | os.O_NOFOLLOW, 0o600)
+            os.fchmod(descriptor, 0o600)
+            os.close(descriptor)
+        self.db = sqlite3.connect(database, timeout=10, isolation_level=None)
         self.db.row_factory = sqlite3.Row
         self.db.executescript("""
             PRAGMA journal_mode=WAL;
@@ -236,7 +240,7 @@ class Billing:
                 voucher = self.verify_voucher(auth["payment-voucher"], fields)
                 nonce, method = voucher["nonce"], "private-account"
             else:
-                require(not self.mock and fields["currency"] == "USD" and self.facilitator is not None, "x402_unavailable")
+                require((not self.mock or self.mock_x402) and fields["currency"] == "USD" and self.facilitator is not None, "x402_unavailable")
                 payment = gateway.decode_payment(auth["payment-signature"])
                 requirements = {"scheme": "exact", "network": gateway.BASE_NETWORK, "asset": gateway.BASE_USDC,
                                 "amount": str(int(Decimal(fields["amount"]) * 10**6)), "payTo": gateway.PAY_TO,
