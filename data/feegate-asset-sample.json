@@ -3,9 +3,9 @@
   "_note": "Automated open-source intelligence feed covering global AI trends, commercial signals, and China Mobile Ecosystem Privacy & Threat Intelligence. Maintained by Yotoha.",
   "asset": "Global Tech & Mobile Privacy Threat Intelligence Feed",
   "frequency": "daily",
-  "rows_per_run": 24,
+  "rows_per_run": 4,
   "license": "CC BY 4.0",
-  "updated_at": "2026-11-11T00:00:00Z",
+  "updated_at": "2026-11-12T03:00:00Z",
   "schema": {
     "signal_id": "string",
     "title": "string",
@@ -19,29 +19,7 @@
   },
   "rows": [
     {
-      "signal_id": "flash_4_1794355240",
-      "title": "OpenAI第三季度营收据悉达到100亿美元，环比激增近50%",
-      "url": "https://www.36kr.com/newsflashes/4064577870500742",
-      "source": "CommercialNewsflash",
-      "category": "AI Commercialization",
-      "business_signals": "AI & Agents, Venture Capital, Monetization & SaaS",
-      "relevance_score": 100,
-      "summary": "据知情人士透露，OpenAI已告知投资者，其第三季度营收环比激增近50%，达到100亿美元。此前，该公司曾经历过一段增长放缓的时期，而随着市场对其最新模型及企业级产品的需求回升，营收实现了反弹。在当地时间周二举行的一次电话会议上，OpenAI 向投资者披露了部分财务指标。目前，该公司正寻求完成新一轮融资，其估值有望达到 1.25 万亿美元。该公司第三季度营收...",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50443824",
-      "title": "Synaptics patent claims stop work on DisplayLink drivers",
-      "url": "https://lwn.net/SubscriberLink/1102549/acbc92e00cee3a3f/",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 100,
-      "summary": "HN Score: 264 | Comments: 122",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "sec_telemetry_hyperos_1794355239",
+      "signal_id": "sec_telemetry_hyperos_1794453606",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -49,21 +27,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 98,
       "summary": "实机取证发现底层守护进程 com.miui.daemon (MQSAS) 与 com.xiaomi.barrage 默认获取全局通知监听特权(NotificationMonitorService)，拦截微信、银行全部弹窗明文；通过用户空间 adb pm uninstall 可安全拔除并不影响基带与通讯。",
-      "as_of": "2026-11-11"
+      "as_of": "2026-11-12"
     },
     {
-      "signal_id": "hn_50443812",
-      "title": "Show HN: Get your coding agent off ~2019 JavaScript, onto modern web primitives",
-      "url": "https://github.com/GoogleChrome/modern-web-guidance",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 97,
-      "summary": "HN Score: 229 | Comments: 65",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "sec_darknet_breach_mapping_1794355239",
+      "signal_id": "sec_darknet_breach_mapping_1794453606",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -71,10 +38,10 @@
       "business_signals": "Darknet Intelligence, Canary Tokens, Anti-OSINT",
       "relevance_score": 96,
       "summary": "系统解构华住会 2018 (5亿条)、微博 2020 (5.38亿条)、快递面单等地下流通数据库物理结构；提出基于数学级 k-Anonymity 零暴露本地密码探针与姓名/门牌号金丝雀暗记反向唯一归因模型。",
-      "as_of": "2026-11-11"
+      "as_of": "2026-11-12"
     },
     {
-      "signal_id": "sec_clipboard_appops_1794355239",
+      "signal_id": "sec_clipboard_appops_1794453606",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -82,21 +49,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 95,
       "summary": "抽检美团、大众点评、天猫、拼多多、网易云等应用，默认拥有 READ_CLIPBOARD: allow 权限，每次切换前台自动静默搜集剪切板口令与身份证号；通过 cmd appops set <pkg> READ_CLIPBOARD ignore 可物理免疫且不影响复制粘贴正常交互。",
-      "as_of": "2026-11-11"
+      "as_of": "2026-11-12"
     },
     {
-      "signal_id": "flash_2_1794355240",
-      "title": "美联储理事鲍曼警告AI投资回报不及预期或导致股市估值大幅回调",
-      "url": "https://www.36kr.com/newsflashes/4064582682104709",
-      "source": "CommercialNewsflash",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents, Venture Capital",
-      "relevance_score": 95,
-      "summary": "美联储理事米歇尔·鲍曼表示，她认为金融市场给经济活动带来诸多风险，其中包括一旦人工智能领域的投资回报不及预期，股价可能大幅下跌。鲍曼周二在华盛顿发表讲话时警告，AI投资回报问题可能引发“股票估值大幅回调”的风险，同时还提及“私营部门长期利率急剧上升”的隐患。“股价下跌可能削弱消费者支出的韧性，”她说。“而利率上升可能进一步给住房和小企业投资等利率敏感的经济领...",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "sec_sandbox_confinement_1794355239",
+      "signal_id": "sec_sandbox_confinement_1794453606",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -104,183 +60,7 @@
       "business_signals": "Container Security, Linux Hardening, Zero Trust",
       "relevance_score": 92,
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50447074",
-      "title": "After 7 Months, Glasswing Overwelms Maintainers with Underwhelming Findings",
-      "url": "https://www.vulncheck.com/blog/anthropic-glasswing-november-update",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 85,
-      "summary": "HN Score: 101 | Comments: 24",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50442736",
-      "title": ".name Grandfathered",
-      "url": "https://neil.fraser.name/news/2026/11/10/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 637 | Comments: 140",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50441707",
-      "title": "Smart home devices should work without the internet",
-      "url": "https://docodethatmatters.com/home-automation-overnight-success/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 650 | Comments: 231",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50439193",
-      "title": "AlphaProof Code",
-      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 559 | Comments: 174",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50443427",
-      "title": "Val Town is winding down",
-      "url": "https://blog.val.town/winding-down",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 78,
-      "summary": "HN Score: 281 | Comments: 75",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50445401",
-      "title": "Toyota brand Scion is back and it's going to sell a kei truck in America",
-      "url": "https://www.theautopian.com/scion-is-back-and-its-going-to-sell-a-freaking-kei-truck-in-america/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 76,
-      "summary": "HN Score: 260 | Comments: 182",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "flash_1_1794355240",
-      "title": "从“抢发行”到“择窗口”，港股IPO市场正“减速换挡”",
-      "url": "https://www.36kr.com/newsflashes/4064583202706562",
-      "source": "CommercialNewsflash",
-      "category": "Venture & Investment",
-      "business_signals": "Venture Capital",
-      "relevance_score": 70,
-      "summary": "11月9日，本该是和美药业在港交所敲锣的日子。但11月4日招股刚截止，公司即公告鉴于现行市场情况，决定延迟上市，这已是10月下旬以来第三只在临近上市时“踩刹车”的港股新股。同时，还有多家A股公司选择取消或暂缓港股IPO。而在半年前，港股市场还要为“铜锣不够用”发愁。半年之间，港股一级市场就完成了一场极为迅速的冷热变幻。港股IPO市场正“减速换挡”：从“抢发行...",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "flash_5_1794355240",
-      "title": "黄金销售与积存金交易活跃度明显走高，银行密集强化风险提示",
-      "url": "https://www.36kr.com/newsflashes/4064570635179145",
-      "source": "CommercialNewsflash",
-      "category": "Venture & Investment",
-      "business_signals": "Venture Capital",
-      "relevance_score": 70,
-      "summary": "11月10日，中国金币集团发布贵金属价格波动风险提示，提醒集藏投资者理性参与、审慎操作，避免盲目追涨杀跌。近期，黄金和白银价格经历大幅回调之后转入修复，但价格弹性与机构预期分歧同步上升。最近从多家银行了解到，近期黄金销售与积存金交易活跃度明显走高。有一家股份行省级分行的积存金存量规模，两个月内增长了一倍。伴随投资者交易热情升温，银行在优化积存金挂单等配套服务...",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "flash_7_1794355240",
-      "title": "CoreWeave上调年度营收展望",
-      "url": "https://www.36kr.com/newsflashes/4064559890175113",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Monetization & SaaS",
-      "relevance_score": 70,
-      "summary": "当地时间11月10日，人工智能算力提供商CoreWeave公布三季度营收36.6亿美元，分析师预测均值为35.6亿美元；每股亏损1.27美元，好于分析师预计的每股亏损1.46美元。该公司预计今年营收为130亿至133亿美元。此前的预测区间上限为132亿美元。（界面）",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50446246",
-      "title": "Six Math Essentials by Terence Tao",
-      "url": "https://teorth.github.io/tao-web/six-math-essentials.html",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 59,
-      "summary": "HN Score: 95 | Comments: 16",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "hn_50446714",
-      "title": "rVPN – stealth VPN with end-to-end encryption",
-      "url": "https://rvpn.org/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 54,
-      "summary": "HN Score: 49 | Comments: 37",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "flash_0_1794355240",
-      "title": "我国太空算力网加快部署 10月以来5只概念股获机构调研",
-      "url": "https://www.36kr.com/newsflashes/4064580844196996",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "11月9日举办的2026太空云产业生态大会上，“星云星座计划”等我国太空云产业化成果发布，标志着我国“太空云”生态建设迈出了从技术验证走向产业化布局的关键一步。本次发布的“星云星座计划”是中国科学院空天信息创新研究院与国内科创企业联合研发的全栈国产化太空算力网。据统计，目前A股布局太空算力产业链的上市公司共有24家，11月10日平均上涨3.01%。从机构关注...",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "flash_3_1794355240",
-      "title": "EIA短期能源展望报告：预计2026年全球石油需求为1.024亿桶/日",
-      "url": "https://www.36kr.com/newsflashes/4064579832059016",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "EIA短期能源展望报告：预计2026年全球石油需求为1.024亿桶/日，此前预期为1.024亿桶/日；预计2027年全球石油需求为1.044亿桶/日，此前预期为1.046亿桶/日。（界面）",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "flash_6_1794355240",
-      "title": "美联储12月加息50个基点的概率为11.5%",
-      "url": "https://www.36kr.com/newsflashes/4064560787199110",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "据CME“美联储观察”：美联储12月维持利率不变的概率为0%，加息25个基点的概率为88.5%，加息50个基点的概率为11.5%。美联储到明年1月维持利率不变的概率为0%（昨日为11.8%），累计加息25个基点的概率33.6%（昨日为66.9%），累计加息50个基点的概率为59.2%（昨日为21.3%），累计加息75个基点的概率为7.1%（昨日为0%）。（财...",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "flash_8_1794355240",
-      "title": "我国持续推进市场多元化，外贸“朋友圈”持续扩大",
-      "url": "https://www.36kr.com/newsflashes/4064559059686529",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "近年来，我国持续推进市场多元化，降低对单一市场依赖，分散外部环境带来的风险，外贸“朋友圈”持续扩大。海关统计数据显示，今年前10个月，我国对180多个国家和地区进出口实现增长，其中，对东盟、拉美、非洲等新兴市场进出口分别增长24.2%、14.4%、17.6%，对欧盟、美国进出口分别增长8.5%、6.3%。同期，对APEC其他经济体进出口27.08万亿元，增长...",
-      "as_of": "2026-11-11"
-    },
-    {
-      "signal_id": "flash_9_1794355240",
-      "title": "ETF资金持续发力，中国资产吸引力增强",
-      "url": "https://www.36kr.com/newsflashes/4064534382253189",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "近期，中国资产展现出一定韧性，A股和港股市场均企稳回升。资金面支撑明显，截至11月9日，股票型ETF持续加仓A股，10月以来累计净流入额超5900亿元；港股上市公司积极回购，10月以来累计回购金额超110亿港元。分析人士认为，中国资产内生的稳定性依然稳固，叠加近期维稳政策力度加大，中国资产的吸引力正在增强。短期内，市场风险偏好有所提升，中国股市有望延续反弹态...",
-      "as_of": "2026-11-11"
+      "as_of": "2026-11-12"
     }
   ]
 }
