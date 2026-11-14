@@ -3,9 +3,9 @@
   "_note": "Automated open-source intelligence feed covering global AI trends, commercial signals, and China Mobile Ecosystem Privacy & Threat Intelligence. Maintained by Yotoha.",
   "asset": "Global Tech & Mobile Privacy Threat Intelligence Feed",
   "frequency": "daily",
-  "rows_per_run": 4,
+  "rows_per_run": 24,
   "license": "CC BY 4.0",
-  "updated_at": "2026-11-13T03:00:00Z",
+  "updated_at": "2026-11-14T04:00:00Z",
   "schema": {
     "signal_id": "string",
     "title": "string",
@@ -19,7 +19,29 @@
   },
   "rows": [
     {
-      "signal_id": "sec_telemetry_hyperos_1794538831",
+      "signal_id": "hn_50493251",
+      "title": "Nvidia Allegedly Engineered Scarcity by Funding AI Startups to Buy Its GPUs",
+      "url": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents, Venture Capital, Hardware & Compute",
+      "relevance_score": 100,
+      "summary": "HN Score: 122 | Comments: 59",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "hn_50474959",
+      "title": "Reverse engineering my Coway air purifier to ditch the cloud",
+      "url": "https://scottjg.com/posts/2026-11-11-reverse-engineering-my-coway-air-purifier-to-ditch-the-cloud/",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 100,
+      "summary": "HN Score: 710 | Comments: 203",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "sec_telemetry_hyperos_1794631934",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -27,10 +49,21 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 98,
       "summary": "实机取证发现底层守护进程 com.miui.daemon (MQSAS) 与 com.xiaomi.barrage 默认获取全局通知监听特权(NotificationMonitorService)，拦截微信、银行全部弹窗明文；通过用户空间 adb pm uninstall 可安全拔除并不影响基带与通讯。",
-      "as_of": "2026-11-13"
+      "as_of": "2026-11-14"
     },
     {
-      "signal_id": "sec_darknet_breach_mapping_1794538831",
+      "signal_id": "hn_50490593",
+      "title": "Live airband on all frequencies from KORS. Victoria, CA also ground stopped",
+      "url": "https://orcasairband.com/",
+      "source": "HackerNews",
+      "category": "AI & Frontier Models",
+      "business_signals": "AI & Agents",
+      "relevance_score": 98,
+      "summary": "HN Score: 238 | Comments: 54",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "sec_darknet_breach_mapping_1794631934",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -38,10 +71,10 @@
       "business_signals": "Darknet Intelligence, Canary Tokens, Anti-OSINT",
       "relevance_score": 96,
       "summary": "系统解构华住会 2018 (5亿条)、微博 2020 (5.38亿条)、快递面单等地下流通数据库物理结构；提出基于数学级 k-Anonymity 零暴露本地密码探针与姓名/门牌号金丝雀暗记反向唯一归因模型。",
-      "as_of": "2026-11-13"
+      "as_of": "2026-11-14"
     },
     {
-      "signal_id": "sec_clipboard_appops_1794538831",
+      "signal_id": "sec_clipboard_appops_1794631934",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -49,10 +82,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 95,
       "summary": "抽检美团、大众点评、天猫、拼多多、网易云等应用，默认拥有 READ_CLIPBOARD: allow 权限，每次切换前台自动静默搜集剪切板口令与身份证号；通过 cmd appops set <pkg> READ_CLIPBOARD ignore 可物理免疫且不影响复制粘贴正常交互。",
-      "as_of": "2026-11-13"
+      "as_of": "2026-11-14"
     },
     {
-      "signal_id": "sec_sandbox_confinement_1794538831",
+      "signal_id": "sec_sandbox_confinement_1794631934",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -60,7 +93,194 @@
       "business_signals": "Container Security, Linux Hardening, Zero Trust",
       "relevance_score": 92,
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
-      "as_of": "2026-11-13"
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "hn_50489641",
+      "title": "FAA issues national ground stop – lifted 4.5 hours later",
+      "url": "https://www.nbcnews.com/news/us-news/faa-orders-nationwide-ground-stop-departing-flights-reasons-safety-rcna609247",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 80,
+      "summary": "HN Score: 1427 | Comments: 1106",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_3_1794631954",
+      "title": "吴清：科学把握节奏的同时加强对科技企业发行上市的制度适配性研究",
+      "url": "https://www.36kr.com/newsflashes/4069074198303622",
+      "source": "CommercialNewsflash",
+      "category": "Venture & Investment",
+      "business_signals": "Venture Capital",
+      "relevance_score": 70,
+      "summary": "证监会主席吴清在参加2026中国资本市场学术年会时表示，进一步深化制度包容性适应性研究。资本市场作为市场化资源配置的重要平台，要进一步研究深化投融资综合改革，加快构建适应创新规律、产业规律的直接融资体系，统筹发挥私募市场与公开市场、股票市场与债券市场的协同功能，尤其是要在科学把握节奏的同时，加强对大型和新型科技企业发行上市的制度适配性和风险应对机制研究。同时...",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_4_1794631954",
+      "title": "吴清：研究评估量化、减持等制度的优化和公平合理的监管安排",
+      "url": "https://www.36kr.com/newsflashes/4069072217232517",
+      "source": "CommercialNewsflash",
+      "category": "Venture & Investment",
+      "business_signals": "Venture Capital",
+      "relevance_score": 70,
+      "summary": "证监会主席吴清在参加2026中国资本市场学术年会时表示，进一步深化市场微观结构研究。为进一步提升市场定价和发展质量，需要深入研究改善资本供给结构，加快发展壮大长期资本、耐心资本；深入研究改善预期引导机制，减少“羊群效应”“短期化”交易带来的市场波动；还要深入研究评估量化交易、股份减持等制度规则的优化和公平合理的监管安排，切实保护好投资者合法权益。（证券时报）",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "hn_50488325",
+      "title": "FM-1 Workbench",
+      "url": "https://open.m-vave.com/fm1-workbench",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 69,
+      "summary": "HN Score: 197 | Comments: 136",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "hn_50491423",
+      "title": "Terminal borders that don't cost a cell",
+      "url": "https://www.joshka.net/cell-borders/",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 65,
+      "summary": "HN Score: 152 | Comments: 73",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "hn_50493062",
+      "title": "Ggml v1.0.0",
+      "url": "https://github.com/ggml-org/ggml/releases/tag/v1.0.0",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 58,
+      "summary": "HN Score: 88 | Comments: 12",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "hn_50491830",
+      "title": "What Happened to 3Com?",
+      "url": "https://dfarq.homeip.net/what-happened-to-3com/",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 58,
+      "summary": "HN Score: 86 | Comments: 51",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "hn_50491545",
+      "title": "Show HN: Live map of U.S. flights during tonight's FAA nationwide ground stop",
+      "url": "https://grounds.top/",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 57,
+      "summary": "HN Score: 76 | Comments: 10",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "hn_50491980",
+      "title": "Unsloth Qwen3.8-27B Quantizations – Dynamic v3.1 Update",
+      "url": "https://unsloth.ai/docs/models/qwen3.8",
+      "source": "HackerNews",
+      "category": "General Tech & Market",
+      "business_signals": "General Tech",
+      "relevance_score": 54,
+      "summary": "HN Score: 46 | Comments: 5",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_0_1794631954",
+      "title": "金价一周跌去4.6%",
+      "url": "https://www.36kr.com/newsflashes/4069040028537731",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "截至周五收盘，纽约商品交易所12月交割的黄金期价收于每盎司3886.30美元，较前一交易日上涨0.03%，本周金价累计跌幅超4.6%。国际金价持续走弱，主要是市场担忧美国通胀具备黏性，同时预期美联储可能进一步收紧货币政策，推动美元走强、美债收益率走高，压制以美元计价的贵金属价格。本周国际油价累计下行，纽约油价下跌2.5%，布伦特油价下跌2.5%。市场重新评估...",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_1_1794631954",
+      "title": "吴清：进一步深化市场稳定长效机制研究，防范市场异常波动",
+      "url": "https://www.36kr.com/newsflashes/4069079944975497",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "证监会主席吴清在参加2026中国资本市场学术年会时表示，进一步深化市场稳定长效机制研究，中国资本市场从未像今天这样与全球资本市场高度联动、传导共振。面对高度不确定的外部环境和输入性风险，需要我们加强对全球资本市场周期变化、资产定价逻辑演变、风险传导联动等规律性认识，进一步强化跨境跨市场跨行业风险的研究应对，系统构建稳的机制、稳的力量、稳的生态，有效防范市场异...",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_2_1794631954",
+      "title": "Afterpay联合创始人莫尔纳将于年底离开",
+      "url": "https://www.36kr.com/newsflashes/4069079494775682",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "先买后付平台Afterpay联合创始人尼克·莫尔纳宣布，他将于今年年底离开这家公司及其母公司Block。莫尔纳在2014年与安东尼·艾森一同创立了这家澳大利亚先买后付企业，他表示自己希望多陪伴家人。他于周六在领英上发布了这一消息。莫尔纳写道：“我会在年底结束工作，之后我唯一的安排就是多陪陪家人，说不定他们都要不习惯我总待在家里！”（新浪财经）",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_5_1794631954",
+      "title": "APEC深圳会议各项筹备工作已经就绪",
+      "url": "https://www.36kr.com/newsflashes/4068996955804809",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "广东省委常委、APEC会议广东省筹备工作领导小组副组长王曦14日在2026年APEC领导人会议周新闻中心首场吹风会上表示，目前，各项筹备工作已经就绪，我们满怀热忱，静候八方宾客到来。（新华社）",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_6_1794631954",
+      "title": "南方五省区新能源汽车产业链前10月贡献全网用电增量超三成",
+      "url": "https://www.36kr.com/newsflashes/4068951501837186",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "36氪获悉，据中国南方电网有限责任公司消息，今年1至10月，南方五省区新能源汽车产业链售电量占全网售电量的17.1%，同比增长14.8%，对全网用电增量的贡献率达到34.1%。每新增3度电，就有1度多流向新能源汽车产业链。",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_7_1794631954",
+      "title": "百万级CAR-T抗癌药首次纳入基本医保，患者自付降至10万元以内",
+      "url": "https://www.36kr.com/newsflashes/4069026187154307",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "在2026创新药高质量发展大会上，最新版国家医保药品目录及商保创新药目录同步公布。据记者获悉，新版基本医保目录中，有2款创新药由此前首版商保创新药目录转入基本医保，体现“医保+商保”双目录协同衔接的进一步深化。其中，百万级CAR-T抗癌疗法迎来历史性突破，药明巨诺瑞基奥仑赛注射液（商品名：倍诺达®）首次被纳入基本医保，患者经医保报销后，自付费用将降至10万元...",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_8_1794631954",
+      "title": "51个一类新药进入新版国家医保药品目录",
+      "url": "https://www.36kr.com/newsflashes/4069024183981193",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "从国家医保局获悉，2026年国家医保药品目录和商业健康保险创新药品目录在苏州发布。新版国家医保药品目录新增107种药品，其中51个一类新药，再创历史新高。新增品种覆盖肿瘤、罕见病、慢性病、精神疾病等多个临床急需治疗领域。商业健康保险创新药品目录调整同步开展，新增12种药品，其中包括全球首个实体瘤CAR-T、中国首个血友病基因治疗药物等重大创新药品。调整后，2...",
+      "as_of": "2026-11-14"
+    },
+    {
+      "signal_id": "flash_9_1794631954",
+      "title": "德国央行行长：欧洲央行很可能需要再次加息，通胀前景已明显恶化",
+      "url": "https://www.36kr.com/newsflashes/4068948814599040",
+      "source": "CommercialNewsflash",
+      "category": "General Tech & Market",
+      "business_signals": "Industry Dynamics",
+      "relevance_score": 50,
+      "summary": "欧洲央行管委、德国央行行长纳格尔（Joachim Nagel）表示，由于能源价格持续上涨、通胀压力不断增强，欧洲央行很可能需要进一步加息。他警告，通胀维持高位的时间越长，价格上涨向工资及其他商品和服务领域扩散的风险就越大。纳格尔指出，欧洲央行9月的基准预测原本预计，通胀将在今年年底前后见顶，并在2027年较长时间内高于2%的目标水平。但此后通胀前景进一步恶化...",
+      "as_of": "2026-11-14"
     }
   ]
 }
