@@ -94,6 +94,18 @@ I build software around practical business workflows: order and inventory consis
 
 [Organization Repository](https://github.com/NeutrinoGroup/koliance)
 
+### 06 · Developer Utility & Open Source — red-card
+
+**Problem:** Social media and technical content creators face text hallucinations, layout distortion, and blurred rendering when using generative AI for visual knowledge cards.
+
+**Engineering response:** Engineered a zero-hallucination, programmatic CJK visual card engine (`red-card`). It renders pixel-perfect 1080x1440 portrait cards with deterministic text wrapping, font fallback pipelines (Microsoft YaHei, Noto Sans CJK), and curated themes (dark, light, gold).
+
+**Evidence available in repository:** Standalone Python package, CLI and programmatic API, 100% automated test suite passing in CI, and reproducible demo deck generation.
+
+**Engineering value:** Replaces brittle diffusion-based text generation with 100% deterministic code rendering for content creators and technical authors.
+
+[Repository](https://github.com/Yotoha0303/red-card)
+
 ## Architecture Principles | 专业思考
 
 | Principle | Engineering position |
@@ -130,6 +142,7 @@ For an architecture review, a technical discussion, or a bounded contract collab
 - **[KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow)** — [Live Demo](https://knowtrace-workflow.vercel.app) · AI-assisted knowledge workflow with evidence traceability
 - **[go-order-management-system](https://github.com/Yotoha0303/go-order-management-system)** — [Live Demo](https://go-order-management-system.vercel.app/) · order lifecycle, idempotency, inventory consistency
 - **[go-user-system](https://github.com/Yotoha0303/go-user-system)** — authentication, session security, RBAC
+- **[red-card](https://github.com/Yotoha0303/red-card)** — deterministic CJK visual card generator for social media & tech notes (zero AI hallucinations, 1080x1440)
 - [Cloud-Native Validation Lab](https://github.com/Yotoha0303/go-order-management-system-cloudnative-lab) · [QA Automation](https://github.com/Yotoha0303/QA_Automation_Architecture) · [AI Development Quality Gates](https://github.com/Yotoha0303/ai-collaboration-framework)
 - **Organization Collaboration | 组织协作项目:** [Koliance — NeutrinoGroup](https://github.com/NeutrinoGroup/koliance) · real-time trading UI, Go event processing, RPC resilience, CI quality gates
 
@@ -141,6 +154,7 @@ For an architecture review, a technical discussion, or a bounded contract collab
 
 核心项目按其解决的问题组织。建议从对应仓库的 README、测试、CI 和部署文档核验实现范围与成熟度。
 
+- **Developer tools & content automation:** [red-card](https://github.com/Yotoha0303/red-card) — programmatic CJK card engine, zero AI hallucinations, pixel-perfect layout.
 - **Business transaction correctness:** [Go Order Management](https://github.com/Yotoha0303/go-order-management-system) — idempotency, inventory consistency, state transitions.
 - **Identity and access boundaries:** [Go User System](https://github.com/Yotoha0303/go-user-system) — token lifecycle, session revocation, RBAC.
 - **Traceable AI workflows:** [KnowTrace-Workflow](https://github.com/Yotoha0303/KnowTrace-Workflow) — versioned records, evidence traceability, human review.
@@ -207,6 +221,17 @@ An experimental framework that turns development rules into executable checks. I
 **场景与收益：** 用于降低 AI 辅助改动遗漏检查、缺少验证证据或越权操作的风险；目前属于实验性研发工具，不宣称已量化提升团队交付效率。
 
 **Stack:** PowerShell, Bash, Git hooks, CI workflows, automated verification.
+
+### [red-card](https://github.com/Yotoha0303/red-card)
+**Zero-Hallucination CJK Visual Card Engine | 确定性中文视觉卡片生成器**
+
+A developer-first, pure-code image rendering engine tailored for Xiaohongshu, technical notes, and developer social media. Generates crisp, pixel-perfect 1080x1440 portrait cards with deterministic CJK typography wrapping, font fallback pipelines, and theme presets.
+
+面向技术博主、知识创作者与自动化内容矩阵的纯代码视觉卡片渲染引擎。彻底解决扩散模型在中文图文排版中的文字乱码与笔画漂移问题，提供 1080x1440 高清竖屏排版、CJK 字体回退流、暗黑/高光/黑金多套主题以及 Python CLI 与库级 API。
+
+**场景与收益：** 适用于自媒体图文矩阵批量排版、技术架构笔记卡片化、小红书高点赞图文自动化生成；通过确定性渲染消除 AI 幻觉，将排版耗时由人工数十分钟降至毫秒级。
+
+**Stack:** Python, Pillow, Pytest, Hatchling.
 
 ### [QA_Automation_Architecture](https://github.com/Yotoha0303/QA_Automation_Architecture)
 **Containerized QA Automation Toolchain | 容器化自动化测试工具链**
