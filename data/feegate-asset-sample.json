@@ -3,9 +3,9 @@
   "_note": "Automated open-source intelligence feed covering global AI trends, commercial signals, and China Mobile Ecosystem Privacy & Threat Intelligence. Maintained by Yotoha.",
   "asset": "Global Tech & Mobile Privacy Threat Intelligence Feed",
   "frequency": "daily",
-  "rows_per_run": 24,
+  "rows_per_run": 4,
   "license": "CC BY 4.0",
-  "updated_at": "2026-11-18T23:00:00Z",
+  "updated_at": "2026-11-20T04:00:00Z",
   "schema": {
     "signal_id": "string",
     "title": "string",
@@ -19,40 +19,7 @@
   },
   "rows": [
     {
-      "signal_id": "hn_50548021",
-      "title": "Seven new models at scalable price-performance",
-      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 100,
-      "summary": "HN Score: 385 | Comments: 264",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50552424",
-      "title": "Gemini 4 Neon",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 100,
-      "summary": "HN Score: 273 | Comments: 263",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50547777",
-      "title": "AI agents ask better questions than KPMG accountants in audit trial",
-      "url": "https://europeanbusinessmagazine.com/ai-agents-better-questions-kpmg/",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 100,
-      "summary": "HN Score: 291 | Comments: 135",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "sec_telemetry_hyperos_1795042859",
+      "signal_id": "sec_telemetry_hyperos_1795150616",
       "title": "国产智能系统预装遥测与全局通知监听深度审计 (HyperOS/MIUI 特征)",
       "url": "https://source.android.com/docs/core/permissions/restrictions",
       "source": "AutonomousSecurityRadar",
@@ -60,10 +27,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 98,
       "summary": "实机取证发现底层守护进程 com.miui.daemon (MQSAS) 与 com.xiaomi.barrage 默认获取全局通知监听特权(NotificationMonitorService)，拦截微信、银行全部弹窗明文；通过用户空间 adb pm uninstall 可安全拔除并不影响基带与通讯。",
-      "as_of": "2026-11-18"
+      "as_of": "2026-11-20"
     },
     {
-      "signal_id": "sec_darknet_breach_mapping_1795042859",
+      "signal_id": "sec_darknet_breach_mapping_1795150616",
       "title": "国内地下社工库历史数据泄露图谱与金丝雀暗记反向定罪模型",
       "url": "https://haveibeenpwned.com/PwnedWebsites",
       "source": "AutonomousSecurityRadar",
@@ -71,10 +38,10 @@
       "business_signals": "Darknet Intelligence, Canary Tokens, Anti-OSINT",
       "relevance_score": 96,
       "summary": "系统解构华住会 2018 (5亿条)、微博 2020 (5.38亿条)、快递面单等地下流通数据库物理结构；提出基于数学级 k-Anonymity 零暴露本地密码探针与姓名/门牌号金丝雀暗记反向唯一归因模型。",
-      "as_of": "2026-11-18"
+      "as_of": "2026-11-20"
     },
     {
-      "signal_id": "sec_clipboard_appops_1795042859",
+      "signal_id": "sec_clipboard_appops_1795150616",
       "title": "国内 Top 17 商业应用剪切板静默读取基线与 AppOps 锁闭实证",
       "url": "https://developer.android.com/reference/android/app/AppOpsManager",
       "source": "AutonomousSecurityRadar",
@@ -82,32 +49,10 @@
       "business_signals": "Privacy Defense, Threat Intel, Domestic OS Compliance",
       "relevance_score": 95,
       "summary": "抽检美团、大众点评、天猫、拼多多、网易云等应用，默认拥有 READ_CLIPBOARD: allow 权限，每次切换前台自动静默搜集剪切板口令与身份证号；通过 cmd appops set <pkg> READ_CLIPBOARD ignore 可物理免疫且不影响复制粘贴正常交互。",
-      "as_of": "2026-11-18"
+      "as_of": "2026-11-20"
     },
     {
-      "signal_id": "flash_2_1795042867",
-      "title": "欧洲央行报道：欧元区依旧展现韧性 AI、财政、地缘政治风险影响前景",
-      "url": "https://www.36kr.com/newsflashes/4075200463066248",
-      "source": "CommercialNewsflash",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents, Venture Capital",
-      "relevance_score": 95,
-      "summary": "欧洲央行今日发布《2026年11月金融稳定评估报告》称，欧元区金融稳定前景正受到AI估值、财政失衡以及地缘经济紧张局势衍生风险的影响。欧洲央行副行长博里斯·武伊契奇表示：“受持续的地缘经济不确定性、以及AI相关风险敞口上升影响，欧元区金融稳定风险仍处于高位。银行抵御冲击的基础较好，但部分非银机构的脆弱性更为突出，风险持续累积，且宏观审慎防护机制尚不完善。”尽...",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_4_1795042867",
-      "title": "豆包工作日活突破800万，企业客户ARR突破20亿元",
-      "url": "https://www.36kr.com/newsflashes/4075264271176576",
-      "source": "CommercialNewsflash",
-      "category": "AI Commercialization",
-      "business_signals": "AI & Agents, Monetization & SaaS",
-      "relevance_score": 95,
-      "summary": "36氪获悉，豆包官方宣布，豆包工作日活跃用户数（DAU）突破800万，企业客户年度经常性收入（ARR）突破20亿元。据了解豆包工作是豆包面向生产力场景推出的AI产品及品牌，8月25日正式发布。11月16日，豆包工作上线 “工作台” 功能，首批覆盖金融、医疗、教育、创意设计等21个专业场景，预先配置相应技能和工具，用户也可创建、保存和分享自定义工作台。此外，豆...",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "sec_sandbox_confinement_1795042859",
+      "signal_id": "sec_sandbox_confinement_1795150616",
       "title": "闭源商业软件零信任沙盒禁锢标准：免 Root 内核命名空间隔离实践",
       "url": "https://github.com/containers/bubblewrap",
       "source": "AutonomousSecurityRadar",
@@ -115,172 +60,7 @@
       "business_signals": "Container Security, Linux Hardening, Zero Trust",
       "relevance_score": 92,
       "summary": "针对百度网盘等专有商业闭源客户端，部署基于 Linux 非特权 Bubblewrap 的 sandbox-run 包装器，tmpfs 遮蔽宿主主目录与敏感密钥，安全穿透 Wayland/Fcitx5，实现专有应用物理封锁。",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50549493",
-      "title": "Advancing chip design with OpenAI models",
-      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 88,
-      "summary": "HN Score: 133 | Comments: 74",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50551046",
-      "title": "DaisyRose-27B: 1,200-task RL took Qwen3.8 from 5.6% to 12% on Terminal-Bench 4.1",
-      "url": "https://www.radixark.com/blog/daisyrose-27b",
-      "source": "HackerNews",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 84,
-      "summary": "HN Score: 95 | Comments: 23",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50547374",
-      "title": "Unauthenticated remote code execution in Nginx",
-      "url": "https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 980 | Comments: 452",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50547620",
-      "title": "Inside Deutsche Bank",
-      "url": "https://www.inside-db.com/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 490 | Comments: 179",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50545958",
-      "title": "DNS resolvers are the wrong place to fight piracy",
-      "url": "https://techstackups.com/articles/quad9-leaves-france-dns-blocking/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 80,
-      "summary": "HN Score: 543 | Comments: 198",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_6_1795042867",
-      "title": "Visa与连连数字合作落地亚太首笔B2B智能体真实交易",
-      "url": "https://www.36kr.com/newsflashes/4075198400516997",
-      "source": "CommercialNewsflash",
-      "category": "AI & Frontier Models",
-      "business_signals": "AI & Agents",
-      "relevance_score": 75,
-      "summary": "36氪获悉，在新加坡金融科技节上，Visa与连连数字宣布达成将共同推动可信B2B智能体商务的发展。在既有合作基础上，双方通过Visa智能体商务连接平台（Visa Intelligent Commerce Connect），采用专为获授权AI智能体设计的支付标记，成功落地亚太地区首笔智能体真实交易。同日，连连数字宣布推出由Visa智能体商务连接平台提供支持的L...",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50546914",
-      "title": "The Cambridge Dictionary has named ‘human’ as the Word of the Year 2026",
-      "url": "https://www.cam.ac.uk/news/cambridge-dictionary-reveals-word-of-the-year-2026",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 71,
-      "summary": "HN Score: 216 | Comments: 163",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_3_1795042867",
-      "title": "欧洲央行或于25日讨论将银行最低准备金要求从1%提高至2%",
-      "url": "https://www.36kr.com/newsflashes/4075264747967623",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Monetization & SaaS",
-      "relevance_score": 70,
-      "summary": "据报道，知情人士称，欧洲央行将于11月25日讨论将银行最低准备金要求从1%提高至2%。欧洲央行可能将最低准备金要求（MRR）的决定推迟至12月。多数欧洲央行官员支持提高MRR。（界面）",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_9_1795042867",
-      "title": "山鹰国际：筹划重大事项，股票停牌",
-      "url": "https://www.36kr.com/newsflashes/4075242966733704",
-      "source": "CommercialNewsflash",
-      "category": "Venture & Investment",
-      "business_signals": "Venture Capital",
-      "relevance_score": 70,
-      "summary": "36氪获悉，山鹰国际公告，公司接到相关方通知，获悉相关方正在筹划涉及公司的重大事项，该事项尚存在重大不确定性。为保证公平信息披露，维护投资者利益，公司股票将于2026年11月19日开市起停牌，预计停牌时间不超过2个交易日。目前该事项仍处于筹划阶段，能否实施尚存在较大不确定性。",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_5_1795042867",
-      "title": "美股大型科技股盘前涨跌不一，英伟达涨超2%",
-      "url": "https://www.36kr.com/newsflashes/4075258604639368",
-      "source": "CommercialNewsflash",
-      "category": "Hardware & Infrastructure",
-      "business_signals": "Hardware & Compute",
-      "relevance_score": 65,
-      "summary": "36氪获悉，美股大型科技股盘前涨跌不一，截至发稿，英伟达涨超2%，谷歌涨0.8%，特斯拉涨0.45%，亚马逊涨0.28%，苹果跌0.34%，Meta跌0.19%，微软跌0.02%。",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "hn_50510385",
-      "title": "Cuttlefish on Mac: Android's Virtual Device Framework on Apple Silicon",
-      "url": "https://engineering.fb.com/2026/11/13/android/cuttlefish-on-mac/",
-      "source": "HackerNews",
-      "category": "General Tech & Market",
-      "business_signals": "General Tech",
-      "relevance_score": 51,
-      "summary": "HN Score: 19 | Comments: 3",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_0_1795042867",
-      "title": "热门中概股美股盘前跌多涨少，京东跌超2%",
-      "url": "https://www.36kr.com/newsflashes/4075272482444166",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "36氪获悉，热门中概股美股盘前跌多涨少，截至发稿，京东跌超2%，哔哩哔哩跌超1%，网易跌0.89%，阿里巴巴跌0.57%，百度跌0.21%，小鹏集团跌0.2%，理想汽车跌0.16%，蔚来涨超1%，拼多多涨0.09%。",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_1_1795042867",
-      "title": "小米18曝光：起售价5699元，预计12月正式发布",
-      "url": "https://www.36kr.com/newsflashes/4075267476329605",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "36氪获悉，在APEC圆桌会谈采访环节，雷军曝光尚未发布的小米18。据了解，新机起售价5699元，计划于12月正式亮相。小米18延续数字标准版经典小尺寸机身，将在性能、影像、续航、屏幕多维度实现全面升级。",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_7_1795042867",
-      "title": "美联储理事沃勒：若不释放1月加息的信号，应在12月加息50个基点",
-      "url": "https://www.36kr.com/newsflashes/4075254881047424",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "美联储理事沃勒表示，若不释放1月加息的信号，应在12月加息50个基点。（财联社）",
-      "as_of": "2026-11-18"
-    },
-    {
-      "signal_id": "flash_8_1795042867",
-      "title": "金科股份：拟回购1.5亿元至3亿元股份",
-      "url": "https://www.36kr.com/newsflashes/4075195564348551",
-      "source": "CommercialNewsflash",
-      "category": "General Tech & Market",
-      "business_signals": "Industry Dynamics",
-      "relevance_score": 50,
-      "summary": "36氪获悉，金科股份公告，公司董事会审议通过回购部分社会公众股份的议案，回购资金总额不低于1.5亿元且不超过3亿元，回购股份价格上限为董事会决议前30个交易日股票交易均价的150%，实施期限为自董事会审议通过回购方案之日起3个月内。",
-      "as_of": "2026-11-18"
+      "as_of": "2026-11-20"
     }
   ]
 }
