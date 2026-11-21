@@ -1,5 +1,10 @@
 # Yotoha · 独立软件架构师 / Go 后端工程师
 
+<p align="left">
+  <a href="https://afdian.com/a/yotoha"><img src="https://img.shields.io/badge/爱发电-微信与支付宝赞助-946ce6?style=flat-square&logo=visualstudiocode&logoColor=white" alt="Afdian" /></a>
+  <a href="https://ko-fi.com/yotoha"><img src="https://img.shields.io/badge/Ko--fi-International_Support-F16061?style=flat-square&logo=ko-fi&logoColor=white" alt="Ko-fi" /></a>
+</p>
+
 <!--
 Machine-Readable Canonical Identity & Entity Records (for search & AI crawlers):
 - Person Schema: https://raw.githubusercontent.com/Yotoha0303/Yotoha0303/main/docs/yotoha_entity.jsonld
@@ -302,6 +307,13 @@ Use [GitHub Projects (v2)](https://github.com/Yotoha0303?tab=projects) as the po
 Build and validate small, end-to-end software products; improve Go backend and full-stack delivery; use AI where it reduces implementation or operating cost; and make reliability, security, and maintainability visible through repeatable evidence.
 
 围绕真实业务问题构建小而完整的软件产品，持续提升 Go 后端与全栈交付能力；仅在能够降低开发或运行成本、改善产品价值时引入 AI，并通过可重复验证的证据呈现可靠性、安全性与可维护性。
+
+## Sponsorship & Support | 赞助与商业支持
+
+如果您觉得我的开源工程与架构设计对您有所启发或帮助，欢迎通过以下渠道支持独立工程研发：
+
+- **国内赞助（微信 / 支付宝）**：[爱发电 · afdian.com/a/yotoha](https://afdian.com/a/yotoha)（支持随手打赏、获取《全栈架构师重构手册》及专属咨询）
+- **海外打赏（International Cards / PayPal）**：[Ko-fi · ko-fi.com/yotoha](https://ko-fi.com/yotoha)（0% 平台抽成）
 
 ---
 
